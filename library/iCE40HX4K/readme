@@ -1,0 +1,8 @@
+Para usar el makefile hay que instalar kipart:
+
+sudo app install python setup-tools
+sudo easy-install kipart
+
+El programa pasa archivos .csv a librerías kicad, el simbolo de iCE40HX4K fue obtenido modificando el .csv provisto en este github (el cual fue importado del .xlsx del fabricante mediante un script python):
+
+https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries

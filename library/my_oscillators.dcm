@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LFSPXO019966
+D 3.3V HCMOS SMD Crystal Clock Oscillator, Abracon
+K 3.3V HCMOS SMD Crystal Clock Oscillator
+F http://www.abracon.com/Oscillators/ASV.pdf
+$ENDCMP
+#
+#End Doc Library

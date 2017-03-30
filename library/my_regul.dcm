@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIC5355/6-xYMME
+D MICROPOWER 100mA LDO adjustable regulator TSOT-23 5-leads package
+K REGULATOR POSITIVE POWER LDO adjustable
+F http://cds.linear.com/docs/en/datasheet/1761sff.pdf
+$ENDCMP
+#
+#End Doc Library
