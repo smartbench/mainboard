@@ -1,4 +1,4 @@
-update=vie 31 mar 2017 15:41:56 ART
+update=vie 31 mar 2017 17:19:01 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,3 +67,4 @@ LibName35=library/my_power
 LibName36=library/my_regul
 LibName37=library/my_74xx
 LibName38=library/MIC2005A-2
+LibName39=library/AS4C1M16S

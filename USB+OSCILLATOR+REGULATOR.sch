@@ -37,12 +37,13 @@ LIBS:my_power
 LIBS:my_regul
 LIBS:my_74xx
 LIBS:MIC2005A-2
+LIBS:AS4C1M16S
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""

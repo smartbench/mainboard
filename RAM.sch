@@ -1,0 +1,241 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:Oscillators
+LIBS:Lattice_iCE40HX4K_FPGA
+LIBS:my_memory
+LIBS:my_oscillators
+LIBS:my_power
+LIBS:my_regul
+LIBS:my_74xx
+LIBS:MIC2005A-2
+LIBS:AS4C1M16S
+LIBS:iCE40hxk4_dev_board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GNDD #PWR088
+U 1 1 58E1B9A2
+P 4750 4900
+F 0 "#PWR088" H 4750 4650 50  0001 C CNN
+F 1 "GNDD" H 4750 4750 50  0000 C CNN
+F 2 "" H 4750 4900 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58E1D4A1
+P 5500 1200
+F 0 "#PWR?" H 5500 1050 50  0001 C CNN
+F 1 "+3.3V" H 5500 1340 50  0000 C CNN
+F 2 "" H 5500 1200 50  0001 C CNN
+F 3 "" H 5500 1200 50  0001 C CNN
+	1    5500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Core_Ferrite L?
+U 1 1 58E1D68E
+P 5200 1200
+F 0 "L?" V 5150 1200 50  0000 C CNN
+F 1 "L_Core_Ferrite" V 5310 1200 50  0000 C CNN
+F 2 "" H 5200 1200 50  0001 C CNN
+F 3 "" H 5200 1200 50  0001 C CNN
+	1    5200 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 58E1D705
+P 4600 1350
+F 0 "C?" H 4625 1450 50  0000 L CNN
+F 1 "2.7u" H 4625 1250 50  0000 L CNN
+F 2 "" H 4638 1200 50  0001 C CNN
+F 3 "" H 4600 1350 50  0001 C CNN
+	1    4600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58E1D776
+P 4400 1350
+F 0 "C?" H 4425 1450 50  0000 L CNN
+F 1 "100n" H 4425 1250 50  0000 L CNN
+F 2 "" H 4438 1200 50  0001 C CNN
+F 3 "" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 58E1D898
+P 4500 1500
+F 0 "#PWR?" H 4500 1250 50  0001 C CNN
+F 1 "GNDD" H 4500 1350 50  0000 C CNN
+F 2 "" H 4500 1500 50  0001 C CNN
+F 3 "" H 4500 1500 50  0001 C CNN
+	1    4500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4900 4750 4750
+Wire Wire Line
+	4750 4750 5250 4750
+Connection ~ 4850 4750
+Connection ~ 4950 4750
+Connection ~ 5050 4750
+Connection ~ 5150 4750
+Wire Wire Line
+	5350 1200 5500 1200
+Wire Wire Line
+	3750 1200 5050 1200
+Connection ~ 4600 1200
+Wire Wire Line
+	4750 1650 5050 1650
+Wire Wire Line
+	4950 1650 4950 1200
+Connection ~ 4950 1200
+Wire Wire Line
+	5450 1650 5450 1200
+Connection ~ 5450 1200
+Wire Wire Line
+	3750 1500 4600 1500
+Connection ~ 4500 1500
+Connection ~ 4850 1650
+$Comp
+L AS4C1M16S U?
+U 1 1 58E1B24A
+P 5000 3200
+F 0 "U?" H 5000 3100 50  0000 C CNN
+F 1 "AS4C1M16S" H 5000 3300 50  0000 C CNN
+F 2 "MODULE" H 5000 3200 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1650
+Wire Wire Line
+	5150 1650 5450 1650
+Connection ~ 5250 1650
+Connection ~ 4750 1650
+$Comp
+L C C?
+U 1 1 58E1DAA0
+P 3750 1350
+F 0 "C?" H 3775 1450 50  0000 L CNN
+F 1 "100n" H 3775 1250 50  0000 L CNN
+F 2 "" H 3788 1200 50  0001 C CNN
+F 3 "" H 3750 1350 50  0001 C CNN
+	1    3750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58E1DADF
+P 3950 1350
+F 0 "C?" H 3975 1450 50  0000 L CNN
+F 1 "100n" H 3975 1250 50  0000 L CNN
+F 2 "" H 3988 1200 50  0001 C CNN
+F 3 "" H 3950 1350 50  0001 C CNN
+	1    3950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58E1DB0D
+P 4150 1350
+F 0 "C?" H 4175 1450 50  0000 L CNN
+F 1 "100n" H 4175 1250 50  0000 L CNN
+F 2 "" H 4188 1200 50  0001 C CNN
+F 3 "" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 1200
+Connection ~ 4150 1200
+Connection ~ 4400 1200
+Connection ~ 3950 1500
+Connection ~ 4400 1500
+Connection ~ 4150 1500
+$Comp
+L C C?
+U 1 1 58E1DD36
+P 5600 1550
+F 0 "C?" H 5625 1650 50  0000 L CNN
+F 1 "100n" H 5625 1450 50  0000 L CNN
+F 2 "" H 5638 1400 50  0001 C CNN
+F 3 "" H 5600 1550 50  0001 C CNN
+	1    5600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 58E1DD7E
+P 5600 1700
+F 0 "#PWR?" H 5600 1450 50  0001 C CNN
+F 1 "GNDD" H 5600 1550 50  0000 C CNN
+F 2 "" H 5600 1700 50  0001 C CNN
+F 3 "" H 5600 1700 50  0001 C CNN
+	1    5600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58E1DDA1
+P 5950 1550
+F 0 "C?" H 5975 1650 50  0000 L CNN
+F 1 "100n" H 5975 1450 50  0000 L CNN
+F 2 "" H 5988 1400 50  0001 C CNN
+F 3 "" H 5950 1550 50  0001 C CNN
+	1    5950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1700 5950 1700
+Wire Wire Line
+	5450 1400 5950 1400
+Connection ~ 5450 1400
+Connection ~ 5600 1400
+$EndSCHEMATC

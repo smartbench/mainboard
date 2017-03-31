@@ -37,12 +37,13 @@ LIBS:my_power
 LIBS:my_regul
 LIBS:my_74xx
 LIBS:MIC2005A-2
+LIBS:AS4C1M16S
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -268,4 +269,10 @@ Wire Wire Line
 	4550 2400 5800 2400
 Wire Wire Line
 	4550 2500 5800 2500
+$Sheet
+S 8400 3450 1750 2450
+U 58E1AFDD
+F0 "RAM" 79
+F1 "RAM.sch" 79
+$EndSheet
 $EndSCHEMATC
