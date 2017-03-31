@@ -35,6 +35,8 @@ LIBS:my_memory
 LIBS:my_oscillators
 LIBS:my_power
 LIBS:my_regul
+LIBS:my_74xx
+LIBS:MIC2005A-2
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END

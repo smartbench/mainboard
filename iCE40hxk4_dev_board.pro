@@ -1,4 +1,4 @@
-update=jue 30 mar 2017 17:10:58 ART
+update=vie 31 mar 2017 15:41:56 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,5 @@ LibName33=library/my_memory
 LibName34=library/my_oscillators
 LibName35=library/my_power
 LibName36=library/my_regul
+LibName37=library/my_74xx
+LibName38=library/MIC2005A-2
