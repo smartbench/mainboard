@@ -66,30 +66,8 @@ F 3 "" H 3300 2050 60  0001 C CNN
 	2    3300 2050
 	1    0    0    -1  
 $EndComp
-$Comp
-L GNDD #PWR068
-U 1 1 58E15B5E
-P 3700 5450
-F 0 "#PWR068" H 3700 5200 50  0001 C CNN
-F 1 "GNDD" H 3700 5300 50  0000 C CNN
-F 2 "" H 3700 5450 50  0001 C CNN
-F 3 "" H 3700 5450 50  0001 C CNN
-	1    3700 5450
-	1    0    0    -1  
-$EndComp
 Text Notes 3550 1600 0    60   ~ 12
 FPGA BANK 0\n(TOP BANK)
-$Comp
-L +3.3V #PWR069
-U 1 1 58E15B6E
-P 3050 5350
-F 0 "#PWR069" H 3050 5200 50  0001 C CNN
-F 1 "+3.3V" H 3050 5490 50  0000 C CNN
-F 2 "" H 3050 5350 50  0001 C CNN
-F 3 "" H 3050 5350 50  0001 C CNN
-	1    3050 5350
-	1    0    0    -1  
-$EndComp
 $Comp
 L iCE40-HX4K-TQ144 U?
 U 3 1 58E16C0F
@@ -115,28 +93,6 @@ Text Label 6050 3900 0    60   ~ 0
 IOR_144
 Text Label 6050 3700 0    60   ~ 0
 IOR_140
-$Comp
-L GNDD #PWR070
-U 1 1 58E16C66
-P 6200 5700
-F 0 "#PWR070" H 6200 5450 50  0001 C CNN
-F 1 "GNDD" H 6200 5550 50  0000 C CNN
-F 2 "" H 6200 5700 50  0001 C CNN
-F 3 "" H 6200 5700 50  0001 C CNN
-	1    6200 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR071
-U 1 1 58E16C6C
-P 6300 5300
-F 0 "#PWR071" H 6300 5150 50  0001 C CNN
-F 1 "+3.3V" H 6300 5440 50  0000 C CNN
-F 2 "" H 6300 5300 50  0001 C CNN
-F 3 "" H 6300 5300 50  0001 C CNN
-	1    6300 5300
-	1    0    0    -1  
-$EndComp
 Text Notes 5150 1600 0    60   ~ 12
 FPGA BANK 1\n(RIGHT BANK)
 Text Notes 7150 1550 0    60   ~ 12
@@ -241,42 +197,6 @@ F 6 "25V (min. 10V)" H 6300 5550 60  0001 C CNN "VDC"
 	1    6300 5550
 	1    0    0    -1  
 $EndComp
-Text Label 3300 2750 2    60   ~ 0
-ADC0
-Text Label 3300 2850 2    60   ~ 0
-ADC1
-Text Label 3300 2950 2    60   ~ 0
-ADC2
-Text Label 3300 3050 2    60   ~ 0
-ADC3
-Text Label 3300 3150 2    60   ~ 0
-ADC4
-Text Label 3300 3250 2    60   ~ 0
-ADC5
-Text Label 3300 3350 2    60   ~ 0
-ADC6
-Text Label 3300 3450 2    60   ~ 0
-ADC7
-Text Label 3300 3550 2    60   ~ 0
-ADC8
-Text Label 3300 3650 2    60   ~ 0
-ADC9
-Text Label 3300 3750 2    60   ~ 0
-ADC10
-Text Label 3300 3850 2    60   ~ 0
-ADC11
-Text Label 3300 3950 2    60   ~ 0
-ADC12
-Text Label 3300 4050 2    60   ~ 0
-ADC13
-Text Label 3300 4150 2    60   ~ 0
-ADC14
-Text Label 3300 4250 2    60   ~ 0
-ADC15
-Text Label 3300 4350 2    60   ~ 0
-ADC16
-Text Label 3300 4450 2    60   ~ 0
-ADC17
 $Comp
 L CONN_01X35 J401
 U 1 1 58E81FE2
@@ -288,7 +208,7 @@ F 3 "" H 8050 3600 50  0001 C CNN
 	1    8050 3600
 	1    0    0    -1  
 $EndComp
-Text Notes 2900 3000 2    60   ~ 0
+Text Notes 2400 3050 2    60   ~ 0
 Available pins for ADC connections
 Text Notes 2750 2300 2    60   ~ 0
 TO LEFT CONNECTOR
@@ -363,39 +283,6 @@ F 6 "25V (min. 10V)" H 7700 5350 60  0001 C CNN "VDC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR072
-U 1 1 58E821E1
-P 7200 5200
-F 0 "#PWR072" H 7200 5050 50  0001 C CNN
-F 1 "+3.3V" H 7200 5340 50  0000 C CNN
-F 2 "" H 7200 5200 50  0001 C CNN
-F 3 "" H 7200 5200 50  0001 C CNN
-	1    7200 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR073
-U 1 1 58E82242
-P 7700 5650
-F 0 "#PWR073" H 7700 5400 50  0001 C CNN
-F 1 "GNDD" H 7700 5500 50  0000 C CNN
-F 2 "" H 7700 5650 50  0001 C CNN
-F 3 "" H 7700 5650 50  0001 C CNN
-	1    7700 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR074
-U 1 1 58E823AD
-P 6950 1600
-F 0 "#PWR074" H 6950 1450 50  0001 C CNN
-F 1 "+3.3V" H 6950 1740 50  0000 C CNN
-F 2 "" H 6950 1600 50  0001 C CNN
-F 3 "" H 6950 1600 50  0001 C CNN
-	1    6950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C405
 U 1 1 58E823D3
 P 7150 1750
@@ -409,65 +296,37 @@ F 6 "25V (min. 10V)" H 7150 1750 60  0001 C CNN "VDC"
 	1    7150 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L GNDD #PWR075
-U 1 1 58E824C7
-P 7150 2000
-F 0 "#PWR075" H 7150 1750 50  0001 C CNN
-F 1 "GNDD" H 7150 1850 50  0000 C CNN
-F 2 "" H 7150 2000 50  0001 C CNN
-F 3 "" H 7150 2000 50  0001 C CNN
-	1    7150 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR076
-U 1 1 58E82512
-P 7300 3500
-F 0 "#PWR076" H 7300 3250 50  0001 C CNN
-F 1 "GNDD" H 7300 3350 50  0000 C CNN
-F 2 "" H 7300 3500 50  0001 C CNN
-F 3 "" H 7300 3500 50  0001 C CNN
-	1    7300 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3550 5450 3800 5450
-Connection ~ 3700 5450
+	3050 5450 3800 5450
 Wire Wire Line
 	3550 5150 3800 5150
 Wire Wire Line
-	3300 4750 3300 5350
+	3300 4750 3300 5050
 Connection ~ 3300 4850
 Wire Wire Line
-	3700 5150 3700 5050
+	3700 5050 3700 5150
 Wire Wire Line
-	3700 5050 3300 5050
+	3050 5050 3700 5050
 Connection ~ 3300 5050
 Connection ~ 3700 5150
 Wire Wire Line
-	3300 5350 3050 5350
-Wire Wire Line
-	6050 5700 6300 5700
-Connection ~ 6200 5700
+	6050 5700 6650 5700
 Wire Wire Line
 	6050 5000 6050 5400
 Connection ~ 6050 5100
 Wire Wire Line
-	6300 5300 6300 5400
+	6050 5350 6650 5350
 Wire Wire Line
-	6300 5350 6050 5350
+	6300 5350 6300 5400
 Connection ~ 6050 5350
 Connection ~ 6300 5350
 Wire Notes Line
 	1900 2700 2950 2700
 Wire Wire Line
-	7200 5200 7850 5200
+	7400 5200 7850 5200
 Connection ~ 7700 5200
 Wire Wire Line
-	7700 5500 7700 5650
-Wire Wire Line
-	7700 5600 7850 5600
+	7400 5600 7850 5600
 Wire Wire Line
 	7850 5600 7850 5300
 Connection ~ 7700 5600
@@ -479,7 +338,7 @@ Connection ~ 7150 1600
 Wire Wire Line
 	7150 1900 7150 2000
 Wire Wire Line
-	7150 2000 7850 2000
+	6950 2000 7850 2000
 Wire Wire Line
 	7300 3500 7850 3500
 Wire Wire Line
@@ -514,4 +373,63 @@ Wire Notes Line
 	1900 4450 2950 4450
 Text Notes 2550 4700 2    60   ~ 0
 RAM connections
+Text HLabel 3300 2750 0    60   BiDi ~ 12
+ADC_0
+Text HLabel 3300 2850 0    60   BiDi ~ 12
+ADC_1
+Text HLabel 3300 2950 0    60   BiDi ~ 12
+ADC_2
+Text HLabel 3300 3050 0    60   BiDi ~ 12
+ADC_3
+Text HLabel 3300 3150 0    60   BiDi ~ 12
+ADC_4
+Text HLabel 3300 3250 0    60   BiDi ~ 12
+ADC_5
+Text HLabel 3300 3350 0    60   BiDi ~ 12
+ADC_6
+Text HLabel 3300 3450 0    60   BiDi ~ 12
+ADC_7
+Text HLabel 3300 3550 0    60   BiDi ~ 12
+ADC_8
+Text HLabel 3300 3650 0    60   BiDi ~ 12
+ADC_9
+Text HLabel 3300 3750 0    60   BiDi ~ 12
+ADC_10
+Text HLabel 3300 3850 0    60   BiDi ~ 12
+ADC_11
+Text HLabel 3300 3950 0    60   BiDi ~ 12
+ADC_12
+Text HLabel 3300 4050 0    60   BiDi ~ 12
+ADC_13
+Text HLabel 3300 4150 0    60   BiDi ~ 12
+ADC_14
+Text HLabel 3300 4250 0    60   BiDi ~ 12
+ADC_15
+Text HLabel 3300 4350 0    60   BiDi ~ 12
+ADC_16
+Text HLabel 3300 4450 0    60   BiDi ~ 12
+ADC_17
+Text HLabel 3050 5050 0    60   Input ~ 12
++3.3V
+Text HLabel 7400 5200 0    60   Input ~ 12
++3.3V
+Text HLabel 6950 1600 0    60   Input ~ 12
++3.3V
+Text HLabel 6650 5350 2    60   Input ~ 12
++3.3V
+Text HLabel 3050 5450 0    60   Input ~ 12
+GNDD
+Connection ~ 3550 5450
+Text HLabel 6650 5700 2    60   Input ~ 12
+GNDD
+Connection ~ 6300 5700
+Text HLabel 7400 5600 0    60   Input ~ 12
+GNDD
+Wire Wire Line
+	7700 5600 7700 5500
+Text HLabel 7300 3500 0    60   Input ~ 12
+GNDD
+Text HLabel 6950 2000 0    60   Input ~ 12
+GNDD
+Connection ~ 7150 2000
 $EndSCHEMATC

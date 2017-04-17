@@ -53,54 +53,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L +3.3V #PWR077
-U 1 1 58DDB35A
-P 9550 1650
-F 0 "#PWR077" H 9550 1500 50  0001 C CNN
-F 1 "+3.3V" H 9550 1790 50  0000 C CNN
-F 2 "" H 9550 1650 50  0001 C CNN
-F 3 "" H 9550 1650 50  0001 C CNN
-	1    9550 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR078
-U 1 1 58DDB5F9
-P 10050 5300
-F 0 "#PWR078" H 10050 5050 50  0001 C CNN
-F 1 "GNDD" H 10050 5150 50  0000 C CNN
-F 2 "" H 10050 5300 50  0001 C CNN
-F 3 "" H 10050 5300 50  0001 C CNN
-	1    10050 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR079
-U 1 1 58DDDD75
-P 4350 6050
-F 0 "#PWR079" H 4350 5900 50  0001 C CNN
-F 1 "+3.3V" H 4350 6190 50  0000 C CNN
-F 2 "" H 4350 6050 50  0001 C CNN
-F 3 "" H 4350 6050 50  0001 C CNN
-	1    4350 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR080
-U 1 1 58DDDDA1
-P 4350 6200
-F 0 "#PWR080" H 4350 5950 50  0001 C CNN
-F 1 "GNDD" H 4350 6050 50  0000 C CNN
-F 2 "" H 4350 6200 50  0001 C CNN
-F 3 "" H 4350 6200 50  0001 C CNN
-	1    4350 6200
-	1    0    0    -1  
-$EndComp
-Text HLabel 4600 6050 2    60   Input Italic 12
-+3.3V
-Text HLabel 4600 6200 2    60   Input Italic 12
-GNDD
 Text Notes 8800 1550 0    60   ~ 12
 LEFT HEADER
 Text HLabel 6900 2900 0    60   BiDi Italic 12
@@ -139,28 +91,6 @@ F 2 "" H 7250 4700 60  0001 C CNN
 F 3 "" H 7250 4700 60  0001 C CNN
 	4    7250 4700
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDD #PWR081
-U 1 1 58DF7609
-P 7450 2300
-F 0 "#PWR081" H 7450 2050 50  0001 C CNN
-F 1 "GNDD" H 7450 2150 50  0000 C CNN
-F 2 "" H 7450 2300 50  0001 C CNN
-F 3 "" H 7450 2300 50  0001 C CNN
-	1    7450 2300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR082
-U 1 1 58DF79F0
-P 7450 1850
-F 0 "#PWR082" H 7450 1700 50  0001 C CNN
-F 1 "+3.3V" H 7450 1990 50  0000 C CNN
-F 2 "" H 7450 1850 50  0001 C CNN
-F 3 "" H 7450 1850 50  0001 C CNN
-	1    7450 1850
-	-1   0    0    -1  
 $EndComp
 $Comp
 L C C510
@@ -221,28 +151,6 @@ $EndComp
 Text Notes 2100 1450 2    60   ~ 12
 FPGA BANK 3\n(LEFT BANK)
 $Comp
-L GNDD #PWR083
-U 1 1 58DDBCCE
-P 1900 5700
-F 0 "#PWR083" H 1900 5450 50  0001 C CNN
-F 1 "GNDD" H 1900 5550 50  0000 C CNN
-F 2 "" H 1900 5700 50  0001 C CNN
-F 3 "" H 1900 5700 50  0001 C CNN
-	1    1900 5700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR084
-U 1 1 58DDB37B
-P 2550 5400
-F 0 "#PWR084" H 2550 5250 50  0001 C CNN
-F 1 "+3.3V" H 2550 5540 50  0000 C CNN
-F 2 "" H 2550 5400 50  0001 C CNN
-F 3 "" H 2550 5400 50  0001 C CNN
-	1    2550 5400
-	-1   0    0    -1  
-$EndComp
-$Comp
 L iCE40-HX4K-TQ144 U301
 U 5 1 58DE89B0
 P 2300 2150
@@ -279,50 +187,6 @@ F 4 "C0603C104K3RACTU" H 10300 1950 60  0001 C CNN "Manufacturer Part"
 F 5 "X7R" H 10300 1950 60  0001 C CNN "Dielectric"
 F 6 "25V (min. 10V)" H 10300 1950 60  0001 C CNN "VDC"
 	1    10300 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR085
-U 1 1 58E82456
-P 4500 5150
-F 0 "#PWR085" H 4500 4900 50  0001 C CNN
-F 1 "GNDD" H 4500 5000 50  0000 C CNN
-F 2 "" H 4500 5150 50  0001 C CNN
-F 3 "" H 4500 5150 50  0001 C CNN
-	1    4500 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR086
-U 1 1 58E8245C
-P 5250 1450
-F 0 "#PWR086" H 5250 1300 50  0001 C CNN
-F 1 "+3.3V" H 5250 1590 50  0000 C CNN
-F 2 "" H 5250 1450 50  0001 C CNN
-F 3 "" H 5250 1450 50  0001 C CNN
-	1    5250 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR087
-U 1 1 58E82462
-P 3700 1900
-F 0 "#PWR087" H 3700 1650 50  0001 C CNN
-F 1 "GNDD" H 3700 1750 50  0000 C CNN
-F 2 "" H 3700 1900 50  0001 C CNN
-F 3 "" H 3700 1900 50  0001 C CNN
-	1    3700 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L AS4C1M16S U501
-U 1 1 58E82490
-P 4750 3450
-F 0 "U501" H 4750 3350 50  0000 C CNN
-F 1 "AS4C1M16S" H 4750 3550 50  0000 C CNN
-F 2 "MODULE" H 4750 3450 50  0001 C CNN
-F 3 "DOCUMENTATION" H 4750 3450 50  0001 C CNN
-	1    4750 3450
 	1    0    0    -1  
 $EndComp
 Text Label 5800 2400 0    60   ~ 0
@@ -517,36 +381,6 @@ Text Label 2300 4050 0    60   ~ 0
 A10
 Text Notes 7600 1500 2    60   ~ 12
 FPGA BANK 2\n(BOTTOM BANK)
-Text Label 9050 4400 0    60   ~ 0
-IOL_12A
-Text Label 9050 4500 0    60   ~ 0
-IOL_12B
-Text Label 9050 4600 0    60   ~ 0
-IOL_13A
-Text Label 9050 4000 0    60   ~ 0
-IOL_8A
-Text Label 9050 4100 0    60   ~ 0
-IOL_8B
-Text Label 9050 4200 0    60   ~ 0
-IOL_10A
-Text Label 9050 4300 0    60   ~ 0
-IOL_10B
-Text Label 9050 3600 0    60   ~ 0
-IOL_4A
-Text Label 9050 3700 0    60   ~ 0
-IOL_4B
-Text Label 9050 3800 0    60   ~ 0
-IOL_5A
-Text Label 9050 3900 0    60   ~ 0
-IOL_5B
-Text Label 9050 3100 0    60   ~ 0
-IOL_2A
-Text Label 9050 3200 0    60   ~ 0
-IOL_2B
-Text Label 9050 3300 0    60   ~ 0
-IOL_3A
-Text Label 9050 3500 0    60   ~ 0
-IOL_3B
 $Comp
 L CONN_01X35 J501
 U 1 1 58E92216
@@ -557,17 +391,6 @@ F 2 "" H 8850 3500 50  0001 C CNN
 F 3 "" H 8850 3500 50  0001 C CNN
 	1    8850 3500
 	-1   0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR088
-U 1 1 58DDBB46
-P 10300 2200
-F 0 "#PWR088" H 10300 1950 50  0001 C CNN
-F 1 "GNDD" H 10300 2050 50  0000 C CNN
-F 2 "" H 10300 2200 50  0001 C CNN
-F 3 "" H 10300 2200 50  0001 C CNN
-	1    10300 2200
-	1    0    0    -1  
 $EndComp
 Text HLabel 9050 2400 2    60   BiDi ~ 12
 IOT_168
@@ -583,35 +406,9 @@ Text HLabel 9050 2900 2    60   BiDi ~ 12
 IOT_173
 Text HLabel 9050 3000 2    60   BiDi ~ 12
 IOT_174
-$Comp
-L GNDD #PWR089
-U 1 1 58E92B51
-P 9700 2100
-F 0 "#PWR089" H 9700 1850 50  0001 C CNN
-F 1 "GNDD" H 9700 1950 50  0000 C CNN
-F 2 "" H 9700 2100 50  0001 C CNN
-F 3 "" H 9700 2100 50  0001 C CNN
-	1    9700 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR090
-U 1 1 58E92D02
-P 10050 4650
-F 0 "#PWR090" H 10050 4500 50  0001 C CNN
-F 1 "+3.3V" H 10050 4790 50  0000 C CNN
-F 2 "" H 10050 4650 50  0001 C CNN
-F 3 "" H 10050 4650 50  0001 C CNN
-	1    10050 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 5400 2550 5400
 Connection ~ 2050 5400
-Wire Wire Line
-	4600 6200 4350 6200
-Wire Wire Line
-	4350 6050 4600 6050
 Wire Wire Line
 	7250 4000 6900 4000
 Wire Wire Line
@@ -636,22 +433,19 @@ Wire Wire Line
 	7250 2900 6900 2900
 Wire Wire Line
 	7250 4100 6900 4100
-Wire Wire Line
-	2300 5700 2300 4950
 Connection ~ 2300 5050
 Wire Wire Line
 	7250 3500 6900 3500
 Wire Wire Line
-	7350 2300 7600 2300
-Connection ~ 7450 2300
+	7350 2300 7750 2300
 Wire Wire Line
 	7350 2000 7600 2000
 Wire Wire Line
 	7450 2000 7500 2000
 Wire Wire Line
-	7450 1850 7450 2000
+	7100 1900 7750 1900
 Wire Wire Line
-	7450 1900 7100 1900
+	7450 1900 7450 2000
 Wire Wire Line
 	7100 1900 7100 2700
 Wire Wire Line
@@ -660,18 +454,13 @@ Connection ~ 7500 2000
 Wire Wire Line
 	7250 2700 7250 2800
 Connection ~ 7450 1900
-Connection ~ 1900 5700
-Connection ~ 2300 5400
 Connection ~ 2050 5700
-Wire Wire Line
-	4500 5000 4500 5150
 Wire Wire Line
 	3250 1450 5250 1450
 Connection ~ 4350 1450
 Wire Wire Line
 	4700 1450 4700 1900
 Connection ~ 4700 1450
-Connection ~ 5200 1450
 Connection ~ 3700 1450
 Connection ~ 4150 1450
 Wire Wire Line
@@ -685,11 +474,9 @@ Wire Wire Line
 Wire Wire Line
 	4350 1850 4350 1800
 Wire Wire Line
-	3250 1850 4350 1850
+	3150 1850 4350 1850
 Wire Wire Line
 	3500 1850 3500 1800
-Wire Wire Line
-	3700 1800 3700 1900
 Connection ~ 3700 1850
 Wire Wire Line
 	4150 1800 4150 1850
@@ -725,8 +512,7 @@ Connection ~ 4900 1800
 Wire Wire Line
 	5000 5100 5000 5000
 Wire Wire Line
-	4500 5100 5000 5100
-Connection ~ 4500 5100
+	4500 5100 5150 5100
 Wire Wire Line
 	4600 5000 4600 5100
 Connection ~ 4600 5100
@@ -740,9 +526,11 @@ Wire Wire Line
 	4900 5000 4900 5100
 Connection ~ 4900 5100
 Wire Wire Line
-	10050 5050 10050 5300
+	10050 5050 10050 5200
 Wire Wire Line
-	1800 5700 2300 5700
+	9050 5200 10350 5200
+Wire Wire Line
+	1800 5700 2550 5700
 Wire Wire Line
 	10300 2200 10300 2100
 Wire Wire Line
@@ -769,9 +557,9 @@ Wire Wire Line
 	9250 2300 9050 2300
 Connection ~ 9250 2200
 Wire Wire Line
-	10050 4650 10050 4750
+	9050 4700 10350 4700
 Wire Wire Line
-	9050 4700 10050 4700
+	10050 4700 10050 4750
 Connection ~ 10050 4700
 Wire Wire Line
 	9050 4800 9200 4800
@@ -781,8 +569,6 @@ Connection ~ 9200 4700
 Wire Wire Line
 	9200 4900 9050 4900
 Connection ~ 9200 4800
-Wire Wire Line
-	9050 5200 10050 5200
 Connection ~ 10050 5200
 Wire Wire Line
 	9050 5100 9200 5100
@@ -826,17 +612,71 @@ Text Label 2300 2650 0    60   ~ 0
 DQ8
 Text HLabel 5800 3800 2    60   BiDi ~ 12
 DQ14
-$Comp
-L GNDD #PWR091
-U 1 1 58EA9341
-P 9650 3400
-F 0 "#PWR091" H 9650 3150 50  0001 C CNN
-F 1 "GNDD" H 9650 3250 50  0000 C CNN
-F 2 "" H 9650 3400 50  0001 C CNN
-F 3 "" H 9650 3400 50  0001 C CNN
-	1    9650 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9050 3400 9650 3400
+NoConn ~ 5800 4400
+NoConn ~ 5800 4500
+Wire Wire Line
+	9050 3100 9050 4600
+Connection ~ 9050 3200
+Connection ~ 9050 3300
+Connection ~ 9050 3400
+Connection ~ 9050 3500
+Connection ~ 9050 3600
+Connection ~ 9050 3700
+Connection ~ 9050 3800
+Connection ~ 9050 3900
+Connection ~ 9050 4000
+Connection ~ 9050 4100
+Connection ~ 9050 4200
+Connection ~ 9050 4300
+Connection ~ 9050 4400
+Connection ~ 9050 4500
+Text HLabel 2550 5400 2    60   Input Italic 12
++3.3V
+Text HLabel 2550 5700 2    60   Input Italic 12
+GNDD
+Text HLabel 5250 1450 2    60   Input Italic 12
++3.3V
+Text HLabel 7750 1900 2    60   Input Italic 12
++3.3V
+Text HLabel 9550 1650 2    60   Input Italic 12
++3.3V
+Text HLabel 10350 5200 2    60   Input Italic 12
+GNDD
+Text HLabel 10300 2200 2    60   Input Italic 12
+GNDD
+Text HLabel 9700 2100 2    60   Input Italic 12
+GNDD
+Text HLabel 9650 3400 2    60   Input Italic 12
+GNDD
+Text HLabel 7750 2300 2    60   Input Italic 12
+GNDD
+Connection ~ 7600 2300
+Wire Wire Line
+	4500 5100 4500 5000
+Text HLabel 5150 5100 2    60   Input Italic 12
+GNDD
+Connection ~ 5000 5100
+$Comp
+L AS4C1M16S U501
+U 1 1 58E82490
+P 4750 3450
+F 0 "U501" H 4750 3350 50  0000 C CNN
+F 1 "AS4C1M16S" H 4750 3550 50  0000 C CNN
+F 2 "MODULE" H 4750 3450 50  0001 C CNN
+F 3 "DOCUMENTATION" H 4750 3450 50  0001 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 1850 0    60   Input Italic 12
+GNDD
+Connection ~ 3250 1850
+Text HLabel 10350 4700 2    60   Input Italic 12
++3.3V
+Wire Wire Line
+	3700 1800 3700 1850
+Wire Wire Line
+	2300 4950 2300 5400
+Connection ~ 2300 5400
 $EndSCHEMATC
