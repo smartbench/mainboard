@@ -355,7 +355,7 @@ Text Label 6600 5050 2    60   ~ 0
 EEDATA
 Text Notes 1850 3450 0    60   ~ 0
 VBUS filter
-Text Notes 2700 1450 0    79   Italic 16
+Text Notes 2600 1550 0    79   Italic 16
 POWER SOURCE SELECTION AND REGULATION
 Text Label 1500 3900 0    79   ~ 0
 D+
@@ -450,8 +450,8 @@ Text Label 1850 1700 2    79   ~ 0
 Vext_filtered
 Text Notes 1250 3300 0    79   Italic 16
 USB CONNECTOR A
-Text Notes 2300 2800 0    60   ~ 0
-POWER DISTRIBUTION SWITCH, ACTIVE LOW
+Text Notes 2100 2800 0    60   ~ 0
+POWER DISTRIBUTION \nSWITCH, ACTIVE LOW
 $Comp
 L PWR_FLAG #FLG017
 U 1 1 58E1521D
@@ -1134,7 +1134,6 @@ NoConn ~ 9000 5650
 NoConn ~ 9000 5850
 NoConn ~ 9000 5950
 NoConn ~ 6600 5750
-NoConn ~ 3500 2450
 Text HLabel 6400 6350 0    60   Output ~ 12
 GNDD
 Text HLabel 2750 7300 0    60   Output ~ 12
@@ -1151,7 +1150,7 @@ Text HLabel 3800 4650 0    60   Output ~ 12
 +3.3V
 Text HLabel 1350 4300 2    60   Output ~ 12
 GND
-Text HLabel 2850 4000 2    60   Output ~ 12
+Text HLabel 3950 4000 2    60   Output ~ 12
 GND
 Text HLabel 1750 2800 0    60   Output ~ 12
 GND
@@ -1159,7 +1158,7 @@ Text HLabel 2350 2450 0    60   Output ~ 12
 GND
 Text HLabel 5550 3550 0    60   Output ~ 12
 GNDD
-Text HLabel 3700 2650 0    60   Output ~ 12
+Text HLabel 6050 2650 2    60   Output ~ 12
 GND
 Text HLabel 3750 2000 2    60   Output ~ 12
 +5V
@@ -1169,6 +1168,112 @@ Text HLabel 5450 1900 2    60   Output ~ 12
 +1.2V
 Text HLabel 5550 3750 0    60   Output ~ 12
 +3.3V
+Text HLabel 3750 1300 2    60   Output ~ 12
+GND
+Text HLabel 5550 1050 0    60   Output ~ 12
++3.3V
+Text HLabel 7950 1500 0    60   Output ~ 12
++3.3V
+Text GLabel 6500 1850 0    60   Input ~ 12
++1.8V
+Text GLabel 8650 950  0    60   Input ~ 12
++1.8V
+Text HLabel 9700 950  0    60   Output ~ 12
++3.3V
+Text HLabel 8600 1750 0    60   Output ~ 12
+GNDD
+Text HLabel 9800 1750 0    60   Output ~ 12
+GNDD
+Text HLabel 5550 1600 0    60   Output ~ 12
+GNDD
+Text HLabel 4700 7500 0    60   Output ~ 12
+GNDD
+Text HLabel 1350 1450 2    60   Output ~ 12
+GND
+Text HLabel 5250 7450 2    60   Output ~ 12
++3.3V
+Text HLabel 6400 2900 0    60   Output ~ 12
+GNDD
+Text HLabel 5200 3900 0    60   Output ~ 12
++3.3V
+$Comp
+L PWR_FLAG #FLG021
+U 1 1 58F8188C
+P 900 1550
+F 0 "#FLG021" H 900 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1700 50  0000 C CNN
+F 2 "" H 900 1550 50  0001 C CNN
+F 3 "" H 900 1550 50  0001 C CNN
+	1    900  1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Core_Ferrite L1
+U 1 1 58F82371
+P 2050 3700
+F 0 "L1" V 2000 3600 50  0000 C CNN
+F 1 "BK0603HS330-T" V 2160 3700 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603_HandSoldering" H 2050 3700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H 2050 3700 50  0001 C CNN
+F 4 "BLM18AG121SN1D" V 2050 3700 60  0001 C CNN "Manufacturer Part"
+F 5 "120 (min 33)" V 2050 3700 60  0001 C CNN "Impedance 100MHz"
+	1    2050 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USB_OTG J1
+U 1 1 58F55419
+P 1200 3900
+F 0 "J1" H 1000 4350 50  0000 L CNN
+F 1 "USB_OTG" H 1000 4250 50  0000 L CNN
+F 2 "Connectors:USB_Micro-B" H 1350 3850 50  0001 C CNN
+F 3 "" H 1350 3850 50  0001 C CNN
+	1    1200 3900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 4100
+$Comp
+L LED_ALT D?
+U 1 1 58F9B55C
+P 3550 3000
+F 0 "D?" H 3550 3100 50  0000 C CNN
+F 1 "LED_ALT" H 3550 2900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3550 3000 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf" H 3550 3000 50  0001 C CNN
+F 4 "APTD1608LSURCK" H 3550 3000 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 3550 3000 60  0001 C CNN "If"
+F 6 "1.75V" H 3550 3000 60  0001 C CNN "Vf"
+	1    3550 3000
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3600 3300 2    60   Output ~ 12
+GND
+$Comp
+L R R?
+U 1 1 58F9C46B
+P 3150 1000
+F 0 "R?" V 3230 1000 50  0000 C CNN
+F 1 "1500" V 3150 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 1000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3150 1000 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 3150 1000 60  0001 C CNN "Manufacturer Part"
+	1    3150 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_ALT D?
+U 1 1 58F9C5B4
+P 3450 1150
+F 0 "D?" H 3450 1250 50  0000 C CNN
+F 1 "LED_ALT" H 3450 1050 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3450 1150 50  0001 C CNN
+F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 3450 1150 50  0001 C CNN
+F 4 "APTD1608LCGCK" H 3450 1150 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 3450 1150 60  0001 C CNN "If"
+F 6 "1.9V" H 3450 1150 60  0001 C CNN "Vf"
+	1    3450 1150
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	1450 6300 1450 6000
 Wire Wire Line
@@ -1278,8 +1383,6 @@ Connection ~ 4150 2250
 Connection ~ 5250 2650
 Wire Wire Line
 	4150 2250 4150 2350
-Wire Wire Line
-	3700 2650 5700 2650
 Connection ~ 4150 2650
 Wire Wire Line
 	9650 4050 10150 4050
@@ -1394,7 +1497,7 @@ Wire Wire Line
 	5300 1900 5300 2350
 Connection ~ 5300 2350
 Wire Wire Line
-	1800 4000 2850 4000
+	1800 4000 3950 4000
 Connection ~ 2300 4000
 Connection ~ 2300 3700
 Connection ~ 1800 3700
@@ -1443,7 +1546,7 @@ Connection ~ 5700 2250
 Wire Wire Line
 	1500 3700 1900 3700
 Wire Wire Line
-	2200 3700 2650 3700
+	2200 3700 3350 3700
 Wire Wire Line
 	1800 2250 2400 2250
 Wire Wire Line
@@ -1458,7 +1561,7 @@ Wire Wire Line
 	3500 1700 3500 2250
 Connection ~ 3500 2250
 Wire Wire Line
-	1400 1300 2450 1300
+	1400 1300 3750 1300
 Connection ~ 1900 1300
 Connection ~ 1900 1000
 Connection ~ 1400 1000
@@ -1500,7 +1603,6 @@ Connection ~ 1600 6600
 Connection ~ 2600 4000
 Wire Wire Line
 	1950 2800 1750 2800
-Connection ~ 3850 2650
 Wire Wire Line
 	3750 2000 3500 2000
 Connection ~ 3500 2000
@@ -1508,27 +1610,11 @@ Wire Wire Line
 	5850 2000 5700 2000
 Wire Wire Line
 	5450 1900 5300 1900
-Text HLabel 2450 1300 2    60   Output ~ 12
-GND
 Connection ~ 2200 1300
-Text HLabel 5550 1050 0    60   Output ~ 12
-+3.3V
-Text HLabel 7950 1500 0    60   Output ~ 12
-+3.3V
 Wire Wire Line
 	7950 1500 8100 1500
-Text GLabel 6500 1850 0    60   Input ~ 12
-+1.8V
-Text GLabel 8650 950  0    60   Input ~ 12
-+1.8V
-Text HLabel 9700 950  0    60   Output ~ 12
-+3.3V
 Wire Wire Line
 	9700 950  9900 950 
-Text HLabel 8600 1750 0    60   Output ~ 12
-GNDD
-Text HLabel 9800 1750 0    60   Output ~ 12
-GNDD
 Wire Wire Line
 	9900 1750 9800 1750
 Wire Wire Line
@@ -1537,32 +1623,20 @@ Wire Wire Line
 	8750 1750 8750 1550
 Wire Wire Line
 	8650 950  8750 950 
-Text HLabel 5550 1600 0    60   Output ~ 12
-GNDD
 Connection ~ 6400 1600
-Text HLabel 4700 7500 0    60   Output ~ 12
-GNDD
 Wire Wire Line
 	4700 7500 4800 7500
 Wire Wire Line
 	4800 7500 4800 7350
 Connection ~ 4800 7350
-Text HLabel 1350 1450 2    60   Output ~ 12
-GND
 Wire Wire Line
 	1350 1450 1250 1450
 Wire Wire Line
 	1250 1100 1250 1550
-Text HLabel 5250 7450 2    60   Output ~ 12
-+3.3V
-Text HLabel 6400 2900 0    60   Output ~ 12
-GNDD
 Wire Wire Line
 	6400 2900 6500 2900
 Wire Wire Line
 	6500 2900 6500 2750
-Text HLabel 5200 3900 0    60   Output ~ 12
-+3.3V
 Wire Wire Line
 	5200 3900 5300 3900
 Wire Wire Line
@@ -1574,43 +1648,64 @@ Connection ~ 3950 4650
 Wire Wire Line
 	3800 4950 4100 4950
 Connection ~ 3950 4950
-$Comp
-L PWR_FLAG #FLG021
-U 1 1 58F8188C
-P 900 1550
-F 0 "#FLG021" H 900 1625 50  0001 C CNN
-F 1 "PWR_FLAG" H 900 1700 50  0000 C CNN
-F 2 "" H 900 1550 50  0001 C CNN
-F 3 "" H 900 1550 50  0001 C CNN
-	1    900  1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 1550 900  1550
 Connection ~ 1250 1450
+Wire Wire Line
+	3650 3700 3750 3700
+Connection ~ 3750 4000
+Connection ~ 5700 2650
+Wire Wire Line
+	3850 2650 6050 2650
+Wire Wire Line
+	3550 3150 3550 3300
+Wire Wire Line
+	3550 3300 3600 3300
+Wire Wire Line
+	3550 2850 3550 2750
+Wire Wire Line
+	3500 2450 3550 2450
+Connection ~ 3450 1300
+Wire Wire Line
+	2200 1000 3000 1000
+Wire Wire Line
+	3300 1000 3450 1000
 $Comp
-L L_Core_Ferrite L1
-U 1 1 58F82371
-P 2050 3700
-F 0 "L1" V 2000 3600 50  0000 C CNN
-F 1 "BK0603HS330-T" V 2160 3700 50  0000 C CNN
-F 2 "Inductors_SMD:L_0603_HandSoldering" H 2050 3700 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H 2050 3700 50  0001 C CNN
-F 4 "BLM18AG121SN1D" V 2050 3700 60  0001 C CNN "Manufacturer Part"
-F 5 "120 (min 33)" V 2050 3700 60  0001 C CNN "Impedance 100MHz"
-	1    2050 3700
+L LED_ALT D?
+U 1 1 58F9D350
+P 3750 3850
+F 0 "D?" H 3750 3950 50  0000 C CNN
+F 1 "LED_ALT" H 3750 3750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3750 3850 50  0001 C CNN
+F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 3750 3850 50  0001 C CNN
+F 4 "APTD1608LCGCK" H 3750 3850 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 3750 3850 60  0001 C CNN "If"
+F 6 "1.9V" H 3750 3850 60  0001 C CNN "Vf"
+	1    3750 3850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L USB_OTG J1
-U 1 1 58F55419
-P 1200 3900
-F 0 "J1" H 1000 4350 50  0000 L CNN
-F 1 "USB_OTG" H 1000 4250 50  0000 L CNN
-F 2 "Connectors:USB_Micro-B" H 1350 3850 50  0001 C CNN
-F 3 "" H 1350 3850 50  0001 C CNN
-	1    1200 3900
-	1    0    0    -1  
+L R R?
+U 1 1 58F9D6EB
+P 3550 2600
+F 0 "R?" V 3630 2600 50  0000 C CNN
+F 1 "1500" V 3550 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3480 2600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 2600 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 3550 2600 60  0001 C CNN "Manufacturer Part"
+	1    3550 2600
+	-1   0    0    1   
 $EndComp
-NoConn ~ 1500 4100
+$Comp
+L R R?
+U 1 1 58F9D810
+P 3500 3700
+F 0 "R?" V 3580 3700 50  0000 C CNN
+F 1 "1500" V 3500 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3430 3700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3500 3700 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 3500 3700 60  0001 C CNN "Manufacturer Part"
+	1    3500 3700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
