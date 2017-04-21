@@ -346,8 +346,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 3500 7700 3700
 Connection ~ 7700 3500
-Text HLabel 6050 3800 2    60   Input ~ 12
-OSC_IN
 Text HLabel 3300 2050 0    60   BiDi ~ 12
 IOT_168
 Text HLabel 3300 2150 0    60   BiDi ~ 12
@@ -715,4 +713,57 @@ Text Label 9050 3000 2    60   ~ 0
 IOR_116
 Text Label 9050 3200 2    60   ~ 0
 IOR_117
+$Comp
+L LFSPXO019966 Xtal401
+U 1 1 58F9ED80
+P 5000 6450
+F 0 "Xtal401" H 4700 6700 50  0000 L CNN
+F 1 "LFSPXO019966" H 5050 6200 50  0000 L CNN
+F 2 "Oscillators:Oscillator_SMD_Fordahl_DFAS11-4pin_7.0x5.0mm_HandSoldering" H 5700 6100 50  0001 C CNN
+F 3 "" H 4900 6450 50  0001 C CNN
+	1    5000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C407
+U 1 1 58F9ED8A
+P 4400 6300
+F 0 "C407" H 4500 6300 50  0000 L CNN
+F 1 "100nF" H 4450 6200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4438 6150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 4400 6300 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 4400 6300 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 4400 6300 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 4400 6300 60  0001 C CNN "VDC"
+	1    4400 6300
+	1    0    0    -1  
+$EndComp
+Text HLabel 5150 6000 2    60   Output ~ 12
++3.3V
+Text HLabel 5150 6900 2    60   Output ~ 12
+GNDD
+Wire Wire Line
+	4700 6450 4700 6150
+Wire Wire Line
+	4400 6150 5000 6150
+Wire Wire Line
+	4400 6450 4400 6750
+Wire Wire Line
+	4400 6750 5000 6750
+Connection ~ 4700 6150
+Wire Wire Line
+	5000 6150 5000 6000
+Wire Wire Line
+	5000 6000 5150 6000
+Wire Wire Line
+	4850 6900 5150 6900
+Wire Wire Line
+	4850 6900 4850 6750
+Connection ~ 4850 6750
+Wire Wire Line
+	5300 6450 5600 6450
+Text Label 6050 3800 0    60   ~ 0
+OSC
+Text Label 5600 6450 0    60   ~ 0
+OSC
 $EndSCHEMATC
