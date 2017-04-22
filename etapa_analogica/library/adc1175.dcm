@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADC1173
+D Fast ADC  (15 Mhz), TSSOP-24
+K ADC CAN VIDEO
+F http://www.ti.com/lit/ds/symlink/adc1173.pdf
+$ENDCMP
+#
+#End Doc Library

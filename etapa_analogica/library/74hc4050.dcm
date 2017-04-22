@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC4050
+D Multiplexer 8 to 1
+K TTL MUX8
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,7 @@
+**********************************
+Cómo importar una hoja al proyecto
+**********************************
+
+1. Crear hoja en el proyecto donde se va importar -> "Create hierarchical sheet"
+2. Entrar en la hoja recién creada 
+3. Meter el esquemático del proyecto que se desea importar -> "File" -> "Append Schematic sheet"
