@@ -1,0 +1,590 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:d_schottky_300mv
+LIBS:multiplexors
+LIBS:adc1175
+LIBS:clc4007
+LIBS:mic7300
+LIBS:etapa_analogica-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R?
+U 1 1 58FF65EC
+P 8400 1350
+F 0 "R?" V 8300 1500 50  0000 L CNN
+F 1 "R_Small" V 8300 1150 50  0000 L CNN
+F 2 "" H 8400 1350 50  0001 C CNN
+F 3 "" H 8400 1350 50  0001 C CNN
+	1    8400 1350
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF65F3
+P 8400 1150
+F 0 "R?" V 8350 1300 50  0000 L CNN
+F 1 "R_Small" V 8500 1050 50  0000 L CNN
+F 2 "" H 8400 1150 50  0001 C CNN
+F 3 "" H 8400 1150 50  0001 C CNN
+	1    8400 1150
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF65FA
+P 9025 2125
+F 0 "R?" V 8925 2075 50  0000 L CNN
+F 1 "R_Small" V 9075 2025 50  0000 L CNN
+F 2 "" H 9025 2125 50  0001 C CNN
+F 3 "" H 9025 2125 50  0001 C CNN
+	1    9025 2125
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF6601
+P 8425 2125
+F 0 "R?" V 8325 2075 50  0000 L CNN
+F 1 "R_Small" V 8475 2025 50  0000 L CNN
+F 2 "" H 8425 2125 50  0001 C CNN
+F 3 "" H 8425 2125 50  0001 C CNN
+	1    8425 2125
+	0    1    -1   0   
+$EndComp
+$Comp
+L CLC4007 U?
+U 3 1 58FF6609
+P 8950 1450
+F 0 "U?" H 9125 1825 50  0000 L CNN
+F 1 "CLC4007" H 9075 1750 50  0000 L CNN
+F 2 "" H 3975 800 50  0001 C CNN
+F 3 "https://www.exar.com/content/document.ashx?id=21366" H 4075 900 50  0001 C CNN
+F 4 "CLC4007ITP14MTR" H 9050 1650 60  0000 L CNN "Manuf. Part Number"
+	3    8950 1450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1050 725  0    60   Input ~ 0
++3V3
+Text HLabel 1050 875  0    60   Input ~ 0
+-3V3
+Text Label 1200 725  0    60   ~ 0
++3V3
+Text Label 1200 875  0    60   ~ 0
+-3V3
+$Comp
+L GNDD #PWR?
+U 1 1 58FF7AC3
+P 1225 1100
+F 0 "#PWR?" H -3225 -2975 50  0001 C CNN
+F 1 "GNDD" H 1230 927 50  0000 C CNN
+F 2 "" H -3225 -2725 50  0001 C CNN
+F 3 "" H -3225 -2725 50  0001 C CNN
+	1    1225 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 58FF7AC9
+P 1225 1350
+F 0 "#PWR?" H 1225 1100 50  0001 C CNN
+F 1 "GNDA" H 1225 1200 50  0000 C CNN
+F 2 "" H 1225 1350 50  0001 C CNN
+F 3 "" H 1225 1350 50  0001 C CNN
+	1    1225 1350
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1050 1100 0    60   Input ~ 0
+D_GND
+Text HLabel 1050 1350 0    60   Input ~ 0
+A_GND
+Text Label 8850 1150 1    60   ~ 0
++3V3
+Text Label 8850 1750 3    60   ~ 0
+-3V3
+$Comp
+L R_Small R?
+U 1 1 58FF7E4D
+P 8400 925
+F 0 "R?" V 8350 1075 50  0000 L CNN
+F 1 "R_Small" V 8500 825 50  0000 L CNN
+F 2 "" H 8400 925 50  0001 C CNN
+F 3 "" H 8400 925 50  0001 C CNN
+	1    8400 925 
+	0    1    -1   0   
+$EndComp
+Text HLabel 8025 1350 0    60   Input ~ 0
+CHA_IN
+Text Label 8025 925  2    60   ~ 0
+V_OFFSET_FIJO
+Text Label 8025 1150 2    60   ~ 0
+CHA_DAC_OFFSET
+$Comp
+L GNDA #PWR?
+U 1 1 58FF8405
+P 8200 2125
+F 0 "#PWR?" H 8200 1875 50  0001 C CNN
+F 1 "GNDA" H 8200 1975 50  0000 C CNN
+F 2 "" H 8200 2125 50  0001 C CNN
+F 3 "" H 8200 2125 50  0001 C CNN
+	1    8200 2125
+	1    0    0    1   
+$EndComp
+Text HLabel 9700 1450 2    60   Input ~ 0
+CHA_OUT
+Text HLabel 4725 1250 0    60   Input ~ 0
+CHA_DAC
+Text HLabel 1050 1700 0    60   Input ~ 0
+V_REF_2V5
+$Comp
+L R_Small R?
+U 1 1 58FF95E3
+P 5200 1875
+F 0 "R?" V 5100 1825 50  0000 L CNN
+F 1 "R_Small" V 5250 1775 50  0000 L CNN
+F 2 "" H 5200 1875 50  0001 C CNN
+F 3 "" H 5200 1875 50  0001 C CNN
+	1    5200 1875
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF95E9
+P 4600 1875
+F 0 "R?" V 4500 1825 50  0000 L CNN
+F 1 "R_Small" V 4650 1775 50  0000 L CNN
+F 2 "" H 4600 1875 50  0001 C CNN
+F 3 "" H 4600 1875 50  0001 C CNN
+	1    4600 1875
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 58FF95F5
+P 4375 1875
+F 0 "#PWR?" H 4375 1625 50  0001 C CNN
+F 1 "GNDA" H 4375 1725 50  0000 C CNN
+F 2 "" H 4375 1875 50  0001 C CNN
+F 3 "" H 4375 1875 50  0001 C CNN
+	1    4375 1875
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF9E4F
+P 8400 3525
+F 0 "R?" V 8300 3675 50  0000 L CNN
+F 1 "R_Small" V 8300 3325 50  0000 L CNN
+F 2 "" H 8400 3525 50  0001 C CNN
+F 3 "" H 8400 3525 50  0001 C CNN
+	1    8400 3525
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF9E55
+P 8400 3325
+F 0 "R?" V 8350 3475 50  0000 L CNN
+F 1 "R_Small" V 8500 3225 50  0000 L CNN
+F 2 "" H 8400 3325 50  0001 C CNN
+F 3 "" H 8400 3325 50  0001 C CNN
+	1    8400 3325
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF9E5B
+P 9025 4300
+F 0 "R?" V 8925 4250 50  0000 L CNN
+F 1 "R_Small" V 9075 4200 50  0000 L CNN
+F 2 "" H 9025 4300 50  0001 C CNN
+F 3 "" H 9025 4300 50  0001 C CNN
+	1    9025 4300
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF9E61
+P 8425 4300
+F 0 "R?" V 8325 4250 50  0000 L CNN
+F 1 "R_Small" V 8475 4200 50  0000 L CNN
+F 2 "" H 8425 4300 50  0001 C CNN
+F 3 "" H 8425 4300 50  0001 C CNN
+	1    8425 4300
+	0    1    -1   0   
+$EndComp
+$Comp
+L CLC4007 U?
+U 4 1 58FF9E68
+P 8950 3625
+F 0 "U?" H 9125 4000 50  0000 L CNN
+F 1 "CLC4007" H 9075 3925 50  0000 L CNN
+F 2 "" H 3975 2975 50  0001 C CNN
+F 3 "https://www.exar.com/content/document.ashx?id=21366" H 4075 3075 50  0001 C CNN
+F 4 "CLC4007ITP14MTR" H 9050 3825 60  0000 L CNN "Manuf. Part Number"
+	4    8950 3625
+	1    0    0    -1  
+$EndComp
+Text Label 8850 3325 1    60   ~ 0
++3V3
+Text Label 8850 3925 3    60   ~ 0
+-3V3
+$Comp
+L R_Small R?
+U 1 1 58FF9E7A
+P 8400 3100
+F 0 "R?" V 8350 3250 50  0000 L CNN
+F 1 "R_Small" V 8500 3000 50  0000 L CNN
+F 2 "" H 8400 3100 50  0001 C CNN
+F 3 "" H 8400 3100 50  0001 C CNN
+	1    8400 3100
+	0    1    -1   0   
+$EndComp
+Text HLabel 8025 3525 0    60   Input ~ 0
+CHB_IN
+Text Label 8025 3100 2    60   ~ 0
+V_OFFSET_FIJO
+Text Label 8025 3325 2    60   ~ 0
+CHB_DAC_OFFSET
+$Comp
+L GNDA #PWR?
+U 1 1 58FF9E88
+P 8200 4300
+F 0 "#PWR?" H 8200 4050 50  0001 C CNN
+F 1 "GNDA" H 8200 4150 50  0000 C CNN
+F 2 "" H 8200 4300 50  0001 C CNN
+F 3 "" H 8200 4300 50  0001 C CNN
+	1    8200 4300
+	1    0    0    1   
+$EndComp
+Text HLabel 9700 3625 2    60   Input ~ 0
+CHB_OUT
+Wire Wire Line
+	1050 725  1200 725 
+Wire Wire Line
+	1200 875  1050 875 
+Wire Wire Line
+	1050 1100 1225 1100
+Wire Wire Line
+	1225 1350 1050 1350
+Wire Wire Line
+	9125 2125 9375 2125
+Wire Wire Line
+	9375 2125 9375 1450
+Wire Wire Line
+	9250 1450 9375 1450
+Wire Wire Line
+	9375 1450 9700 1450
+Wire Wire Line
+	8650 1550 8650 2125
+Wire Wire Line
+	8525 2125 8650 2125
+Wire Wire Line
+	8650 2125 8925 2125
+Connection ~ 8650 2125
+Wire Wire Line
+	8500 1350 8525 1350
+Wire Wire Line
+	8525 1350 8650 1350
+Wire Wire Line
+	8500 1150 8525 1150
+Wire Wire Line
+	8525 925  8525 1150
+Wire Wire Line
+	8525 1150 8525 1350
+Connection ~ 8525 1350
+Wire Wire Line
+	8525 925  8500 925 
+Connection ~ 8525 1150
+Wire Wire Line
+	8025 925  8300 925 
+Wire Wire Line
+	8300 1150 8025 1150
+Wire Wire Line
+	8300 1350 8025 1350
+Wire Wire Line
+	8200 2125 8325 2125
+Connection ~ 9375 1450
+Wire Wire Line
+	5300 1875 6000 1875
+Wire Wire Line
+	4700 1875 4950 1875
+Wire Wire Line
+	4950 1875 5100 1875
+Wire Wire Line
+	4375 1875 4500 1875
+Wire Wire Line
+	9125 4300 9375 4300
+Wire Wire Line
+	9375 4300 9375 3625
+Wire Wire Line
+	9250 3625 9375 3625
+Wire Wire Line
+	9375 3625 9700 3625
+Wire Wire Line
+	8650 3725 8650 4300
+Wire Wire Line
+	8525 4300 8650 4300
+Wire Wire Line
+	8650 4300 8925 4300
+Connection ~ 8650 4300
+Wire Wire Line
+	8500 3525 8525 3525
+Wire Wire Line
+	8525 3525 8650 3525
+Wire Wire Line
+	8500 3325 8525 3325
+Wire Wire Line
+	8525 3100 8525 3325
+Wire Wire Line
+	8525 3325 8525 3525
+Connection ~ 8525 3525
+Wire Wire Line
+	8525 3100 8500 3100
+Connection ~ 8525 3325
+Wire Wire Line
+	8025 3100 8300 3100
+Wire Wire Line
+	8300 3325 8025 3325
+Wire Wire Line
+	8300 3525 8025 3525
+Wire Wire Line
+	8200 4300 8325 4300
+Connection ~ 9375 3625
+$Comp
+L MIC7300 U?
+U 1 1 58FFA8FE
+P 5500 1350
+F 0 "U?" H 5841 1396 50  0000 L CNN
+F 1 "MIC7300" H 5841 1305 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 1700 -325 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic7300.pdf" H 1850 -25 50  0001 C CNN
+F 4 "MIC7300YM5-TR" H 1800 175 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/MIC7300YM5-TR/576-1319-1-ND/771923" H 1900 275 60  0001 C CNN "Link Digikey"
+F 6 "$0.29" H 2000 375 60  0001 C CNN "Price"
+	1    5500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1450 4950 1450
+Wire Wire Line
+	4950 1450 4950 1875
+Connection ~ 4950 1875
+Wire Wire Line
+	5800 1350 6000 1350
+Wire Wire Line
+	6000 1350 6125 1350
+Wire Wire Line
+	6000 1875 6000 1350
+Wire Wire Line
+	4725 1250 5200 1250
+Text Label 5400 1050 0    60   ~ 0
++3V3
+Text Label 5400 1650 0    60   ~ 0
+-3V3
+Text Label 6125 1350 0    60   ~ 0
+CHA_DAC_OFFSET
+Connection ~ 6000 1350
+Text Label 1250 1700 0    60   ~ 0
+V_REF_2V5
+Wire Wire Line
+	1250 1700 1050 1700
+$Comp
+L R_Small R?
+U 1 1 58FFBD9A
+P 1925 3825
+F 0 "R?" V 1825 3775 50  0000 L CNN
+F 1 "10k" V 2000 3750 50  0000 L CNN
+F 2 "" H 1925 3825 50  0001 C CNN
+F 3 "" H 1925 3825 50  0001 C CNN
+	1    1925 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FFBDA0
+P 1475 3825
+F 0 "R?" V 1375 3775 50  0000 L CNN
+F 1 "33k" V 1550 3775 50  0000 L CNN
+F 2 "" H 1475 3825 50  0001 C CNN
+F 3 "" H 1475 3825 50  0001 C CNN
+	1    1475 3825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2025 3825 2575 3825
+Wire Wire Line
+	1575 3825 1675 3825
+Wire Wire Line
+	1675 3825 1825 3825
+Wire Wire Line
+	1250 3825 1375 3825
+$Comp
+L MIC7300 U?
+U 1 1 58FFBDB2
+P 2075 3300
+F 0 "U?" H 2416 3346 50  0000 L CNN
+F 1 "MIC7300" H 2416 3255 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H -1725 1625 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic7300.pdf" H -1575 1925 50  0001 C CNN
+F 4 "MIC7300YM5-TR" H -1625 2125 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/MIC7300YM5-TR/576-1319-1-ND/771923" H -1525 2225 60  0001 C CNN "Link Digikey"
+F 6 "$0.29" H -1425 2325 60  0001 C CNN "Price"
+	1    2075 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 3400 1675 3825
+Connection ~ 1675 3825
+Wire Wire Line
+	2375 3300 2575 3300
+Wire Wire Line
+	2575 3300 2700 3300
+Wire Wire Line
+	2575 3825 2575 3300
+Text Label 1975 3000 0    60   ~ 0
++3V3
+Text Label 1975 3600 0    60   ~ 0
+-3V3
+Text Label 2700 3300 0    60   ~ 0
+V_OFFSET_FIJO
+Connection ~ 2575 3300
+Text Label 1250 3825 2    60   ~ 0
+V_REF_2V5
+$Comp
+L GNDA #PWR?
+U 1 1 58FFC09A
+P 1575 3200
+F 0 "#PWR?" H 1575 2950 50  0001 C CNN
+F 1 "GNDA" H 1575 3050 50  0000 C CNN
+F 2 "" H 1575 3200 50  0001 C CNN
+F 3 "" H 1575 3200 50  0001 C CNN
+	1    1575 3200
+	0    1    1    0   
+$EndComp
+Text HLabel 4700 3225 0    60   Input ~ 0
+CHB_DAC
+$Comp
+L R_Small R?
+U 1 1 58FFD2CD
+P 5175 3850
+F 0 "R?" V 5075 3800 50  0000 L CNN
+F 1 "R_Small" V 5225 3750 50  0000 L CNN
+F 2 "" H 5175 3850 50  0001 C CNN
+F 3 "" H 5175 3850 50  0001 C CNN
+	1    5175 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FFD2D3
+P 4575 3850
+F 0 "R?" V 4475 3800 50  0000 L CNN
+F 1 "R_Small" V 4625 3750 50  0000 L CNN
+F 2 "" H 4575 3850 50  0001 C CNN
+F 3 "" H 4575 3850 50  0001 C CNN
+	1    4575 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 58FFD2D9
+P 4350 3850
+F 0 "#PWR?" H 4350 3600 50  0001 C CNN
+F 1 "GNDA" H 4350 3700 50  0000 C CNN
+F 2 "" H 4350 3850 50  0001 C CNN
+F 3 "" H 4350 3850 50  0001 C CNN
+	1    4350 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5275 3850 5975 3850
+Wire Wire Line
+	4675 3850 4925 3850
+Wire Wire Line
+	4925 3850 5075 3850
+Wire Wire Line
+	4350 3850 4475 3850
+$Comp
+L MIC7300 U?
+U 1 1 58FFD2E5
+P 5475 3325
+F 0 "U?" H 5816 3371 50  0000 L CNN
+F 1 "MIC7300" H 5816 3280 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 1675 1650 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic7300.pdf" H 1825 1950 50  0001 C CNN
+F 4 "MIC7300YM5-TR" H 1775 2150 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/MIC7300YM5-TR/576-1319-1-ND/771923" H 1875 2250 60  0001 C CNN "Link Digikey"
+F 6 "$0.29" H 1975 2350 60  0001 C CNN "Price"
+	1    5475 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 3425 4925 3425
+Wire Wire Line
+	4925 3425 4925 3850
+Connection ~ 4925 3850
+Wire Wire Line
+	5775 3325 5975 3325
+Wire Wire Line
+	5975 3325 6100 3325
+Wire Wire Line
+	5975 3850 5975 3325
+Wire Wire Line
+	4700 3225 5175 3225
+Text Label 5375 3025 0    60   ~ 0
++3V3
+Text Label 5375 3625 0    60   ~ 0
+-3V3
+Text Label 6100 3325 0    60   ~ 0
+CHB_DAC_OFFSET
+Connection ~ 5975 3325
+Wire Wire Line
+	1675 3400 1775 3400
+Wire Wire Line
+	1575 3200 1775 3200
+Text Notes 2100 1575 0    60   ~ 0
+Offset_Max - Offset_min = 10V\nV_REF_DAC = 10V/5 = 2V\n0V < V_DAC < 2V\n\nV_OFFSET_FIJO = (-1)*V_DAC/2 + V_REF/2/G2\nV_OFFSET_FIJO = -1V+1.25V/5 = -0.75V
+Text Notes 2100 850  0    60   ~ 0
+V_REF_ADC = 2.5V\nG2 = 5 = 1/3 * (1+Rf/Rs)\nRf/Rs = 5*3-1 = 14\n
+$EndSCHEMATC

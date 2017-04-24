@@ -1,0 +1,751 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:d_schottky_300mv
+LIBS:multiplexors
+LIBS:adc1175
+LIBS:clc4007
+LIBS:mic7300
+LIBS:etapa_analogica-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R?
+U 1 1 59005AB1
+P 5525 1375
+F 0 "R?" V 5425 1325 50  0000 L CNN
+F 1 "R_Small" V 5625 1200 50  0000 L CNN
+F 2 "" H 5525 1375 50  0001 C CNN
+F 3 "" H 5525 1375 50  0001 C CNN
+	1    5525 1375
+	0    1    1    0   
+$EndComp
+Text HLabel 9500 1675 2    60   Output ~ 0
+CHA_D0
+Text HLabel 9500 1775 2    60   Output ~ 0
+CHA_D1
+Text HLabel 9500 1875 2    60   Output ~ 0
+CHA_D2
+Text HLabel 9500 1975 2    60   Output ~ 0
+CHA_D3
+Text HLabel 9500 2075 2    60   Output ~ 0
+CHA_D4
+Text HLabel 9500 2175 2    60   Output ~ 0
+CHA_D5
+Text HLabel 9500 2275 2    60   Output ~ 0
+CHA_D5
+Text HLabel 9500 2375 2    60   Output ~ 0
+CHA_D6
+$Comp
+L D_Schottky_BAT54S-7-F D?
+U 1 1 5900605D
+P 5850 1575
+F 0 "D?" V 5850 1400 50  0000 L CNN
+F 1 "D_Schottky_BAT54S-7-F" H 5450 1750 50  0000 L CNN
+F 2 "" H 2600 175 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 2600 875 50  0001 C CNN
+F 4 "BAT54S-7-F" H 3150 675 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 2500 775 60  0001 C CNN "Link Digikey"
+F 6 "$0.21" H 2300 675 60  0001 C CNN "Price"
+	1    5850 1575
+	0    1    1    0   
+$EndComp
+Text HLabel 1225 950  0    60   Input ~ 0
++3V3
+Text HLabel 1225 1100 0    60   Input ~ 0
+-3V3
+Text Label 1375 950  0    60   ~ 0
++3V3
+Text Label 1375 1100 0    60   ~ 0
+-3V3
+$Comp
+L GNDD #PWR?
+U 1 1 59006822
+P 1400 1325
+F 0 "#PWR?" H -3050 -2750 50  0001 C CNN
+F 1 "GNDD" H 1405 1152 50  0000 C CNN
+F 2 "" H -3050 -2500 50  0001 C CNN
+F 3 "" H -3050 -2500 50  0001 C CNN
+	1    1400 1325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 59006828
+P 1400 1575
+F 0 "#PWR?" H 1400 1325 50  0001 C CNN
+F 1 "GNDA" H 1400 1425 50  0000 C CNN
+F 2 "" H 1400 1575 50  0001 C CNN
+F 3 "" H 1400 1575 50  0001 C CNN
+	1    1400 1575
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1225 1325 0    60   Input ~ 0
+D_GND
+Text HLabel 1225 1575 0    60   Input ~ 0
+A_GND
+Text HLabel 1225 1925 0    60   Input ~ 0
+V_REF_2V5
+Text Label 1425 1925 0    60   ~ 0
+V_REF_2V5
+Text HLabel 5200 1375 0    60   Input ~ 0
+CHA_IN
+Text Label 5850 1125 0    60   ~ 0
++3V3
+$Comp
+L GNDA #PWR?
+U 1 1 590068F4
+P 5850 1775
+F 0 "#PWR?" H 5850 1525 50  0001 C CNN
+F 1 "GNDA" H 5850 1625 50  0000 C CNN
+F 2 "" H 5850 1775 50  0001 C CNN
+F 3 "" H 5850 1775 50  0001 C CNN
+	1    5850 1775
+	1    0    0    -1  
+$EndComp
+Text HLabel 9500 2675 2    60   Output ~ 0
+CHA_OE
+Text Label 9500 2575 0    60   ~ 0
+ADC_CLK
+Text HLabel 1225 775  0    60   Input ~ 0
++5V0
+Text Label 1375 775  0    60   ~ 0
++5V0
+$Comp
+L ADC1175 U?
+U 1 1 590075EC
+P 8700 2175
+F 0 "U?" H 8200 1450 50  0000 C CNN
+F 1 "ADC1175" H 8150 1375 50  0000 C CNN
+F 2 "library:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 1650 1575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/adc1175.pdf" H 1750 1675 50  0001 C CNN
+F 4 "ADC1175CIMTCX/NOPB" H 1850 1775 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-detail/en/texas-instruments/ADC1175CIMTCX-NOPB/296-35235-1-ND/3738943" H 1950 1875 60  0001 C CNN "Link Digikey"
+F 6 "$2.73" H 2050 1975 60  0001 C CNN "Price"
+	1    8700 2175
+	1    0    0    -1  
+$EndComp
+Text Label 1100 2475 2    60   ~ 0
++5V0
+$Comp
+L GNDA #PWR?
+U 1 1 590079B4
+P 8500 3050
+F 0 "#PWR?" H 8500 2800 50  0001 C CNN
+F 1 "GNDA" H 8500 2900 50  0000 C CNN
+F 2 "" H 8500 3050 50  0001 C CNN
+F 3 "" H 8500 3050 50  0001 C CNN
+	1    8500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 59007AAF
+P 8900 3050
+F 0 "#PWR?" H 4450 -1025 50  0001 C CNN
+F 1 "GNDD" H 8905 2877 50  0000 C CNN
+F 2 "" H 4450 -775 50  0001 C CNN
+F 3 "" H 4450 -775 50  0001 C CNN
+	1    8900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59007D11
+P 1575 2675
+F 0 "C?" V 1475 2575 50  0000 C CNN
+F 1 "100nF" V 1475 2825 50  0000 C CNN
+F 2 "" H -2625 1700 50  0001 C CNN
+F 3 "" H -2625 1700 50  0001 C CNN
+F 4 "Ceramic" V 1400 2700 60  0000 C CNN "Type"
+	1    1575 2675
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP_Small C?
+U 1 1 59007E63
+P 1350 2675
+F 0 "C?" V 1250 2800 50  0000 C CNN
+F 1 "10uF" V 1275 2550 50  0000 C CNN
+F 2 "" H -3300 1725 50  0001 C CNN
+F 3 "" H -3300 1725 50  0001 C CNN
+F 4 "Elect/Tant" V 1175 2375 60  0000 C CNN "Type"
+	1    1350 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 59007FB1
+P 1350 2875
+F 0 "#PWR?" H 1350 2625 50  0001 C CNN
+F 1 "GNDA" H 1350 2725 50  0000 C CNN
+F 2 "" H 1350 2875 50  0001 C CNN
+F 3 "" H 1350 2875 50  0001 C CNN
+	1    1350 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 590084F9
+P 1675 3750
+F 0 "C?" V 1775 3675 50  0000 C CNN
+F 1 "100nF" V 1775 3900 50  0000 C CNN
+F 2 "" H -2525 2775 50  0001 C CNN
+F 3 "" H -2525 2775 50  0001 C CNN
+F 4 "Ceramic" V 1875 3825 60  0000 C CNN "Type"
+	1    1675 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP_Small C?
+U 1 1 59008500
+P 1900 3750
+F 0 "C?" V 1950 3850 50  0000 C CNN
+F 1 "10uF" V 1950 3600 50  0000 C CNN
+F 2 "" H -2750 2800 50  0001 C CNN
+F 3 "" H -2750 2800 50  0001 C CNN
+F 4 "Elect/Tant" V 2100 3675 60  0000 C CNN "Type"
+	1    1900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 59008506
+P 1775 3950
+F 0 "#PWR?" H 1775 3700 50  0001 C CNN
+F 1 "GNDA" H 1775 3800 50  0000 C CNN
+F 2 "" H 1775 3950 50  0001 C CNN
+F 3 "" H 1775 3950 50  0001 C CNN
+	1    1775 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Core_Iron_Small L?
+U 1 1 59008B82
+P 1475 3575
+F 0 "L?" V 1675 3725 50  0000 C CNN
+F 1 "L_Core_Iron_Small" V 1575 3375 50  0000 C CNN
+F 2 "" H -3425 2875 50  0001 C CNN
+F 3 "" H -3425 2875 50  0001 C CNN
+F 4 "JW Miller FB20010-3B" V 1675 3150 60  0000 C CNN "MPN?"
+	1    1475 3575
+	0    -1   -1   0   
+$EndComp
+Text Notes 7075 825  0    60   ~ 0
+The converter digital supply should not be the supply that is used for other digital circuitry on the board. It should\nbe the same supply used for the A/D analog supply
+Text Notes 10000 1900 0    60   ~ 0
+<-- Convertir a Lógica de 3V3
+$Comp
+L GNDA #PWR?
+U 1 1 59009DAC
+P 1575 2875
+F 0 "#PWR?" H 1575 2625 50  0001 C CNN
+F 1 "GNDA" H 1575 2725 50  0000 C CNN
+F 2 "" H 1575 2875 50  0001 C CNN
+F 3 "" H 1575 2875 50  0001 C CNN
+	1    1575 2875
+	1    0    0    -1  
+$EndComp
+Text Label 1925 2475 0    60   ~ 0
+5V0_A
+Text Label 2075 3575 0    60   ~ 0
+5V0_D
+Text Label 1075 4525 2    60   ~ 0
++3V3
+$Comp
+L C_Small C?
+U 1 1 5900A76B
+P 1550 4725
+F 0 "C?" V 1450 4625 50  0000 C CNN
+F 1 "100nF" V 1450 4875 50  0000 C CNN
+F 2 "" H -2650 3750 50  0001 C CNN
+F 3 "" H -2650 3750 50  0001 C CNN
+F 4 "Ceramic" V 1375 4750 60  0000 C CNN "Type"
+	1    1550 4725
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP_Small C?
+U 1 1 5900A772
+P 1325 4725
+F 0 "C?" V 1225 4850 50  0000 C CNN
+F 1 "10uF" V 1250 4600 50  0000 C CNN
+F 2 "" H -3325 3775 50  0001 C CNN
+F 3 "" H -3325 3775 50  0001 C CNN
+F 4 "Elect/Tant" V 1150 4425 60  0000 C CNN "Type"
+	1    1325 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5900A778
+P 1325 4925
+F 0 "#PWR?" H 1325 4675 50  0001 C CNN
+F 1 "GNDA" H 1325 4775 50  0000 C CNN
+F 2 "" H 1325 4925 50  0001 C CNN
+F 3 "" H 1325 4925 50  0001 C CNN
+	1    1325 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5900A784
+P 1550 4925
+F 0 "#PWR?" H 1550 4675 50  0001 C CNN
+F 1 "GNDA" H 1550 4775 50  0000 C CNN
+F 2 "" H 1550 4925 50  0001 C CNN
+F 3 "" H 1550 4925 50  0001 C CNN
+	1    1550 4925
+	1    0    0    -1  
+$EndComp
+Text Label 1900 4525 0    60   ~ 0
+3V3_D
+Text Label 8400 1250 1    60   ~ 0
+5V0_A
+Text Label 8900 1250 1    60   ~ 0
+5V0_D
+Text Label 8800 1250 1    60   ~ 0
+3V3_D
+Text Label 2775 850  0    60   ~ 0
++3V3
+$Comp
+L R_Small R?
+U 1 1 5900B3E6
+P 2775 1025
+F 0 "R?" V 2875 1000 50  0000 L CNN
+F 1 "R_Small" V 2650 925 50  0000 L CNN
+F 2 "" H -125 -1450 50  0001 C CNN
+F 3 "" H -125 -1450 50  0001 C CNN
+	1    2775 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5900B4B2
+P 3375 1375
+F 0 "C?" V 3467 1421 50  0000 L CNN
+F 1 "C_Small" V 3275 1250 50  0000 L CNN
+F 2 "" H 150 -1150 50  0001 C CNN
+F 3 "" H 150 -1150 50  0001 C CNN
+	1    3375 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener D?
+U 1 1 5900B627
+P 2775 1350
+F 0 "D?" H 2775 1250 50  0000 R CNN
+F 1 "D_Zener" H 2925 1450 50  0000 R CNN
+F 2 "" H -675 -1000 50  0001 C CNN
+F 3 "" H -675 -1000 50  0001 C CNN
+	1    2775 1350
+	0    -1   1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5900B9F3
+P 2775 1950
+F 0 "R?" V 2875 1925 50  0000 L CNN
+F 1 "R_Small" V 2675 1775 50  0000 L CNN
+F 2 "" H -125 -525 50  0001 C CNN
+F 3 "" H -125 -525 50  0001 C CNN
+	1    2775 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5900C86F
+P 3650 1375
+F 0 "C?" V 3742 1421 50  0000 L CNN
+F 1 "C_Small" V 3550 1250 50  0000 L CNN
+F 2 "" H 425 -1150 50  0001 C CNN
+F 3 "" H 425 -1150 50  0001 C CNN
+	1    3650 1375
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 1375
+Wire Wire Line
+	5425 1375 5200 1375
+Wire Wire Line
+	1225 950  1375 950 
+Wire Wire Line
+	1375 1100 1225 1100
+Wire Wire Line
+	1225 1325 1400 1325
+Wire Wire Line
+	1400 1575 1225 1575
+Wire Wire Line
+	1425 1925 1225 1925
+Wire Wire Line
+	5850 1775 5850 1725
+Wire Wire Line
+	9400 1675 9500 1675
+Wire Wire Line
+	9400 1775 9500 1775
+Wire Wire Line
+	9400 1875 9500 1875
+Wire Wire Line
+	9400 1975 9500 1975
+Wire Wire Line
+	9400 2075 9500 2075
+Wire Wire Line
+	9500 2175 9400 2175
+Wire Wire Line
+	9400 2275 9500 2275
+Wire Wire Line
+	9500 2375 9400 2375
+Wire Wire Line
+	9500 2575 9400 2575
+Wire Wire Line
+	9500 2675 9400 2675
+Wire Wire Line
+	1225 775  1375 775 
+Wire Wire Line
+	8600 1350 8600 1375
+Connection ~ 8500 1350
+Wire Wire Line
+	8400 1250 8400 1375
+Connection ~ 8400 1350
+Wire Wire Line
+	8500 2975 8500 3050
+Wire Wire Line
+	8500 3000 8600 3000
+Wire Wire Line
+	8600 3000 8600 2975
+Connection ~ 8500 3000
+Wire Wire Line
+	8800 2975 8800 3000
+Wire Wire Line
+	8800 3000 8900 3000
+Wire Wire Line
+	8900 2975 8900 3050
+Connection ~ 8900 3000
+Wire Wire Line
+	8400 1350 8600 1350
+Wire Wire Line
+	1350 2475 1350 2575
+Wire Wire Line
+	1575 2475 1575 2575
+Wire Wire Line
+	1350 2775 1350 2875
+Wire Wire Line
+	1575 2775 1575 2875
+Wire Wire Line
+	1675 3850 1675 3900
+Wire Wire Line
+	1675 3900 1900 3900
+Wire Wire Line
+	1900 3900 1900 3850
+Wire Wire Line
+	1775 3950 1775 3900
+Connection ~ 1775 3900
+Wire Wire Line
+	1900 3575 1900 3650
+Wire Wire Line
+	1675 3575 1675 3650
+Wire Wire Line
+	1575 3575 2075 3575
+Wire Wire Line
+	1100 2475 1925 2475
+Connection ~ 1350 2475
+Wire Wire Line
+	1100 2475 1100 3575
+Wire Wire Line
+	1100 3575 1375 3575
+Connection ~ 1675 3575
+Connection ~ 1575 2475
+Connection ~ 1900 3575
+Wire Wire Line
+	1325 4525 1325 4625
+Wire Wire Line
+	1550 4525 1550 4625
+Wire Wire Line
+	1325 4825 1325 4925
+Wire Wire Line
+	1550 4825 1550 4925
+Wire Wire Line
+	1075 4525 1900 4525
+Connection ~ 1325 4525
+Connection ~ 1550 4525
+Wire Wire Line
+	8900 1375 8900 1250
+Wire Wire Line
+	8800 1250 8800 1375
+Wire Wire Line
+	2775 1125 2775 1200
+Connection ~ 2775 1175
+Wire Wire Line
+	2775 925  2775 850 
+Wire Wire Line
+	2775 1500 2775 1850
+Connection ~ 2775 1700
+Wire Wire Line
+	3375 1175 3375 1275
+Connection ~ 3375 1175
+Wire Wire Line
+	3650 1275 3650 1175
+Connection ~ 3650 1175
+$Comp
+L GNDA #PWR?
+U 1 1 5900C992
+P 2775 2100
+F 0 "#PWR?" H 2775 1850 50  0001 C CNN
+F 1 "GNDA" H 2775 1950 50  0000 C CNN
+F 2 "" H 2775 2100 50  0001 C CNN
+F 3 "" H 2775 2100 50  0001 C CNN
+	1    2775 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 2100 2775 2050
+Wire Wire Line
+	3375 1475 3375 1825
+Wire Wire Line
+	3650 1475 3650 1800
+Connection ~ 3375 1700
+$Comp
+L C_Small C?
+U 1 1 5900CAEB
+P 3375 1925
+F 0 "C?" V 3467 1971 50  0000 L CNN
+F 1 "C_Small" V 3275 1800 50  0000 L CNN
+F 2 "" H 150 -600 50  0001 C CNN
+F 3 "" H 150 -600 50  0001 C CNN
+	1    3375 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5900CBBB
+P 3375 2100
+F 0 "#PWR?" H 3375 1850 50  0001 C CNN
+F 1 "GNDA" H 3375 1950 50  0000 C CNN
+F 2 "" H 3375 2100 50  0001 C CNN
+F 3 "" H 3375 2100 50  0001 C CNN
+	1    3375 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 2100 3375 2025
+Text Label 3825 1175 0    60   ~ 0
+V_REF_TOP
+Wire Wire Line
+	3100 1700 3850 1700
+Wire Wire Line
+	3825 1175 3100 1175
+$Comp
+L R_Small R?
+U 1 1 5900EE4C
+P 3000 1175
+F 0 "R?" V 3100 1150 50  0000 L CNN
+F 1 "R_Small" V 2875 1075 50  0000 L CNN
+F 2 "" H 100 -1300 50  0001 C CNN
+F 3 "" H 100 -1300 50  0001 C CNN
+	1    3000 1175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 1175 2775 1175
+$Comp
+L R_Small R?
+U 1 1 5900EF15
+P 3000 1700
+F 0 "R?" V 3100 1675 50  0000 L CNN
+F 1 "R_Small" V 2875 1600 50  0000 L CNN
+F 2 "" H 100 -775 50  0001 C CNN
+F 3 "" H 100 -775 50  0001 C CNN
+	1    3000 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 1700 2775 1700
+$Comp
+L C_Small C?
+U 1 1 5900EFE0
+P 3650 1900
+F 0 "C?" V 3742 1946 50  0000 L CNN
+F 1 "C_Small" V 3550 1775 50  0000 L CNN
+F 2 "" H 425 -625 50  0001 C CNN
+F 3 "" H 425 -625 50  0001 C CNN
+	1    3650 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 1700
+$Comp
+L GNDA #PWR?
+U 1 1 5900F0A1
+P 3650 2100
+F 0 "#PWR?" H 3650 1850 50  0001 C CNN
+F 1 "GNDA" H 3650 1950 50  0000 C CNN
+F 2 "" H 3650 2100 50  0001 C CNN
+F 3 "" H 3650 2100 50  0001 C CNN
+	1    3650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2100 3650 2000
+Text Label 8000 2175 2    60   ~ 0
+V_REF_TOP
+Text Label 8000 2275 2    60   ~ 0
+V_REF_BOTTOM
+Text Label 3850 1700 0    60   ~ 0
+V_REF_BOTTOM
+Text Label 6100 1375 0    60   ~ 0
+CHA_ADC_INPUT
+Wire Wire Line
+	5625 1375 6100 1375
+Text Label 8000 1775 2    60   ~ 0
+CHA_ADC_INPUT
+Text Label 3100 2825 0    60   ~ 0
++3V3
+$Comp
+L D_Zener D?
+U 1 1 590101E2
+P 3100 3600
+F 0 "D?" H 3100 3500 50  0000 R CNN
+F 1 "D_Zener" H 3250 3700 50  0000 R CNN
+F 2 "" H -350 1250 50  0001 C CNN
+F 3 "" H -350 1250 50  0001 C CNN
+	1    3100 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 590102F6
+P 3100 3850
+F 0 "#PWR?" H 3100 3600 50  0001 C CNN
+F 1 "GNDA" H 3100 3700 50  0000 C CNN
+F 2 "" H 3100 3850 50  0001 C CNN
+F 3 "" H 3100 3850 50  0001 C CNN
+	1    3100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5901033D
+P 3100 3200
+F 0 "R?" V 3200 3175 50  0000 L CNN
+F 1 "R_Small" V 3025 2950 50  0000 L CNN
+F 2 "" H 200 725 50  0001 C CNN
+F 3 "" H 200 725 50  0001 C CNN
+	1    3100 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2825 3100 3100
+Wire Wire Line
+	3100 3300 3100 3450
+Wire Wire Line
+	3100 3750 3100 3850
+Text Label 4175 3375 0    60   ~ 0
+V_REF_2V5
+Connection ~ 3700 3375
+$Comp
+L C_Small C?
+U 1 1 590106C8
+P 3700 3600
+F 0 "C?" V 3750 3650 50  0000 L CNN
+F 1 "C_Small" V 3600 3475 50  0000 L CNN
+F 2 "" H 475 1075 50  0001 C CNN
+F 3 "" H 475 1075 50  0001 C CNN
+	1    3700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 590106CE
+P 3700 3775
+F 0 "#PWR?" H 3700 3525 50  0001 C CNN
+F 1 "GNDA" H 3700 3625 50  0000 C CNN
+F 2 "" H 3700 3775 50  0001 C CNN
+F 3 "" H 3700 3775 50  0001 C CNN
+	1    3700 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3775 3700 3700
+Wire Wire Line
+	3425 3375 4175 3375
+$Comp
+L R_Small R?
+U 1 1 590106D6
+P 3325 3375
+F 0 "R?" V 3425 3350 50  0000 L CNN
+F 1 "R_Small" V 3225 3350 50  0000 L CNN
+F 2 "" H 425 900 50  0001 C CNN
+F 3 "" H 425 900 50  0001 C CNN
+	1    3325 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 590106DD
+P 3975 3575
+F 0 "C?" V 3925 3625 50  0000 L CNN
+F 1 "C_Small" V 4075 3425 50  0000 L CNN
+F 2 "" H 750 1050 50  0001 C CNN
+F 3 "" H 750 1050 50  0001 C CNN
+	1    3975 3575
+	1    0    0    -1  
+$EndComp
+Connection ~ 3975 3375
+$Comp
+L GNDA #PWR?
+U 1 1 590106E4
+P 3975 3775
+F 0 "#PWR?" H 3975 3525 50  0001 C CNN
+F 1 "GNDA" H 3975 3625 50  0000 C CNN
+F 2 "" H 3975 3775 50  0001 C CNN
+F 3 "" H 3975 3775 50  0001 C CNN
+	1    3975 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 3775 3975 3675
+Wire Wire Line
+	3975 3475 3975 3375
+Wire Wire Line
+	3700 3500 3700 3375
+Wire Wire Line
+	3225 3375 3100 3375
+Connection ~ 3100 3375
+$EndSCHEMATC
