@@ -563,13 +563,13 @@ F 3 "" H 7950 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 4175 1225 0    60   Input ~ 0
-CHA_INPUT_SIGNAL
+CHA_IN
 Text HLabel 4175 3925 0    60   Input ~ 0
-CHB_INPUT_SIGNAL
+CHB_IN
 Text HLabel 9025 1375 2    60   Input ~ 0
-CHA_ATT_OUTPUT
+CHA_OUT
 Text HLabel 9050 4100 2    60   Input ~ 0
-CHB_ATT_OUTPUT
+CHB_OUT
 Text HLabel 4200 2075 0    60   Input ~ 0
 CHA_DC_COUPLING
 $Comp
