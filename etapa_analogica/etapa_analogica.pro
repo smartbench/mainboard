@@ -1,4 +1,4 @@
-update=dom 23 abr 2017 20:04:10 ART
+update=lun 08 may 2017 22:30:25 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,6 @@ LibName31=library/multiplexors
 LibName32=library/adc1175
 LibName33=library/clc4007
 LibName34=library/mic7300
+LibName35=library/tcr2ef13
+LibName36=library/max1720
+LibName37=library/voltage-regulators

@@ -33,12 +33,15 @@ LIBS:multiplexors
 LIBS:adc1175
 LIBS:clc4007
 LIBS:mic7300
+LIBS:tcr2ef13
+LIBS:max1720
+LIBS:voltage-regulators
 LIBS:etapa_analogica-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -90,47 +93,47 @@ F 6 "$0.21" H 3450 1075 60  0001 C CNN "Price"
 	0    1    1    0   
 $EndComp
 Text HLabel 1225 950  0    60   Input ~ 0
-+3V3
-Text HLabel 1225 1100 0    60   Input ~ 0
--3V3
+VDD_A
+Text HLabel 1200 1300 0    60   Input ~ 0
+VSS_A
 Text Label 1375 950  0    60   ~ 0
-+3V3
-Text Label 1375 1100 0    60   ~ 0
--3V3
+VDD_A
+Text Label 1375 1300 0    60   ~ 0
+VSS_A
 $Comp
 L GNDD #PWR?
 U 1 1 59006822
-P 1400 1325
-F 0 "#PWR?" H -3050 -2750 50  0001 C CNN
-F 1 "GNDD" H 1405 1152 50  0000 C CNN
-F 2 "" H -3050 -2500 50  0001 C CNN
-F 3 "" H -3050 -2500 50  0001 C CNN
-	1    1400 1325
+P 2475 1100
+F 0 "#PWR?" H -1975 -2975 50  0001 C CNN
+F 1 "GNDD" H 2480 927 50  0000 C CNN
+F 2 "" H -1975 -2725 50  0001 C CNN
+F 3 "" H -1975 -2725 50  0001 C CNN
+	1    2475 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GNDA #PWR?
 U 1 1 59006828
-P 1400 1575
-F 0 "#PWR?" H 1400 1325 50  0001 C CNN
-F 1 "GNDA" H 1400 1425 50  0000 C CNN
-F 2 "" H 1400 1575 50  0001 C CNN
-F 3 "" H 1400 1575 50  0001 C CNN
-	1    1400 1575
+P 1400 1125
+F 0 "#PWR?" H 1400 875 50  0001 C CNN
+F 1 "GNDA" H 1400 975 50  0000 C CNN
+F 2 "" H 1400 1125 50  0001 C CNN
+F 3 "" H 1400 1125 50  0001 C CNN
+	1    1400 1125
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1225 1325 0    60   Input ~ 0
+Text HLabel 2300 1100 0    60   Input ~ 0
 D_GND
-Text HLabel 1225 1575 0    60   Input ~ 0
+Text HLabel 1225 1125 0    60   Input ~ 0
 A_GND
-Text HLabel 1225 1925 0    60   Output ~ 0
+Text HLabel 1625 1975 2    60   Output ~ 0
 V_REF_DAC
-Text Label 1425 1925 0    60   ~ 0
+Text Label 1425 1975 2    60   ~ 0
 V_REF_DAC_1V2
 Text HLabel 6000 1775 0    60   Input ~ 0
 CHA_IN
 Text Label 7000 1525 0    60   ~ 0
-+3V3
+VDD_A
 $Comp
 L GNDA #PWR?
 U 1 1 590068F4
@@ -143,7 +146,7 @@ F 3 "" H 7000 2175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 9500 2675 2    60   Input ~ 0
-CHA_OE
+CHA_ADC_OE
 Text Label 9500 2575 0    60   ~ 0
 ADC_CLK
 Text HLabel 1225 775  0    60   Input ~ 0
@@ -287,8 +290,6 @@ Text Label 1900 2775 0    60   ~ 0
 5V0_A
 Text Label 2050 3875 0    60   ~ 0
 5V0_D
-Text Label 1050 4825 2    60   ~ 0
-+3V3
 $Comp
 L C_Small C?
 U 1 1 5900A76B
@@ -344,7 +345,7 @@ Text Label 8900 1250 1    60   ~ 0
 Text Label 8800 1250 1    60   ~ 0
 3V3_D
 Text Label 3450 5925 0    60   ~ 0
-+3V3
+VDD_A
 $Comp
 L R_Small R?
 U 1 1 5900B3E6
@@ -402,19 +403,17 @@ F 3 "" H 1100 3925 50  0001 C CNN
 $EndComp
 Connection ~ 6900 1775
 Wire Wire Line
-	6300 1775 6375 1775
-Wire Wire Line
-	6375 1775 6575 1775
+	6300 1775 6575 1775
 Wire Wire Line
 	1225 950  1375 950 
 Wire Wire Line
-	1375 1100 1225 1100
+	1375 1300 1200 1300
 Wire Wire Line
-	1225 1325 1400 1325
+	2300 1100 2475 1100
 Wire Wire Line
-	1400 1575 1225 1575
+	1400 1125 1225 1125
 Wire Wire Line
-	1425 1925 1225 1925
+	1425 1975 1625 1975
 Wire Wire Line
 	7000 2175 7000 2125
 Wire Wire Line
@@ -443,14 +442,10 @@ Wire Wire Line
 	8600 1350 8600 1375
 Connection ~ 8500 1350
 Wire Wire Line
-	8400 1250 8400 1350
-Wire Wire Line
-	8400 1350 8400 1375
+	8400 1250 8400 1375
 Connection ~ 8400 1350
 Wire Wire Line
-	8500 2975 8500 3000
-Wire Wire Line
-	8500 3000 8500 3050
+	8500 2975 8500 3050
 Wire Wire Line
 	8500 3000 8600 3000
 Wire Wire Line
@@ -461,14 +456,10 @@ Wire Wire Line
 Wire Wire Line
 	8800 3000 8900 3000
 Wire Wire Line
-	8900 2975 8900 3000
-Wire Wire Line
-	8900 3000 8900 3050
+	8900 2975 8900 3050
 Connection ~ 8900 3000
 Wire Wire Line
-	8400 1350 8500 1350
-Wire Wire Line
-	8500 1350 8600 1350
+	8400 1350 8600 1350
 Wire Wire Line
 	1325 2775 1325 2875
 Wire Wire Line
@@ -480,9 +471,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 4150 1650 4200
 Wire Wire Line
-	1650 4200 1750 4200
-Wire Wire Line
-	1750 4200 1875 4200
+	1650 4200 1875 4200
 Wire Wire Line
 	1875 4200 1875 4150
 Wire Wire Line
@@ -493,19 +482,9 @@ Wire Wire Line
 Wire Wire Line
 	1650 3875 1650 3950
 Wire Wire Line
-	1550 3875 1650 3875
+	1550 3875 2050 3875
 Wire Wire Line
-	1650 3875 1875 3875
-Wire Wire Line
-	1875 3875 2050 3875
-Wire Wire Line
-	900  2775 1075 2775
-Wire Wire Line
-	1075 2775 1325 2775
-Wire Wire Line
-	1325 2775 1550 2775
-Wire Wire Line
-	1550 2775 1900 2775
+	900  2775 1900 2775
 Connection ~ 1325 2775
 Wire Wire Line
 	1075 2775 1075 3875
@@ -523,11 +502,7 @@ Wire Wire Line
 Wire Wire Line
 	1525 5125 1525 5225
 Wire Wire Line
-	1050 4825 1300 4825
-Wire Wire Line
-	1300 4825 1525 4825
-Wire Wire Line
-	1525 4825 1875 4825
+	1050 4825 1875 4825
 Connection ~ 1300 4825
 Connection ~ 1525 4825
 Wire Wire Line
@@ -535,16 +510,12 @@ Wire Wire Line
 Wire Wire Line
 	8800 1250 8800 1375
 Wire Wire Line
-	3450 6200 3450 6250
-Wire Wire Line
-	3450 6250 3450 6275
+	3450 6200 3450 6275
 Connection ~ 3450 6250
 Wire Wire Line
 	3450 6000 3450 5925
 Wire Wire Line
-	3450 6575 3450 6775
-Wire Wire Line
-	3450 6775 3450 6925
+	3450 6575 3450 6925
 Connection ~ 3450 6775
 Wire Wire Line
 	4050 6250 4050 6350
@@ -566,13 +537,9 @@ $EndComp
 Wire Wire Line
 	3450 7175 3450 7125
 Wire Wire Line
-	4050 6550 4050 6775
+	4050 6550 4050 6900
 Wire Wire Line
-	4050 6775 4050 6900
-Wire Wire Line
-	4325 6550 4325 6775
-Wire Wire Line
-	4325 6775 4325 6875
+	4325 6550 4325 6875
 Connection ~ 4050 6775
 $Comp
 L C_Small C?
@@ -601,21 +568,9 @@ Wire Wire Line
 Text Label 4800 6250 0    60   ~ 0
 V_REF_TOP
 Wire Wire Line
-	3775 6775 4050 6775
+	3775 6775 4825 6775
 Wire Wire Line
-	4050 6775 4325 6775
-Wire Wire Line
-	4325 6775 4575 6775
-Wire Wire Line
-	4575 6775 4825 6775
-Wire Wire Line
-	3775 6250 4050 6250
-Wire Wire Line
-	4050 6250 4325 6250
-Wire Wire Line
-	4325 6250 4575 6250
-Wire Wire Line
-	4575 6250 4800 6250
+	3775 6250 4800 6250
 $Comp
 L R_Small R?
 U 1 1 5900EE4C
@@ -674,11 +629,9 @@ V_REF_BOTTOM
 Text Label 4825 6775 0    60   ~ 0
 V_REF_BOTTOM
 Wire Wire Line
-	6775 1775 6900 1775
-Wire Wire Line
-	6900 1775 8000 1775
+	6775 1775 8000 1775
 Text Label 1075 5975 0    60   ~ 0
-+3V3
+VDD_A
 $Comp
 L D_Zener D?
 U 1 1 590101E2
@@ -715,9 +668,7 @@ $EndComp
 Wire Wire Line
 	1075 5975 1075 6250
 Wire Wire Line
-	1075 6450 1075 6525
-Wire Wire Line
-	1075 6525 1075 6600
+	1075 6450 1075 6600
 Wire Wire Line
 	1075 6900 1075 7000
 Text Label 2150 6525 0    60   ~ 0
@@ -748,11 +699,7 @@ $EndComp
 Wire Wire Line
 	1675 6925 1675 6850
 Wire Wire Line
-	1400 6525 1675 6525
-Wire Wire Line
-	1675 6525 1950 6525
-Wire Wire Line
-	1950 6525 2150 6525
+	1400 6525 2150 6525
 $Comp
 L R_Small R?
 U 1 1 590106D6
@@ -796,12 +743,12 @@ Wire Wire Line
 Wire Wire Line
 	1200 6525 1075 6525
 Connection ~ 1075 6525
-Text HLabel 1200 2100 0    60   Output ~ 0
+Text HLabel 1650 1800 2    60   Output ~ 0
 V_REF_CENTER
-Text Label 1425 2100 0    60   ~ 0
+Text Label 1425 1800 2    60   ~ 0
 V_REF_CENTER
 Wire Wire Line
-	1200 2100 1425 2100
+	1650 1800 1425 1800
 Connection ~ 1075 2775
 Text HLabel 9475 4450 2    60   Output ~ 0
 CHB_D0
@@ -820,7 +767,7 @@ CHB_D6
 Text HLabel 9475 5150 2    60   Output ~ 0
 CHB_D7
 Text HLabel 9475 5450 2    60   Input ~ 0
-CHB_OE
+CHB_ADC_OE
 Text Label 9475 5350 0    60   ~ 0
 ADC_CLK
 $Comp
@@ -889,14 +836,10 @@ Wire Wire Line
 	8575 4125 8575 4150
 Connection ~ 8475 4125
 Wire Wire Line
-	8375 4025 8375 4125
-Wire Wire Line
-	8375 4125 8375 4150
+	8375 4025 8375 4150
 Connection ~ 8375 4125
 Wire Wire Line
-	8475 5750 8475 5775
-Wire Wire Line
-	8475 5775 8475 5825
+	8475 5750 8475 5825
 Wire Wire Line
 	8475 5775 8575 5775
 Wire Wire Line
@@ -907,14 +850,10 @@ Wire Wire Line
 Wire Wire Line
 	8775 5775 8875 5775
 Wire Wire Line
-	8875 5750 8875 5775
-Wire Wire Line
-	8875 5775 8875 5825
+	8875 5750 8875 5825
 Connection ~ 8875 5775
 Wire Wire Line
-	8375 4125 8475 4125
-Wire Wire Line
-	8475 4125 8575 4125
+	8375 4125 8575 4125
 Wire Wire Line
 	8875 4150 8875 4025
 Wire Wire Line
@@ -949,7 +888,7 @@ F 6 "$0.21" H 3300 3850 60  0001 C CNN "Price"
 	0    1    1    0   
 $EndComp
 Text Label 6850 4300 0    60   ~ 0
-+3V3
+VDD_A
 $Comp
 L GNDA #PWR?
 U 1 1 58FEC86D
@@ -963,13 +902,11 @@ F 3 "" H 6850 4950 50  0001 C CNN
 $EndComp
 Connection ~ 6750 4550
 Wire Wire Line
-	6425 4550 6225 4550
+	6075 4550 6425 4550
 Wire Wire Line
 	6850 4950 6850 4900
 Wire Wire Line
-	6625 4550 6750 4550
-Wire Wire Line
-	6750 4550 7975 4550
+	6625 4550 7975 4550
 $Comp
 L R_Small R?
 U 1 1 58FED31F
@@ -996,9 +933,7 @@ Wire Wire Line
 	4575 6750 4575 6775
 Connection ~ 4575 6775
 Wire Wire Line
-	4575 6475 4575 6500
-Wire Wire Line
-	4575 6500 4575 6550
+	4575 6475 4575 6550
 Wire Wire Line
 	4575 6275 4575 6250
 Connection ~ 4575 6250
@@ -1052,10 +987,6 @@ Wire Wire Line
 	6000 1775 6100 1775
 Text HLabel 5775 4550 0    60   Input ~ 0
 CHB_IN
-Wire Wire Line
-	6075 4550 6150 4550
-Wire Wire Line
-	6150 4550 6225 4550
 $Comp
 L D_Schottky_BAT54-7-F D?
 U 1 1 58FF0DCF
@@ -1109,4 +1040,18 @@ Text Notes 6125 4025 0    60   ~ 0
 ADC Input Protection
 Text Notes 3350 5700 0    60   ~ 0
 ADC VOLTAGE REFERENCES\nTOP-BOTTOM = 2.5V
+Text HLabel 2300 900  0    60   Input ~ 0
+VDD_D
+Text Label 2450 900  0    60   ~ 0
+VDD_D
+Wire Wire Line
+	2300 900  2450 900 
+Text Label 1050 4825 2    60   ~ 0
+VDD_D
+Text HLabel 2300 1300 0    60   Input ~ 0
+ADC_CLK
+Wire Wire Line
+	2300 1300 2475 1300
+Text Label 2475 1300 0    60   ~ 0
+ADC_CLK
 $EndSCHEMATC

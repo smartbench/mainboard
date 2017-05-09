@@ -33,12 +33,15 @@ LIBS:multiplexors
 LIBS:adc1175
 LIBS:clc4007
 LIBS:mic7300
+LIBS:tcr2ef13
+LIBS:max1720
+LIBS:voltage-regulators
 LIBS:etapa_analogica-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -83,9 +86,9 @@ $EndComp
 Text HLabel 7675 1075 2    60   Input ~ 0
 CHA_OUT
 Text HLabel 1100 800  0    60   Input ~ 0
-+3V3
+VDD_A
 Text HLabel 1100 950  0    60   Input ~ 0
--3V3
+VSS_A
 $Comp
 L GNDD #PWR?
 U 1 1 58FE6F44
@@ -100,17 +103,17 @@ $EndComp
 Text HLabel 4550 975  0    60   Input ~ 0
 CHA_IN
 Text Label 5100 1725 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 5125 1375 3    60   ~ 0
--3V3
+VSS_A
 Text Label 5125 775  1    60   ~ 0
-+3V3
+VDD_A
 Text Label 3400 1575 2    60   ~ 0
--3V3
+VSS_A
 Text Label 1250 800  0    60   ~ 0
-+3V3
+VDD_A
 Text Label 1250 950  0    60   ~ 0
--3V3
+VSS_A
 $Comp
 L GNDD #PWR?
 U 1 1 58FE849D
@@ -531,13 +534,13 @@ $EndComp
 Text HLabel 4550 3825 0    60   Input ~ 0
 CHB_IN
 Text Label 5100 4575 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 5125 4225 3    60   ~ 0
--3V3
+VSS_A
 Text Label 5125 3625 1    60   ~ 0
-+3V3
+VDD_A
 Text Label 3400 4425 2    60   ~ 0
--3V3
+VSS_A
 $Comp
 L R_Small R?
 U 1 1 58FED057

@@ -33,12 +33,15 @@ LIBS:multiplexors
 LIBS:adc1175
 LIBS:clc4007
 LIBS:mic7300
+LIBS:tcr2ef13
+LIBS:max1720
+LIBS:voltage-regulators
 LIBS:etapa_analogica-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -379,7 +382,7 @@ F 4 "CD4051BM96" V 8625 1950 60  0000 C CNN "Manuf. Part Number"
 	1    0    0    -1  
 $EndComp
 Text HLabel 1300 1600 0    60   Input ~ 0
-+3V3
+VDD_A
 $Comp
 L GNDD #PWR?
 U 1 1 58FD3C93
@@ -634,27 +637,27 @@ CHB_ATT_20dB
 Text Label 7950 4050 2    60   ~ 0
 CHB_ATT_40dB
 Text Label 1475 1600 0    60   ~ 0
-+3V3
+VDD_A
 Text HLabel 1300 1750 0    60   Input ~ 0
--3V3
+VSS_A
 Text Label 1475 1750 0    60   ~ 0
--3V3
+VSS_A
 Text Label 8475 1025 1    60   ~ 0
-+3V3
+VDD_A
 Text Label 5950 1275 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 5950 2200 0    60   ~ 0
--3V3
+VSS_A
 Text Label 8625 2725 3    60   ~ 0
--3V3
+VSS_A
 Text Label 8650 5450 3    60   ~ 0
--3V3
+VSS_A
 Text Label 5925 4900 0    60   ~ 0
--3V3
+VSS_A
 Text Label 5925 3975 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 8500 3750 1    60   ~ 0
-+3V3
+VDD_A
 $Comp
 L CPC1017N U?
 U 1 1 58FD8CA1

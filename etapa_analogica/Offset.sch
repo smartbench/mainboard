@@ -33,12 +33,15 @@ LIBS:multiplexors
 LIBS:adc1175
 LIBS:clc4007
 LIBS:mic7300
+LIBS:tcr2ef13
+LIBS:max1720
+LIBS:voltage-regulators
 LIBS:etapa_analogica-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -105,13 +108,13 @@ F 4 "CLC4007ITP14MTR" H 9050 1650 60  0000 L CNN "Manuf. Part Number"
 	1    0    0    -1  
 $EndComp
 Text HLabel 1050 725  0    60   Input ~ 0
-+3V3
+VDD_A
 Text HLabel 1050 875  0    60   Input ~ 0
--3V3
+VSS_A
 Text Label 1200 725  0    60   ~ 0
-+3V3
+VDD_A
 Text Label 1200 875  0    60   ~ 0
--3V3
+VSS_A
 $Comp
 L GNDD #PWR?
 U 1 1 58FF7AC3
@@ -139,9 +142,9 @@ D_GND
 Text HLabel 1050 1350 0    60   Input ~ 0
 A_GND
 Text Label 8850 1150 1    60   ~ 0
-+3V3
+VDD_A
 Text Label 8850 1750 3    60   ~ 0
--3V3
+VSS_A
 $Comp
 L R_Small R?
 U 1 1 58FF7E4D
@@ -266,9 +269,9 @@ Wire Wire Line
 Wire Wire Line
 	4725 1250 5200 1250
 Text Label 5400 1050 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 5400 1650 0    60   ~ 0
--3V3
+VSS_A
 Text Label 6125 1350 0    60   ~ 0
 CHA_OFFSET
 Connection ~ 6000 1350
@@ -326,9 +329,9 @@ Wire Wire Line
 Wire Wire Line
 	2575 3825 2575 3300
 Text Label 1975 3000 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 1975 3600 0    60   ~ 0
--3V3
+VSS_A
 Text Label 2700 3300 0    60   ~ 0
 V_OFFSET_FIJO
 Connection ~ 2575 3300
@@ -401,9 +404,9 @@ Wire Wire Line
 Wire Wire Line
 	4700 3225 5175 3225
 Text Label 5375 3025 0    60   ~ 0
-+3V3
+VDD_A
 Text Label 5375 3625 0    60   ~ 0
--3V3
+VSS_A
 Text Label 6100 3325 0    60   ~ 0
 CHB_OFFSET
 Connection ~ 5975 3325
@@ -495,9 +498,9 @@ F 4 "CLC4007ITP14MTR" H 9025 3625 60  0000 L CNN "Manuf. Part Number"
 	1    0    0    -1  
 $EndComp
 Text Label 8825 3125 1    60   ~ 0
-+3V3
+VDD_A
 Text Label 8825 3725 3    60   ~ 0
--3V3
+VSS_A
 $Comp
 L R_Small R?
 U 1 1 58FE9F5A
@@ -573,4 +576,16 @@ Wire Wire Line
 	8000 2900 7825 2900
 Text Label 4350 3850 2    60   ~ 0
 V_REF_DAC
+Text Label 1225 2200 2    60   ~ 0
+CHA_OFFSET
+Text Label 1225 2375 2    60   ~ 0
+CHB_OFFSET
+Text HLabel 1450 2200 2    60   Input ~ 0
+CHA_OFFSET
+Text HLabel 1450 2375 2    60   Input ~ 0
+CHB_OFFSET
+Wire Wire Line
+	1450 2200 1225 2200
+Wire Wire Line
+	1450 2375 1225 2375
 $EndSCHEMATC
