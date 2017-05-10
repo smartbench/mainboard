@@ -1,0 +1,56 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# LM4040D25FTA
+#
+DEF LM4040D25FTA D 0 10 N N 1 F N
+F0 "D" 0 90 50 H V C CNN
+F1 "LM4040D25FTA" 0 -90 50 H V C CNN
+F2 "TO_SOT_Packages_SMD:SOT-23" -100 -10 50 H I C CNN
+F3 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" 50 -400 50 H I C CNN
+F4 "LM4040D25FTA" -650 -200 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/diodes-incorporated/LM4040D25FTA/LM4040D25FCT-ND/1557756" -150 -310 60 H I C CNN "Link Digikey"
+F6 "$0.50" -50 -210 60 H I C CNN "Price (Digikey)"
+F7 "2.5V" 0 240 60 H V C CNN "Vref"
+F8 "?mA < I < ?mA" 100 340 60 H V C CNN "Irange"
+$FPLIST
+ sot-23
+$ENDFPLIST
+DRAW
+P 2 0 1 0 30 0 -30 0 N
+P 3 0 1 0 -10 40 -30 40 -30 -40 N
+P 3 0 1 0 50 -50 50 0 100 0 N
+P 4 0 1 0 30 40 -30 0 30 -40 30 40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+X to2 3 50 -50 35 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LM4041EIM3-1.2/NOPB
+#
+DEF LM4041EIM3-1.2/NOPB D 0 10 N N 1 F N
+F0 "D" 0 90 50 H V C CNN
+F1 "LM4041EIM3-1.2/NOPB" 0 -90 50 H V C CNN
+F2 "TO_SOT_Packages_SMD:SOT-23" -50 -500 50 H I C CNN
+F3 "https://www.digikey.com/product-detail/en/texas-instruments/LM4041EIM3-1.2-NOPB/LM4041EIM3-1.2-NOPBCT-ND/212732" 50 -400 50 H I C CNN
+F4 "LM4041EIM3-1.2/NOPB" -650 -200 60 H I C CNN "Manuf. Part Number"
+F5 "http://www.ti.com/lit/ds/symlink/lm4041-n.pdf" -150 -310 60 H I C CNN "Link Digikey"
+F6 "$0.76" 350 -200 60 H I C CNN "Price (Digikey)"
+F7 "1.225V" 0 240 60 H V C CNN "Vref"
+F8 "?mA < I < ?mA" 100 340 60 H V C CNN "Irange"
+$FPLIST
+ sot-23
+$ENDFPLIST
+DRAW
+P 2 0 1 0 30 0 -30 0 N
+P 3 0 1 0 -10 40 -30 40 -30 -40 N
+P 3 0 1 0 50 -50 50 0 100 0 N
+P 4 0 1 0 30 40 -30 0 30 -40 30 40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+X to2 3 50 -50 35 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

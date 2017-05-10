@@ -36,8 +36,9 @@ LIBS:mic7300
 LIBS:tcr2ef13
 LIBS:max1720
 LIBS:voltage-regulators
+LIBS:voltage-references
 LIBS:etapa_analogica-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -344,62 +345,459 @@ Text Label 8900 1250 1    60   ~ 0
 5V0_D
 Text Label 8800 1250 1    60   ~ 0
 3V3_D
-Text Label 3450 5925 0    60   ~ 0
+Text Label 3450 5950 0    60   ~ 0
 VDD_A
 $Comp
 L R_Small R?
 U 1 1 5900B3E6
-P 3450 6100
-F 0 "R?" V 3550 6075 50  0000 L CNN
-F 1 "R_Small" V 3325 6000 50  0000 L CNN
-F 2 "" H 550 3625 50  0001 C CNN
-F 3 "" H 550 3625 50  0001 C CNN
-	1    3450 6100
+P 3450 6125
+F 0 "R?" V 3550 6100 50  0000 L CNN
+F 1 "R_Small" V 3325 6025 50  0000 L CNN
+F 2 "" H 550 3650 50  0001 C CNN
+F 3 "" H 550 3650 50  0001 C CNN
+	1    3450 6125
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
 U 1 1 5900B4B2
-P 4050 6450
-F 0 "C?" V 4142 6496 50  0000 L CNN
-F 1 "C_Small" V 3950 6325 50  0000 L CNN
-F 2 "" H 825 3925 50  0001 C CNN
-F 3 "" H 825 3925 50  0001 C CNN
-	1    4050 6450
+P 4050 6475
+F 0 "C?" V 4142 6521 50  0000 L CNN
+F 1 "C_Small" V 3950 6350 50  0000 L CNN
+F 2 "" H 825 3950 50  0001 C CNN
+F 3 "" H 825 3950 50  0001 C CNN
+	1    4050 6475
 	1    0    0    -1  
-$EndComp
-$Comp
-L D_Zener D?
-U 1 1 5900B627
-P 3450 6425
-F 0 "D?" H 3450 6325 50  0000 R CNN
-F 1 "D_Zener" H 3600 6525 50  0000 R CNN
-F 2 "" H 0   4075 50  0001 C CNN
-F 3 "" H 0   4075 50  0001 C CNN
-	1    3450 6425
-	0    -1   1    0   
 $EndComp
 $Comp
 L R_Small R?
 U 1 1 5900B9F3
-P 3450 7025
-F 0 "R?" V 3550 7000 50  0000 L CNN
-F 1 "R_Small" V 3350 6850 50  0000 L CNN
-F 2 "" H 550 4550 50  0001 C CNN
-F 3 "" H 550 4550 50  0001 C CNN
-	1    3450 7025
+P 3450 7050
+F 0 "R?" V 3550 7025 50  0000 L CNN
+F 1 "R_Small" V 3350 6875 50  0000 L CNN
+F 2 "" H 550 4575 50  0001 C CNN
+F 3 "" H 550 4575 50  0001 C CNN
+	1    3450 7050
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
 U 1 1 5900C86F
-P 4325 6450
-F 0 "C?" V 4417 6496 50  0000 L CNN
-F 1 "C_Small" V 4225 6325 50  0000 L CNN
-F 2 "" H 1100 3925 50  0001 C CNN
-F 3 "" H 1100 3925 50  0001 C CNN
-	1    4325 6450
+P 4325 6475
+F 0 "C?" V 4417 6521 50  0000 L CNN
+F 1 "C_Small" V 4225 6350 50  0000 L CNN
+F 2 "" H 1100 3950 50  0001 C CNN
+F 3 "" H 1100 3950 50  0001 C CNN
+	1    4325 6475
 	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5900C992
+P 3450 7200
+F 0 "#PWR?" H 3450 6950 50  0001 C CNN
+F 1 "GNDA" H 3450 7050 50  0000 C CNN
+F 2 "" H 3450 7200 50  0001 C CNN
+F 3 "" H 3450 7200 50  0001 C CNN
+	1    3450 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5900CAEB
+P 4050 7025
+F 0 "C?" V 4142 7071 50  0000 L CNN
+F 1 "C_Small" V 3950 6900 50  0000 L CNN
+F 2 "" H 825 4500 50  0001 C CNN
+F 3 "" H 825 4500 50  0001 C CNN
+	1    4050 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5900CBBB
+P 4050 7200
+F 0 "#PWR?" H 4050 6950 50  0001 C CNN
+F 1 "GNDA" H 4050 7050 50  0000 C CNN
+F 2 "" H 4050 7200 50  0001 C CNN
+F 3 "" H 4050 7200 50  0001 C CNN
+	1    4050 7200
+	1    0    0    -1  
+$EndComp
+Text Label 4800 6275 0    60   ~ 0
+V_REF_TOP
+$Comp
+L R_Small R?
+U 1 1 5900EE4C
+P 3675 6275
+F 0 "R?" V 3775 6250 50  0000 L CNN
+F 1 "R_Small" V 3550 6175 50  0000 L CNN
+F 2 "" H 775 3800 50  0001 C CNN
+F 3 "" H 775 3800 50  0001 C CNN
+	1    3675 6275
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5900EF15
+P 3675 6800
+F 0 "R?" V 3775 6775 50  0000 L CNN
+F 1 "R_Small" V 3550 6700 50  0000 L CNN
+F 2 "" H 775 4325 50  0001 C CNN
+F 3 "" H 775 4325 50  0001 C CNN
+	1    3675 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5900EFE0
+P 4325 7000
+F 0 "C?" V 4417 7046 50  0000 L CNN
+F 1 "C_Small" V 4225 6875 50  0000 L CNN
+F 2 "" H 1100 4475 50  0001 C CNN
+F 3 "" H 1100 4475 50  0001 C CNN
+	1    4325 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5900F0A1
+P 4325 7200
+F 0 "#PWR?" H 4325 6950 50  0001 C CNN
+F 1 "GNDA" H 4325 7050 50  0000 C CNN
+F 2 "" H 4325 7200 50  0001 C CNN
+F 3 "" H 4325 7200 50  0001 C CNN
+	1    4325 7200
+	1    0    0    -1  
+$EndComp
+Text Label 8000 2275 2    60   ~ 0
+V_REF_TOP
+Text Label 8000 2575 2    60   ~ 0
+V_REF_BOTTOM
+Text Label 4825 6800 0    60   ~ 0
+V_REF_BOTTOM
+Text Label 1100 5925 0    60   ~ 0
+VDD_A
+$Comp
+L GNDA #PWR?
+U 1 1 590102F6
+P 1100 6950
+F 0 "#PWR?" H 1100 6700 50  0001 C CNN
+F 1 "GNDA" H 1100 6800 50  0000 C CNN
+F 2 "" H 1100 6950 50  0001 C CNN
+F 3 "" H 1100 6950 50  0001 C CNN
+	1    1100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5901033D
+P 1100 6300
+F 0 "R?" V 1200 6275 50  0000 L CNN
+F 1 "R_Small" V 1025 6050 50  0000 L CNN
+F 2 "" H -1800 3825 50  0001 C CNN
+F 3 "" H -1800 3825 50  0001 C CNN
+	1    1100 6300
+	-1   0    0    1   
+$EndComp
+Text Label 2175 6475 0    60   ~ 0
+V_REF_DAC_1V2
+$Comp
+L C_Small C?
+U 1 1 590106C8
+P 1700 6700
+F 0 "C?" V 1750 6750 50  0000 L CNN
+F 1 "C_Small" V 1600 6575 50  0000 L CNN
+F 2 "" H -1525 4175 50  0001 C CNN
+F 3 "" H -1525 4175 50  0001 C CNN
+	1    1700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 590106CE
+P 1700 6875
+F 0 "#PWR?" H 1700 6625 50  0001 C CNN
+F 1 "GNDA" H 1700 6725 50  0000 C CNN
+F 2 "" H 1700 6875 50  0001 C CNN
+F 3 "" H 1700 6875 50  0001 C CNN
+	1    1700 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 590106D6
+P 1325 6475
+F 0 "R?" V 1425 6450 50  0000 L CNN
+F 1 "R_Small" V 1225 6450 50  0000 L CNN
+F 2 "" H -1575 4000 50  0001 C CNN
+F 3 "" H -1575 4000 50  0001 C CNN
+	1    1325 6475
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 590106DD
+P 1975 6675
+F 0 "C?" V 1925 6725 50  0000 L CNN
+F 1 "C_Small" V 2075 6525 50  0000 L CNN
+F 2 "" H -1250 4150 50  0001 C CNN
+F 3 "" H -1250 4150 50  0001 C CNN
+	1    1975 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 590106E4
+P 1975 6875
+F 0 "#PWR?" H 1975 6625 50  0001 C CNN
+F 1 "GNDA" H 1975 6725 50  0000 C CNN
+F 2 "" H 1975 6875 50  0001 C CNN
+F 3 "" H 1975 6875 50  0001 C CNN
+	1    1975 6875
+	1    0    0    -1  
+$EndComp
+Text HLabel 1650 1800 2    60   Output ~ 0
+V_REF_CENTER
+Text Label 1425 1800 2    60   ~ 0
+V_REF_CENTER
+Text HLabel 9475 4450 2    60   Output ~ 0
+CHB_D0
+Text HLabel 9475 4550 2    60   Output ~ 0
+CHB_D1
+Text HLabel 9475 4650 2    60   Output ~ 0
+CHB_D2
+Text HLabel 9475 4750 2    60   Output ~ 0
+CHB_D3
+Text HLabel 9475 4850 2    60   Output ~ 0
+CHB_D4
+Text HLabel 9475 4950 2    60   Output ~ 0
+CHB_D5
+Text HLabel 9475 5050 2    60   Output ~ 0
+CHB_D6
+Text HLabel 9475 5150 2    60   Output ~ 0
+CHB_D7
+Text HLabel 9475 5450 2    60   Input ~ 0
+CHB_ADC_OE
+Text Label 9475 5350 0    60   ~ 0
+ADC_CLK
+$Comp
+L ADC1175 U?
+U 1 1 58FEC024
+P 8675 4950
+F 0 "U?" H 8175 4225 50  0000 C CNN
+F 1 "ADC1175" H 8125 4150 50  0000 C CNN
+F 2 "library:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 1625 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/adc1175.pdf" H 1725 4450 50  0001 C CNN
+F 4 "ADC1175CIMTCX/NOPB" H 1825 4550 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-detail/en/texas-instruments/ADC1175CIMTCX-NOPB/296-35235-1-ND/3738943" H 1925 4650 60  0001 C CNN "Link Digikey"
+F 6 "$2.73" H 2025 4750 60  0001 C CNN "Price"
+	1    8675 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 58FEC02A
+P 8475 5825
+F 0 "#PWR?" H 8475 5575 50  0001 C CNN
+F 1 "GNDA" H 8475 5675 50  0000 C CNN
+F 2 "" H 8475 5825 50  0001 C CNN
+F 3 "" H 8475 5825 50  0001 C CNN
+	1    8475 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 58FEC030
+P 8875 5825
+F 0 "#PWR?" H 4425 1750 50  0001 C CNN
+F 1 "GNDD" H 8880 5652 50  0000 C CNN
+F 2 "" H 4425 2000 50  0001 C CNN
+F 3 "" H 4425 2000 50  0001 C CNN
+	1    8875 5825
+	1    0    0    -1  
+$EndComp
+Text Label 8375 4025 1    60   ~ 0
+5V0_A
+Text Label 8875 4025 1    60   ~ 0
+5V0_D
+Text Label 8775 4025 1    60   ~ 0
+3V3_D
+Text Label 7975 5050 2    60   ~ 0
+V_REF_TOP
+Text Label 7975 5350 2    60   ~ 0
+V_REF_BOTTOM
+$Comp
+L R_Small R?
+U 1 1 58FEC85C
+P 6525 4550
+F 0 "R?" V 6425 4500 50  0000 L CNN
+F 1 "220" V 6625 4375 50  0000 L CNN
+F 2 "" H 6525 4550 50  0001 C CNN
+F 3 "" H 6525 4550 50  0001 C CNN
+	1    6525 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky_BAT54S-7-F D?
+U 1 1 58FEC865
+P 6850 4750
+F 0 "D?" V 6850 4575 50  0000 L CNN
+F 1 "D_Schottky_BAT54S-7-F" H 6450 4925 50  0000 L CNN
+F 2 "" H 3600 3350 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3600 4050 50  0001 C CNN
+F 4 "BAT54S-7-F" H 4150 3850 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 3500 3950 60  0001 C CNN "Link Digikey"
+F 6 "$0.21" H 3300 3850 60  0001 C CNN "Price"
+	1    6850 4750
+	0    1    1    0   
+$EndComp
+Text Label 6850 4300 0    60   ~ 0
+VDD_A
+$Comp
+L GNDA #PWR?
+U 1 1 58FEC86D
+P 6850 4950
+F 0 "#PWR?" H 6850 4700 50  0001 C CNN
+F 1 "GNDA" H 6850 4800 50  0000 C CNN
+F 2 "" H 6850 4950 50  0001 C CNN
+F 3 "" H 6850 4950 50  0001 C CNN
+	1    6850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FED31F
+P 4575 6400
+F 0 "R?" V 4675 6375 50  0000 L CNN
+F 1 "R_Small" V 4450 6300 50  0000 L CNN
+F 2 "" H 1675 3925 50  0001 C CNN
+F 3 "" H 1675 3925 50  0001 C CNN
+	1    4575 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FED3D9
+P 4575 6675
+F 0 "R?" V 4675 6650 50  0000 L CNN
+F 1 "R_Small" V 4450 6575 50  0000 L CNN
+F 2 "" H 1675 4200 50  0001 C CNN
+F 3 "" H 1675 4200 50  0001 C CNN
+	1    4575 6675
+	-1   0    0    1   
+$EndComp
+Text Label 4800 6525 0    60   ~ 0
+V_REF_CENTER
+$Comp
+L D_Schottky_BAT54-7-F D?
+U 1 1 58FEFD23
+P 6375 2000
+F 0 "D?" H 6450 2100 50  0000 L CNN
+F 1 "D_Schottky_BAT54-7-F" H 6300 2225 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOT-23_ANK" H 275 -575 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 275 125 50  0001 C CNN
+F 4 "BAT54-7-F" H 475 -175 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54-7-F/BAT54-FDICT-ND/717819" H 175 25  60  0001 C CNN "Link Digikey"
+F 6 "$0.16" H 325 -75 60  0001 C CNN "Price"
+	1    6375 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 58FEFFCE
+P 6375 2225
+F 0 "#PWR?" H 6375 1975 50  0001 C CNN
+F 1 "GNDA" H 6375 2075 50  0000 C CNN
+F 2 "" H 6375 2225 50  0001 C CNN
+F 3 "" H 6375 2225 50  0001 C CNN
+	1    6375 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF066D
+P 6200 1775
+F 0 "R?" V 6100 1725 50  0000 L CNN
+F 1 "470" V 6300 1600 50  0000 L CNN
+F 2 "" H 6200 1775 50  0001 C CNN
+F 3 "" H 6200 1775 50  0001 C CNN
+	1    6200 1775
+	0    1    1    0   
+$EndComp
+Text HLabel 5775 4550 0    60   Input ~ 0
+CHB_IN
+$Comp
+L D_Schottky_BAT54-7-F D?
+U 1 1 58FF0DCF
+P 6150 4775
+F 0 "D?" H 6225 4875 50  0000 L CNN
+F 1 "D_Schottky_BAT54-7-F" H 6075 5000 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOT-23_ANK" H 50  2200 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 50  2900 50  0001 C CNN
+F 4 "BAT54-7-F" H 250 2600 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54-7-F/BAT54-FDICT-ND/717819" H -50 2800 60  0001 C CNN "Link Digikey"
+F 6 "$0.16" H 100 2700 60  0001 C CNN "Price"
+	1    6150 4775
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 58FF0DD7
+P 6150 5000
+F 0 "#PWR?" H 6150 4750 50  0001 C CNN
+F 1 "GNDA" H 6150 4850 50  0000 C CNN
+F 2 "" H 6150 5000 50  0001 C CNN
+F 3 "" H 6150 5000 50  0001 C CNN
+	1    6150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 58FF0DDE
+P 5975 4550
+F 0 "R?" V 5875 4500 50  0000 L CNN
+F 1 "470" V 6075 4375 50  0000 L CNN
+F 2 "" H 5975 4550 50  0001 C CNN
+F 3 "" H 5975 4550 50  0001 C CNN
+	1    5975 4550
+	0    1    1    0   
+$EndComp
+Text Notes 950  2550 0    60   ~ 0
+ADC Power Supply Filter
+Text Notes 975  5775 0    60   ~ 0
+DAC VOLTAGE REFERENCE (1.2V)
+Text Notes 6050 1275 0    60   ~ 0
+ADC Input Protection
+Text Notes 6125 4025 0    60   ~ 0
+ADC Input Protection
+Text Notes 3350 5700 0    60   ~ 0
+ADC VOLTAGE REFERENCES\nTOP-BOTTOM = 2.5V
+Text HLabel 2300 900  0    60   Input ~ 0
+VDD_D
+Text Label 2450 900  0    60   ~ 0
+VDD_D
+Text Label 1050 4825 2    60   ~ 0
+VDD_D
+Text HLabel 2300 1300 0    60   Input ~ 0
+ADC_CLK
+Text Label 2475 1300 0    60   ~ 0
+ADC_CLK
+$Comp
+L LM4041EIM3-1.2/NOPB D?
+U 1 1 5913A0F9
+P 1100 6700
+F 0 "D?" H 1100 6800 50  0000 C CNN
+F 1 "LM4041EIM3-1.2/NOPB" H 1100 6610 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1050 6200 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/texas-instruments/LM4041EIM3-1.2-NOPB/LM4041EIM3-1.2-NOPBCT-ND/212732" H 1150 6300 50  0001 C CNN
+F 4 "LM4041EIM3-1.2/NOPB" H 450 6500 60  0001 C CNN "Manuf. Part Number"
+F 5 "http://www.ti.com/lit/ds/symlink/lm4041-n.pdf" H 950 6390 60  0001 C CNN "Link Digikey"
+F 6 "$0.76" H 1450 6500 60  0001 C CNN "Price (Digikey)"
+F 7 "1.225V" H 1100 6940 60  0001 C CNN "Vref"
+F 8 "?mA < I < ?mA" H 1200 7040 60  0001 C CNN "Irange"
+	1    1100 6700
+	0    1    1    0   
 $EndComp
 Connection ~ 6900 1775
 Wire Wire Line
@@ -510,308 +908,65 @@ Wire Wire Line
 Wire Wire Line
 	8800 1250 8800 1375
 Wire Wire Line
-	3450 6200 3450 6275
-Connection ~ 3450 6250
+	3450 6225 3450 6350
+Connection ~ 3450 6275
 Wire Wire Line
-	3450 6000 3450 5925
+	3450 6025 3450 5950
 Wire Wire Line
-	3450 6575 3450 6925
-Connection ~ 3450 6775
+	3450 6550 3450 6950
+Connection ~ 3450 6800
 Wire Wire Line
-	4050 6250 4050 6350
-Connection ~ 4050 6250
+	4050 6275 4050 6375
+Connection ~ 4050 6275
 Wire Wire Line
-	4325 6250 4325 6350
-Connection ~ 4325 6250
-$Comp
-L GNDA #PWR?
-U 1 1 5900C992
-P 3450 7175
-F 0 "#PWR?" H 3450 6925 50  0001 C CNN
-F 1 "GNDA" H 3450 7025 50  0000 C CNN
-F 2 "" H 3450 7175 50  0001 C CNN
-F 3 "" H 3450 7175 50  0001 C CNN
-	1    3450 7175
-	1    0    0    -1  
-$EndComp
+	4325 6275 4325 6375
+Connection ~ 4325 6275
 Wire Wire Line
-	3450 7175 3450 7125
+	3450 7200 3450 7150
 Wire Wire Line
-	4050 6550 4050 6900
+	4050 6575 4050 6925
 Wire Wire Line
-	4325 6550 4325 6875
-Connection ~ 4050 6775
-$Comp
-L C_Small C?
-U 1 1 5900CAEB
-P 4050 7000
-F 0 "C?" V 4142 7046 50  0000 L CNN
-F 1 "C_Small" V 3950 6875 50  0000 L CNN
-F 2 "" H 825 4475 50  0001 C CNN
-F 3 "" H 825 4475 50  0001 C CNN
-	1    4050 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5900CBBB
-P 4050 7175
-F 0 "#PWR?" H 4050 6925 50  0001 C CNN
-F 1 "GNDA" H 4050 7025 50  0000 C CNN
-F 2 "" H 4050 7175 50  0001 C CNN
-F 3 "" H 4050 7175 50  0001 C CNN
-	1    4050 7175
-	1    0    0    -1  
-$EndComp
+	4325 6575 4325 6900
+Connection ~ 4050 6800
 Wire Wire Line
-	4050 7175 4050 7100
-Text Label 4800 6250 0    60   ~ 0
-V_REF_TOP
+	4050 7200 4050 7125
 Wire Wire Line
-	3775 6775 4825 6775
+	3775 6800 4825 6800
 Wire Wire Line
-	3775 6250 4800 6250
-$Comp
-L R_Small R?
-U 1 1 5900EE4C
-P 3675 6250
-F 0 "R?" V 3775 6225 50  0000 L CNN
-F 1 "R_Small" V 3550 6150 50  0000 L CNN
-F 2 "" H 775 3775 50  0001 C CNN
-F 3 "" H 775 3775 50  0001 C CNN
-	1    3675 6250
-	0    1    1    0   
-$EndComp
+	3775 6275 4800 6275
 Wire Wire Line
-	3575 6250 3450 6250
-$Comp
-L R_Small R?
-U 1 1 5900EF15
-P 3675 6775
-F 0 "R?" V 3775 6750 50  0000 L CNN
-F 1 "R_Small" V 3550 6675 50  0000 L CNN
-F 2 "" H 775 4300 50  0001 C CNN
-F 3 "" H 775 4300 50  0001 C CNN
-	1    3675 6775
-	0    1    1    0   
-$EndComp
+	3575 6275 3450 6275
 Wire Wire Line
-	3575 6775 3450 6775
-$Comp
-L C_Small C?
-U 1 1 5900EFE0
-P 4325 6975
-F 0 "C?" V 4417 7021 50  0000 L CNN
-F 1 "C_Small" V 4225 6850 50  0000 L CNN
-F 2 "" H 1100 4450 50  0001 C CNN
-F 3 "" H 1100 4450 50  0001 C CNN
-	1    4325 6975
-	1    0    0    -1  
-$EndComp
-Connection ~ 4325 6775
-$Comp
-L GNDA #PWR?
-U 1 1 5900F0A1
-P 4325 7175
-F 0 "#PWR?" H 4325 6925 50  0001 C CNN
-F 1 "GNDA" H 4325 7025 50  0000 C CNN
-F 2 "" H 4325 7175 50  0001 C CNN
-F 3 "" H 4325 7175 50  0001 C CNN
-	1    4325 7175
-	1    0    0    -1  
-$EndComp
+	3575 6800 3450 6800
+Connection ~ 4325 6800
 Wire Wire Line
-	4325 7175 4325 7075
-Text Label 8000 2275 2    60   ~ 0
-V_REF_TOP
-Text Label 8000 2575 2    60   ~ 0
-V_REF_BOTTOM
-Text Label 4825 6775 0    60   ~ 0
-V_REF_BOTTOM
+	4325 7200 4325 7100
 Wire Wire Line
 	6775 1775 8000 1775
-Text Label 1075 5975 0    60   ~ 0
-VDD_A
-$Comp
-L D_Zener D?
-U 1 1 590101E2
-P 1075 6750
-F 0 "D?" H 1075 6650 50  0000 R CNN
-F 1 "D_Zener" H 1225 6850 50  0000 R CNN
-F 2 "" H -2375 4400 50  0001 C CNN
-F 3 "" H -2375 4400 50  0001 C CNN
-	1    1075 6750
-	0    -1   1    0   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 590102F6
-P 1075 7000
-F 0 "#PWR?" H 1075 6750 50  0001 C CNN
-F 1 "GNDA" H 1075 6850 50  0000 C CNN
-F 2 "" H 1075 7000 50  0001 C CNN
-F 3 "" H 1075 7000 50  0001 C CNN
-	1    1075 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R?
-U 1 1 5901033D
-P 1075 6350
-F 0 "R?" V 1175 6325 50  0000 L CNN
-F 1 "R_Small" V 1000 6100 50  0000 L CNN
-F 2 "" H -1825 3875 50  0001 C CNN
-F 3 "" H -1825 3875 50  0001 C CNN
-	1    1075 6350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	1075 5975 1075 6250
+	1100 5925 1100 6200
 Wire Wire Line
-	1075 6450 1075 6600
+	1100 6400 1100 6600
 Wire Wire Line
-	1075 6900 1075 7000
-Text Label 2150 6525 0    60   ~ 0
-V_REF_DAC_1V2
-Connection ~ 1675 6525
-$Comp
-L C_Small C?
-U 1 1 590106C8
-P 1675 6750
-F 0 "C?" V 1725 6800 50  0000 L CNN
-F 1 "C_Small" V 1575 6625 50  0000 L CNN
-F 2 "" H -1550 4225 50  0001 C CNN
-F 3 "" H -1550 4225 50  0001 C CNN
-	1    1675 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 590106CE
-P 1675 6925
-F 0 "#PWR?" H 1675 6675 50  0001 C CNN
-F 1 "GNDA" H 1675 6775 50  0000 C CNN
-F 2 "" H 1675 6925 50  0001 C CNN
-F 3 "" H 1675 6925 50  0001 C CNN
-	1    1675 6925
-	1    0    0    -1  
-$EndComp
+	1100 6800 1100 6950
+Connection ~ 1700 6475
 Wire Wire Line
-	1675 6925 1675 6850
+	1700 6875 1700 6800
 Wire Wire Line
-	1400 6525 2150 6525
-$Comp
-L R_Small R?
-U 1 1 590106D6
-P 1300 6525
-F 0 "R?" V 1400 6500 50  0000 L CNN
-F 1 "R_Small" V 1200 6500 50  0000 L CNN
-F 2 "" H -1600 4050 50  0001 C CNN
-F 3 "" H -1600 4050 50  0001 C CNN
-	1    1300 6525
-	0    1    1    0   
-$EndComp
-$Comp
-L C_Small C?
-U 1 1 590106DD
-P 1950 6725
-F 0 "C?" V 1900 6775 50  0000 L CNN
-F 1 "C_Small" V 2050 6575 50  0000 L CNN
-F 2 "" H -1275 4200 50  0001 C CNN
-F 3 "" H -1275 4200 50  0001 C CNN
-	1    1950 6725
-	1    0    0    -1  
-$EndComp
-Connection ~ 1950 6525
-$Comp
-L GNDA #PWR?
-U 1 1 590106E4
-P 1950 6925
-F 0 "#PWR?" H 1950 6675 50  0001 C CNN
-F 1 "GNDA" H 1950 6775 50  0000 C CNN
-F 2 "" H 1950 6925 50  0001 C CNN
-F 3 "" H 1950 6925 50  0001 C CNN
-	1    1950 6925
-	1    0    0    -1  
-$EndComp
+	1425 6475 2175 6475
+Connection ~ 1975 6475
 Wire Wire Line
-	1950 6925 1950 6825
+	1975 6875 1975 6775
 Wire Wire Line
-	1950 6625 1950 6525
+	1975 6575 1975 6475
 Wire Wire Line
-	1675 6650 1675 6525
+	1700 6600 1700 6475
 Wire Wire Line
-	1200 6525 1075 6525
-Connection ~ 1075 6525
-Text HLabel 1650 1800 2    60   Output ~ 0
-V_REF_CENTER
-Text Label 1425 1800 2    60   ~ 0
-V_REF_CENTER
+	1225 6475 1100 6475
+Connection ~ 1100 6475
 Wire Wire Line
 	1650 1800 1425 1800
 Connection ~ 1075 2775
-Text HLabel 9475 4450 2    60   Output ~ 0
-CHB_D0
-Text HLabel 9475 4550 2    60   Output ~ 0
-CHB_D1
-Text HLabel 9475 4650 2    60   Output ~ 0
-CHB_D2
-Text HLabel 9475 4750 2    60   Output ~ 0
-CHB_D3
-Text HLabel 9475 4850 2    60   Output ~ 0
-CHB_D4
-Text HLabel 9475 4950 2    60   Output ~ 0
-CHB_D5
-Text HLabel 9475 5050 2    60   Output ~ 0
-CHB_D6
-Text HLabel 9475 5150 2    60   Output ~ 0
-CHB_D7
-Text HLabel 9475 5450 2    60   Input ~ 0
-CHB_ADC_OE
-Text Label 9475 5350 0    60   ~ 0
-ADC_CLK
-$Comp
-L ADC1175 U?
-U 1 1 58FEC024
-P 8675 4950
-F 0 "U?" H 8175 4225 50  0000 C CNN
-F 1 "ADC1175" H 8125 4150 50  0000 C CNN
-F 2 "library:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 1625 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/adc1175.pdf" H 1725 4450 50  0001 C CNN
-F 4 "ADC1175CIMTCX/NOPB" H 1825 4550 60  0001 C CNN "MPN"
-F 5 "https://www.digikey.com/product-detail/en/texas-instruments/ADC1175CIMTCX-NOPB/296-35235-1-ND/3738943" H 1925 4650 60  0001 C CNN "Link Digikey"
-F 6 "$2.73" H 2025 4750 60  0001 C CNN "Price"
-	1    8675 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 58FEC02A
-P 8475 5825
-F 0 "#PWR?" H 8475 5575 50  0001 C CNN
-F 1 "GNDA" H 8475 5675 50  0000 C CNN
-F 2 "" H 8475 5825 50  0001 C CNN
-F 3 "" H 8475 5825 50  0001 C CNN
-	1    8475 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR?
-U 1 1 58FEC030
-P 8875 5825
-F 0 "#PWR?" H 4425 1750 50  0001 C CNN
-F 1 "GNDD" H 8880 5652 50  0000 C CNN
-F 2 "" H 4425 2000 50  0001 C CNN
-F 3 "" H 4425 2000 50  0001 C CNN
-	1    8875 5825
-	1    0    0    -1  
-$EndComp
-Text Label 8375 4025 1    60   ~ 0
-5V0_A
-Text Label 8875 4025 1    60   ~ 0
-5V0_D
-Text Label 8775 4025 1    60   ~ 0
-3V3_D
 Wire Wire Line
 	9375 4450 9475 4450
 Wire Wire Line
@@ -858,48 +1013,6 @@ Wire Wire Line
 	8875 4150 8875 4025
 Wire Wire Line
 	8775 4025 8775 4150
-Text Label 7975 5050 2    60   ~ 0
-V_REF_TOP
-Text Label 7975 5350 2    60   ~ 0
-V_REF_BOTTOM
-$Comp
-L R_Small R?
-U 1 1 58FEC85C
-P 6525 4550
-F 0 "R?" V 6425 4500 50  0000 L CNN
-F 1 "220" V 6625 4375 50  0000 L CNN
-F 2 "" H 6525 4550 50  0001 C CNN
-F 3 "" H 6525 4550 50  0001 C CNN
-	1    6525 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Schottky_BAT54S-7-F D?
-U 1 1 58FEC865
-P 6850 4750
-F 0 "D?" V 6850 4575 50  0000 L CNN
-F 1 "D_Schottky_BAT54S-7-F" H 6450 4925 50  0000 L CNN
-F 2 "" H 3600 3350 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3600 4050 50  0001 C CNN
-F 4 "BAT54S-7-F" H 4150 3850 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 3500 3950 60  0001 C CNN "Link Digikey"
-F 6 "$0.21" H 3300 3850 60  0001 C CNN "Price"
-	1    6850 4750
-	0    1    1    0   
-$EndComp
-Text Label 6850 4300 0    60   ~ 0
-VDD_A
-$Comp
-L GNDA #PWR?
-U 1 1 58FEC86D
-P 6850 4950
-F 0 "#PWR?" H 6850 4700 50  0001 C CNN
-F 1 "GNDA" H 6850 4800 50  0000 C CNN
-F 2 "" H 6850 4950 50  0001 C CNN
-F 3 "" H 6850 4950 50  0001 C CNN
-	1    6850 4950
-	1    0    0    -1  
-$EndComp
 Connection ~ 6750 4550
 Wire Wire Line
 	6075 4550 6425 4550
@@ -907,151 +1020,59 @@ Wire Wire Line
 	6850 4950 6850 4900
 Wire Wire Line
 	6625 4550 7975 4550
-$Comp
-L R_Small R?
-U 1 1 58FED31F
-P 4575 6375
-F 0 "R?" V 4675 6350 50  0000 L CNN
-F 1 "R_Small" V 4450 6275 50  0000 L CNN
-F 2 "" H 1675 3900 50  0001 C CNN
-F 3 "" H 1675 3900 50  0001 C CNN
-	1    4575 6375
-	-1   0    0    1   
-$EndComp
-$Comp
-L R_Small R?
-U 1 1 58FED3D9
-P 4575 6650
-F 0 "R?" V 4675 6625 50  0000 L CNN
-F 1 "R_Small" V 4450 6550 50  0000 L CNN
-F 2 "" H 1675 4175 50  0001 C CNN
-F 3 "" H 1675 4175 50  0001 C CNN
-	1    4575 6650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	4575 6750 4575 6775
-Connection ~ 4575 6775
+	4575 6775 4575 6800
+Connection ~ 4575 6800
 Wire Wire Line
-	4575 6475 4575 6550
+	4575 6500 4575 6575
 Wire Wire Line
-	4575 6275 4575 6250
-Connection ~ 4575 6250
+	4575 6300 4575 6275
+Connection ~ 4575 6275
 Wire Wire Line
-	4575 6500 4800 6500
-Connection ~ 4575 6500
-Text Label 4800 6500 0    60   ~ 0
-V_REF_CENTER
-$Comp
-L D_Schottky_BAT54-7-F D?
-U 1 1 58FEFD23
-P 6375 2000
-F 0 "D?" H 6450 2100 50  0000 L CNN
-F 1 "D_Schottky_BAT54-7-F" H 6300 2225 50  0000 L CNN
-F 2 "Diodes_SMD:D_SOT-23_ANK" H 275 -575 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 275 125 50  0001 C CNN
-F 4 "BAT54-7-F" H 475 -175 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54-7-F/BAT54-FDICT-ND/717819" H 175 25  60  0001 C CNN "Link Digikey"
-F 6 "$0.16" H 325 -75 60  0001 C CNN "Price"
-	1    6375 2000
-	0    1    1    0   
-$EndComp
+	4575 6525 4800 6525
+Connection ~ 4575 6525
 Wire Wire Line
 	6375 1850 6375 1775
 Connection ~ 6375 1775
-$Comp
-L GNDA #PWR?
-U 1 1 58FEFFCE
-P 6375 2225
-F 0 "#PWR?" H 6375 1975 50  0001 C CNN
-F 1 "GNDA" H 6375 2075 50  0000 C CNN
-F 2 "" H 6375 2225 50  0001 C CNN
-F 3 "" H 6375 2225 50  0001 C CNN
-	1    6375 2225
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6375 2225 6375 2150
-$Comp
-L R_Small R?
-U 1 1 58FF066D
-P 6200 1775
-F 0 "R?" V 6100 1725 50  0000 L CNN
-F 1 "470" V 6300 1600 50  0000 L CNN
-F 2 "" H 6200 1775 50  0001 C CNN
-F 3 "" H 6200 1775 50  0001 C CNN
-	1    6200 1775
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6000 1775 6100 1775
-Text HLabel 5775 4550 0    60   Input ~ 0
-CHB_IN
-$Comp
-L D_Schottky_BAT54-7-F D?
-U 1 1 58FF0DCF
-P 6150 4775
-F 0 "D?" H 6225 4875 50  0000 L CNN
-F 1 "D_Schottky_BAT54-7-F" H 6075 5000 50  0000 L CNN
-F 2 "Diodes_SMD:D_SOT-23_ANK" H 50  2200 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 50  2900 50  0001 C CNN
-F 4 "BAT54-7-F" H 250 2600 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54-7-F/BAT54-FDICT-ND/717819" H -50 2800 60  0001 C CNN "Link Digikey"
-F 6 "$0.16" H 100 2700 60  0001 C CNN "Price"
-	1    6150 4775
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6150 4625 6150 4550
 Connection ~ 6150 4550
-$Comp
-L GNDA #PWR?
-U 1 1 58FF0DD7
-P 6150 5000
-F 0 "#PWR?" H 6150 4750 50  0001 C CNN
-F 1 "GNDA" H 6150 4850 50  0000 C CNN
-F 2 "" H 6150 5000 50  0001 C CNN
-F 3 "" H 6150 5000 50  0001 C CNN
-	1    6150 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6150 5000 6150 4925
+Wire Wire Line
+	5775 4550 5875 4550
+Wire Wire Line
+	2300 900  2450 900 
+Wire Wire Line
+	2300 1300 2475 1300
+Wire Wire Line
+	1050 6750 1050 6850
+Wire Wire Line
+	1050 6850 1100 6850
+Connection ~ 1100 6850
 $Comp
-L R_Small R?
-U 1 1 58FF0DDE
-P 5975 4550
-F 0 "R?" V 5875 4500 50  0000 L CNN
-F 1 "470" V 6075 4375 50  0000 L CNN
-F 2 "" H 5975 4550 50  0001 C CNN
-F 3 "" H 5975 4550 50  0001 C CNN
-	1    5975 4550
+L LM4040D25FTA D?
+U 1 1 5913BB9F
+P 3450 6450
+F 0 "D?" H 3450 6540 50  0000 C CNN
+F 1 "LM4040D25FTA" H 3450 6360 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3350 6440 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" H 3500 6050 50  0001 C CNN
+F 4 "LM4040D25FTA" H 2800 6250 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/LM4040D25FTA/LM4040D25FCT-ND/1557756" H 3300 6140 60  0001 C CNN "Link Digikey"
+F 6 "$0.50" H 3400 6240 60  0001 C CNN "Price (Digikey)"
+F 7 "2.5V" H 3450 6690 60  0001 C CNN "Vref"
+F 8 "?mA < I < ?mA" H 3550 6790 60  0001 C CNN "Irange"
+	1    3450 6450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5775 4550 5875 4550
-Text Notes 950  2550 0    60   ~ 0
-ADC Power Supply Filter
-Text Notes 950  5825 0    60   ~ 0
-DAC VOLTAGE REFERENCE (1.2V)
-Text Notes 6050 1275 0    60   ~ 0
-ADC Input Protection
-Text Notes 6125 4025 0    60   ~ 0
-ADC Input Protection
-Text Notes 3350 5700 0    60   ~ 0
-ADC VOLTAGE REFERENCES\nTOP-BOTTOM = 2.5V
-Text HLabel 2300 900  0    60   Input ~ 0
-VDD_D
-Text Label 2450 900  0    60   ~ 0
-VDD_D
+	3400 6500 3400 6600
 Wire Wire Line
-	2300 900  2450 900 
-Text Label 1050 4825 2    60   ~ 0
-VDD_D
-Text HLabel 2300 1300 0    60   Input ~ 0
-ADC_CLK
-Wire Wire Line
-	2300 1300 2475 1300
-Text Label 2475 1300 0    60   ~ 0
-ADC_CLK
+	3400 6600 3450 6600
+Connection ~ 3450 6600
 $EndSCHEMATC

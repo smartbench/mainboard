@@ -1,4 +1,4 @@
-update=lun 08 may 2017 22:30:25 ART
+update=mié 10 may 2017 19:38:42 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,4 @@ LibName34=library/mic7300
 LibName35=library/tcr2ef13
 LibName36=library/max1720
 LibName37=library/voltage-regulators
+LibName38=library/voltage-references
