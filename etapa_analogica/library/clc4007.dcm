@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CLC4007
+D Quad Op amp, GBP 250MHz
+K AmpliOp
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# MIC7300
+#
+DEF MIC7300 U 0 1 Y Y 1 F N
+F0 "U" 0 250 50 H V L CNN
+F1 "MIC7300" 0 150 50 H V L CNN
+F2 "TO_SOT_Packages_SMD:SOT-23-5" 0 -150 50 H I L CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic7300.pdf" 150 150 50 H I C CNN
+F4 "MIC7300YM5-TR" 100 350 60 H I C CNN "MPN"
+F5 "https://www.digikey.com/product-detail/en/microchip-technology/MIC7300YM5-TR/576-1319-1-ND/771923" 200 450 60 H I C CNN "Link Digikey"
+F6 "$0.29" 300 550 60 H I C CNN "Price"
+$FPLIST
+ SOT-23*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X V- 2 -100 -300 150 U 50 50 1 1 W
+X + 3 -300 100 100 R 50 50 1 1 I
+X - 4 -300 -100 100 R 50 50 1 1 I
+X V+ 5 -100 300 150 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

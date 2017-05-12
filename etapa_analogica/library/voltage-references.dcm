@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM4040D25FTA
+D Voltage Reference 2.5V
+K Ref voltage reference
+F https://www.diodes.com/assets/Datasheets/LM4040.pdf
+$ENDCMP
+#
+$CMP LM4041EIM3-1.2/NOPB
+D Voltage Reference 1.225V
+K Ref voltage reference
+F http://www.ti.com/lit/ds/symlink/lm4041-n.pdf
+$ENDCMP
+#
+#End Doc Library
