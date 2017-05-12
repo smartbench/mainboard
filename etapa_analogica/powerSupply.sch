@@ -37,12 +37,11 @@ LIBS:tcr2ef13
 LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
-LIBS:etapa_analogica-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -401,4 +400,6 @@ F 3 "" H 125 250 50  0001 C CNN
 	1    1250 1000
 	0    -1   -1   0   
 $EndComp
+Text Notes 1900 5250 0    60   ~ 0
+ToDo: Revisar si con un inverter alcanza o si hay que agregar uno más
 $EndSCHEMATC

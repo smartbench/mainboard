@@ -2,6 +2,13 @@
 Cómo importar una hoja al proyecto
 **********************************
 
-1. Crear hoja en el proyecto donde se va importar -> "Create hierarchical sheet"
-2. Entrar en la hoja recién creada 
-3. Meter el esquemático del proyecto que se desea importar -> "File" -> "Append Schematic sheet"
+ToDo: Importar footprints
+
+Hacer esto antes de "Append Schematic Sheet"
+. Copiar los archivos de libreria a la carpeta donde van estar todos. 
+. Agregarlos desde kicad. "Preferences"->"Component Libraries"
+
+Luego,
+. Crear hoja en el proyecto donde se va importar -> "Create hierarchical sheet"
+. Entrar en la hoja recién creada 
+. Meter el esquemático del proyecto que se desea importar -> "File" -> "Append Schematic sheet"
