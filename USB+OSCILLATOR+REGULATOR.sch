@@ -1074,10 +1074,8 @@ F 4 "APTD1608LSURCK" H 3550 3000 60  0001 C CNN "Manufacturer Part"
 F 5 "2mA" H 3550 3000 60  0001 C CNN "If"
 F 6 "1.75V" H 3550 3000 60  0001 C CNN "Vf"
 	1    3550 3000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
-Text HLabel 3600 3300 2    60   Output ~ 12
-GND
 $Comp
 L R R202
 U 1 1 58F9C46B
@@ -1621,4 +1619,8 @@ Wire Wire Line
 	6150 5800 6150 5350
 Wire Wire Line
 	6150 5350 6600 5350
+Text HLabel 3600 3300 2    60   Output ~ 12
++5V
+Text Notes 3700 3000 0    51   ~ 0
+Fault is active low.
 $EndSCHEMATC
