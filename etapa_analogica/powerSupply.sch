@@ -78,43 +78,10 @@ Wire Wire Line
 	1550 3450 1775 3450
 Wire Wire Line
 	1775 3600 1825 3600
-$Comp
-L CP1_Small C?
-U 1 1 59147B7C
-P 1775 3875
-F 0 "C?" H 1600 3850 50  0000 L CNN
-F 1 "10uF" H 1500 3950 50  0000 L CNN
-F 2 "" H 1125 2625 50  0001 C CNN
-F 3 "" H 1125 2625 50  0001 C CNN
-	1    1775 3875
-	1    0    0    -1  
-$EndComp
 Connection ~ 1775 3750
 Wire Wire Line
 	1775 3975 1775 4000
 Connection ~ 1775 4000
-$Comp
-L CP1_Small C?
-U 1 1 59147B86
-P 1775 4425
-F 0 "C?" H 1600 4400 50  0000 L CNN
-F 1 "10uF" H 1500 4500 50  0000 L CNN
-F 2 "" H 1125 3175 50  0001 C CNN
-F 3 "" H 1125 3175 50  0001 C CNN
-	1    1775 4425
-	-1   0    0    1   
-$EndComp
-$Comp
-L CP1_Small C?
-U 1 1 59147B8D
-P 3400 3975
-F 0 "C?" H 3225 3950 50  0000 L CNN
-F 1 "10uF" H 3125 4050 50  0000 L CNN
-F 2 "" H 2750 2725 50  0001 C CNN
-F 3 "" H 2750 2725 50  0001 C CNN
-	1    3400 3975
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 3875 3400 3800
 Wire Wire Line
@@ -348,20 +315,6 @@ F 6 "$0.39" H 2725 -2000 60  0001 C CNN "Price (Digikey)"
 	1    4750 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L MAX1720 U?
-U 1 1 59147C23
-P 2525 3850
-F 0 "U?" H 2550 4437 60  0000 C CNN
-F 1 "MAX1720" H 2550 4331 60  0000 C CNN
-F 2 "" H -225 1625 60  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/MAX1720-D.PDF" H -625 925 60  0001 C CNN
-F 4 "MAX1720EUTG" H -325 725 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/on-semiconductor/MAX1720EUTG/MAX1720EUTGOSCT-ND/2705019" H -1125 825 60  0001 C CNN "Digikey Link"
-F 6 "$0,73" H 325 725 60  0001 C CNN "Digikey Price"
-	1    2525 3850
-	1    0    0    -1  
-$EndComp
 Text HLabel 1150 825  0    60   Input ~ 0
 +5V
 Text HLabel 2350 825  2    60   Output ~ 0
@@ -401,6 +354,59 @@ F 3 "" H 125 250 50  0001 C CNN
 	1    1250 1000
 	0    -1   -1   0   
 $EndComp
-Text Notes 1900 5250 0    60   ~ 0
-ToDo: Revisar si con un inverter alcanza o si hay que agregar uno más
+Text Notes 1375 6550 0    60   ~ 0
+Cosumos:\n- Inverter LM2776 entrega 200mA, consumo < 100mA\n- Regulador -3V0 entrega 100mA, consumo < 100mA\n- Regulador +3V3 entrega 200mA, consumo < 100mA
+$Comp
+L LM2776DBVR U?
+U 1 1 5917F1EA
+P 2525 3850
+F 0 "U?" H 2550 4437 60  0000 C CNN
+F 1 "LM2776DBVR" H 2550 4331 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H -550 300 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2776.pdf" H -950 -400 60  0001 C CNN
+F 4 "LM2776DBVR" H -650 -600 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/texas-instruments/LM2776DBVR/296-43957-1-ND/5973203" H -1450 -500 60  0001 C CNN "Digikey Link"
+F 6 "$1.10" H 0   -600 60  0001 C CNN "Digikey Price"
+	1    2525 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5917F338
+P 1775 3875
+F 0 "C?" H 1867 3921 50  0000 L CNN
+F 1 "4.7uF" H 1475 3925 50  0000 L CNN
+F 2 "" H -1350 275 50  0001 C CNN
+F 3 "" H -1350 275 50  0001 C CNN
+	1    1775 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5918002D
+P 3400 3975
+F 0 "C?" H 3225 4050 50  0000 L CNN
+F 1 "1uF" V 3525 3925 50  0000 L CNN
+F 2 "" H 275 375 50  0001 C CNN
+F 3 "" H 275 375 50  0001 C CNN
+	1    3400 3975
+	1    0    0    -1  
+$EndComp
+Text Notes 3100 4650 0    60   ~ 0
+Flying Capacitor:\n1uF,10V\nCeramic\nX7R or X5R\n>1uF@2MHz
+Text Notes 500  3925 0    60   ~ 0
+Input Capacitor:\n10uF, 10V\nCeramic\nX7R or X5R\n10V\n>2uF@2MHz,DC_BIAS=5V
+Text Notes 875  4950 0    60   ~ 0
+Output Capacitor:\n10uF, 10V\nCeramic\nX7R or X5R\n>2uF@2MHz,DC_BIAS=5V
+$Comp
+L C_Small C?
+U 1 1 59180DB2
+P 1775 4425
+F 0 "C?" H 1867 4471 50  0000 L CNN
+F 1 "10uF" H 1575 4525 50  0000 L CNN
+F 2 "" H -1350 825 50  0001 C CNN
+F 3 "" H -1350 825 50  0001 C CNN
+	1    1775 4425
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
