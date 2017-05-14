@@ -27,6 +27,32 @@ X to2 3 50 -50 35 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# LM4040DYM3-2.5-TR
+#
+DEF LM4040DYM3-2.5-TR D 0 10 N N 1 F N
+F0 "D" 0 90 50 H V C CNN
+F1 "LM4040DYM3-2.5-TR" 0 -90 50 H V C CNN
+F2 "TO_SOT_Packages_SMD:SOT-23" -100 -10 50 H I C CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040" 50 -400 50 H I C CNN
+F4 "LM4040DYM3-2.5-TR" -650 -200 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-2.5-TR/576-1047-1-ND/771818" -150 -310 60 H I C CNN "Link Digikey"
+F6 "$0.30" -50 -210 60 H I C CNN "Price (Digikey)"
+F7 "2.5V" 0 240 60 H V C CNN "Vref"
+F8 "65uA < I < 15mA" 100 340 60 H V C CNN "Irange"
+$FPLIST
+ sot-23
+$ENDFPLIST
+DRAW
+P 2 0 1 0 30 0 -30 0 N
+P 3 0 1 0 -10 40 -30 40 -30 -40 N
+P 3 0 1 0 50 -50 50 0 100 0 N
+P 4 0 1 0 30 40 -30 0 30 -40 30 40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+X to2 3 50 -50 35 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # LM4041EIM3-1.2/NOPB
 #
 DEF LM4041EIM3-1.2/NOPB D 0 10 N N 1 F N

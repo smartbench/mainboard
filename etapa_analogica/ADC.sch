@@ -37,7 +37,8 @@ LIBS:tcr2ef13
 LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
-EELAYER 25 0
+LIBS:etapa_analogica-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -83,7 +84,7 @@ L D_Schottky_BAT54S-7-F D?
 U 1 1 5900605D
 P 7000 1975
 F 0 "D?" H 7125 2025 50  0000 L CNN
-F 1 "D_Schottky_BAT54S-7-F" H 6600 2150 50  0000 L CNN
+F 1 "D_Schottky_BAT54S-7-F" H 6500 2175 50  0000 L CNN
 F 2 "" H 3750 575 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3750 1275 50  0001 C CNN
 F 4 "BAT54S-7-F" H 4300 1075 60  0001 C CNN "Manuf. Part Number"
@@ -126,9 +127,9 @@ Text HLabel 2300 1100 0    60   Input ~ 0
 D_GND
 Text HLabel 1225 1125 0    60   Input ~ 0
 A_GND
-Text HLabel 1625 1975 2    60   Output ~ 0
+Text HLabel 1650 2175 2    60   Output ~ 0
 V_REF_DAC
-Text Label 1425 1975 2    60   ~ 0
+Text Label 1450 2175 2    60   ~ 0
 V_REF_DAC_1V2
 Text HLabel 6000 1775 0    60   Input ~ 0
 CHA_IN
@@ -424,7 +425,7 @@ F 3 "" H 4050 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4800 6275 0    60   ~ 0
-V_REF_TOP
+CHB_V_REF_TOP
 $Comp
 L R_Small R?
 U 1 1 5900EE4C
@@ -470,11 +471,11 @@ F 3 "" H 4325 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8000 2275 2    60   ~ 0
-V_REF_TOP
+CHA_V_REF_TOP
 Text Label 8000 2575 2    60   ~ 0
-V_REF_BOTTOM
+CHA_V_REF_BOTTOM
 Text Label 4825 6800 0    60   ~ 0
-V_REF_BOTTOM
+CHB_V_REF_BOTTOM
 Text Label 1100 5925 0    60   ~ 0
 VDD_A
 $Comp
@@ -557,9 +558,9 @@ F 3 "" H 1975 6875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 1650 1800 2    60   Output ~ 0
-V_REF_CENTER
+CHA_VREF_CENT
 Text Label 1425 1800 2    60   ~ 0
-V_REF_CENTER
+CHA_V_REF_CENTER
 Text HLabel 9475 4450 2    60   Output ~ 0
 CHB_D0
 Text HLabel 9475 4550 2    60   Output ~ 0
@@ -623,9 +624,9 @@ Text Label 8875 4025 1    60   ~ 0
 Text Label 8775 4025 1    60   ~ 0
 3V3_D
 Text Label 7975 5050 2    60   ~ 0
-V_REF_TOP
+CHB_V_REF_TOP
 Text Label 7975 5350 2    60   ~ 0
-V_REF_BOTTOM
+CHB_V_REF_BOTTOM
 $Comp
 L R_Small R?
 U 1 1 58FEC85C
@@ -687,7 +688,7 @@ F 3 "" H 1675 4200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 4800 6525 0    60   ~ 0
-V_REF_CENTER
+CHB_V_REF_CENTER
 $Comp
 L D_Schottky_BAT54-7-F D?
 U 1 1 58FEFD23
@@ -766,7 +767,7 @@ Text Notes 950  2550 0    60   ~ 0
 ADC Power Supply Filter
 Text Notes 975  5775 0    60   ~ 0
 DAC VOLTAGE REFERENCE (1.2V)
-Text Notes 6050 1275 0    60   ~ 0
+Text Notes 6450 1175 0    60   ~ 0
 ADC Input Protection
 Text Notes 6125 4025 0    60   ~ 0
 ADC Input Protection
@@ -798,6 +799,22 @@ F 8 "?mA < I < ?mA" H 1200 7040 60  0001 C CNN "Irange"
 	1    1100 6700
 	0    1    1    0   
 $EndComp
+$Comp
+L LM4040DYM3-2.5-TR D?
+U 1 1 5917F07E
+P 3450 6450
+F 0 "D?" V 3298 6517 50  0000 L CNN
+F 1 "LM4040DYM3-2.5-TR" H 3100 6250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H -1000 665 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040" H -850 275 50  0001 C CNN
+F 4 "LM4040DYM3-2.5-TR" H -1550 475 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-2.5-TR/576-1047-1-ND/771818" H -1050 365 60  0001 C CNN "Link Digikey"
+F 6 "$0.30" H -950 465 60  0001 C CNN "Price (Digikey)"
+F 7 "2.5V" H 3350 6175 60  0001 L CNN "Vref"
+F 8 "65uA < I < 15mA" H 3025 6275 60  0001 L CNN "Irange"
+	1    3450 6450
+	0    1    1    0   
+$EndComp
 Connection ~ 6900 1775
 Wire Wire Line
 	6300 1775 6575 1775
@@ -810,7 +827,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 1125 1225 1125
 Wire Wire Line
-	1425 1975 1625 1975
+	1450 2175 1650 2175
 Wire Wire Line
 	7000 2175 7000 2125
 Wire Wire Line
@@ -1053,25 +1070,234 @@ Wire Wire Line
 Wire Wire Line
 	1050 6850 1100 6850
 Connection ~ 1100 6850
-$Comp
-L LM4040D25FTA D?
-U 1 1 5913BB9F
-P 3450 6450
-F 0 "D?" H 3450 6540 50  0000 C CNN
-F 1 "LM4040D25FTA" H 3450 6360 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 3350 6440 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" H 3500 6050 50  0001 C CNN
-F 4 "LM4040D25FTA" H 2800 6250 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/LM4040D25FTA/LM4040D25FCT-ND/1557756" H 3300 6140 60  0001 C CNN "Link Digikey"
-F 6 "$0.50" H 3400 6240 60  0001 C CNN "Price (Digikey)"
-F 7 "2.5V" H 3450 6690 60  0001 C CNN "Vref"
-F 8 "?mA < I < ?mA" H 3550 6790 60  0001 C CNN "Irange"
-	1    3450 6450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3400 6500 3400 6600
 Wire Wire Line
 	3400 6600 3450 6600
 Connection ~ 3450 6600
+Text Label 3425 2200 0    60   ~ 0
+VDD_A
+$Comp
+L R_Small R?
+U 1 1 5918028B
+P 3425 2375
+F 0 "R?" V 3525 2350 50  0000 L CNN
+F 1 "R_Small" V 3300 2275 50  0000 L CNN
+F 2 "" H 525 -100 50  0001 C CNN
+F 3 "" H 525 -100 50  0001 C CNN
+	1    3425 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59180291
+P 4025 2725
+F 0 "C?" V 4117 2771 50  0000 L CNN
+F 1 "C_Small" V 3925 2600 50  0000 L CNN
+F 2 "" H 800 200 50  0001 C CNN
+F 3 "" H 800 200 50  0001 C CNN
+	1    4025 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59180297
+P 3425 3300
+F 0 "R?" V 3525 3275 50  0000 L CNN
+F 1 "R_Small" V 3325 3125 50  0000 L CNN
+F 2 "" H 525 825 50  0001 C CNN
+F 3 "" H 525 825 50  0001 C CNN
+	1    3425 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5918029D
+P 4300 2725
+F 0 "C?" V 4392 2771 50  0000 L CNN
+F 1 "C_Small" V 4200 2600 50  0000 L CNN
+F 2 "" H 1075 200 50  0001 C CNN
+F 3 "" H 1075 200 50  0001 C CNN
+	1    4300 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 591802A3
+P 3425 3450
+F 0 "#PWR?" H 3425 3200 50  0001 C CNN
+F 1 "GNDA" H 3425 3300 50  0000 C CNN
+F 2 "" H 3425 3450 50  0001 C CNN
+F 3 "" H 3425 3450 50  0001 C CNN
+	1    3425 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 591802A9
+P 4025 3275
+F 0 "C?" V 4117 3321 50  0000 L CNN
+F 1 "C_Small" V 3925 3150 50  0000 L CNN
+F 2 "" H 800 750 50  0001 C CNN
+F 3 "" H 800 750 50  0001 C CNN
+	1    4025 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 591802AF
+P 4025 3450
+F 0 "#PWR?" H 4025 3200 50  0001 C CNN
+F 1 "GNDA" H 4025 3300 50  0000 C CNN
+F 2 "" H 4025 3450 50  0001 C CNN
+F 3 "" H 4025 3450 50  0001 C CNN
+	1    4025 3450
+	1    0    0    -1  
+$EndComp
+Text Label 4775 2525 0    60   ~ 0
+CHA_V_REF_TOP
+$Comp
+L R_Small R?
+U 1 1 591802B6
+P 3650 2525
+F 0 "R?" V 3750 2500 50  0000 L CNN
+F 1 "R_Small" V 3525 2425 50  0000 L CNN
+F 2 "" H 750 50  50  0001 C CNN
+F 3 "" H 750 50  50  0001 C CNN
+	1    3650 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 591802BC
+P 3650 3050
+F 0 "R?" V 3750 3025 50  0000 L CNN
+F 1 "R_Small" V 3525 2950 50  0000 L CNN
+F 2 "" H 750 575 50  0001 C CNN
+F 3 "" H 750 575 50  0001 C CNN
+	1    3650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 591802C2
+P 4300 3250
+F 0 "C?" V 4392 3296 50  0000 L CNN
+F 1 "C_Small" V 4200 3125 50  0000 L CNN
+F 2 "" H 1075 725 50  0001 C CNN
+F 3 "" H 1075 725 50  0001 C CNN
+	1    4300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 591802C8
+P 4300 3450
+F 0 "#PWR?" H 4300 3200 50  0001 C CNN
+F 1 "GNDA" H 4300 3300 50  0000 C CNN
+F 2 "" H 4300 3450 50  0001 C CNN
+F 3 "" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    -1  
+$EndComp
+Text Label 4800 3050 0    60   ~ 0
+CHA_V_REF_BOTTOM
+$Comp
+L R_Small R?
+U 1 1 591802CF
+P 4550 2650
+F 0 "R?" V 4650 2625 50  0000 L CNN
+F 1 "R_Small" V 4425 2550 50  0000 L CNN
+F 2 "" H 1650 175 50  0001 C CNN
+F 3 "" H 1650 175 50  0001 C CNN
+	1    4550 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 591802D5
+P 4550 2925
+F 0 "R?" V 4650 2900 50  0000 L CNN
+F 1 "R_Small" V 4425 2825 50  0000 L CNN
+F 2 "" H 1650 450 50  0001 C CNN
+F 3 "" H 1650 450 50  0001 C CNN
+	1    4550 2925
+	-1   0    0    1   
+$EndComp
+Text Label 4775 2775 0    60   ~ 0
+CHA_V_REF_CENTER
+Text Notes 3325 1950 0    60   ~ 0
+ADC VOLTAGE REFERENCES\nTOP-BOTTOM = 2.5V
+$Comp
+L LM4040DYM3-2.5-TR D?
+U 1 1 591802E2
+P 3425 2700
+F 0 "D?" V 3273 2767 50  0000 L CNN
+F 1 "LM4040DYM3-2.5-TR" H 3075 2500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H -1025 -3085 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040" H -875 -3475 50  0001 C CNN
+F 4 "LM4040DYM3-2.5-TR" H -1575 -3275 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-2.5-TR/576-1047-1-ND/771818" H -1075 -3385 60  0001 C CNN "Link Digikey"
+F 6 "$0.30" H -975 -3285 60  0001 C CNN "Price (Digikey)"
+F 7 "2.5V" H 3325 2425 60  0001 L CNN "Vref"
+F 8 "65uA < I < 15mA" H 3000 2525 60  0001 L CNN "Irange"
+	1    3425 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3425 2475 3425 2600
+Connection ~ 3425 2525
+Wire Wire Line
+	3425 2275 3425 2200
+Wire Wire Line
+	3425 2800 3425 3200
+Connection ~ 3425 3050
+Wire Wire Line
+	4025 2525 4025 2625
+Connection ~ 4025 2525
+Wire Wire Line
+	4300 2525 4300 2625
+Connection ~ 4300 2525
+Wire Wire Line
+	3425 3450 3425 3400
+Wire Wire Line
+	4025 2825 4025 3175
+Wire Wire Line
+	4300 2825 4300 3150
+Connection ~ 4025 3050
+Wire Wire Line
+	4025 3450 4025 3375
+Wire Wire Line
+	3750 3050 4800 3050
+Wire Wire Line
+	3750 2525 4775 2525
+Wire Wire Line
+	3550 2525 3425 2525
+Wire Wire Line
+	3550 3050 3425 3050
+Connection ~ 4300 3050
+Wire Wire Line
+	4300 3450 4300 3350
+Wire Wire Line
+	4550 3025 4550 3050
+Connection ~ 4550 3050
+Wire Wire Line
+	4550 2750 4550 2825
+Wire Wire Line
+	4550 2550 4550 2525
+Connection ~ 4550 2525
+Wire Wire Line
+	4550 2775 4775 2775
+Connection ~ 4550 2775
+Wire Wire Line
+	3375 2750 3375 2850
+Wire Wire Line
+	3375 2850 3425 2850
+Connection ~ 3425 2850
+Text HLabel 1650 1975 2    60   Output ~ 0
+CHB_VREF_CENT
+Text Label 1425 1975 2    60   ~ 0
+CHB_V_REF_CENTER
+Wire Wire Line
+	1650 1975 1425 1975
 $EndSCHEMATC
