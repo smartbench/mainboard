@@ -1619,8 +1619,8 @@ Wire Wire Line
 	6150 5800 6150 5350
 Wire Wire Line
 	6150 5350 6600 5350
-Text HLabel 3600 3300 2    60   Output ~ 12
-+5V
 Text Notes 3700 3000 0    51   ~ 0
 Fault is active low.
+Text HLabel 3600 3300 2    60   Output ~ 12
++5V
 $EndSCHEMATC
