@@ -37,8 +37,9 @@ LIBS:tcr2ef13
 LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
+LIBS:DACs
 LIBS:etapa_analogica-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -66,7 +67,7 @@ U 1 1 58FE6F30
 P 4250 1725
 F 0 "U?" H 4450 2500 50  0000 C CNN
 F 1 "CD4051BM96" V 4275 1650 50  0000 C CNN
-F 2 "" H 1450 -2275 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 1450 -2275 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" H 1450 -2275 50  0001 C CNN
 F 4 "CD4051BM96" V 4175 1650 60  0000 C CNN "Manuf. Part Number"
 	1    4250 1725
@@ -78,7 +79,7 @@ U 1 1 58FE6F38
 P 5225 1075
 F 0 "U?" H 5425 1250 50  0000 L CNN
 F 1 "CLC4007" H 5500 1025 50  0000 L CNN
-F 2 "" H 250 425 50  0001 C CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 250 425 50  0001 C CNN
 F 3 "https://www.exar.com/content/document.ashx?id=21366" H 350 525 50  0001 C CNN
 F 4 "CLC4007ITP14MTR" H 5350 950 60  0000 L CNN "Manuf. Part Number"
 	1    5225 1075
@@ -90,17 +91,6 @@ Text HLabel 1100 800  0    60   Input ~ 0
 VDD_A
 Text HLabel 1100 950  0    60   Input ~ 0
 VSS_A
-$Comp
-L GNDD #PWR?
-U 1 1 58FE6F44
-P 3400 1775
-F 0 "#PWR?" H -1050 -2300 50  0001 C CNN
-F 1 "GNDD" H 3405 1602 50  0000 C CNN
-F 2 "" H -1050 -2050 50  0001 C CNN
-F 3 "" H -1050 -2050 50  0001 C CNN
-	1    3400 1775
-	0    1    1    0   
-$EndComp
 Text HLabel 4550 975  0    60   Input ~ 0
 CHA_IN
 Text Label 5100 1725 0    60   ~ 0
@@ -501,7 +491,7 @@ U 1 1 58FED03E
 P 4250 4575
 F 0 "U?" H 4450 5350 50  0000 C CNN
 F 1 "CD4051BM96" V 4275 4500 50  0000 C CNN
-F 2 "" H 1450 575 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 1450 575 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" H 1450 575 50  0001 C CNN
 F 4 "CD4051BM96" V 4175 4500 60  0000 C CNN "Manuf. Part Number"
 	1    4250 4575
@@ -513,7 +503,7 @@ U 2 1 58FED045
 P 5225 3925
 F 0 "U?" H 5425 4100 50  0000 L CNN
 F 1 "CLC4007" H 5500 3875 50  0000 L CNN
-F 2 "" H 250 3275 50  0001 C CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 250 3275 50  0001 C CNN
 F 3 "https://www.exar.com/content/document.ashx?id=21366" H 350 3375 50  0001 C CNN
 F 4 "CLC4007ITP14MTR" H 5350 3800 60  0000 L CNN "Manuf. Part Number"
 	2    5225 3925
@@ -521,17 +511,6 @@ F 4 "CLC4007ITP14MTR" H 5350 3800 60  0000 L CNN "Manuf. Part Number"
 $EndComp
 Text HLabel 7675 3925 2    60   Input ~ 0
 CHB_OUT
-$Comp
-L GNDD #PWR?
-U 1 1 58FED04C
-P 3400 4625
-F 0 "#PWR?" H -1050 550 50  0001 C CNN
-F 1 "GNDD" H 3405 4452 50  0000 C CNN
-F 2 "" H -1050 800 50  0001 C CNN
-F 3 "" H -1050 800 50  0001 C CNN
-	1    3400 4625
-	0    1    1    0   
-$EndComp
 Text HLabel 4550 3825 0    60   Input ~ 0
 CHB_IN
 Text Label 5100 4575 0    60   ~ 0
@@ -880,4 +859,26 @@ Wire Wire Line
 	7725 4525 7725 4725
 Wire Wire Line
 	7975 4725 7975 4525
+$Comp
+L GNDA #PWR?
+U 1 1 59307D73
+P 3400 1775
+F 0 "#PWR?" H 3400 1525 50  0001 C CNN
+F 1 "GNDA" H 3400 1625 50  0000 C CNN
+F 2 "" H 3400 1775 50  0001 C CNN
+F 3 "" H 3400 1775 50  0001 C CNN
+	1    3400 1775
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 59307F0B
+P 3400 4625
+F 0 "#PWR?" H 3400 4375 50  0001 C CNN
+F 1 "GNDA" H 3400 4475 50  0000 C CNN
+F 2 "" H 3400 4625 50  0001 C CNN
+F 3 "" H 3400 4625 50  0001 C CNN
+	1    3400 4625
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

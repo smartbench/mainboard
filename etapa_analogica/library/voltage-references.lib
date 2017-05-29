@@ -27,6 +27,32 @@ X to2 3 50 -50 35 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# LM4040DYM3-2.5-TR
+#
+DEF LM4040DYM3-2.5-TR D 0 10 N N 1 F N
+F0 "D" 0 90 50 H V C CNN
+F1 "LM4040DYM3-2.5-TR" 0 -90 50 H V C CNN
+F2 "TO_SOT_Packages_SMD:SOT-23" -100 -10 50 H I C CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040" 50 -400 50 H I C CNN
+F4 "LM4040DYM3-2.5-TR" -650 -200 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-2.5-TR/576-1047-1-ND/771818" -150 -310 60 H I C CNN "Link Digikey"
+F6 "$0.30" -50 -210 60 H I C CNN "Price (Digikey)"
+F7 "2.5V" 0 240 60 H V C CNN "Vref"
+F8 "65uA < I < 15mA" 100 340 60 H V C CNN "Irange"
+$FPLIST
+ sot-23
+$ENDFPLIST
+DRAW
+P 2 0 1 0 30 0 -30 0 N
+P 3 0 1 0 -10 40 -30 40 -30 -40 N
+P 3 0 1 0 50 -50 50 0 100 0 N
+P 4 0 1 0 30 40 -30 0 30 -40 30 40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+X to2 3 50 -50 35 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # LM4041EIM3-1.2/NOPB
 #
 DEF LM4041EIM3-1.2/NOPB D 0 10 N N 1 F N
@@ -50,6 +76,30 @@ P 4 0 1 0 30 40 -30 0 30 -40 30 40 F
 X K 1 -100 0 70 R 50 50 1 1 P
 X A 2 100 0 70 L 50 50 1 1 P
 X to2 3 50 -50 35 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MCP4716
+#
+DEF MCP4716 U 0 40 Y Y 1 F N
+F0 "U" 100 -300 60 H V C CNN
+F1 "MCP4716" 250 -400 60 H V C CNN
+F2 "TO_SOT_Packages_SMD:SOT-23-6" 50 0 60 H I C CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22272C.pdf" -450 -700 60 H I C CNN
+F4 "MCP4716A0T-E/CH" -500 -500 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/microchip-technology/MCP4716A0T-E-CH/MCP4716A0T-E-CHCT-ND/2684987" -450 -600 60 H I C CNN "Link Digikey"
+F6 "$0.84" 250 -500 60 H I C CNN "Price (Digikey)"
+$FPLIST
+ sot-23-6
+$ENDFPLIST
+DRAW
+S -250 250 250 -250 0 1 0 N
+X Vout 1 350 0 100 L 50 50 1 1 O
+X VSS 2 0 -350 100 U 50 50 1 1 W
+X VDD 3 0 350 100 D 50 50 1 1 W
+X SDA 4 -350 -50 100 R 50 50 1 1 I
+X SCL 5 -350 -150 100 R 50 50 1 1 I
+X Vref 6 -350 150 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

@@ -37,8 +37,9 @@ LIBS:tcr2ef13
 LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
+LIBS:DACs
 LIBS:etapa_analogica-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -190,7 +191,7 @@ AR Path="/58FD10E9/58FD2343/58FD2939/58FD30BB" Ref="D?"  Part="1"
 AR Path="/58FE2814/58FD30BB" Ref="D?"  Part="1" 
 F 0 "D?" V 5679 2004 50  0000 L CNN
 F 1 "D_Schottky_BAT54S-7-F" V 5770 2004 50  0000 L CNN
-F 2 "" H 2425 -175 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2425 -175 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 2425 525 50  0001 C CNN
 F 4 "BAT54S-7-F" H 2975 325 60  0001 C CNN "Manuf. Part Number"
 F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 2325 425 60  0001 C CNN "Link Digikey"
@@ -352,7 +353,7 @@ AR Path="/58FD10E9/58FD2343/58FD2939/58FD369A" Ref="D?"  Part="1"
 AR Path="/58FE2814/58FD369A" Ref="D?"  Part="1" 
 F 0 "D?" V 5654 4704 50  0000 L CNN
 F 1 "D_Schottky_BAT54S-7-F" V 5745 4704 50  0000 L CNN
-F 2 "" H 2400 2525 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2400 2525 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 2400 3225 50  0001 C CNN
 F 4 "BAT54S-7-F" H 2950 3025 60  0001 C CNN "Manuf. Part Number"
 F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 2300 3125 60  0001 C CNN "Link Digikey"
@@ -376,7 +377,7 @@ AR Path="/58FD10E9/58FD2343/58FD2939/58FD3C88" Ref="U?"  Part="1"
 AR Path="/58FE2814/58FD3C88" Ref="U?"  Part="1" 
 F 0 "U?" H 8600 2625 50  0000 C CNN
 F 1 "CD4051BM96" V 8525 1975 50  0000 C CNN
-F 2 "" H 5175 125 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5175 125 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" H 5175 125 50  0001 C CNN
 F 4 "CD4051BM96" V 8625 1950 60  0000 C CNN "Manuf. Part Number"
 	1    8475 1875
@@ -384,19 +385,6 @@ F 4 "CD4051BM96" V 8625 1950 60  0000 C CNN "Manuf. Part Number"
 $EndComp
 Text HLabel 1300 1600 0    60   Input ~ 0
 VDD_A
-$Comp
-L GNDD #PWR?
-U 1 1 58FD3C93
-P 8425 2725
-AR Path="/58FD10E9/58FD2343/58FD2939/58FD3C93" Ref="#PWR?"  Part="1" 
-AR Path="/58FE2814/58FD3C93" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3975 -1350 50  0001 C CNN
-F 1 "GNDD" H 8430 2552 50  0000 C CNN
-F 2 "" H 3975 -1100 50  0001 C CNN
-F 3 "" H 3975 -1100 50  0001 C CNN
-	1    8425 2725
-	1    0    0    -1  
-$EndComp
 $Comp
 L GNDA #PWR?
 U 1 1 58FD3C99
@@ -480,23 +468,10 @@ AR Path="/58FD10E9/58FD2343/58FD2939/58FD3D75" Ref="U?"  Part="1"
 AR Path="/58FE2814/58FD3D75" Ref="U?"  Part="1" 
 F 0 "U?" H 8625 5350 50  0000 C CNN
 F 1 "CD4051BM96" V 8550 4700 50  0000 C CNN
-F 2 "" H 5200 2850 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5200 2850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" H 5200 2850 50  0001 C CNN
 F 4 "CD4051BM96" V 8650 4675 60  0000 C CNN "Manuf. Part Number"
 	1    8500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR?
-U 1 1 58FD3D7F
-P 8450 5450
-AR Path="/58FD10E9/58FD2343/58FD2939/58FD3D7F" Ref="#PWR?"  Part="1" 
-AR Path="/58FE2814/58FD3D7F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4000 1375 50  0001 C CNN
-F 1 "GNDD" H 8455 5277 50  0000 C CNN
-F 2 "" H 4000 1625 50  0001 C CNN
-F 3 "" H 4000 1625 50  0001 C CNN
-	1    8450 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -808,4 +783,26 @@ Wire Wire Line
 	4300 1275 4300 1225
 Wire Wire Line
 	4800 1275 4800 1225
+$Comp
+L GNDA #PWR?
+U 1 1 59307380
+P 8425 2725
+F 0 "#PWR?" H 8425 2475 50  0001 C CNN
+F 1 "GNDA" H 8425 2575 50  0000 C CNN
+F 2 "" H 8425 2725 50  0001 C CNN
+F 3 "" H 8425 2725 50  0001 C CNN
+	1    8425 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5930763B
+P 8450 5450
+F 0 "#PWR?" H 8450 5200 50  0001 C CNN
+F 1 "GNDA" H 8450 5300 50  0000 C CNN
+F 2 "" H 8450 5450 50  0001 C CNN
+F 3 "" H 8450 5450 50  0001 C CNN
+	1    8450 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

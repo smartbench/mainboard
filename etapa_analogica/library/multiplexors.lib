@@ -34,11 +34,15 @@ ENDDEF
 DEF CD4051BM96 U 0 10 Y Y 1 F N
 F0 "U" 0 0 50 H V C CNN
 F1 "CD4051BM96" 0 -150 50 H V C CNN
-F2 "" -100 -100 50 H I C CNN
-F3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" 0 0 50 H I C CNN
-F4 "CD4051BM96" 100 100 60 H I C CNN "Manuf. Part Number"
-F5 "https://www.digikey.com/product-detail/en/texas-instruments/CD4051BM96/296-14271-1-ND/528348" 200 200 60 H I C CNN "Link Digikey"
-F6 "$0.42" 300 300 60 H I C CNN "Price"
+F2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" -100 -100 50 H I C CNN
+F3 "http://www.ti.com/lit/ds/symlink/cd4051b.pdf" -400 -1200 50 H I C CNN
+F4 "CD4051BM96" -450 -1400 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/texas-instruments/CD4051BM96/296-14271-1-ND/528348" -700 -1000 60 H I C CNN "Link Digikey"
+F6 "$0.42" 250 -1400 60 H I C CNN "Price"
+$FPLIST
+ soic16
+ soic-16
+$ENDFPLIST
 DRAW
 X VEE 7 150 -850 150 U 50 50 0 0 W
 X GND 8 -50 -850 150 U 50 50 0 0 W

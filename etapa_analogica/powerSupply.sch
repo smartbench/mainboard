@@ -37,8 +37,9 @@ LIBS:tcr2ef13
 LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
+LIBS:DACs
 LIBS:etapa_analogica-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
