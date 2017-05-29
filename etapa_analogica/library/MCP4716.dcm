@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP4716
+D DAC 10 bits
+K DAC
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22272C.pdf
+$ENDCMP
+#
+#End Doc Library

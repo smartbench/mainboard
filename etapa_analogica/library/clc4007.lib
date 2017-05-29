@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.3
 DEF CLC4007 U 0 20 Y Y 4 F N
 F0 "U" 0 200 50 H V L CNN
 F1 "CLC4007" 0 -200 50 H V L CNN
-F2 "" -50 100 50 H I C CNN
+F2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" -50 100 50 H I C CNN
 F3 "https://www.exar.com/content/document.ashx?id=21366" 50 200 50 H I C CNN
 F4 "CLC4007ITP14MTR" 100 300 60 H I C CNN "Manuf. Part Number"
 F5 "https://www.digikey.com/product-detail/en/exar-corporation/CLC4007ITP14MTR/1016-2025-1-ND/4870807" 200 400 60 H I C CNN "Link Digikey"

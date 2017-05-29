@@ -1,4 +1,4 @@
-update=sáb 27 may 2017 12:13:12 ART
+update=lun 29 may 2017 14:46:49 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,4 +67,4 @@ LibName35=library/tcr2ef13
 LibName36=library/max1720
 LibName37=library/voltage-regulators
 LibName38=library/voltage-references
-LibName39=library/lm4040dym3-2
+LibName39=library/DACs
