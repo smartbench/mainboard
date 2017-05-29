@@ -38,7 +38,6 @@ LIBS:my_regul
 LIBS:my_74xx
 LIBS:MIC2005A-2
 LIBS:AS4C1M16S
-LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -95,7 +94,7 @@ Text Label 6050 3700 0    60   ~ 0
 IOR_140
 Text Notes 5150 1600 0    60   ~ 12
 FPGA BANK 1\n(RIGHT BANK)
-Text Notes 7150 1550 0    60   ~ 12
+Text Notes 7150 1450 0    60   ~ 12
 RIGHT HEADER
 Text Label 6050 2400 0    60   ~ 0
 IOR_112
@@ -212,61 +211,61 @@ Text Notes 2400 3050 2    60   ~ 0
 Available pins for ADC connections
 Text Notes 2750 2300 2    60   ~ 0
 TO LEFT CONNECTOR
-Text Label 7850 3900 2    60   ~ 0
-IOR_139
 Text Label 7850 3800 2    60   ~ 0
+IOR_139
+Text Label 7850 3700 2    60   ~ 0
 IOR_138
-Text Label 7850 3400 2    60   ~ 0
+Text Label 7850 3500 2    60   ~ 0
 IOR_137
-Text Label 7850 4200 2    60   ~ 0
-IOR_146
 Text Label 7850 4100 2    60   ~ 0
-IOR_144
+IOR_146
 Text Label 7850 4000 2    60   ~ 0
+IOR_144
+Text Label 7850 3900 2    60   ~ 0
 IOR_140
-Text Label 7850 2400 2    60   ~ 0
-IOR_112
-Text Label 7850 2300 2    60   ~ 0
-IOR_111
-Text Label 7850 2200 2    60   ~ 0
-IOR_110
-Text Label 7850 2100 2    60   ~ 0
-IOR_109
-Text Label 7850 2800 2    60   ~ 0
-IOR_117
-Text Label 7850 2700 2    60   ~ 0
-IOR_116
-Text Label 7850 2600 2    60   ~ 0
-IOR_115
 Text Label 7850 2500 2    60   ~ 0
-IOR_114
-Text Label 7850 3200 2    60   ~ 0
-IOR_128
-Text Label 7850 3100 2    60   ~ 0
-IOR_120
-Text Label 7850 3000 2    60   ~ 0
-IOR_119
+IOR_112
+Text Label 7850 2400 2    60   ~ 0
+IOR_111
+Text Label 7850 2300 2    60   ~ 0
+IOR_110
+Text Label 7850 2200 2    60   ~ 0
+IOR_109
 Text Label 7850 2900 2    60   ~ 0
-IOR_118
+IOR_117
+Text Label 7850 2800 2    60   ~ 0
+IOR_116
+Text Label 7850 2700 2    60   ~ 0
+IOR_115
+Text Label 7850 2600 2    60   ~ 0
+IOR_114
 Text Label 7850 3300 2    60   ~ 0
+IOR_128
+Text Label 7850 3200 2    60   ~ 0
+IOR_120
+Text Label 7850 3100 2    60   ~ 0
+IOR_119
+Text Label 7850 3000 2    60   ~ 0
+IOR_118
+Text Label 7850 3400 2    60   ~ 0
 IOR_136
-Text Label 7850 4300 2    60   ~ 0
+Text Label 7850 4200 2    60   ~ 0
 IOR_147
-Text Label 7850 4400 2    60   ~ 0
+Text Label 7850 4300 2    60   ~ 0
 IOR_148
-Text Label 7850 4500 2    60   ~ 0
+Text Label 7850 4400 2    60   ~ 0
 IOR_152
-Text Label 7850 4600 2    60   ~ 0
+Text Label 7850 4500 2    60   ~ 0
 IOR_160
-Text Label 7850 4700 2    60   ~ 0
+Text Label 7850 4600 2    60   ~ 0
 IOR_161
-Text Label 7850 4800 2    60   ~ 0
+Text Label 7850 4700 2    60   ~ 0
 IOR_164
-Text Label 7850 4900 2    60   ~ 0
+Text Label 7850 4800 2    60   ~ 0
 IOR_165
-Text Label 7850 5000 2    60   ~ 0
+Text Label 7850 4900 2    60   ~ 0
 IOR_166
-Text Label 7850 5100 2    60   ~ 0
+Text Label 7850 5000 2    60   ~ 0
 IOR_167
 $Comp
 L C C406
@@ -285,15 +284,15 @@ $EndComp
 $Comp
 L C C405
 U 1 1 58E823D3
-P 7150 1750
-F 0 "C405" H 6900 1800 50  0000 L CNN
-F 1 "100nF" H 6800 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7188 1600 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7150 1750 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 7150 1750 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 7150 1750 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 7150 1750 60  0001 C CNN "VDC"
-	1    7150 1750
+P 7150 1850
+F 0 "C405" H 6900 1900 50  0000 L CNN
+F 1 "100nF" H 6800 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7188 1700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7150 1850 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 7150 1850 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 7150 1850 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 7150 1850 60  0001 C CNN "VDC"
+	1    7150 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -330,22 +329,11 @@ Wire Wire Line
 Wire Wire Line
 	7850 5600 7850 5300
 Connection ~ 7700 5600
+Connection ~ 7150 1700
 Wire Wire Line
-	6950 1600 7850 1600
+	7150 2000 7150 2100
 Wire Wire Line
-	7850 1600 7850 1900
-Connection ~ 7150 1600
-Wire Wire Line
-	7150 1900 7150 2000
-Wire Wire Line
-	6950 2000 7850 2000
-Wire Wire Line
-	7300 3500 7850 3500
-Wire Wire Line
-	7850 3600 7700 3600
-Wire Wire Line
-	7700 3500 7700 3700
-Connection ~ 7700 3500
+	6950 2100 7850 2100
 Text HLabel 3300 2050 0    60   BiDi ~ 12
 IOT_168
 Text HLabel 3300 2150 0    60   BiDi ~ 12
@@ -360,9 +348,6 @@ Text HLabel 3300 2550 0    60   BiDi ~ 12
 IOT_173
 Text HLabel 3300 2650 0    60   BiDi ~ 12
 IOT_174
-Wire Wire Line
-	7700 3700 7850 3700
-Connection ~ 7700 3600
 Text HLabel 3300 4550 0    60   BiDi ~ 12
 DQ15
 Text HLabel 3300 4650 0    60   BiDi ~ 12
@@ -411,7 +396,7 @@ Text HLabel 3050 5050 0    60   Input ~ 12
 +3.3V
 Text HLabel 7400 5200 0    60   Input ~ 12
 +3.3V
-Text HLabel 6950 1600 0    60   Input ~ 12
+Text HLabel 6950 1700 0    60   Input ~ 12
 +3.3V
 Text HLabel 6650 5350 2    60   Input ~ 12
 +3.3V
@@ -425,11 +410,11 @@ Text HLabel 7400 5600 0    60   Input ~ 12
 GNDD
 Wire Wire Line
 	7700 5600 7700 5500
-Text HLabel 7300 3500 0    60   Input ~ 12
+Text HLabel 7300 3600 0    60   Input ~ 12
 GNDD
-Text HLabel 6950 2000 0    60   Input ~ 12
+Text HLabel 6950 2100 0    60   Input ~ 12
 GNDD
-Connection ~ 7150 2000
+Connection ~ 7150 2100
 $Comp
 L LED_ALT D401
 U 1 1 58F9FF73
@@ -766,4 +751,24 @@ Text Label 6050 3800 0    60   ~ 0
 OSC
 Text Label 5600 6450 0    60   ~ 0
 OSC
+Wire Wire Line
+	7300 3600 7850 3600
+Wire Wire Line
+	6950 1700 7300 1700
+Wire Wire Line
+	7300 1700 7300 2000
+Wire Wire Line
+	7300 2000 7850 2000
+Text HLabel 6950 1600 0    60   Input ~ 12
++5V
+Wire Wire Line
+	6950 1600 7400 1600
+Wire Wire Line
+	7400 1600 7400 1900
+Wire Wire Line
+	7400 1900 7850 1900
+Text HLabel 7400 5100 0    60   Input ~ 12
++5V
+Wire Wire Line
+	7400 5100 7850 5100
 $EndSCHEMATC

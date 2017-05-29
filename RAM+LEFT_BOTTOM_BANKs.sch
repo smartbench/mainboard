@@ -38,7 +38,6 @@ LIBS:my_regul
 LIBS:my_74xx
 LIBS:MIC2005A-2
 LIBS:AS4C1M16S
-LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -178,15 +177,15 @@ $EndComp
 $Comp
 L C C512
 U 1 1 58E817F5
-P 10300 1950
-F 0 "C512" H 10400 1950 50  0000 L CNN
-F 1 "100nF" H 10350 1850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10338 1800 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10300 1950 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 10300 1950 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 10300 1950 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 10300 1950 60  0001 C CNN "VDC"
-	1    10300 1950
+P 10000 1950
+F 0 "C512" H 10100 1950 50  0000 L CNN
+F 1 "100nF" H 10050 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10038 1800 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10000 1950 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 10000 1950 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 10000 1950 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 10000 1950 60  0001 C CNN "VDC"
+	1    10000 1950
 	1    0    0    -1  
 $EndComp
 Text Label 5800 2400 0    60   ~ 0
@@ -526,18 +525,13 @@ Wire Wire Line
 	4900 5000 4900 5100
 Connection ~ 4900 5100
 Wire Wire Line
-	10050 5050 10050 5200
+	10050 5200 10050 5050
 Wire Wire Line
 	9050 5200 10350 5200
 Wire Wire Line
 	1800 5700 2550 5700
 Wire Wire Line
-	10300 2200 10300 2100
-Wire Wire Line
 	9050 1800 10300 1800
-Wire Wire Line
-	9550 1650 9550 1800
-Connection ~ 9550 1800
 Wire Wire Line
 	9050 1900 9300 1900
 Wire Wire Line
@@ -547,7 +541,7 @@ Wire Wire Line
 	9300 2000 9050 2000
 Connection ~ 9300 1900
 Wire Wire Line
-	9050 2100 9700 2100
+	9050 2100 10300 2100
 Wire Wire Line
 	9050 2200 9250 2200
 Wire Wire Line
@@ -616,8 +610,6 @@ Wire Wire Line
 	9050 3400 9650 3400
 NoConn ~ 5800 4400
 NoConn ~ 5800 4500
-Wire Wire Line
-	9050 3100 9050 4600
 Connection ~ 9050 3200
 Connection ~ 9050 3300
 Connection ~ 9050 3400
@@ -640,13 +632,11 @@ Text HLabel 5250 1450 2    60   Input Italic 12
 +3.3V
 Text HLabel 7750 1900 2    60   Input Italic 12
 +3.3V
-Text HLabel 9550 1650 2    60   Input Italic 12
+Text HLabel 10300 1800 2    60   Input Italic 12
 +3.3V
 Text HLabel 10350 5200 2    60   Input Italic 12
 GNDD
-Text HLabel 10300 2200 2    60   Input Italic 12
-GNDD
-Text HLabel 9700 2100 2    60   Input Italic 12
+Text HLabel 10300 2100 2    60   Input Italic 12
 GNDD
 Text HLabel 9650 3400 2    60   Input Italic 12
 GNDD
@@ -679,4 +669,12 @@ Wire Wire Line
 Wire Wire Line
 	2300 4950 2300 5400
 Connection ~ 2300 5400
+Text HLabel 10350 4600 2    60   Input ~ 12
++5V
+Wire Wire Line
+	9050 4600 10350 4600
+Wire Wire Line
+	9050 3100 9050 4500
+Connection ~ 10000 1800
+Connection ~ 10000 2100
 $EndSCHEMATC
