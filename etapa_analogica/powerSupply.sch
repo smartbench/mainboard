@@ -38,6 +38,7 @@ LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
 LIBS:DACs
+LIBS:etapa_analogica-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -57,16 +58,10 @@ Text Label 5825 4200 0    60   ~ 0
 Wire Wire Line
 	1775 3750 1825 3750
 Wire Wire Line
-	1775 3450 1775 3600
-Wire Wire Line
-	1775 3600 1775 3750
-Wire Wire Line
-	1775 3750 1775 3775
+	1775 3450 1775 3775
 Connection ~ 1775 3600
 Wire Wire Line
-	1650 4000 1775 4000
-Wire Wire Line
-	1775 4000 1825 4000
+	1650 4000 1825 4000
 Text Label 1550 3450 2    60   ~ 0
 +5V
 $Comp
@@ -112,24 +107,16 @@ Wire Wire Line
 Text Label 1550 4250 2    60   ~ 0
 -5V
 Wire Wire Line
-	1550 4250 1775 4250
-Wire Wire Line
-	1775 4250 1825 4250
+	1550 4250 1825 4250
 Wire Wire Line
 	1775 4325 1775 4250
 Connection ~ 1775 4250
 Text Label 3850 1725 2    60   ~ 0
 +5V
 Wire Wire Line
-	3850 1725 4250 1725
+	3850 1725 4750 1725
 Wire Wire Line
-	4250 1725 4750 1725
-Wire Wire Line
-	4250 1725 4250 2050
-Wire Wire Line
-	4250 2050 4250 2100
-Wire Wire Line
-	4250 2050 4250 2050
+	4250 1725 4250 2100
 Wire Wire Line
 	4250 2050 4300 2050
 Connection ~ 4250 2050
@@ -145,9 +132,7 @@ F 3 "" H 3125 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 2300 4250 2350
-Wire Wire Line
-	4250 2350 4250 2400
+	4250 2300 4250 2400
 $Comp
 L C_Small C?
 U 1 1 59147BAF
@@ -173,9 +158,7 @@ F 4 "GRM188R61C105KA93D" H 5875 2050 60  0000 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 2050 5300 2050
-Wire Wire Line
-	5300 2050 5450 2050
+	5200 2050 5450 2050
 Wire Wire Line
 	5300 2050 5300 2100
 $Comp
@@ -201,17 +184,11 @@ Text Label 5450 2050 0    60   ~ 0
 +3V3
 Connection ~ 5300 2050
 Wire Wire Line
-	5300 4200 5375 4200
-Wire Wire Line
-	5375 4200 5575 4200
-Wire Wire Line
-	5575 4200 5825 4200
+	5300 4200 5825 4200
 Text Label 4050 4200 2    60   ~ 0
 -5V
 Wire Wire Line
-	4050 4200 4225 4200
-Wire Wire Line
-	4225 4200 4300 4200
+	4050 4200 4300 4200
 $Comp
 L CP1_Small C?
 U 1 1 59147BD0
@@ -261,9 +238,7 @@ Connection ~ 5375 4200
 Wire Wire Line
 	5125 3800 4800 3800
 Wire Wire Line
-	4800 3750 4800 3800
-Wire Wire Line
-	4800 3800 4800 3850
+	4800 3750 4800 3850
 Connection ~ 4800 3800
 $Comp
 L GNDA #PWR?

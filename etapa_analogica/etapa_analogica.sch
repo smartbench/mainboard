@@ -38,6 +38,7 @@ LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
 LIBS:DACs
+LIBS:etapa_analogica-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -865,9 +866,7 @@ Wire Wire Line
 	1025 3775 1025 3600
 Connection ~ 1025 3350
 Wire Wire Line
-	1025 6075 1200 6075
-Wire Wire Line
-	1200 6075 1550 6075
+	1025 6075 1550 6075
 Wire Wire Line
 	1550 6075 1550 6275
 Wire Wire Line
@@ -878,9 +877,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 6650 2250 6475
 Wire Wire Line
-	2250 6075 2600 6075
-Wire Wire Line
-	2600 6075 2775 6075
+	2250 6075 2775 6075
 Wire Wire Line
 	2600 6075 2600 6275
 Wire Wire Line
@@ -920,39 +917,11 @@ Wire Wire Line
 	1375 4350 1375 4400
 Connection ~ 1375 4350
 Wire Wire Line
-	825  3200 825  3350
+	825  3200 825  4350
 Wire Wire Line
-	825  3350 1025 3350
+	825  3350 2275 3350
 Wire Wire Line
-	1025 3350 1200 3350
-Wire Wire Line
-	1200 3350 1375 3350
-Wire Wire Line
-	1375 3350 1550 3350
-Wire Wire Line
-	1550 3350 1750 3350
-Wire Wire Line
-	1750 3350 1925 3350
-Wire Wire Line
-	1925 3350 2100 3350
-Wire Wire Line
-	2100 3350 2275 3350
-Wire Wire Line
-	825  4350 1025 4350
-Wire Wire Line
-	1025 4350 1200 4350
-Wire Wire Line
-	1200 4350 1375 4350
-Wire Wire Line
-	1375 4350 1550 4350
-Wire Wire Line
-	1550 4350 1725 4350
-Wire Wire Line
-	1725 4350 1900 4350
-Wire Wire Line
-	1900 4350 2075 4350
-Wire Wire Line
-	2075 4350 2250 4350
+	825  4350 2250 4350
 $Comp
 L C_Small C?
 U 1 1 5931A13E
@@ -1184,8 +1153,6 @@ Wire Wire Line
 	2075 4350 2075 4400
 Connection ~ 2075 4350
 Connection ~ 1550 4350
-Wire Wire Line
-	825  3350 825  4350
 Connection ~ 825  3350
 $Comp
 L C_Small C?
@@ -1419,39 +1386,11 @@ Wire Wire Line
 	3850 4350 3850 4400
 Connection ~ 3850 4350
 Wire Wire Line
-	2950 3350 3125 3350
+	2950 3350 4375 3350
 Wire Wire Line
-	3125 3350 3300 3350
+	4375 4350 4375 3175
 Wire Wire Line
-	3300 3350 3475 3350
-Wire Wire Line
-	3475 3350 3675 3350
-Wire Wire Line
-	3675 3350 3850 3350
-Wire Wire Line
-	3850 3350 4025 3350
-Wire Wire Line
-	4025 3350 4200 3350
-Wire Wire Line
-	4200 3350 4375 3350
-Wire Wire Line
-	4375 3350 4375 3175
-Wire Wire Line
-	2975 4350 3150 4350
-Wire Wire Line
-	3150 4350 3325 4350
-Wire Wire Line
-	3325 4350 3500 4350
-Wire Wire Line
-	3500 4350 3675 4350
-Wire Wire Line
-	3675 4350 3850 4350
-Wire Wire Line
-	3850 4350 4025 4350
-Wire Wire Line
-	4025 4350 4200 4350
-Wire Wire Line
-	4200 4350 4375 4350
+	2975 4350 4375 4350
 $Comp
 L C_Small C?
 U 1 1 5931E85A
@@ -1683,8 +1622,6 @@ Wire Wire Line
 	3150 4350 3150 4400
 Connection ~ 3150 4350
 Connection ~ 3675 4350
-Wire Wire Line
-	4375 4350 4375 3350
 Connection ~ 4375 3350
 Connection ~ 2600 6075
 Wire Notes Line
