@@ -38,7 +38,6 @@ LIBS:max1720
 LIBS:voltage-regulators
 LIBS:voltage-references
 LIBS:DACs
-LIBS:etapa_analogica-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -58,10 +57,16 @@ Text Label 5825 4200 0    60   ~ 0
 Wire Wire Line
 	1775 3750 1825 3750
 Wire Wire Line
-	1775 3450 1775 3775
+	1775 3450 1775 3600
+Wire Wire Line
+	1775 3600 1775 3750
+Wire Wire Line
+	1775 3750 1775 3775
 Connection ~ 1775 3600
 Wire Wire Line
-	1650 4000 1825 4000
+	1650 4000 1775 4000
+Wire Wire Line
+	1775 4000 1825 4000
 Text Label 1550 3450 2    60   ~ 0
 +5V
 $Comp
@@ -107,18 +112,26 @@ Wire Wire Line
 Text Label 1550 4250 2    60   ~ 0
 -5V
 Wire Wire Line
-	1550 4250 1825 4250
+	1550 4250 1775 4250
+Wire Wire Line
+	1775 4250 1825 4250
 Wire Wire Line
 	1775 4325 1775 4250
 Connection ~ 1775 4250
 Text Label 3850 1725 2    60   ~ 0
 +5V
 Wire Wire Line
-	3850 1725 4750 1725
+	3850 1725 4250 1725
 Wire Wire Line
-	4250 1725 4250 2100
+	4250 1725 4750 1725
 Wire Wire Line
-	4225 2050 4300 2050
+	4250 1725 4250 2050
+Wire Wire Line
+	4250 2050 4250 2100
+Wire Wire Line
+	4250 2050 4250 2050
+Wire Wire Line
+	4250 2050 4300 2050
 Connection ~ 4250 2050
 $Comp
 L GNDA #PWR?
@@ -132,7 +145,9 @@ F 3 "" H 3125 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 2300 4250 2400
+	4250 2300 4250 2350
+Wire Wire Line
+	4250 2350 4250 2400
 $Comp
 L C_Small C?
 U 1 1 59147BAF
@@ -141,6 +156,7 @@ F 0 "C?" H 4050 2225 50  0000 C CNN
 F 1 "0.1uF" H 4075 2125 50  0000 C CNN
 F 2 "" H 3150 -1425 50  0001 C CNN
 F 3 "" H 3150 -1425 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 3700 2325 60  0000 C CNN "MPN"
 	1    4250 2200
 	1    0    0    -1  
 $EndComp
@@ -152,11 +168,14 @@ F 0 "C?" H 5400 2250 50  0000 L CNN
 F 1 "1uF" H 5425 2150 50  0000 L CNN
 F 2 "" H 4650 950 50  0001 C CNN
 F 3 "" H 4650 950 50  0001 C CNN
+F 4 "GRM188R61C105KA93D" H 5875 2050 60  0000 C CNN "MPN"
 	1    5300 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 2050 5450 2050
+	5200 2050 5300 2050
+Wire Wire Line
+	5300 2050 5450 2050
 Wire Wire Line
 	5300 2050 5300 2100
 $Comp
@@ -182,11 +201,17 @@ Text Label 5450 2050 0    60   ~ 0
 +3V3
 Connection ~ 5300 2050
 Wire Wire Line
-	5300 4200 5825 4200
+	5300 4200 5375 4200
+Wire Wire Line
+	5375 4200 5575 4200
+Wire Wire Line
+	5575 4200 5825 4200
 Text Label 4050 4200 2    60   ~ 0
 -5V
 Wire Wire Line
-	4050 4200 4300 4200
+	4050 4200 4225 4200
+Wire Wire Line
+	4225 4200 4300 4200
 $Comp
 L CP1_Small C?
 U 1 1 59147BD0
@@ -195,7 +220,8 @@ F 0 "C?" H 4325 3775 50  0000 L CNN
 F 1 "1uF" H 4350 3675 50  0000 L CNN
 F 2 "" H 3575 2475 50  0001 C CNN
 F 3 "" H 3575 2475 50  0001 C CNN
-F 4 "solid tantalum" H 4225 3725 60  0001 C CNN "Type"
+F 4 "tantalum" H 4225 3725 60  0001 C CNN "Type"
+F 5 "GRM188R61C105KA93D" V 4000 3875 60  0000 C CNN "MPN"
 	1    4225 3725
 	1    0    0    -1  
 $EndComp
@@ -235,7 +261,9 @@ Connection ~ 5375 4200
 Wire Wire Line
 	5125 3800 4800 3800
 Wire Wire Line
-	4800 3750 4800 3850
+	4800 3750 4800 3800
+Wire Wire Line
+	4800 3800 4800 3850
 Connection ~ 4800 3800
 $Comp
 L GNDA #PWR?
@@ -283,8 +311,12 @@ P 5575 3675
 F 0 "C?" H 5675 3725 50  0000 L CNN
 F 1 "10uF" H 5700 3625 50  0000 L CNN
 F 2 "" H 4925 2425 50  0001 C CNN
-F 3 "" H 4925 2425 50  0001 C CNN
-F 4 "Electrolytic" H 5575 3675 60  0001 C CNN "Type"
+F 3 "http://www.vishay.com/docs/40002/293d.pdf" H 4925 2425 50  0001 C CNN
+F 4 "Tantalum" H 5575 3675 60  0001 C CNN "Type"
+F 5 "293D106X9016B2TE3" H 6175 3525 60  0000 C CNN "Manuf. Part Number"
+F 6 "https://www.digikey.com/product-detail/en/vishay-sprague/293D106X9016B2TE3/718-1124-1-ND/1559618" H 5575 3675 60  0001 C CNN "Link Digikey"
+F 7 "$(0,41/0,286)" H 5575 3675 60  0001 C CNN "Price Digikey"
+F 8 "1411" H 5575 3675 60  0001 C CNN "Encapsulado"
 	1    5575 3675
 	1    0    0    -1  
 $EndComp
@@ -375,10 +407,11 @@ $Comp
 L C_Small C?
 U 1 1 5917F338
 P 1775 3875
-F 0 "C?" H 1867 3921 50  0000 L CNN
-F 1 "4.7uF" H 1475 3925 50  0000 L CNN
+F 0 "C?" H 1525 3900 50  0000 L CNN
+F 1 "4.7uF" H 1525 4000 50  0000 L CNN
 F 2 "" H -1350 275 50  0001 C CNN
 F 3 "" H -1350 275 50  0001 C CNN
+F 4 "GRM21BR61C106KE15K" H 1200 4075 60  0000 C CNN "MPN"
 	1    1775 3875
 	1    0    0    -1  
 $EndComp
@@ -386,27 +419,29 @@ $Comp
 L C_Small C?
 U 1 1 5918002D
 P 3400 3975
-F 0 "C?" H 3225 4050 50  0000 L CNN
-F 1 "1uF" V 3525 3925 50  0000 L CNN
+F 0 "C?" H 3175 4075 50  0000 L CNN
+F 1 "1uF" H 3175 3975 50  0000 L CNN
 F 2 "" H 275 375 50  0001 C CNN
 F 3 "" H 275 375 50  0001 C CNN
+F 4 "GRM188R61C105KA93D" V 3550 4200 60  0000 C CNN "MPN"
 	1    3400 3975
 	1    0    0    -1  
 $EndComp
-Text Notes 3100 4650 0    60   ~ 0
+Text Notes 3200 4800 0    60   ~ 0
 Flying Capacitor:\n1uF,10V\nCeramic\nX7R or X5R\n>1uF@2MHz
-Text Notes 500  3925 0    60   ~ 0
+Text Notes 575  3325 0    60   ~ 0
 Input Capacitor:\n10uF, 10V\nCeramic\nX7R or X5R\n10V\n>2uF@2MHz,DC_BIAS=5V
-Text Notes 875  4950 0    60   ~ 0
+Text Notes 575  5150 0    60   ~ 0
 Output Capacitor:\n10uF, 10V\nCeramic\nX7R or X5R\n>2uF@2MHz,DC_BIAS=5V
 $Comp
 L C_Small C?
 U 1 1 59180DB2
 P 1775 4425
-F 0 "C?" H 1867 4471 50  0000 L CNN
-F 1 "10uF" H 1575 4525 50  0000 L CNN
+F 0 "C?" H 1500 4425 50  0000 L CNN
+F 1 "10uF" H 1500 4325 50  0000 L CNN
 F 2 "" H -1350 825 50  0001 C CNN
 F 3 "" H -1350 825 50  0001 C CNN
+F 4 "GRM21BR61C106KE15K" H 1075 4525 60  0000 C CNN "MPN"
 	1    1775 4425
 	1    0    0    -1  
 $EndComp
