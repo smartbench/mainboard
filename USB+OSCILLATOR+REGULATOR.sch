@@ -38,6 +38,7 @@ LIBS:my_regul
 LIBS:my_74xx
 LIBS:MIC2005A-2
 LIBS:AS4C1M16S
+LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -993,7 +994,7 @@ Text HLabel 5550 3550 0    60   Output ~ 12
 GNDD
 Text HLabel 6050 2650 2    60   Output ~ 12
 GND
-Text HLabel 3750 2000 2    60   Output ~ 12
+Text HLabel 3900 1950 2    60   Output ~ 12
 +5V
 Text HLabel 5850 2000 2    60   Output ~ 12
 +3.3V
@@ -1100,6 +1101,156 @@ F 5 "2mA" H 3450 1150 60  0001 C CNN "If"
 F 6 "1.9V" H 3450 1150 60  0001 C CNN "Vf"
 	1    3450 1150
 	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_ALT D204
+U 1 1 58F9D350
+P 3750 3850
+F 0 "D204" H 3750 3950 50  0000 C CNN
+F 1 "GREEN" H 3750 3750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3750 3850 50  0001 C CNN
+F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 3750 3850 50  0001 C CNN
+F 4 "APTD1608LCGCK" H 3750 3850 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 3750 3850 60  0001 C CNN "If"
+F 6 "1.9V" H 3750 3850 60  0001 C CNN "Vf"
+	1    3750 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R205
+U 1 1 58F9D6EB
+P 3550 2600
+F 0 "R205" V 3630 2600 50  0000 C CNN
+F 1 "1500" V 3550 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3480 2600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 2600 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 3550 2600 60  0001 C CNN "Manufacturer Part"
+	1    3550 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R204
+U 1 1 58F9D810
+P 3500 3700
+F 0 "R204" V 3580 3700 50  0000 C CNN
+F 1 "1500" V 3500 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3430 3700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3500 3700 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 3500 3700 60  0001 C CNN "Manufacturer Part"
+	1    3500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_ALT D205
+U 1 1 58F97BFA
+P 9250 3150
+F 0 "D205" H 9250 3250 50  0000 C CNN
+F 1 "GREEN" H 9250 3100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9250 3150 50  0001 C CNN
+F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 9250 3150 50  0001 C CNN
+F 4 "APTD1608LCGCK" H 9250 3150 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 9250 3150 60  0001 C CNN "If"
+F 6 "1.9V" H 9250 3150 60  0001 C CNN "Vf"
+	1    9250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT2232H U205
+U 1 1 58DACB1C
+P 7800 4150
+F 0 "U205" H 6750 6250 50  0000 L CNN
+F 1 "FT2232H" H 8550 6250 50  0000 L CNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 7800 4150 50  0001 C CNN
+F 3 "" H 7800 4150 50  0001 C CNN
+	1    7800 4150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9000 3450
+NoConn ~ 9000 3550
+NoConn ~ 9000 3650
+NoConn ~ 9000 3750
+NoConn ~ 9000 3850
+$Comp
+L R R232
+U 1 1 58F9B086
+P 10300 3150
+F 0 "R232" V 10250 3300 50  0000 C CNN
+F 1 "680" V 10300 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10300 3150 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 10300 3150 60  0001 C CNN "Manufacturer Part"
+	1    10300 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R233
+U 1 1 58F9B3F0
+P 10300 3250
+F 0 "R233" V 10250 3400 50  0000 C CNN
+F 1 "680" V 10300 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3250 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10300 3250 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 10300 3250 60  0001 C CNN "Manufacturer Part"
+	1    10300 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R234
+U 1 1 58F9B988
+P 10300 3350
+F 0 "R234" V 10250 3500 50  0000 C CNN
+F 1 "680" V 10300 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3350 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10300 3350 50  0001 C CNN
+F 4 "CRCW06031K50JNEA" V 10300 3350 60  0001 C CNN "Manufacturer Part"
+	1    10300 3350
+	0    1    1    0   
+$EndComp
+Text HLabel 10750 3250 2    60   Output ~ 12
++3.3V
+$Comp
+L LED_ALT D206
+U 1 1 58F9D81C
+P 9550 3250
+F 0 "D206" H 9550 3350 50  0000 C CNN
+F 1 "YELLOW" H 9550 3200 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9550 3250 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSYCK.pdf" H 9550 3250 50  0001 C CNN
+F 4 "APTD1608LSYCK" H 9550 3250 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 9550 3250 60  0001 C CNN "If"
+F 6 "1.75V" H 9550 3250 60  0001 C CNN "Vf"
+	1    9550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ALT D207
+U 1 1 58F9E03E
+P 9900 3350
+F 0 "D207" H 9900 3450 50  0000 C CNN
+F 1 "RED" H 9900 3300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9900 3350 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf" H 9900 3350 50  0001 C CNN
+F 4 "APTD1608LSURCK" H 9900 3350 60  0001 C CNN "Manufacturer Part"
+F 5 "2mA" H 9900 3350 60  0001 C CNN "If"
+F 6 "1.75V" H 9900 3350 60  0001 C CNN "Vf"
+	1    9900 3350
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 3000 0    51   ~ 0
+Fault is active low.
+Text HLabel 3600 3300 2    60   Output ~ 12
++5V
+$Comp
+L D_Schottky D?
+U 1 1 5931F72E
+P 3700 2250
+F 0 "D?" H 3700 2350 50  0000 C CNN
+F 1 "D_Schottky" H 3600 2150 50  0000 C CNN
+F 2 "Diodes_SMD:D_0603" H 3700 2250 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/80/CDBURT0530LL-HF%20RevB850212-464702.pdf" H 3700 2250 50  0001 C CNN
+F 4 "CDBURT0530LL-HF" H 3700 2250 60  0001 C CNN "Manufacturer Part Number"
+	1    3700 2250
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4950 5800 4950 5500
@@ -1309,7 +1460,7 @@ Connection ~ 7100 1050
 Wire Wire Line
 	5200 2350 5400 2350
 Wire Wire Line
-	3850 2250 3850 2350
+	3850 1700 3850 2350
 Connection ~ 3850 2250
 Wire Wire Line
 	9650 4250 10150 4250
@@ -1344,14 +1495,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 2450 2400 2450
 Wire Wire Line
-	3500 2250 4400 2250
-Wire Wire Line
 	1200 1100 1250 1100
 Wire Wire Line
 	1200 1000 1500 1000
-Wire Wire Line
-	3500 1700 3500 2250
-Connection ~ 3500 2250
 Wire Wire Line
 	1400 1300 3750 1300
 Connection ~ 1900 1300
@@ -1368,7 +1514,7 @@ Wire Wire Line
 	1250 1000 1250 950 
 Connection ~ 1250 1000
 Wire Wire Line
-	2350 1700 3500 1700
+	2350 1700 3850 1700
 Wire Wire Line
 	1850 1700 2050 1700
 Wire Wire Line
@@ -1395,9 +1541,6 @@ Connection ~ 5100 6100
 Connection ~ 2600 4000
 Wire Wire Line
 	1950 2800 1750 2800
-Wire Wire Line
-	3750 2000 3500 2000
-Connection ~ 3500 2000
 Wire Wire Line
 	5850 2000 5700 2000
 Wire Wire Line
@@ -1457,116 +1600,12 @@ Wire Wire Line
 	2200 1000 3000 1000
 Wire Wire Line
 	3300 1000 3450 1000
-$Comp
-L LED_ALT D204
-U 1 1 58F9D350
-P 3750 3850
-F 0 "D204" H 3750 3950 50  0000 C CNN
-F 1 "GREEN" H 3750 3750 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 3750 3850 50  0001 C CNN
-F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 3750 3850 50  0001 C CNN
-F 4 "APTD1608LCGCK" H 3750 3850 60  0001 C CNN "Manufacturer Part"
-F 5 "2mA" H 3750 3850 60  0001 C CNN "If"
-F 6 "1.9V" H 3750 3850 60  0001 C CNN "Vf"
-	1    3750 3850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R205
-U 1 1 58F9D6EB
-P 3550 2600
-F 0 "R205" V 3630 2600 50  0000 C CNN
-F 1 "1500" V 3550 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3480 2600 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 2600 50  0001 C CNN
-F 4 "CRCW06031K50JNEA" V 3550 2600 60  0001 C CNN "Manufacturer Part"
-	1    3550 2600
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R204
-U 1 1 58F9D810
-P 3500 3700
-F 0 "R204" V 3580 3700 50  0000 C CNN
-F 1 "1500" V 3500 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3430 3700 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3500 3700 50  0001 C CNN
-F 4 "CRCW06031K50JNEA" V 3500 3700 60  0001 C CNN "Manufacturer Part"
-	1    3500 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L LED_ALT D205
-U 1 1 58F97BFA
-P 9250 3150
-F 0 "D205" H 9250 3250 50  0000 C CNN
-F 1 "GREEN" H 9250 3100 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 9250 3150 50  0001 C CNN
-F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 9250 3150 50  0001 C CNN
-F 4 "APTD1608LCGCK" H 9250 3150 60  0001 C CNN "Manufacturer Part"
-F 5 "2mA" H 9250 3150 60  0001 C CNN "If"
-F 6 "1.9V" H 9250 3150 60  0001 C CNN "Vf"
-	1    9250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L FT2232H U205
-U 1 1 58DACB1C
-P 7800 4150
-F 0 "U205" H 6750 6250 50  0000 L CNN
-F 1 "FT2232H" H 8550 6250 50  0000 L CNN
-F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 7800 4150 50  0001 C CNN
-F 3 "" H 7800 4150 50  0001 C CNN
-	1    7800 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9000 3150 9100 3150
 Wire Wire Line
 	9000 3250 9400 3250
 Wire Wire Line
 	9000 3350 9750 3350
-NoConn ~ 9000 3450
-NoConn ~ 9000 3550
-NoConn ~ 9000 3650
-NoConn ~ 9000 3750
-NoConn ~ 9000 3850
-$Comp
-L R R232
-U 1 1 58F9B086
-P 10300 3150
-F 0 "R232" V 10250 3300 50  0000 C CNN
-F 1 "680" V 10300 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10300 3150 50  0001 C CNN
-F 4 "CRCW06031K50JNEA" V 10300 3150 60  0001 C CNN "Manufacturer Part"
-	1    10300 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L R R233
-U 1 1 58F9B3F0
-P 10300 3250
-F 0 "R233" V 10250 3400 50  0000 C CNN
-F 1 "680" V 10300 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3250 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10300 3250 50  0001 C CNN
-F 4 "CRCW06031K50JNEA" V 10300 3250 60  0001 C CNN "Manufacturer Part"
-	1    10300 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L R R234
-U 1 1 58F9B988
-P 10300 3350
-F 0 "R234" V 10250 3500 50  0000 C CNN
-F 1 "680" V 10300 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3350 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 10300 3350 50  0001 C CNN
-F 4 "CRCW06031K50JNEA" V 10300 3350 60  0001 C CNN "Manufacturer Part"
-	1    10300 3350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10150 3350 10050 3350
 Wire Wire Line
@@ -1582,44 +1621,17 @@ Wire Wire Line
 Wire Wire Line
 	10450 3250 10750 3250
 Connection ~ 10600 3250
-Text HLabel 10750 3250 2    60   Output ~ 12
-+3.3V
-$Comp
-L LED_ALT D206
-U 1 1 58F9D81C
-P 9550 3250
-F 0 "D206" H 9550 3350 50  0000 C CNN
-F 1 "YELLOW" H 9550 3200 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 9550 3250 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSYCK.pdf" H 9550 3250 50  0001 C CNN
-F 4 "APTD1608LSYCK" H 9550 3250 60  0001 C CNN "Manufacturer Part"
-F 5 "2mA" H 9550 3250 60  0001 C CNN "If"
-F 6 "1.75V" H 9550 3250 60  0001 C CNN "Vf"
-	1    9550 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED_ALT D207
-U 1 1 58F9E03E
-P 9900 3350
-F 0 "D207" H 9900 3450 50  0000 C CNN
-F 1 "RED" H 9900 3300 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 9900 3350 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf" H 9900 3350 50  0001 C CNN
-F 4 "APTD1608LSURCK" H 9900 3350 60  0001 C CNN "Manufacturer Part"
-F 5 "2mA" H 9900 3350 60  0001 C CNN "If"
-F 6 "1.75V" H 9900 3350 60  0001 C CNN "Vf"
-	1    9900 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 5800 6150 5800
 Wire Wire Line
 	6150 5800 6150 5350
 Wire Wire Line
 	6150 5350 6600 5350
-Text Notes 3700 3000 0    51   ~ 0
-Fault is active low.
-Text HLabel 3600 3300 2    60   Output ~ 12
-+5V
+Wire Wire Line
+	3850 1950 3900 1950
+Connection ~ 3850 1950
+Wire Wire Line
+	3550 2250 3500 2250
+Wire Wire Line
+	3850 2250 4400 2250
 $EndSCHEMATC
