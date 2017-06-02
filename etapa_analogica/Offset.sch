@@ -199,26 +199,18 @@ Wire Wire Line
 Wire Wire Line
 	9750 4125 9750 3450
 Wire Wire Line
-	9625 3450 9750 3450
-Wire Wire Line
-	9750 3450 10075 3450
+	9625 3450 10075 3450
 Wire Wire Line
 	9025 3550 9025 4125
 Wire Wire Line
-	8900 4125 9025 4125
-Wire Wire Line
-	9025 4125 9300 4125
+	8900 4125 9300 4125
 Connection ~ 9025 4125
 Wire Wire Line
-	8875 3350 8900 3350
-Wire Wire Line
-	8900 3350 9025 3350
+	8875 3350 9025 3350
 Wire Wire Line
 	8875 3150 8900 3150
 Wire Wire Line
-	8900 2925 8900 3150
-Wire Wire Line
-	8900 3150 8900 3350
+	8900 2925 8900 3350
 Connection ~ 8900 3350
 Wire Wire Line
 	8900 2925 8875 2925
@@ -233,9 +225,7 @@ Connection ~ 9750 3450
 Wire Wire Line
 	5925 3875 6625 3875
 Wire Wire Line
-	5325 3875 5575 3875
-Wire Wire Line
-	5575 3875 5725 3875
+	5325 3875 5725 3875
 Wire Wire Line
 	5000 3875 5125 3875
 $Comp
@@ -258,9 +248,7 @@ Wire Wire Line
 	5575 3450 5575 3875
 Connection ~ 5575 3875
 Wire Wire Line
-	6425 3350 6625 3350
-Wire Wire Line
-	6625 3350 6750 3350
+	6425 3350 6750 3350
 Wire Wire Line
 	6625 3875 6625 3350
 Text Label 6025 3050 0    60   ~ 0
@@ -299,9 +287,7 @@ $EndComp
 Wire Wire Line
 	2225 3825 2775 3825
 Wire Wire Line
-	1775 3825 1875 3825
-Wire Wire Line
-	1875 3825 2025 3825
+	1775 3825 2025 3825
 Wire Wire Line
 	1450 3825 1575 3825
 $Comp
@@ -322,9 +308,7 @@ Wire Wire Line
 	1875 3400 1875 3825
 Connection ~ 1875 3825
 Wire Wire Line
-	2575 3300 2775 3300
-Wire Wire Line
-	2775 3300 2900 3300
+	2575 3300 2900 3300
 Wire Wire Line
 	2775 3825 2775 3300
 Text Label 2175 3000 0    60   ~ 0
@@ -372,9 +356,7 @@ $EndComp
 Wire Wire Line
 	5650 5850 6350 5850
 Wire Wire Line
-	5050 5850 5300 5850
-Wire Wire Line
-	5300 5850 5450 5850
+	5050 5850 5450 5850
 Wire Wire Line
 	4725 5850 4850 5850
 $Comp
@@ -397,9 +379,7 @@ Wire Wire Line
 	5300 5425 5300 5850
 Connection ~ 5300 5850
 Wire Wire Line
-	6150 5325 6350 5325
-Wire Wire Line
-	6350 5325 6475 5325
+	6150 5325 6475 5325
 Wire Wire Line
 	6350 5850 6350 5325
 Text Label 5750 5025 0    60   ~ 0
@@ -535,26 +515,18 @@ Wire Wire Line
 Wire Wire Line
 	9725 6100 9725 5425
 Wire Wire Line
-	9600 5425 9725 5425
-Wire Wire Line
-	9725 5425 10050 5425
+	9600 5425 10050 5425
 Wire Wire Line
 	9000 5525 9000 6100
 Wire Wire Line
-	8875 6100 9000 6100
-Wire Wire Line
-	9000 6100 9275 6100
+	8875 6100 9275 6100
 Connection ~ 9000 6100
 Wire Wire Line
-	8850 5325 8875 5325
-Wire Wire Line
-	8875 5325 9000 5325
+	8850 5325 9000 5325
 Wire Wire Line
 	8850 5125 8875 5125
 Wire Wire Line
-	8875 4900 8875 5125
-Wire Wire Line
-	8875 5125 8875 5325
+	8875 4900 8875 5325
 Connection ~ 8875 5325
 Wire Wire Line
 	8875 4900 8850 4900
@@ -620,9 +592,7 @@ $EndComp
 Wire Wire Line
 	2250 5750 2800 5750
 Wire Wire Line
-	1800 5750 1900 5750
-Wire Wire Line
-	1900 5750 2050 5750
+	1800 5750 2050 5750
 Wire Wire Line
 	1475 5750 1600 5750
 $Comp
@@ -643,9 +613,7 @@ Wire Wire Line
 	1900 5325 1900 5750
 Connection ~ 1900 5750
 Wire Wire Line
-	2600 5225 2800 5225
-Wire Wire Line
-	2800 5225 2925 5225
+	2600 5225 2925 5225
 Wire Wire Line
 	2800 5750 2800 5225
 Text Label 2200 4925 0    60   ~ 0
@@ -779,21 +747,13 @@ SDA
 Text Label 4325 1700 0    60   ~ 0
 SCL
 Wire Wire Line
-	3575 1600 4125 1600
+	3575 1600 4325 1600
 Wire Wire Line
-	4125 1600 4325 1600
+	3575 1700 4325 1700
 Wire Wire Line
-	4325 1700 3875 1700
-Wire Wire Line
-	3875 1700 3575 1700
-Wire Wire Line
-	4525 4650 4675 4650
-Wire Wire Line
-	4675 4650 4675 4650
+	4525 4650 4825 4650
 Wire Wire Line
 	4675 4650 4675 4800
-Wire Wire Line
-	4675 4650 4825 4650
 Connection ~ 4675 4650
 $Comp
 L GNDA #PWR?
@@ -811,9 +771,7 @@ Wire Wire Line
 Text Label 5150 2675 0    60   ~ 0
 VDD_A
 Wire Wire Line
-	4750 2675 5025 2675
-Wire Wire Line
-	5025 2675 5025 2675
+	4750 2675 5150 2675
 Wire Wire Line
 	5025 2675 5025 2800
 $Comp
@@ -829,8 +787,6 @@ F 5 "C0603C104K3RACTU" V 4800 3250 60  0000 C CNN "MPN"
 	1    4650 2675
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5025 2675 5150 2675
 Connection ~ 5025 2675
 $Comp
 L GNDA #PWR?
@@ -874,9 +830,7 @@ Wire Wire Line
 	3875 1750 3875 1700
 Connection ~ 3875 1700
 Wire Wire Line
-	3675 1950 3875 1950
-Wire Wire Line
-	3875 1950 4125 1950
+	3675 1950 4125 1950
 Connection ~ 3875 1950
 Text Label 3675 1950 2    60   ~ 0
 VDD_A
