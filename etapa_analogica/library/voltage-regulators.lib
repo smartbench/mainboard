@@ -115,12 +115,17 @@ F1 "MIC5270" 0 -200 60 H V C CNN
 F2 "TO_SOT_Packages_SMD:SOT-23-5" -150 -550 60 H I C CNN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf" -150 -350 60 H I C CNN
 F4 "MIC5270-3.0YM5-TR" -500 -700 60 H I C CNN "Manuf. Part Number"
-F5 "https://www.digikey.com/product-detail/en/texas-instruments/LM337IMPX-NOPB/LM337IMPX-NOPBCT-ND/3526950" -250 -450 60 H I C CNN "Digikey Link"
+F5 "https://www.digikey.com/product-detail/en/microchip-technology/MIC5270-3.0YM5-TR/576-2837-1-ND/1821997" -250 -450 60 H I C CNN "Digikey Link"
 F6 "$1.59" 300 -700 60 H I C CNN "Price (Digikey)"
+$FPLIST
+ SOT-23-5
+$ENDFPLIST
 DRAW
 T 0 0 -100 60 0 0 0 REG.~-3V Normal 0 C C
 S -300 150 300 -150 0 1 0 N
+X nc 1 500 100 200 L 50 50 1 1 N N
 X GND 2 0 350 200 D 50 50 1 1 W
+X NC 3 -500 100 200 R 50 50 1 1 N N
 X Vo 4 500 0 200 L 50 50 1 1 w
 X Vi 5 -500 0 200 R 50 50 1 1 W
 ENDDRAW

@@ -164,40 +164,6 @@ Connection ~ 4225 4200
 Wire Wire Line
 	5575 3775 5575 4200
 Connection ~ 5575 4200
-$Comp
-L R_Small R?
-U 1 1 59147BDB
-P 4800 3650
-F 0 "R?" H 4625 3700 50  0000 L CNN
-F 1 "R_Small" H 4425 3600 50  0000 L CNN
-F 2 "" H 2600 -400 50  0001 C CNN
-F 3 "" H 2600 -400 50  0001 C CNN
-	1    4800 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R?
-U 1 1 59147BE2
-P 5225 3800
-F 0 "R?" V 5421 3800 50  0000 C CNN
-F 1 "R_Small" V 5330 3800 50  0000 C CNN
-F 2 "" H 3025 -250 50  0001 C CNN
-F 3 "" H 3025 -250 50  0001 C CNN
-	1    5225 3800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5325 3800 5375 3800
-Wire Wire Line
-	5375 3800 5375 4200
-Connection ~ 5375 4200
-Wire Wire Line
-	5125 3800 4800 3800
-Wire Wire Line
-	4800 3750 4800 3850
-Connection ~ 4800 3800
-Wire Wire Line
-	4800 3500 4800 3550
 Wire Wire Line
 	5575 3500 5575 3575
 Wire Wire Line
@@ -227,7 +193,7 @@ F 1 "MIC5270" H 4800 3864 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3100 -1100 60  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf" H 3100 -900 60  0001 C CNN
 F 4 "MIC5270-3.0YM5-TR" H 2750 -1250 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/texas-instruments/LM337IMPX-NOPB/LM337IMPX-NOPBCT-ND/3526950" H 3000 -1000 60  0001 C CNN "Digikey Link"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/MIC5270-3.0YM5-TR/576-2837-1-ND/1821997" H 3000 -1000 60  0001 C CNN "Digikey Link"
 F 6 "$1.59" H 3550 -1250 60  0001 C CNN "Price (Digikey)"
 	1    4800 4200
 	1    0    0    -1  
@@ -342,10 +308,12 @@ Text Label 1650 4000 2    60   ~ 0
 GND_A
 Text Label 4225 3500 1    60   ~ 0
 GND_A
-Text Label 4800 3500 1    60   ~ 0
+Text Label 4800 3775 1    60   ~ 0
 GND_A
 Text Label 5575 3500 1    60   ~ 0
 GND_A
 Text Label 5300 2375 3    60   ~ 0
 GND_A
+Wire Wire Line
+	4800 3775 4800 3850
 $EndSCHEMATC

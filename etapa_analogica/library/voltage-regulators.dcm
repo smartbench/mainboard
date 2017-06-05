@@ -6,6 +6,7 @@ $ENDCMP
 #
 $CMP MIC5270
 D Negative Low-Dropout Regulator
+F http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf
 $ENDCMP
 #
 $CMP TCR2EF13
