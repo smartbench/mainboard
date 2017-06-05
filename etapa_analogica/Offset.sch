@@ -117,19 +117,8 @@ Text Label 1200 725  0    60   ~ 0
 VDD_A
 Text Label 1200 875  0    60   ~ 0
 VSS_A
-$Comp
-L GNDA #PWR?
-U 1 1 58FF7AC9
-P 1225 1025
-F 0 "#PWR?" H 1225 775 50  0001 C CNN
-F 1 "GNDA" H 1225 875 50  0000 C CNN
-F 2 "" H 1225 1025 50  0001 C CNN
-F 3 "" H 1225 1025 50  0001 C CNN
-	1    1225 1025
-	0    -1   -1   0   
-$EndComp
 Text HLabel 1050 1025 0    60   Input ~ 0
-A_GND
+GND_A
 Text Label 9225 3150 1    60   ~ 0
 VDD_A
 Text Label 9225 3750 3    60   ~ 0
@@ -151,17 +140,6 @@ Text Label 8225 2925 2    60   ~ 0
 CHA_V_OFFSET_FIJO
 Text Label 8225 3150 2    60   ~ 0
 CHA_OFFSET
-$Comp
-L GNDA #PWR?
-U 1 1 58FF8405
-P 8575 4125
-F 0 "#PWR?" H 8575 3875 50  0001 C CNN
-F 1 "GNDA" H 8575 3975 50  0000 C CNN
-F 2 "" H 8575 4125 50  0001 C CNN
-F 3 "" H 8575 4125 50  0001 C CNN
-	1    8575 4125
-	1    0    0    1   
-$EndComp
 Text HLabel 10075 3450 2    60   Input ~ 0
 CHA_OUT
 Text HLabel 1500 1350 0    60   Input ~ 0
@@ -320,17 +298,6 @@ CHA_V_OFFSET_FIJO
 Connection ~ 2775 3300
 Text Label 1775 3200 2    60   ~ 0
 CHA_V_REF_CENTER
-$Comp
-L GNDA #PWR?
-U 1 1 58FFC09A
-P 1450 3825
-F 0 "#PWR?" H 1450 3575 50  0001 C CNN
-F 1 "GNDA" H 1450 3675 50  0000 C CNN
-F 2 "" H 1450 3825 50  0001 C CNN
-F 3 "" H 1450 3825 50  0001 C CNN
-	1    1450 3825
-	0    1    1    0   
-$EndComp
 $Comp
 L R_Small R?
 U 1 1 58FFD2CD
@@ -497,17 +464,6 @@ Text Label 8200 4900 2    60   ~ 0
 CHB_V_OFFSET_FIJO
 Text Label 8200 5125 2    60   ~ 0
 CHB_OFFSET
-$Comp
-L GNDA #PWR?
-U 1 1 58FE9F63
-P 8550 6100
-F 0 "#PWR?" H 8550 5850 50  0001 C CNN
-F 1 "GNDA" H 8550 5950 50  0000 C CNN
-F 2 "" H 8550 6100 50  0001 C CNN
-F 3 "" H 8550 6100 50  0001 C CNN
-	1    8550 6100
-	1    0    0    1   
-$EndComp
 Text HLabel 10050 5425 2    60   Input ~ 0
 CHB_OUT
 Wire Wire Line
@@ -625,17 +581,6 @@ CHB_V_OFFSET_FIJO
 Connection ~ 2800 5225
 Text Label 1800 5125 2    60   ~ 0
 CHB_V_REF_CENTER
-$Comp
-L GNDA #PWR?
-U 1 1 5918170D
-P 1475 5750
-F 0 "#PWR?" H 1475 5500 50  0001 C CNN
-F 1 "GNDA" H 1475 5600 50  0000 C CNN
-F 2 "" H 1475 5750 50  0001 C CNN
-F 3 "" H 1475 5750 50  0001 C CNN
-	1    1475 5750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1900 5325 2000 5325
 Wire Wire Line
@@ -704,28 +649,6 @@ Wire Wire Line
 	5300 5225 5550 5225
 Text Label 4325 5000 2    60   ~ 0
 V_REF_DAC
-$Comp
-L GNDA #PWR?
-U 1 1 592E5628
-P 5025 3500
-F 0 "#PWR?" H 5025 3250 50  0001 C CNN
-F 1 "GNDA" H 5025 3350 50  0000 C CNN
-F 2 "" H 5025 3500 50  0001 C CNN
-F 3 "" H 5025 3500 50  0001 C CNN
-	1    5025 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592E58C3
-P 4675 5500
-F 0 "#PWR?" H 4675 5250 50  0001 C CNN
-F 1 "GNDA" H 4675 5350 50  0000 C CNN
-F 2 "" H 4675 5500 50  0001 C CNN
-F 3 "" H 4675 5500 50  0001 C CNN
-	1    4675 5500
-	1    0    0    -1  
-$EndComp
 Text Label 3675 1250 0    60   ~ 0
 CHA_DAC
 Text HLabel 3575 1250 0    60   Input ~ 0
@@ -788,17 +711,6 @@ F 5 "C0603C104K3RACTU" V 4800 3250 60  0000 C CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 Connection ~ 5025 2675
-$Comp
-L GNDA #PWR?
-U 1 1 592FCA1C
-P 4375 2675
-F 0 "#PWR?" H 4375 2425 50  0001 C CNN
-F 1 "GNDA" H 4375 2525 50  0000 C CNN
-F 2 "" H 4375 2675 50  0001 C CNN
-F 3 "" H 4375 2675 50  0001 C CNN
-	1    4375 2675
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4375 2675 4550 2675
 $Comp
@@ -847,4 +759,24 @@ F 5 "C0603C104K3RACTU" V 4575 5250 60  0000 C CNN "MPN"
 	1    4425 4650
 	0    -1   -1   0   
 $EndComp
+Text Label 1225 1025 0    60   ~ 0
+GND_A
+Text Label 1450 3825 2    60   ~ 0
+GND_A
+Text Label 4375 2675 2    60   ~ 0
+GND_A
+Text Label 5025 3625 2    60   ~ 0
+GND_A
+Text Label 8575 4125 2    60   ~ 0
+GND_A
+Wire Wire Line
+	5025 3625 5025 3500
+Text Label 8550 6100 2    60   ~ 0
+GND_A
+Text Label 4675 5625 2    60   ~ 0
+GND_A
+Wire Wire Line
+	4675 5500 4675 5625
+Text Label 1475 5750 2    60   ~ 0
+GND_A
 $EndSCHEMATC

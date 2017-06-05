@@ -53,7 +53,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 5225 900  0    60   Input ~ 0
+Text HLabel 5225 900  0    60   Input ~ 0
 CHA_INPUT_SIGNAL
 $Sheet
 S 5525 750  1225 2475
@@ -73,15 +73,15 @@ F11 "CHB_ATT_EN" I L 5525 2050 60
 F12 "CHA_OFFSET" I L 5525 2150 60 
 F13 "CHA_DC_COUPLING" I L 5525 2300 60 
 F14 "CHB_DC_COUPLING" I L 5525 2400 60 
-F15 "A_GND" I L 5525 2800 60 
-F16 "D_GND" I L 5525 3100 60 
+F15 "GND_A" I L 5525 2800 60 
+F16 "GND_D" I L 5525 3100 60 
 F17 "VSS_A" I L 5525 2925 60 
 F18 "CHA_IN" I L 5525 900 60 
 F19 "CHB_IN" I L 5525 1025 60 
 F20 "CHA_OUT" I R 6750 900 60 
 F21 "CHB_OUT" I R 6750 1025 60 
 $EndSheet
-Text GLabel 5225 1025 0    60   Input ~ 0
+Text HLabel 5225 1025 0    60   Input ~ 0
 CHB_INPUT_SIGNAL
 Text Label 5525 2675 2    60   ~ 0
 VDD_A
@@ -100,8 +100,8 @@ F6 "CHA_OUT" I R 10100 900 60
 F7 "VDD_A" I L 8925 2150 60 
 F8 "VSS_A" I L 8925 2400 60 
 F9 "CHA_IN" I L 8925 900 60 
-F10 "D_GND" I L 8925 2675 60 
-F11 "A_GND" I L 8925 2275 60 
+F10 "GND_D" I L 8925 2675 60 
+F11 "GND_A" I L 8925 2275 60 
 F12 "CHB_GAIN_SEL_0" I L 8925 1675 60 
 F13 "CHB_GAIN_SEL_1" I L 8925 1775 60 
 F14 "CHB_GAIN_SEL_2" I L 8925 1875 60 
@@ -125,23 +125,8 @@ Text Label 5550 3900 2    60   ~ 0
 CHA_PGA_OUT
 Text Label 5550 4025 2    60   ~ 0
 CHB_PGA_OUT
-Text GLabel 1200 675  0    60   Input ~ 0
-+5V_USB
-Text GLabel 1200 825  0    60   Input ~ 0
-GND_A
 Text Label 1325 675  0    60   ~ 0
 +5V
-$Comp
-L GNDA #PWR?
-U 1 1 59113FA5
-P 1325 825
-F 0 "#PWR?" H 200 -175 50  0001 C CNN
-F 1 "GNDA" V 1330 697 50  0000 R CNN
-F 2 "" H 200 75  50  0001 C CNN
-F 3 "" H 200 75  50  0001 C CNN
-	1    1325 825 
-	0    -1   -1   0   
-$EndComp
 Text Label 2150 700  2    60   ~ 0
 +3V3
 Text Label 2150 850  2    60   ~ 0
@@ -162,50 +147,6 @@ Text Label 8525 4675 2    60   ~ 0
 VDD_A
 Text Label 8525 4925 2    60   ~ 0
 VSS_A
-$Comp
-L GNDA #PWR?
-U 1 1 59140563
-P 5525 2800
-F 0 "#PWR?" H 4400 1800 50  0001 C CNN
-F 1 "GNDA" V 5530 2673 50  0000 R CNN
-F 2 "" H 4400 2050 50  0001 C CNN
-F 3 "" H 4400 2050 50  0001 C CNN
-	1    5525 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 59140838
-P 5550 4875
-F 0 "#PWR?" H 4425 3875 50  0001 C CNN
-F 1 "GNDA" V 5555 4748 50  0000 R CNN
-F 2 "" H 4425 4125 50  0001 C CNN
-F 3 "" H 4425 4125 50  0001 C CNN
-	1    5550 4875
-	0    1    1    0   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 59140BF7
-P 8525 4800
-F 0 "#PWR?" H 7400 3800 50  0001 C CNN
-F 1 "GNDA" V 8530 4673 50  0000 R CNN
-F 2 "" H 7400 4050 50  0001 C CNN
-F 3 "" H 7400 4050 50  0001 C CNN
-	1    8525 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 59140DE2
-P 8925 2275
-F 0 "#PWR?" H 7800 1275 50  0001 C CNN
-F 1 "GNDA" V 8930 2148 50  0000 R CNN
-F 2 "" H 7800 1525 50  0001 C CNN
-F 3 "" H 7800 1525 50  0001 C CNN
-	1    8925 2275
-	0    1    1    0   
-$EndComp
 Text Label 8525 4550 2    60   ~ 0
 +5V
 $Sheet
@@ -221,17 +162,6 @@ F6 "-5V" O R 2725 2125 60
 $EndSheet
 Text Label 1900 1825 2    60   ~ 0
 +5V
-$Comp
-L GNDA #PWR?
-U 1 1 5914CB1E
-P 1900 2125
-F 0 "#PWR?" H 775 1125 50  0001 C CNN
-F 1 "GNDA" V 1905 1998 50  0000 R CNN
-F 2 "" H 775 1375 50  0001 C CNN
-F 3 "" H 775 1375 50  0001 C CNN
-	1    1900 2125
-	0    1    1    0   
-$EndComp
 Text Label 2725 1825 0    60   ~ 0
 +3V3
 Text Label 2725 1975 0    60   ~ 0
@@ -250,8 +180,8 @@ F5 "CHA_D3" O R 9825 4375 60
 F6 "CHA_D4" O R 9825 4475 60 
 F7 "VDD_A" I L 8525 4675 60 
 F8 "VSS_A" I L 8525 4925 60 
-F9 "D_GND" I L 8525 5200 60 
-F10 "A_GND" I L 8525 4800 60 
+F9 "GND_D" I L 8525 5200 60 
+F10 "GND_A" I L 8525 4800 60 
 F11 "V_REF_DAC" O L 8525 4375 60 
 F12 "CHA_IN" I L 8525 3900 60 
 F13 "+5V0" I L 8525 4550 60 
@@ -274,8 +204,6 @@ F29 "ADC_CLK" I L 8525 5900 60
 F30 "CHB_VREF_CENT" O L 8525 4275 60 
 F31 "CHA_VREF_CENT" O L 8525 4175 60 
 $EndSheet
-Text GLabel 1175 1100 0    60   Input ~ 0
-+3V3_D
 Text Label 1325 1100 0    60   ~ 0
 VDD_D
 Text Label 8525 5100 2    60   ~ 0
@@ -284,125 +212,79 @@ Text Label 7025 4175 0    60   ~ 0
 CHA_VREF_CENT
 Text Label 7025 4375 0    60   ~ 0
 V_REF_DAC
-Text GLabel 1175 1250 0    60   Input ~ 0
-GND_D
-$Comp
-L GNDD #PWR?
-U 1 1 591764B7
-P 1300 1250
-F 0 "#PWR?" H 0   -250 50  0001 C CNN
-F 1 "GNDD" V 1305 1122 50  0000 R CNN
-F 2 "" H 0   0   50  0001 C CNN
-F 3 "" H 0   0   50  0001 C CNN
-	1    1300 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GNDD #PWR?
-U 1 1 59177460
-P 5525 3100
-F 0 "#PWR?" H 4225 1600 50  0001 C CNN
-F 1 "GNDD" V 5530 2972 50  0000 R CNN
-F 2 "" H 4225 1850 50  0001 C CNN
-F 3 "" H 4225 1850 50  0001 C CNN
-	1    5525 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L GNDD #PWR?
-U 1 1 59178BE6
-P 8525 5200
-F 0 "#PWR?" H 7225 3700 50  0001 C CNN
-F 1 "GNDD" V 8530 5072 50  0000 R CNN
-F 2 "" H 7225 3950 50  0001 C CNN
-F 3 "" H 7225 3950 50  0001 C CNN
-	1    8525 5200
-	0    1    1    0   
-$EndComp
-$Comp
-L GNDD #PWR?
-U 1 1 5917A901
-P 8925 2675
-F 0 "#PWR?" H 7625 1175 50  0001 C CNN
-F 1 "GNDD" V 8930 2547 50  0000 R CNN
-F 2 "" H 7625 1425 50  0001 C CNN
-F 3 "" H 7625 1425 50  0001 C CNN
-	1    8925 2675
-	0    1    1    0   
-$EndComp
-Text GLabel 5225 1200 0    60   Input ~ 0
+Text HLabel 5225 1200 0    60   Input ~ 0
 CHA_ATT_SEL_0
-Text GLabel 5225 1300 0    60   Input ~ 0
+Text HLabel 5225 1300 0    60   Input ~ 0
 CHA_ATT_SEL_1
-Text GLabel 5225 1400 0    60   Input ~ 0
+Text HLabel 5225 1400 0    60   Input ~ 0
 CHA_ATT_SEL_2
-Text GLabel 5225 1500 0    60   Input ~ 0
+Text HLabel 5225 1500 0    60   Input ~ 0
 CHA_ATT_EN
-Text GLabel 5225 1750 0    60   Input ~ 0
+Text HLabel 5225 1750 0    60   Input ~ 0
 CHB_ATT_SEL_0
-Text GLabel 5225 1850 0    60   Input ~ 0
+Text HLabel 5225 1850 0    60   Input ~ 0
 CHB_ATT_SEL_1
-Text GLabel 5225 1950 0    60   Input ~ 0
+Text HLabel 5225 1950 0    60   Input ~ 0
 CHB_ATT_SEL_2
-Text GLabel 5225 2050 0    60   Input ~ 0
+Text HLabel 5225 2050 0    60   Input ~ 0
 CHB_ATT_EN
-Text GLabel 5225 2300 0    60   Input ~ 0
+Text HLabel 5225 2300 0    60   Input ~ 0
 CHA_DC_COUPLING
-Text GLabel 5225 2400 0    60   Input ~ 0
+Text HLabel 5225 2400 0    60   Input ~ 0
 CHB_DC_COUPLING
-Text GLabel 8625 1225 0    60   Input ~ 0
+Text HLabel 8625 1225 0    60   Input ~ 0
 CHA_GAIN_SEL_0
-Text GLabel 8625 1325 0    60   Input ~ 0
+Text HLabel 8625 1325 0    60   Input ~ 0
 CHA_GAIN_SEL_1
-Text GLabel 8625 1425 0    60   Input ~ 0
+Text HLabel 8625 1425 0    60   Input ~ 0
 CHA_GAIN_SEL_2
-Text GLabel 8625 1525 0    60   Input ~ 0
+Text HLabel 8625 1525 0    60   Input ~ 0
 CHA_GAIN_EN
-Text GLabel 8625 1675 0    60   Input ~ 0
+Text HLabel 8625 1675 0    60   Input ~ 0
 CHB_GAIN_SEL_0
-Text GLabel 8625 1775 0    60   Input ~ 0
+Text HLabel 8625 1775 0    60   Input ~ 0
 CHB_GAIN_SEL_1
-Text GLabel 8625 1875 0    60   Input ~ 0
+Text HLabel 8625 1875 0    60   Input ~ 0
 CHB_GAIN_SEL_2
-Text GLabel 8625 1975 0    60   Input ~ 0
+Text HLabel 8625 1975 0    60   Input ~ 0
 CHB_GAIN_EN
-Text GLabel 10125 4075 2    60   Output ~ 0
+Text HLabel 10125 4075 2    60   Output ~ 0
 CHA_D0
-Text GLabel 10125 4175 2    60   Output ~ 0
+Text HLabel 10125 4175 2    60   Output ~ 0
 CHA_D1
-Text GLabel 10125 4275 2    60   Output ~ 0
+Text HLabel 10125 4275 2    60   Output ~ 0
 CHA_D2
-Text GLabel 10125 4375 2    60   Output ~ 0
+Text HLabel 10125 4375 2    60   Output ~ 0
 CHA_D3
-Text GLabel 10125 4475 2    60   Output ~ 0
+Text HLabel 10125 4475 2    60   Output ~ 0
 CHA_D4
-Text GLabel 10125 4575 2    60   Output ~ 0
+Text HLabel 10125 4575 2    60   Output ~ 0
 CHA_D5
-Text GLabel 10125 4675 2    60   Output ~ 0
+Text HLabel 10125 4675 2    60   Output ~ 0
 CHA_D6
-Text GLabel 10125 4775 2    60   Output ~ 0
+Text HLabel 10125 4775 2    60   Output ~ 0
 CHA_D7
-Text GLabel 10125 5125 2    60   Output ~ 0
+Text HLabel 10125 5125 2    60   Output ~ 0
 CHB_D0
-Text GLabel 10125 5225 2    60   Output ~ 0
+Text HLabel 10125 5225 2    60   Output ~ 0
 CHB_D1
-Text GLabel 10125 5325 2    60   Output ~ 0
+Text HLabel 10125 5325 2    60   Output ~ 0
 CHB_D2
-Text GLabel 10125 5425 2    60   Output ~ 0
+Text HLabel 10125 5425 2    60   Output ~ 0
 CHB_D3
-Text GLabel 10125 5525 2    60   Output ~ 0
+Text HLabel 10125 5525 2    60   Output ~ 0
 CHB_D4
-Text GLabel 10125 5625 2    60   Output ~ 0
+Text HLabel 10125 5625 2    60   Output ~ 0
 CHB_D5
-Text GLabel 10125 5725 2    60   Output ~ 0
+Text HLabel 10125 5725 2    60   Output ~ 0
 CHB_D6
-Text GLabel 10125 5825 2    60   Output ~ 0
+Text HLabel 10125 5825 2    60   Output ~ 0
 CHB_D7
-Text GLabel 10125 3900 2    60   Input ~ 0
+Text HLabel 10125 3900 2    60   Input ~ 0
 CHA_ADC_OE
-Text GLabel 10125 4975 2    60   Input ~ 0
+Text HLabel 10125 4975 2    60   Input ~ 0
 CHB_ADC_OE
-Text GLabel 8300 5900 0    60   Input ~ 0
+Text HLabel 8300 5900 0    60   Input ~ 0
 ADC_CLK
 Text Label 6900 4800 0    60   ~ 0
 CHA_OFFSET
@@ -418,9 +300,9 @@ Text Label 5550 4200 2    60   ~ 0
 CHA_DAC
 Text Label 5550 4300 2    60   ~ 0
 CHB_DAC
-Text GLabel 5325 4400 0    60   Input ~ 0
+Text HLabel 5325 4400 0    60   Input ~ 0
 SDA
-Text GLabel 5325 4525 0    60   Input ~ 0
+Text HLabel 5325 4525 0    60   Input ~ 0
 SCL
 $Sheet
 S 5550 3725 1350 1750
@@ -429,7 +311,7 @@ F0 "OFFSET" 60
 F1 "Offset.sch" 60
 F2 "VDD_A" I L 5550 4750 60 
 F3 "VSS_A" I L 5550 5000 60 
-F4 "A_GND" I L 5550 4875 60 
+F4 "GND_A" I L 5550 4875 60 
 F5 "CHA_OUT" I R 6900 3900 60 
 F6 "CHA_DAC" I L 5550 4200 60 
 F7 "CHB_OUT" I R 6900 4025 60 
@@ -457,28 +339,6 @@ F 5 "C0603C104K3RACTU" V 1350 6125 60  0000 C CNN "MPN"
 	1    1200 6375
 	1    0    0    -1  
 $EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592CA706
-P 1200 6650
-F 0 "#PWR?" H 1200 6400 50  0001 C CNN
-F 1 "GNDA" H 1200 6500 50  0000 C CNN
-F 2 "" H 1200 6650 50  0001 C CNN
-F 3 "" H 1200 6650 50  0001 C CNN
-	1    1200 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592CA70C
-P 1550 6650
-F 0 "#PWR?" H 1550 6400 50  0001 C CNN
-F 1 "GNDA" H 1550 6500 50  0000 C CNN
-F 2 "" H 1550 6650 50  0001 C CNN
-F 3 "" H 1550 6650 50  0001 C CNN
-	1    1550 6650
-	1    0    0    -1  
-$EndComp
 Text Label 825  3200 0    60   ~ 0
 VDD_A
 $Comp
@@ -493,17 +353,6 @@ F 4 "Ceramic" V 1125 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 1200 3400 60  0001 C CNN "MPN"
 	1    1025 3500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592CA72A
-P 1025 3775
-F 0 "#PWR?" H 1025 3525 50  0001 C CNN
-F 1 "GNDA" H 1025 3625 50  0000 C CNN
-F 2 "" H 1025 3775 50  0001 C CNN
-F 3 "" H 1025 3775 50  0001 C CNN
-	1    1025 3775
-	1    0    0    -1  
 $EndComp
 Text Label 1025 6075 2    60   ~ 0
 VDD_A
@@ -535,28 +384,6 @@ F 5 "C0603C104K3RACTU" V 2425 6575 60  0000 C CNN "MPN"
 	1    2250 6375
 	-1   0    0    1   
 $EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592F87F2
-P 2250 6650
-F 0 "#PWR?" H 2250 6400 50  0001 C CNN
-F 1 "GNDA" H 2250 6500 50  0000 C CNN
-F 2 "" H 2250 6650 50  0001 C CNN
-F 3 "" H 2250 6650 50  0001 C CNN
-	1    2250 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592F87F8
-P 2600 6650
-F 0 "#PWR?" H 2600 6400 50  0001 C CNN
-F 1 "GNDA" H 2600 6500 50  0000 C CNN
-F 2 "" H 2600 6650 50  0001 C CNN
-F 3 "" H 2600 6650 50  0001 C CNN
-	1    2600 6650
-	1    0    0    -1  
-$EndComp
 Text Label 2775 6075 0    60   ~ 0
 VSS_A
 $Comp
@@ -586,17 +413,6 @@ F 5 "C0603C104K3RACTU" V 1425 3825 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 592FF1B2
-P 1200 3775
-F 0 "#PWR?" H 1200 3525 50  0001 C CNN
-F 1 "GNDA" H 1200 3625 50  0000 C CNN
-F 2 "" H 1200 3775 50  0001 C CNN
-F 3 "" H 1200 3775 50  0001 C CNN
-	1    1200 3775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 592FF67A
 P 1375 3500
@@ -610,17 +426,6 @@ F 5 "C0603C104K3RACTU" V 1600 3825 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 592FF680
-P 1375 3775
-F 0 "#PWR?" H 1375 3525 50  0001 C CNN
-F 1 "GNDA" H 1375 3625 50  0000 C CNN
-F 2 "" H 1375 3775 50  0001 C CNN
-F 3 "" H 1375 3775 50  0001 C CNN
-	1    1375 3775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 592FFED6
 P 1550 3500
@@ -632,17 +437,6 @@ F 4 "Ceramic" V 1650 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 1775 3825 60  0001 C CNN "MPN"
 	1    1550 3500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 592FFEDC
-P 1550 3775
-F 0 "#PWR?" H 1550 3525 50  0001 C CNN
-F 1 "GNDA" H 1550 3625 50  0000 C CNN
-F 2 "" H 1550 3775 50  0001 C CNN
-F 3 "" H 1550 3775 50  0001 C CNN
-	1    1550 3775
-	1    0    0    -1  
 $EndComp
 Text Notes 1875 3150 0    60   ~ 0
 Filtro MIC7300 y CD4051BM96
@@ -660,17 +454,6 @@ F 5 "GRM188R61C105KA93D" V 1175 4675 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 59307BEB
-P 1025 4775
-F 0 "#PWR?" H 1025 4525 50  0001 C CNN
-F 1 "GNDA" H 1025 4625 50  0000 C CNN
-F 2 "" H 1025 4775 50  0001 C CNN
-F 3 "" H 1025 4775 50  0001 C CNN
-	1    1025 4775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 59308170
 P 1200 4500
@@ -682,17 +465,6 @@ F 4 "Ceramic" V 1300 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 1425 4825 60  0001 C CNN "MPN"
 	1    1200 4500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 593093AB
-P 1200 4775
-F 0 "#PWR?" H 1200 4525 50  0001 C CNN
-F 1 "GNDA" H 1200 4625 50  0000 C CNN
-F 2 "" H 1200 4775 50  0001 C CNN
-F 3 "" H 1200 4775 50  0001 C CNN
-	1    1200 4775
-	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -708,17 +480,6 @@ F 5 "GRM188R61C105KA93D" V 1600 4825 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 59309864
-P 1375 4775
-F 0 "#PWR?" H 1375 4525 50  0001 C CNN
-F 1 "GNDA" H 1375 4625 50  0000 C CNN
-F 2 "" H 1375 4775 50  0001 C CNN
-F 3 "" H 1375 4775 50  0001 C CNN
-	1    1375 4775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 59309D19
 P 1550 4500
@@ -730,17 +491,6 @@ F 4 "Ceramic" V 1650 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 1775 4825 60  0001 C CNN "MPN"
 	1    1550 4500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 59309D1F
-P 1550 4775
-F 0 "#PWR?" H 1550 4525 50  0001 C CNN
-F 1 "GNDA" H 1550 4625 50  0000 C CNN
-F 2 "" H 1550 4775 50  0001 C CNN
-F 3 "" H 1550 4775 50  0001 C CNN
-	1    1550 4775
-	1    0    0    -1  
 $EndComp
 Text Label 4375 3175 2    60   ~ 0
 VSS_A
@@ -936,17 +686,6 @@ F 5 "C0603C104K3RACTU" V 1975 3650 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931A144
-P 1750 3775
-F 0 "#PWR?" H 1750 3525 50  0001 C CNN
-F 1 "GNDA" H 1750 3625 50  0000 C CNN
-F 2 "" H 1750 3775 50  0001 C CNN
-F 3 "" H 1750 3775 50  0001 C CNN
-	1    1750 3775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931A14C
 P 1925 3500
@@ -958,17 +697,6 @@ F 4 "Ceramic" V 2025 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 2150 3825 60  0001 C CNN "MPN"
 	1    1925 3500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931A152
-P 1925 3775
-F 0 "#PWR?" H 1925 3525 50  0001 C CNN
-F 1 "GNDA" H 1925 3625 50  0000 C CNN
-F 2 "" H 1925 3775 50  0001 C CNN
-F 3 "" H 1925 3775 50  0001 C CNN
-	1    1925 3775
-	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -984,17 +712,6 @@ F 5 "C0603C104K3RACTU" V 2325 3825 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931A160
-P 2100 3775
-F 0 "#PWR?" H 2100 3525 50  0001 C CNN
-F 1 "GNDA" H 2100 3625 50  0000 C CNN
-F 2 "" H 2100 3775 50  0001 C CNN
-F 3 "" H 2100 3775 50  0001 C CNN
-	1    2100 3775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931A168
 P 2275 3500
@@ -1006,17 +723,6 @@ F 4 "Ceramic" V 2375 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 2050 3725 60  0000 C CNN "MPN"
 	1    2275 3500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931A16E
-P 2275 3775
-F 0 "#PWR?" H 2275 3525 50  0001 C CNN
-F 1 "GNDA" H 2275 3625 50  0000 C CNN
-F 2 "" H 2275 3775 50  0001 C CNN
-F 3 "" H 2275 3775 50  0001 C CNN
-	1    2275 3775
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1750 3350 1750 3400
@@ -1051,17 +757,6 @@ F 5 "GRM188R61C105KA93D" V 1875 4675 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931BA0A
-P 1725 4775
-F 0 "#PWR?" H 1725 4525 50  0001 C CNN
-F 1 "GNDA" H 1725 4625 50  0000 C CNN
-F 2 "" H 1725 4775 50  0001 C CNN
-F 3 "" H 1725 4775 50  0001 C CNN
-	1    1725 4775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931BA12
 P 1900 4500
@@ -1073,17 +768,6 @@ F 4 "Ceramic" V 2000 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 2125 4825 60  0001 C CNN "MPN"
 	1    1900 4500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931BA18
-P 1900 4775
-F 0 "#PWR?" H 1900 4525 50  0001 C CNN
-F 1 "GNDA" H 1900 4625 50  0000 C CNN
-F 2 "" H 1900 4775 50  0001 C CNN
-F 3 "" H 1900 4775 50  0001 C CNN
-	1    1900 4775
-	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -1099,17 +783,6 @@ F 5 "GRM188R61C105KA93D" V 2300 4825 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931BA26
-P 2075 4775
-F 0 "#PWR?" H 2075 4525 50  0001 C CNN
-F 1 "GNDA" H 2075 4625 50  0000 C CNN
-F 2 "" H 2075 4775 50  0001 C CNN
-F 3 "" H 2075 4775 50  0001 C CNN
-	1    2075 4775
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931BA2E
 P 2250 4500
@@ -1121,17 +794,6 @@ F 4 "Ceramic" V 2350 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 2100 4825 60  0000 C CNN "MPN"
 	1    2250 4500
 	-1   0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931BA34
-P 2250 4775
-F 0 "#PWR?" H 2250 4525 50  0001 C CNN
-F 1 "GNDA" H 2250 4625 50  0000 C CNN
-F 2 "" H 2250 4775 50  0001 C CNN
-F 3 "" H 2250 4775 50  0001 C CNN
-	1    2250 4775
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1725 4775 1725 4600
@@ -1168,17 +830,6 @@ F 5 "C0603C104K3RACTU" V 4375 3400 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E7D6
-P 4200 3775
-F 0 "#PWR?" H 4200 3525 50  0001 C CNN
-F 1 "GNDA" H 4200 3625 50  0000 C CNN
-F 2 "" H 4200 3775 50  0001 C CNN
-F 3 "" H 4200 3775 50  0001 C CNN
-	1    4200 3775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E7DE
 P 4025 3500
@@ -1190,17 +841,6 @@ F 4 "Ceramic" V 4125 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 4250 3825 60  0001 C CNN "MPN"
 	1    4025 3500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E7E4
-P 4025 3775
-F 0 "#PWR?" H 4025 3525 50  0001 C CNN
-F 1 "GNDA" H 4025 3625 50  0000 C CNN
-F 2 "" H 4025 3775 50  0001 C CNN
-F 3 "" H 4025 3775 50  0001 C CNN
-	1    4025 3775
-	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -1216,17 +856,6 @@ F 5 "C0603C104K3RACTU" V 4075 3825 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E7F2
-P 3850 3775
-F 0 "#PWR?" H 3850 3525 50  0001 C CNN
-F 1 "GNDA" H 3850 3625 50  0000 C CNN
-F 2 "" H 3850 3775 50  0001 C CNN
-F 3 "" H 3850 3775 50  0001 C CNN
-	1    3850 3775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E7FA
 P 3675 3500
@@ -1238,17 +867,6 @@ F 4 "Ceramic" V 3775 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 3900 3825 60  0001 C CNN "MPN"
 	1    3675 3500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E800
-P 3675 3775
-F 0 "#PWR?" H 3675 3525 50  0001 C CNN
-F 1 "GNDA" H 3675 3625 50  0000 C CNN
-F 2 "" H 3675 3775 50  0001 C CNN
-F 3 "" H 3675 3775 50  0001 C CNN
-	1    3675 3775
-	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -1264,17 +882,6 @@ F 5 "GRM188R61C105KA93D" V 4350 4675 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E80F
-P 4200 4775
-F 0 "#PWR?" H 4200 4525 50  0001 C CNN
-F 1 "GNDA" H 4200 4625 50  0000 C CNN
-F 2 "" H 4200 4775 50  0001 C CNN
-F 3 "" H 4200 4775 50  0001 C CNN
-	1    4200 4775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E817
 P 4025 4500
@@ -1286,17 +893,6 @@ F 4 "Ceramic" V 4125 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 4250 4825 60  0001 C CNN "MPN"
 	1    4025 4500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E81D
-P 4025 4775
-F 0 "#PWR?" H 4025 4525 50  0001 C CNN
-F 1 "GNDA" H 4025 4625 50  0000 C CNN
-F 2 "" H 4025 4775 50  0001 C CNN
-F 3 "" H 4025 4775 50  0001 C CNN
-	1    4025 4775
-	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -1312,17 +908,6 @@ F 5 "GRM188R61C105KA93D" V 4075 4825 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E82B
-P 3850 4775
-F 0 "#PWR?" H 3850 4525 50  0001 C CNN
-F 1 "GNDA" H 3850 4625 50  0000 C CNN
-F 2 "" H 3850 4775 50  0001 C CNN
-F 3 "" H 3850 4775 50  0001 C CNN
-	1    3850 4775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E833
 P 3675 4500
@@ -1334,17 +919,6 @@ F 4 "Ceramic" V 3775 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 3900 4825 60  0001 C CNN "MPN"
 	1    3675 4500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E839
-P 3675 4775
-F 0 "#PWR?" H 3675 4525 50  0001 C CNN
-F 1 "GNDA" H 3675 4625 50  0000 C CNN
-F 2 "" H 3675 4775 50  0001 C CNN
-F 3 "" H 3675 4775 50  0001 C CNN
-	1    3675 4775
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4200 3350 4200 3400
@@ -1405,17 +979,6 @@ F 5 "C0603C104K3RACTU" V 3700 3650 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E860
-P 3475 3775
-F 0 "#PWR?" H 3475 3525 50  0001 C CNN
-F 1 "GNDA" H 3475 3625 50  0000 C CNN
-F 2 "" H 3475 3775 50  0001 C CNN
-F 3 "" H 3475 3775 50  0001 C CNN
-	1    3475 3775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E868
 P 3300 3500
@@ -1427,17 +990,6 @@ F 4 "Ceramic" V 3400 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 3525 3825 60  0001 C CNN "MPN"
 	1    3300 3500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E86E
-P 3300 3775
-F 0 "#PWR?" H 3300 3525 50  0001 C CNN
-F 1 "GNDA" H 3300 3625 50  0000 C CNN
-F 2 "" H 3300 3775 50  0001 C CNN
-F 3 "" H 3300 3775 50  0001 C CNN
-	1    3300 3775
-	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -1453,17 +1005,6 @@ F 5 "C0603C104K3RACTU" V 3350 3825 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E87C
-P 3125 3775
-F 0 "#PWR?" H 3125 3525 50  0001 C CNN
-F 1 "GNDA" H 3125 3625 50  0000 C CNN
-F 2 "" H 3125 3775 50  0001 C CNN
-F 3 "" H 3125 3775 50  0001 C CNN
-	1    3125 3775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E884
 P 2950 3500
@@ -1475,17 +1016,6 @@ F 4 "Ceramic" V 3050 3700 60  0001 C CNN "Tipo"
 F 5 "C0603C104K3RACTU" V 2750 3675 60  0000 C CNN "MPN"
 	1    2950 3500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E88A
-P 2950 3775
-F 0 "#PWR?" H 2950 3525 50  0001 C CNN
-F 1 "GNDA" H 2950 3625 50  0000 C CNN
-F 2 "" H 2950 3775 50  0001 C CNN
-F 3 "" H 2950 3775 50  0001 C CNN
-	1    2950 3775
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3475 3350 3475 3400
@@ -1520,17 +1050,6 @@ F 5 "GRM188R61C105KA93D" V 3650 4675 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E8A4
-P 3500 4775
-F 0 "#PWR?" H 3500 4525 50  0001 C CNN
-F 1 "GNDA" H 3500 4625 50  0000 C CNN
-F 2 "" H 3500 4775 50  0001 C CNN
-F 3 "" H 3500 4775 50  0001 C CNN
-	1    3500 4775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E8AC
 P 3325 4500
@@ -1542,17 +1061,6 @@ F 4 "Ceramic" V 3425 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 3550 4825 60  0001 C CNN "MPN"
 	1    3325 4500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E8B2
-P 3325 4775
-F 0 "#PWR?" H 3325 4525 50  0001 C CNN
-F 1 "GNDA" H 3325 4625 50  0000 C CNN
-F 2 "" H 3325 4775 50  0001 C CNN
-F 3 "" H 3325 4775 50  0001 C CNN
-	1    3325 4775
-	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C?
@@ -1568,17 +1076,6 @@ F 5 "GRM188R61C105KA93D" V 3375 4825 60  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDA #PWR?
-U 1 1 5931E8C0
-P 3150 4775
-F 0 "#PWR?" H 3150 4525 50  0001 C CNN
-F 1 "GNDA" H 3150 4625 50  0000 C CNN
-F 2 "" H 3150 4775 50  0001 C CNN
-F 3 "" H 3150 4775 50  0001 C CNN
-	1    3150 4775
-	-1   0    0    -1  
-$EndComp
-$Comp
 L C_Small C?
 U 1 1 5931E8C8
 P 2975 4500
@@ -1590,17 +1087,6 @@ F 4 "Ceramic" V 3075 4700 60  0001 C CNN "Tipo"
 F 5 "GRM188R61C105KA93D" V 2700 4800 60  0000 C CNN "MPN"
 	1    2975 4500
 	1    0    0    1   
-$EndComp
-$Comp
-L GNDA #PWR?
-U 1 1 5931E8CE
-P 2975 4775
-F 0 "#PWR?" H 2975 4525 50  0001 C CNN
-F 1 "GNDA" H 2975 4625 50  0000 C CNN
-F 2 "" H 2975 4775 50  0001 C CNN
-F 3 "" H 2975 4775 50  0001 C CNN
-	1    2975 4775
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 4775 3500 4600
@@ -1640,4 +1126,78 @@ Wire Notes Line
 	4600 5450 600  5450
 Wire Notes Line
 	600  5450 600  2925
+Text HLabel 1200 675  0    60   Input ~ 0
++5V_USB
+Text HLabel 1200 825  0    60   Input ~ 0
+GND_A
+Text HLabel 1175 1100 0    60   Input ~ 0
++3V3_D
+Text HLabel 1175 1250 0    60   Input ~ 0
+GND_D
+Text Label 1300 1250 0    60   ~ 0
+GND_D
+Text Label 1325 825  0    60   ~ 0
+GND_A
+Text Label 5525 2800 2    60   ~ 0
+GND_A
+Text Label 5525 3100 2    60   ~ 0
+GND_D
+Text Label 1900 2125 2    60   ~ 0
+GND_A
+Text Label 8925 2275 2    60   ~ 0
+GND_A
+Text Label 8925 2675 2    60   ~ 0
+GND_D
+Text Label 8525 4800 2    60   ~ 0
+GND_A
+Text Label 8525 5200 2    60   ~ 0
+GND_D
+Text Label 5550 4875 2    60   ~ 0
+GND_A
+Text Label 900  4775 2    60   ~ 0
+GND_A
+Text Label 1000 6650 2    60   ~ 0
+GND_A
+Wire Wire Line
+	1000 6650 2600 6650
+Connection ~ 1200 6650
+Connection ~ 1550 6650
+Connection ~ 2250 6650
+Wire Wire Line
+	900  4775 4200 4775
+Connection ~ 1025 4775
+Connection ~ 1200 4775
+Connection ~ 1375 4775
+Connection ~ 1550 4775
+Connection ~ 1725 4775
+Connection ~ 1900 4775
+Connection ~ 2075 4775
+Connection ~ 2250 4775
+Connection ~ 2975 4775
+Connection ~ 3150 4775
+Connection ~ 3325 4775
+Connection ~ 3500 4775
+Connection ~ 3675 4775
+Connection ~ 3850 4775
+Connection ~ 4025 4775
+Wire Wire Line
+	1025 3775 4200 3775
+Connection ~ 4025 3775
+Connection ~ 3850 3775
+Connection ~ 3675 3775
+Connection ~ 3475 3775
+Connection ~ 3300 3775
+Connection ~ 3125 3775
+Connection ~ 2950 3775
+Connection ~ 2275 3775
+Connection ~ 2100 3775
+Connection ~ 1925 3775
+Connection ~ 1750 3775
+Connection ~ 1550 3775
+Connection ~ 1375 3775
+Connection ~ 1200 3775
+Wire Wire Line
+	2600 3775 2600 4775
+Connection ~ 2600 4775
+Connection ~ 2600 3775
 $EndSCHEMATC

@@ -64,17 +64,6 @@ Wire Wire Line
 	1650 4000 1825 4000
 Text Label 1550 3450 2    60   ~ 0
 +5V
-$Comp
-L GNDA #PWR?
-U 1 1 59147B74
-P 1650 4000
-F 0 "#PWR?" H 525 3000 50  0001 C CNN
-F 1 "GNDA" V 1655 3873 50  0000 R CNN
-F 2 "" H 525 3250 50  0001 C CNN
-F 3 "" H 525 3250 50  0001 C CNN
-	1    1650 4000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1550 3450 1775 3450
 Wire Wire Line
@@ -91,17 +80,6 @@ Wire Wire Line
 	3275 4150 3400 4150
 Wire Wire Line
 	3400 4150 3400 4075
-$Comp
-L GNDA #PWR?
-U 1 1 59147B98
-P 1775 4575
-F 0 "#PWR?" H 650 3575 50  0001 C CNN
-F 1 "GNDA" H 1780 4402 50  0000 C CNN
-F 2 "" H 650 3825 50  0001 C CNN
-F 3 "" H 650 3825 50  0001 C CNN
-	1    1775 4575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1775 4575 1775 4525
 Text Label 1550 4250 2    60   ~ 0
@@ -120,19 +98,8 @@ Wire Wire Line
 Wire Wire Line
 	4250 2050 4300 2050
 Connection ~ 4250 2050
-$Comp
-L GNDA #PWR?
-U 1 1 59147BA8
-P 4250 2400
-F 0 "#PWR?" H 3125 1400 50  0001 C CNN
-F 1 "GNDA" V 4255 2273 50  0000 R CNN
-F 2 "" H 3125 1650 50  0001 C CNN
-F 3 "" H 3125 1650 50  0001 C CNN
-	1    4250 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4250 2300 4250 2400
+	4250 2300 4250 2525
 $Comp
 L C_Small C?
 U 1 1 59147BAF
@@ -161,17 +128,6 @@ Wire Wire Line
 	5200 2050 5450 2050
 Wire Wire Line
 	5300 2050 5300 2100
-$Comp
-L GNDA #PWR?
-U 1 1 59147BBF
-P 5300 2375
-F 0 "#PWR?" H 4175 1375 50  0001 C CNN
-F 1 "GNDA" H 5305 2202 50  0000 C CNN
-F 2 "" H 4175 1625 50  0001 C CNN
-F 3 "" H 4175 1625 50  0001 C CNN
-	1    5300 2375
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 2375 5300 2300
 Wire Wire Line
@@ -240,43 +196,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 3750 4800 3850
 Connection ~ 4800 3800
-$Comp
-L GNDA #PWR?
-U 1 1 59147BEF
-P 4800 3500
-F 0 "#PWR?" H 3675 2500 50  0001 C CNN
-F 1 "GNDA" H 4805 3327 50  0000 C CNN
-F 2 "" H 3675 2750 50  0001 C CNN
-F 3 "" H 3675 2750 50  0001 C CNN
-	1    4800 3500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4800 3500 4800 3550
-$Comp
-L GNDA #PWR?
-U 1 1 59147BF6
-P 5575 3500
-F 0 "#PWR?" H 4450 2500 50  0001 C CNN
-F 1 "GNDA" H 5580 3327 50  0000 C CNN
-F 2 "" H 4450 2750 50  0001 C CNN
-F 3 "" H 4450 2750 50  0001 C CNN
-	1    5575 3500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5575 3500 5575 3575
-$Comp
-L GNDA #PWR?
-U 1 1 59147BFD
-P 4225 3500
-F 0 "#PWR?" H 3100 2500 50  0001 C CNN
-F 1 "GNDA" H 4230 3327 50  0000 C CNN
-F 2 "" H 3100 2750 50  0001 C CNN
-F 3 "" H 3100 2750 50  0001 C CNN
-	1    4225 3500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4225 3500 4225 3625
 $Comp
@@ -351,17 +274,6 @@ Wire Wire Line
 	2350 1000 2225 1000
 Wire Wire Line
 	2350 1175 2225 1175
-$Comp
-L GNDA #PWR?
-U 1 1 59148676
-P 1250 1000
-F 0 "#PWR?" H 125 0   50  0001 C CNN
-F 1 "GNDA" V 1255 872 50  0000 R CNN
-F 2 "" H 125 250 50  0001 C CNN
-F 3 "" H 125 250 50  0001 C CNN
-	1    1250 1000
-	0    -1   -1   0   
-$EndComp
 Text Notes 1375 6550 0    60   ~ 0
 Cosumos:\n- Inverter LM2776 entrega 200mA, consumo < 100mA\n- Regulador -3V0 entrega 100mA, consumo < 100mA\n- Regulador +3V3 entrega 200mA, consumo < 100mA
 $Comp
@@ -420,4 +332,20 @@ F 4 "GRM21BR61C106KE15K" H 1075 4525 60  0000 C CNN "MPN"
 	1    1775 4425
 	1    0    0    -1  
 $EndComp
+Text Label 1250 1000 0    60   ~ 0
+GND_A
+Text Label 4250 2525 3    60   ~ 0
+GND_A
+Text Label 1775 4575 3    60   ~ 0
+GND_A
+Text Label 1650 4000 2    60   ~ 0
+GND_A
+Text Label 4225 3500 1    60   ~ 0
+GND_A
+Text Label 4800 3500 1    60   ~ 0
+GND_A
+Text Label 5575 3500 1    60   ~ 0
+GND_A
+Text Label 5300 2375 3    60   ~ 0
+GND_A
 $EndSCHEMATC
