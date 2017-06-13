@@ -225,10 +225,6 @@ Text Label 3700 2600 2    60   ~ 0
 A2
 Text Label 3700 2700 2    60   ~ 0
 A3
-Text Label 3700 2800 2    60   ~ 0
-A4
-Text Label 3700 2900 2    60   ~ 0
-A5
 Text Label 3700 3000 2    60   ~ 0
 A6
 Text Label 3700 3100 2    60   ~ 0
@@ -573,40 +569,32 @@ Connection ~ 9200 5200
 Wire Wire Line
 	9050 5000 9200 5000
 Connection ~ 9200 5100
-Text Label 2300 3550 0    60   ~ 0
-A4
-Text Label 2300 3450 0    60   ~ 0
-A5
-Text Label 2300 3350 0    60   ~ 0
+Text Label 2300 2150 0    60   ~ 0
 A6
-Text Label 2300 3250 0    60   ~ 0
+Text Label 2300 2250 0    60   ~ 0
 A7
-Text Label 2300 3150 0    60   ~ 0
+Text Label 2300 2350 0    60   ~ 0
 A8
-Text Label 2300 3050 0    60   ~ 0
+Text Label 2300 2450 0    60   ~ 0
 A9
-Text Label 2300 2950 0    60   ~ 0
+Text Label 2300 2550 0    60   ~ 0
 CKE
-Text Label 2300 2850 0    60   ~ 0
+Text Label 2300 2650 0    60   ~ 0
 CLK
 Text Label 2300 2750 0    60   ~ 0
 UDQM
-Text Label 2300 2550 0    60   ~ 0
+Text Label 2300 2950 0    60   ~ 0
 DQ9
-Text Label 2300 2450 0    60   ~ 0
+Text Label 2300 3050 0    60   ~ 0
 DQ10
-Text Label 2300 2350 0    60   ~ 0
+Text Label 2300 3150 0    60   ~ 0
 DQ11
-Text Label 2300 2250 0    60   ~ 0
+Text Label 2300 3250 0    60   ~ 0
 DQ12
-Text Label 2300 2150 0    60   ~ 0
+Text Label 2300 3350 0    60   ~ 0
 DQ13
-Text HLabel 5800 3900 2    60   BiDi ~ 12
-DQ15
-Text Label 2300 2650 0    60   ~ 0
+Text Label 2300 2850 0    60   ~ 0
 DQ8
-Text HLabel 5800 3800 2    60   BiDi ~ 12
-DQ14
 Wire Wire Line
 	9050 3400 9650 3400
 NoConn ~ 5800 4400
@@ -678,4 +666,16 @@ Wire Wire Line
 	9050 3100 9050 4500
 Connection ~ 10000 1800
 Connection ~ 10000 2100
+Text Label 5800 3800 0    60   ~ 0
+DQ14
+Text Label 5800 3900 0    60   ~ 0
+DQ15
+Text HLabel 3700 2800 0    60   Input ~ 0
+A4
+Text HLabel 3700 2900 0    60   Input ~ 0
+A5
+Text Label 2300 3450 0    60   ~ 0
+DQ14
+Text Label 2300 3550 0    60   ~ 0
+DQ15
 $EndSCHEMATC
