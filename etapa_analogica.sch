@@ -314,9 +314,9 @@ CHA_DAC
 Text Label 5550 4300 2    60   ~ 0
 CHB_DAC
 Text HLabel 5325 4400 0    60   Input ~ 0
-SDA
+SDA_OFF
 Text HLabel 5325 4525 0    60   Input ~ 0
-SCL
+SCL_OFF
 $Sheet
 S 5550 3725 1350 1750
 U 58FF252D
