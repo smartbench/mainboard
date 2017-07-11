@@ -38,12 +38,25 @@ LIBS:my_regul
 LIBS:my_74xx
 LIBS:MIC2005A-2
 LIBS:AS4C1M16S
+LIBS:adc1175
+LIBS:clc4007
+LIBS:DACs
+LIBS:d_schottky_300mv
+LIBS:lm337-n
+LIBS:lm4040dym3-2
+LIBS:max1720
+LIBS:MCP4716
+LIBS:mic7300
+LIBS:multiplexors
+LIBS:tcr2ef13
+LIBS:voltage-references
+LIBS:voltage-regulators
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -440,5 +453,11 @@ F23 "IOT_174" B R 6850 4700 60
 F24 "+5V" I L 5150 3400 60 
 F25 "A4" I R 6850 5150 60 
 F26 "A5" I R 6850 5250 60 
+$EndSheet
+$Sheet
+S 7900 1150 1650 1850
+U 594C84EF
+F0 "Analog front end" 60
+F1 "etapa_analogica.sch" 60
 $EndSheet
 $EndSCHEMATC

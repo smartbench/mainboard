@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM4040D25FTA
+D Voltage Reference 2.5V
+K Ref voltage reference
+F https://www.diodes.com/assets/Datasheets/LM4040.pdf
+$ENDCMP
+#
+$CMP LM4040DYM3-2.5-TR
+D Voltage Reference 2.5V
+K Ref Voltage Reference
+F http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040
+$ENDCMP
+#
+$CMP LM4041EIM3-1.2/NOPB
+D Voltage Reference 1.225V
+K Ref voltage reference
+F http://www.ti.com/lit/ds/symlink/lm4041-n.pdf
+$ENDCMP
+#
+$CMP MCP4716
+D DAC 10 bits
+K DAC
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22272C.pdf
+$ENDCMP
+#
+#End Doc Library

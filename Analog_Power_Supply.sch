@@ -28,22 +28,35 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:d_schottky_300mv
-LIBS:multiplexors
+LIBS:ftdi
+LIBS:Oscillators
+LIBS:Lattice_iCE40HX4K_FPGA
+LIBS:my_memory
+LIBS:my_oscillators
+LIBS:my_power
+LIBS:my_regul
+LIBS:my_74xx
+LIBS:MIC2005A-2
+LIBS:AS4C1M16S
 LIBS:adc1175
 LIBS:clc4007
-LIBS:mic7300
-LIBS:tcr2ef13
-LIBS:max1720
-LIBS:voltage-regulators
-LIBS:voltage-references
 LIBS:DACs
-LIBS:etapa_analogica-cache
+LIBS:d_schottky_300mv
+LIBS:lm337-n
+LIBS:lm4040dym3-2
+LIBS:max1720
+LIBS:MCP4716
+LIBS:mic7300
+LIBS:multiplexors
+LIBS:tcr2ef13
+LIBS:voltage-references
+LIBS:voltage-regulators
+LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -101,14 +114,14 @@ Connection ~ 6100 2050
 Wire Wire Line
 	6100 2300 6100 2525
 $Comp
-L C_Small C405
-U 1 1 59147BAF
+L C_Small C905
+U 1 1 594D049B
 P 6100 2200
-F 0 "C405" H 5900 2225 50  0000 C CNN
+F 0 "C905" H 5900 2225 50  0000 C CNN
 F 1 "0.1uF" H 5925 2125 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5000 -1425 50  0001 C CNN
 F 3 "http://www.kemet.com/Lists/ProductCatalog/Attachments/53/KEM_C1002_X7R_SMD.pdf" H 5000 -1425 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 5550 2325 60  0001 C CNN "Manufacturer Part"
+F 4 "C0603C104K3RACTU" H 5550 2325 60  0001 C CNN "MPN"
 F 5 "X7R" H 6100 2200 60  0001 C CNN "Dielectric"
 F 6 "25V" H 6100 2200 60  0001 C CNN "VDC"
 F 7 "Kemet" H 6100 2200 60  0001 C CNN "Manufacturer"
@@ -116,14 +129,14 @@ F 7 "Kemet" H 6100 2200 60  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C406
-U 1 1 59147BB6
+L C_Small C906
+U 1 1 594D049C
 P 7150 2200
-F 0 "C406" H 7250 2250 50  0000 L CNN
+F 0 "C906" H 7250 2250 50  0000 L CNN
 F 1 "1uF" H 7275 2150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6500 950 50  0001 C CNN
 F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61C105KA93-01.pdf" H 6500 950 50  0001 C CNN
-F 4 "GRM188R61C105KA93D" H 7725 2050 60  0001 C CNN "Manufacturer Part"
+F 4 "GRM188R61C105KA93D" H 7725 2050 60  0001 C CNN "MPN"
 F 5 "X5R" H 7150 2200 60  0001 C CNN "Dielectric"
 F 6 "16V" H 7150 2200 60  0001 C CNN "VDC"
 F 7 "Murata" H 7150 2200 60  0001 C CNN "Manufacturer"
@@ -152,14 +165,14 @@ Text Label 5900 4200 2    60   ~ 0
 Wire Wire Line
 	5900 4200 6150 4200
 $Comp
-L C_Small C404
-U 1 1 59147BD0
+L C_Small C904
+U 1 1 594D049D
 P 6075 3725
-F 0 "C404" H 6175 3775 50  0000 L CNN
+F 0 "C904" H 6175 3775 50  0000 L CNN
 F 1 "1uF" H 6200 3675 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5425 2475 50  0001 C CNN
 F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61C105KA93-01.pdf" H 5425 2475 50  0001 C CNN
-F 4 "GRM188R61C105KA93D" H 5850 3875 60  0001 C CNN "Manufacturer Part"
+F 4 "GRM188R61C105KA93D" H 5850 3875 60  0001 C CNN "MPN"
 	1    6075 3725
 	1    0    0    -1  
 $EndComp
@@ -174,10 +187,24 @@ Wire Wire Line
 Wire Wire Line
 	6075 3500 6075 3625
 $Comp
-L MIC5270 U403
-U 1 1 59147C0F
+L CP1_Small C907
+U 1 1 594D049E
+P 7425 3675
+F 0 "C907" H 7525 3725 50  0000 L CNN
+F 1 "10uF" H 7550 3625 50  0000 L CNN
+F 2 "library:C_1411" H 6775 2425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/40002/293d.pdf" H 6775 2425 50  0001 C CNN
+F 4 "Tantalum" H 7425 3675 60  0001 C CNN "Type"
+F 5 "293D106X9016B2TE3" H 8025 3525 60  0001 C CNN "MNP"
+F 6 "1411" H 7425 3675 60  0001 C CNN "Encapsulado"
+	1    7425 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L MIC5270 U903
+U 1 1 594D049F
 P 6650 4200
-F 0 "U403" H 6650 3970 60  0000 C CNN
+F 0 "U903" H 6650 3970 60  0000 C CNN
 F 1 "MIC5270" H 6650 3864 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 4950 -1100 60  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf" H 4950 -900 60  0001 C CNN
@@ -188,10 +215,10 @@ F 6 "$1.59" H 5400 -1250 60  0001 C CNN "Price (Digikey)"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCR2EF13 U402
-U 1 1 59147C19
+L TCR2EF13 U902
+U 1 1 594D04A0
 P 6600 2200
-F 0 "U402" H 6600 1870 60  0000 C CNN
+F 0 "U902" H 6600 1870 60  0000 C CNN
 F 1 "TCR2EF13" H 6600 1764 60  0000 C CNN
 F 2 "library:SC-74(5-pins)" H 4625 -1600 60  0001 C CNN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&prodName=TCR2EF13" H 4225 -1700 60  0001 C CNN
@@ -232,10 +259,10 @@ Wire Wire Line
 Text Notes 1375 6550 0    60   ~ 0
 Cosumos:\n- Inverter LM2776 entrega 200mA, consumo < 100mA\n- Regulador -3V0 entrega 100mA, consumo < 100mA\n- Regulador +3V3 entrega 200mA, consumo < 100mA
 $Comp
-L LM2776DBVR U401
-U 1 1 5917F1EA
+L LM2776DBVR U901
+U 1 1 594D04A1
 P 2525 3850
-F 0 "U401" H 2550 4437 60  0000 C CNN
+F 0 "U901" H 2550 4437 60  0000 C CNN
 F 1 "LM2776DBVR" H 2550 4331 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-6" H -550 300 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2776.pdf" H -950 -400 60  0001 C CNN
@@ -246,14 +273,26 @@ F 6 "$1.10" H 0   -600 60  0001 C CNN "Digikey Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C403
-U 1 1 5918002D
+L C_Small C901
+U 1 1 594D04A2
+P 1775 3875
+F 0 "C901" H 1525 3900 50  0000 L CNN
+F 1 "10uF" H 1525 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H -1350 275 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61C106KE15-01.pdf" H -1350 275 50  0001 C CNN
+F 4 "GRM21BR61C106KE15K" H 1200 4075 60  0001 C CNN "MPN"
+	1    1775 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C903
+U 1 1 594D04A3
 P 3400 3975
-F 0 "C403" H 3175 4075 50  0000 L CNN
+F 0 "C903" H 3175 4075 50  0000 L CNN
 F 1 "1uF" H 3175 3975 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 275 375 50  0001 C CNN
 F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61C105KA93-01.pdf" H 275 375 50  0001 C CNN
-F 4 "GRM188R61C105KA93D" V 3550 4200 60  0001 C CNN "Manufacturer Part"
+F 4 "GRM188R61C105KA93D" V 3550 4200 60  0001 C CNN "MPN"
 	1    3400 3975
 	1    0    0    -1  
 $EndComp
@@ -263,6 +302,18 @@ Text Notes 650  3250 0    60   ~ 0
 Input Capacitor:\n10uF, 10V\nCeramic\nX7R or X5R\n10V\n>2uF@2MHz,DC_BIAS=5V\n>0.7uF @anyFreq @anyVDC
 Text Notes 575  5150 0    60   ~ 0
 Output Capacitor:\n10uF, 10V\nCeramic\nX7R or X5R\n>2uF@2MHz,DC_BIAS=5V\n>0.5uF @anyFreq @anyVDC
+$Comp
+L C_Small C902
+U 1 1 594D04A4
+P 1775 4425
+F 0 "C902" H 1500 4425 50  0000 L CNN
+F 1 "10uF" H 1500 4325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H -1350 825 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61C106KE15-01.pdf" H -1350 825 50  0001 C CNN
+F 4 "GRM21BR61C106KE15K" H 1075 4525 60  0001 C CNN "MPN"
+	1    1775 4425
+	1    0    0    -1  
+$EndComp
 Text Label 1250 1000 0    60   ~ 0
 GND_A
 Text Label 6100 2525 3    60   ~ 0
@@ -285,41 +336,4 @@ Text Notes 7600 3950 0    60   ~ 0
 ESR<3ohm @100KHz\n
 Text Notes 7150 1900 0    60   ~ 0
 ESR<10ohm
-$Comp
-L C_Small C402
-U 1 1 59180DB2
-P 1775 4425
-F 0 "C402" H 1500 4425 50  0000 L CNN
-F 1 "10uF" H 1500 4325 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H -1350 825 50  0001 C CNN
-F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61C106KE15-01.pdf" H -1350 825 50  0001 C CNN
-F 4 "GRM21BR61C106KE15K" H 1075 4525 60  0001 C CNN "Manufacturer Part"
-	1    1775 4425
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C401
-U 1 1 5917F338
-P 1775 3875
-F 0 "C401" H 1525 3900 50  0000 L CNN
-F 1 "10uF" H 1525 4000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H -1350 275 50  0001 C CNN
-F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61C106KE15-01.pdf" H -1350 275 50  0001 C CNN
-F 4 "GRM21BR61C106KE15K" H 1200 4075 60  0001 C CNN "Manufacturer Part"
-	1    1775 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP_Small C407
-U 1 1 595FD680
-P 7425 3675
-F 0 "C407" V 7550 3775 50  0000 C CNN
-F 1 "10uF" V 7575 3550 50  0000 C CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2775 2725 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H 2775 2725 50  0001 C CNN
-F 4 "Tantalum" V 7250 3375 60  0001 C CNN "Type"
-F 5 "TAJA106K010RNJV" V 7250 3350 60  0001 C CNN "Manufacter Part"
-	1    7425 3675
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

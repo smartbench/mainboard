@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# TCR2EF13
+#
+DEF TCR2EF13 U 0 40 Y Y 1 F N
+F0 "U" -50 -450 60 H V C CNN
+F1 "TCR2EF13" 0 -350 60 H V C CNN
+F2 "library:SC-74(5-pins)" -150 -550 60 H I C CNN
+F3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&prodName=TCR2EF13" -550 -650 60 H I C CNN
+F4 "TCR2EF33,LM(CT" -250 -850 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TCR2EF33,LM(CT/TCR2EF33LM(CTCT-ND/4503328" -250 -750 60 H I C CNN "Digikey Link"
+F6 "$0.39" -200 -950 60 H I C CNN "Price (Digikey)"
+$FPLIST
+ SC-74A(5-pins)
+$ENDFPLIST
+DRAW
+S -250 250 250 -250 0 1 0 N
+X Vi 1 -450 150 200 R 50 50 1 1 I
+X GND 2 -450 -150 200 R 50 50 1 1 I
+X CTRL 3 0 450 200 D 50 50 1 1 I
+X n/c 4 450 -150 200 L 50 50 1 1 N N
+X Vo 5 450 150 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

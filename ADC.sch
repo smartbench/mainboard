@@ -28,22 +28,35 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:d_schottky_300mv
-LIBS:multiplexors
+LIBS:ftdi
+LIBS:Oscillators
+LIBS:Lattice_iCE40HX4K_FPGA
+LIBS:my_memory
+LIBS:my_oscillators
+LIBS:my_power
+LIBS:my_regul
+LIBS:my_74xx
+LIBS:MIC2005A-2
+LIBS:AS4C1M16S
 LIBS:adc1175
 LIBS:clc4007
-LIBS:mic7300
-LIBS:tcr2ef13
-LIBS:max1720
-LIBS:voltage-regulators
-LIBS:voltage-references
 LIBS:DACs
-LIBS:etapa_analogica-cache
+LIBS:d_schottky_300mv
+LIBS:lm337-n
+LIBS:lm4040dym3-2
+LIBS:max1720
+LIBS:MCP4716
+LIBS:mic7300
+LIBS:multiplexors
+LIBS:tcr2ef13
+LIBS:voltage-references
+LIBS:voltage-regulators
+LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -54,10 +67,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R_Small R513
+L R_Small R1013
 U 1 1 59005AB1
 P 7475 1775
-F 0 "R513" V 7375 1725 50  0000 L CNN
+F 0 "R1013" V 7375 1725 50  0000 L CNN
 F 1 "220" V 7575 1600 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 7475 1775 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7475 1775 50  0001 C CNN
@@ -82,10 +95,10 @@ CHA_D6
 Text HLabel 10300 2375 2    60   Output ~ 0
 CHA_D7
 $Comp
-L D_Schottky_BAT54S-7-F D507
+L D_Schottky_BAT54S-7-F D1007
 U 1 1 5900605D
 P 7800 1975
-F 0 "D507" H 7925 2025 50  0000 L CNN
+F 0 "D1007" H 7925 2025 50  0000 L CNN
 F 1 "D_Schottky_BAT54S-7-F" H 7300 2175 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 4550 575 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 4550 1275 50  0001 C CNN
@@ -124,10 +137,10 @@ Text HLabel 1225 775  0    60   Input ~ 0
 Text Label 1375 775  0    60   ~ 0
 +5V0
 $Comp
-L ADC1175 U501
+L ADC1175 U1001
 U 1 1 590075EC
 P 9500 2175
-F 0 "U501" H 9000 1450 50  0000 C CNN
+F 0 "U1001" H 9000 1450 50  0000 C CNN
 F 1 "ADC1175" H 8950 1375 50  0000 C CNN
 F 2 "library:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 2450 1575 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/adc1175.pdf" H 2550 1675 50  0001 C CNN
@@ -140,10 +153,10 @@ $EndComp
 Text Label 900  2975 2    60   ~ 0
 +5V0
 $Comp
-L C_Small C503
+L C_Small C1003
 U 1 1 59007D11
 P 1550 3175
-F 0 "C503" V 1450 3075 50  0000 C CNN
+F 0 "C1003" V 1450 3075 50  0000 C CNN
 F 1 "100nF" V 1450 3325 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -2650 2200 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H -2650 2200 50  0001 C CNN
@@ -205,10 +218,10 @@ CHB_ADC_OE
 Text Label 10325 5350 0    60   ~ 0
 ADC_CLK
 $Comp
-L ADC1175 U502
+L ADC1175 U1002
 U 1 1 58FEC024
 P 9525 4950
-F 0 "U502" H 9025 4225 50  0000 C CNN
+F 0 "U1002" H 9025 4225 50  0000 C CNN
 F 1 "ADC1175" H 8975 4150 50  0000 C CNN
 F 2 "library:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 2475 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/adc1175.pdf" H 2575 4450 50  0001 C CNN
@@ -229,10 +242,10 @@ CHB_V_REF_TOP
 Text Label 8825 5350 2    60   ~ 0
 CHB_V_REF_BOTTOM
 $Comp
-L D_Schottky_BAT54S-7-F D506
+L D_Schottky_BAT54S-7-F D1006
 U 1 1 58FEC865
 P 7700 4750
-F 0 "D506" V 7700 4575 50  0000 L CNN
+F 0 "D1006" V 7700 4575 50  0000 L CNN
 F 1 "D_Schottky_BAT54S-7-F" H 7300 4925 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 4450 3350 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 4450 4050 50  0001 C CNN
@@ -247,10 +260,10 @@ VDD_A
 Text Label 5175 4675 0    60   ~ 0
 CHB_V_REF_CENTER
 $Comp
-L D_Schottky_BAT54-7-F D505
+L D_Schottky_BAT54-7-F D1005
 U 1 1 58FEFD23
 P 7175 2000
-F 0 "D505" H 7250 2100 50  0000 L CNN
+F 0 "D1005" H 7250 2100 50  0000 L CNN
 F 1 "D_Schottky_BAT54-7-F" H 7100 2225 50  0000 L CNN
 F 2 "Diodes_SMD:D_SOT-23_ANK" H 1075 -575 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 1075 125 50  0001 C CNN
@@ -261,10 +274,10 @@ F 6 "$0.16" H 1125 -75 60  0001 C CNN "Price"
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R511
+L R_Small R1011
 U 1 1 58FF066D
 P 7000 1775
-F 0 "R511" V 6900 1725 50  0000 L CNN
+F 0 "R1011" V 6900 1725 50  0000 L CNN
 F 1 "470" V 7100 1600 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 7000 1775 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7000 1775 50  0001 C CNN
@@ -275,10 +288,10 @@ $EndComp
 Text HLabel 6625 4550 0    60   Input ~ 0
 CHB_IN
 $Comp
-L D_Schottky_BAT54-7-F D504
+L D_Schottky_BAT54-7-F D1004
 U 1 1 58FF0DCF
 P 7000 4775
-F 0 "D504" H 7075 4875 50  0000 L CNN
+F 0 "D1004" H 7075 4875 50  0000 L CNN
 F 1 "D_Schottky_BAT54-7-F" H 6925 5000 50  0000 L CNN
 F 2 "Diodes_SMD:D_SOT-23_ANK" H 900 2200 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 900 2900 50  0001 C CNN
@@ -309,10 +322,10 @@ ADC_CLK
 Text Label 2475 1150 0    60   ~ 0
 ADC_CLK
 $Comp
-L LM4041EIM3-1.2/NOPB D502
+L LM4041EIM3-1.2/NOPB D1002
 U 1 1 5913A0F9
 P 3875 6850
-F 0 "D502" H 3875 6950 50  0000 C CNN
+F 0 "D1002" H 3875 6950 50  0000 C CNN
 F 1 "LM4041EIM3-1.2/NOPB" H 3875 6650 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 3825 6350 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/texas-instruments/LM4041EIM3-1.2-NOPB/LM4041EIM3-1.2-NOPBCT-ND/212732" H 3925 6450 50  0001 C CNN
@@ -325,10 +338,10 @@ F 8 "?mA < I < ?mA" H 3975 7190 60  0001 C CNN "Irange"
 	0    1    1    0   
 $EndComp
 $Comp
-L LM4040DYM3-2.5-TR D501
+L LM4040DYM3-2.5-TR D1001
 U 1 1 5917F07E
 P 3825 4600
-F 0 "D501" H 3825 4500 50  0000 L CNN
+F 0 "D1001" H 3825 4500 50  0000 L CNN
 F 1 "LM4040DYM3-2.5-TR" H 3475 4400 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H -625 -1185 50  0001 C CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040" H -475 -1575 50  0001 C CNN
@@ -343,10 +356,10 @@ $EndComp
 Text Label 3925 1550 0    60   ~ 0
 VDD_A
 $Comp
-L R_Small R504
+L R_Small R1004
 U 1 1 5918028B
 P 3925 1725
-F 0 "R504" V 3825 1775 50  0000 L CNN
+F 0 "R1004" V 3825 1775 50  0000 L CNN
 F 1 "50" V 3800 1625 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 1025 -750 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 1025 -750 50  0001 C CNN
@@ -359,10 +372,10 @@ CHA_V_REF_TOP
 Text Label 5300 2400 0    60   ~ 0
 CHA_V_REF_BOTTOM
 $Comp
-L R_Small R508
+L R_Small R1008
 U 1 1 591802CF
 P 5050 2000
-F 0 "R508" V 5150 1975 50  0000 L CNN
+F 0 "R1008" V 5150 1975 50  0000 L CNN
 F 1 "4K7" V 4925 1900 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2150 -475 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 2150 -475 50  0001 C CNN
@@ -375,10 +388,10 @@ CHA_V_REF_CENTER
 Text Notes 3825 1300 0    60   ~ 0
 ADC VOLTAGE REFERENCES (CHA)\nTOP-BOTTOM = 2.5V
 $Comp
-L LM4040DYM3-2.5-TR D503
+L LM4040DYM3-2.5-TR D1003
 U 1 1 591802E2
 P 3925 2050
-F 0 "D503" H 3950 1950 50  0000 L CNN
+F 0 "D1003" H 3950 1950 50  0000 L CNN
 F 1 "LM4040DYM3-2.5-TR" H 3575 1850 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H -525 -3735 50  0001 C CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579040" H -375 -4125 50  0001 C CNN
@@ -399,10 +412,10 @@ NoConn ~ 8800 2675
 Text Label 2050 5025 0    60   ~ 0
 5V0_D2
 $Comp
-L L_Core_Iron_Small L502
+L L_Core_Iron_Small L1002
 U 1 1 592EB00A
 P 1450 5025
-F 0 "L502" V 1650 5175 50  0000 C CNN
+F 0 "L1002" V 1650 5175 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 1550 5050 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -3450 4325 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -3450 4325 50  0001 C CNN
@@ -813,10 +826,10 @@ Connection ~ 7175 2475
 NoConn ~ 8825 4950
 NoConn ~ 8825 5450
 $Comp
-L C_Small C511
+L C_Small C1011
 U 1 1 595DDC8D
 P 2300 3175
-F 0 "C511" V 2200 3075 50  0000 C CNN
+F 0 "C1011" V 2200 3075 50  0000 C CNN
 F 1 "100nF" V 2200 3325 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -1900 2200 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H -1900 2200 50  0001 C CNN
@@ -826,10 +839,10 @@ F 5 "C0603C104K3RACTU" V 2125 3450 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C505
+L C_Small C1005
 U 1 1 595DDD50
 P 1650 4250
-F 0 "C505" V 1750 4175 50  0000 C CNN
+F 0 "C1005" V 1750 4175 50  0000 C CNN
 F 1 "100nF" V 1750 4400 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -2550 3275 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H -2550 3275 50  0001 C CNN
@@ -839,10 +852,10 @@ F 5 "C0603C104K3RACTU" V 1475 4525 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C506
+L C_Small C1006
 U 1 1 595DDEC8
 P 1650 5200
-F 0 "C506" V 1750 5125 50  0000 C CNN
+F 0 "C1006" V 1750 5125 50  0000 C CNN
 F 1 "100nF" V 1725 5325 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -2550 4225 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H -2550 4225 50  0001 C CNN
@@ -852,10 +865,10 @@ F 5 "C0603C104K3RACTU" V 1475 5475 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C502
+L C_Small C1002
 U 1 1 595DDFAB
 P 1325 5925
-F 0 "C502" V 1450 5800 50  0000 C CNN
+F 0 "C1002" V 1450 5800 50  0000 C CNN
 F 1 "100nF" V 1450 6025 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -2875 4950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H -2875 4950 50  0001 C CNN
@@ -865,10 +878,10 @@ F 5 "C0603C104K3RACTU" V 1150 6200 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C510
+L C_Small C1010
 U 1 1 595DE0A9
 P 2125 5925
-F 0 "C510" V 2225 5800 50  0000 C CNN
+F 0 "C1010" V 2225 5800 50  0000 C CNN
 F 1 "100nF" V 2250 6025 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -2075 4950 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H -2075 4950 50  0001 C CNN
@@ -878,10 +891,10 @@ F 5 "C0603C104K3RACTU" V 1950 6200 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CP_Small C512
+L CP_Small C1012
 U 1 1 595DF202
 P 2350 5925
-F 0 "C512" V 2475 6025 50  0000 C CNN
+F 0 "C1012" V 2475 6025 50  0000 C CNN
 F 1 "10uF" V 2500 5800 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -2300 4975 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -2300 4975 50  0001 C CNN
@@ -891,10 +904,10 @@ F 5 "TAJA106K010RNJV" V 2175 5600 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C504
+L CP_Small C1004
 U 1 1 595DFC6C
 P 1550 5925
-F 0 "C504" V 1675 6025 50  0000 C CNN
+F 0 "C1004" V 1675 6025 50  0000 C CNN
 F 1 "10uF" V 1700 5800 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -3100 4975 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -3100 4975 50  0001 C CNN
@@ -904,10 +917,10 @@ F 5 "TAJA106K010RNJV" V 1375 5600 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C508
+L CP_Small C1008
 U 1 1 595DFD29
 P 1875 5200
-F 0 "C508" V 2000 5300 50  0000 C CNN
+F 0 "C1008" V 2000 5300 50  0000 C CNN
 F 1 "10uF" V 2025 5075 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -2775 4250 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -2775 4250 50  0001 C CNN
@@ -917,10 +930,10 @@ F 5 "TAJA106K010RNJV" V 1700 4875 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C507
+L CP_Small C1007
 U 1 1 595DFDEF
 P 1875 4250
-F 0 "C507" V 2000 4350 50  0000 C CNN
+F 0 "C1007" V 2000 4350 50  0000 C CNN
 F 1 "10uF" V 2025 4125 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -2775 3300 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -2775 3300 50  0001 C CNN
@@ -930,10 +943,10 @@ F 5 "TAJA106K010RNJV" V 1700 3925 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C501
+L CP_Small C1001
 U 1 1 595DFEE4
 P 1325 3175
-F 0 "C501" V 1450 3275 50  0000 C CNN
+F 0 "C1001" V 1450 3275 50  0000 C CNN
 F 1 "10uF" V 1475 3050 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -3325 2225 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -3325 2225 50  0001 C CNN
@@ -943,10 +956,10 @@ F 5 "TAJA106K010RNJV" V 1150 2850 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C509
+L CP_Small C1009
 U 1 1 595DFFB4
 P 2075 3175
-F 0 "C509" V 2200 3275 50  0000 C CNN
+F 0 "C1009" V 2200 3275 50  0000 C CNN
 F 1 "10uF" V 2225 3050 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -2575 2225 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -2575 2225 50  0001 C CNN
@@ -956,10 +969,10 @@ F 5 "TAJA106K010RNJV" V 1900 2850 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L L_Core_Iron_Small L501
+L L_Core_Iron_Small L1001
 U 1 1 595E0A4E
 P 1450 4075
-F 0 "L501" V 1650 4225 50  0000 C CNN
+F 0 "L1001" V 1650 4225 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 1550 4100 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -3450 3375 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -3450 3375 50  0001 C CNN
@@ -968,10 +981,10 @@ F 4 "BLM18AG121SN1D" V 1375 4350 60  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L L_Core_Iron_Small L503
+L L_Core_Iron_Small L1003
 U 1 1 595E0BFE
 P 4050 4425
-F 0 "L503" V 4000 4375 50  0000 C CNN
+F 0 "L1003" V 4000 4375 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 4175 4175 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -850 3725 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -850 3725 50  0001 C CNN
@@ -980,10 +993,10 @@ F 4 "BLM18AG121SN1D" V 3975 4700 60  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L L_Core_Iron_Small L504
+L L_Core_Iron_Small L1004
 U 1 1 595E0CF6
 P 4050 4950
-F 0 "L504" V 4250 5100 50  0000 C CNN
+F 0 "L1004" V 4250 5100 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 4150 4975 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -850 4250 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -850 4250 50  0001 C CNN
@@ -992,10 +1005,10 @@ F 4 "BLM18AG121SN1D" V 3975 5225 60  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CP_Small C513
+L CP_Small C1013
 U 1 1 595E0E19
 P 4425 4625
-F 0 "C513" V 4550 4725 50  0000 C CNN
+F 0 "C1013" V 4550 4725 50  0000 C CNN
 F 1 "10uF" V 4575 4500 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -225 3675 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -225 3675 50  0001 C CNN
@@ -1005,10 +1018,10 @@ F 5 "TAJA106K010RNJV" V 4250 4300 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C514
+L CP_Small C1014
 U 1 1 595E0F07
 P 4425 5175
-F 0 "C514" V 4550 5275 50  0000 C CNN
+F 0 "C1014" V 4550 5275 50  0000 C CNN
 F 1 "10uF" V 4575 5050 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -225 4225 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -225 4225 50  0001 C CNN
@@ -1018,10 +1031,10 @@ F 5 "TAJA106K010RNJV" V 4250 4850 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L L_Core_Iron_Small L505
+L L_Core_Iron_Small L1005
 U 1 1 595E1E1C
 P 4100 6625
-F 0 "L505" V 4325 6650 50  0000 C CNN
+F 0 "L1005" V 4325 6650 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 4225 6350 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -800 5925 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -800 5925 50  0001 C CNN
@@ -1030,10 +1043,10 @@ F 4 "BLM18AG121SN1D" V 4025 6900 60  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CP_Small C515
+L CP_Small C1015
 U 1 1 595E1F1C
 P 4475 6850
-F 0 "C515" V 4550 6950 50  0000 C CNN
+F 0 "C1015" V 4550 6950 50  0000 C CNN
 F 1 "10uF" V 4525 6725 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -175 5900 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -175 5900 50  0001 C CNN
@@ -1043,10 +1056,10 @@ F 5 "TAJA106K010RNJV" V 4300 6525 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C518
+L C_Small C1018
 U 1 1 595E201B
 P 4750 6825
-F 0 "C518" V 4625 6725 50  0000 C CNN
+F 0 "C1018" V 4625 6725 50  0000 C CNN
 F 1 "100nF" V 4575 6975 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 550 5850 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 550 5850 50  0001 C CNN
@@ -1056,10 +1069,10 @@ F 5 "C0603C104K3RACTU" V 4575 7100 60  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L CP_Small C517
+L CP_Small C1017
 U 1 1 595E2DA7
 P 4525 2625
-F 0 "C517" V 4650 2725 50  0000 C CNN
+F 0 "C1017" V 4650 2725 50  0000 C CNN
 F 1 "10uF" V 4675 2500 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -125 1675 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -125 1675 50  0001 C CNN
@@ -1069,10 +1082,10 @@ F 5 "TAJA106K010RNJV" V 4350 2300 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C516
+L CP_Small C1016
 U 1 1 595E2E6F
 P 4525 2075
-F 0 "C516" V 4650 2175 50  0000 C CNN
+F 0 "C1016" V 4650 2175 50  0000 C CNN
 F 1 "10uF" V 4675 1950 50  0000 C CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H -125 1125 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H -125 1125 50  0001 C CNN
@@ -1082,10 +1095,10 @@ F 5 "TAJA106K010RNJV" V 4350 1750 60  0001 C CNN "Manufacter Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L L_Core_Iron_Small L507
+L L_Core_Iron_Small L1007
 U 1 1 595E2F88
 P 4150 2400
-F 0 "L507" V 4100 2300 50  0000 C CNN
+F 0 "L1007" V 4100 2300 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 4250 2250 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -750 1700 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -750 1700 50  0001 C CNN
@@ -1094,10 +1107,10 @@ F 4 "BLM18AG121SN1D" V 4075 2675 60  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L L_Core_Iron_Small L506
+L L_Core_Iron_Small L1006
 U 1 1 595E3050
 P 4150 1875
-F 0 "L506" V 4100 1825 50  0000 C CNN
+F 0 "L1006" V 4100 1825 50  0000 C CNN
 F 1 "L_Core_Iron_Small" V 4250 1675 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H -750 1175 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/281/c31e-794748.pdf" H -750 1175 50  0001 C CNN
@@ -1106,10 +1119,10 @@ F 4 "BLM18AG121SN1D" V 4075 2150 60  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R501
+L R_Small R1001
 U 1 1 595F7035
 P 3825 4275
-F 0 "R501" V 3725 4325 50  0000 L CNN
+F 0 "R1001" V 3725 4325 50  0000 L CNN
 F 1 "50" V 3700 4175 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 925 1800 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 925 1800 50  0001 C CNN
@@ -1118,10 +1131,10 @@ F 4 "CRCW060350R0FKEA" V 3825 4275 60  0001 C CNN "Manufacturer Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R509
+L R_Small R1009
 U 1 1 595F7364
 P 5050 2275
-F 0 "R509" V 5150 2250 50  0000 L CNN
+F 0 "R1009" V 5150 2250 50  0000 L CNN
 F 1 "4K7" V 4925 2175 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2150 -200 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 2150 -200 50  0001 C CNN
@@ -1130,10 +1143,10 @@ F 4 "RC0603FR-074K7L" V 5050 2275 60  0001 C CNN "Manufacturer Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R506
+L R_Small R1006
 U 1 1 595F7474
 P 4950 4550
-F 0 "R506" V 5050 4525 50  0000 L CNN
+F 0 "R1006" V 5050 4525 50  0000 L CNN
 F 1 "4K7" V 4825 4450 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2050 2075 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 2050 2075 50  0001 C CNN
@@ -1142,10 +1155,10 @@ F 4 "RC0603FR-074K7L" V 4950 4550 60  0001 C CNN "Manufacturer Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R507
+L R_Small R1007
 U 1 1 595F75E4
 P 4950 4825
-F 0 "R507" V 5050 4800 50  0000 L CNN
+F 0 "R1007" V 5050 4800 50  0000 L CNN
 F 1 "4K7" V 4825 4725 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2050 2350 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 2050 2350 50  0001 C CNN
@@ -1154,10 +1167,10 @@ F 4 "RC0603FR-074K7L" V 4950 4825 60  0001 C CNN "Manufacturer Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R510
+L R_Small R1010
 U 1 1 595F84D1
 P 6825 4550
-F 0 "R510" V 6725 4500 50  0000 L CNN
+F 0 "R1010" V 6725 4500 50  0000 L CNN
 F 1 "470" V 6925 4375 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 6825 4550 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 6825 4550 50  0001 C CNN
@@ -1166,10 +1179,10 @@ F 4 "RC0603FR-07470RL" V 6825 4550 60  0001 C CNN "Manufacturer Part"
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R512
+L R_Small R1012
 U 1 1 595F874F
 P 7375 4550
-F 0 "R512" V 7275 4500 50  0000 L CNN
+F 0 "R1012" V 7275 4500 50  0000 L CNN
 F 1 "220" V 7475 4375 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 7375 4550 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7375 4550 50  0001 C CNN
@@ -1178,10 +1191,10 @@ F 4 "RC0603JR-07220RL" V 7375 4550 60  0001 C CNN "Manufacturer Part"
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R503
+L R_Small R1003
 U 1 1 595F9240
 P 3875 6450
-F 0 "R503" V 3775 6400 50  0000 L CNN
+F 0 "R1003" V 3775 6400 50  0000 L CNN
 F 1 "220" V 3975 6275 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3875 6450 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 3875 6450 50  0001 C CNN
@@ -1190,10 +1203,10 @@ F 4 "RC0603JR-07220RL" V 3875 6450 60  0001 C CNN "Manufacturer Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R502
+L R_Small R1002
 U 1 1 59686B74
 P 3825 5200
-F 0 "R502" V 3725 5150 50  0000 L CNN
+F 0 "R1002" V 3725 5150 50  0000 L CNN
 F 1 "0" V 3900 5125 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" H 3825 5200 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/PYu-RC1206_51_RoHS_L-4-349080.pdf" H 3825 5200 50  0001 C CNN
@@ -1203,10 +1216,10 @@ F 5 "2A" V 3825 5200 60  0001 C CNN "Current Max."
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R505
+L R_Small R1005
 U 1 1 59686C95
 P 3925 2650
-F 0 "R505" V 3825 2600 50  0000 L CNN
+F 0 "R1005" V 3825 2600 50  0000 L CNN
 F 1 "0" V 4000 2575 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" H 3925 2650 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/447/PYu-RC1206_51_RoHS_L-4-349080.pdf" H 3925 2650 50  0001 C CNN

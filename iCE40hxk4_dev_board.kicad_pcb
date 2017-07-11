@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.6-e0-6349~53~ubuntu16.04.1)
 
   (general
     (links 432)
-    (no_connects 72)
-    (area 146.924999 57.924999 211.075001 143.075001)
+    (no_connects 69)
+    (area 146.812 26.794 234.096524 146.035)
     (thickness 1.6)
     (drawings 5)
     (tracks 1602)
@@ -17,7 +17,7 @@
     (0 F.Cu signal hide)
     (1 In1.Cu power hide)
     (2 In2.Cu power hide)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)

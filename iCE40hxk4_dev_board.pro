@@ -1,4 +1,4 @@
-update=vie 31 mar 2017 17:19:01 ART
+update=jue 22 jun 2017 20:09:42 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,3 +68,16 @@ LibName36=library/my_regul
 LibName37=library/my_74xx
 LibName38=library/MIC2005A-2
 LibName39=library/AS4C1M16S
+LibName40=library/adc1175
+LibName41=library/clc4007
+LibName42=library/DACs
+LibName43=library/d_schottky_300mv
+LibName44=library/lm337-n
+LibName45=library/lm4040dym3-2
+LibName46=library/max1720
+LibName47=library/MCP4716
+LibName48=library/mic7300
+LibName49=library/multiplexors
+LibName50=library/tcr2ef13
+LibName51=library/voltage-references
+LibName52=library/voltage-regulators

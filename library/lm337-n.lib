@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# LM337-N
+#
+DEF LM337-N U 0 40 Y Y 1 F N
+F0 "U" -200 200 60 H V C CNN
+F1 "LM337-N" 0 -200 60 H V C CNN
+F2 "" -150 -950 60 H I C CNN
+F3 "http://www.ti.com/lit/ds/symlink/lm137.pdf" -150 -950 60 H I C CNN
+F4 "LM337IMPX/NOPB" -500 -1100 60 H I C CNN "Manuf. Part Number"
+F5 "https://www.digikey.com/product-detail/en/texas-instruments/LM337IMPX-NOPB/LM337IMPX-NOPBCT-ND/3526950" -250 -850 60 H I C CNN "Digikey Link"
+F6 "$1.48" 300 -1100 60 H I C CNN "Price (Digikey)"
+DRAW
+S -300 150 300 -150 0 1 0 N
+X ADJ 1 0 350 200 D 50 50 1 1 I
+X Vi 2 -500 0 200 R 50 50 1 1 W
+X Vout 3 500 0 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+#End Library

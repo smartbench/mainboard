@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCR2EF13
+D Low Drop-Out Regulator +3V3
+K regulator LDO 3V3 3.3V
+F datasheets/TCR2EF13_datasheet_en_20140301.pdf
+$ENDCMP
+#
+#End Doc Library
