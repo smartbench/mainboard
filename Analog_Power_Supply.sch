@@ -156,7 +156,7 @@ Wire Wire Line
 	6150 2350 6100 2350
 Connection ~ 6100 2350
 Text Label 7300 2050 0    60   ~ 0
-+3V3
++3V3_A
 Connection ~ 7150 2050
 Wire Wire Line
 	7150 4200 7675 4200
@@ -231,7 +231,7 @@ $EndComp
 Text HLabel 1150 825  0    60   Input ~ 0
 +5V
 Text HLabel 2350 825  2    60   Output ~ 0
-+3V3
++3V3_A
 Text HLabel 2350 1000 2    60   Output ~ 0
 -3V0
 Text HLabel 1150 1000 0    60   Input ~ 0
@@ -245,7 +245,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 1000 1250 1000
 Text Label 2225 825  2    60   ~ 0
-+3V3
++3V3_A
 Text Label 2225 1000 2    60   ~ 0
 -3V0
 Text Label 2225 1175 2    60   ~ 0

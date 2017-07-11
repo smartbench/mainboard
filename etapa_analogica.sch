@@ -141,7 +141,7 @@ CHB_PGA_OUT
 Text Label 1325 675  0    60   ~ 0
 +5V
 Text Label 2150 700  2    60   ~ 0
-+3V3
++3V3_A
 Text Label 2150 850  2    60   ~ 0
 -3V0
 Text Label 2425 700  0    60   ~ 0
@@ -168,15 +168,15 @@ U 591462FD
 F0 "powerSupply" 60
 F1 "Analog_Power_Supply.sch" 60
 F2 "+5V" I L 1900 1825 60 
-F3 "+3V3" O R 2725 1825 60 
-F4 "-3V0" O R 2725 1975 60 
-F5 "GND_A" I L 1900 2125 60 
-F6 "-5V" O R 2725 2125 60 
+F3 "-3V0" O R 2725 1975 60 
+F4 "GND_A" I L 1900 2125 60 
+F5 "-5V" O R 2725 2125 60 
+F6 "+3V3_A" O R 2725 1825 60 
 $EndSheet
 Text Label 1900 1825 2    60   ~ 0
 +5V
 Text Label 2725 1825 0    60   ~ 0
-+3V3
++3V3_A
 Text Label 2725 1975 0    60   ~ 0
 -3V0
 Text Label 2725 2125 0    60   ~ 0
