@@ -69,151 +69,151 @@ $EndDescr
 $Comp
 L C C703
 U 1 1 5965C31F
-P 5700 1375
-F 0 "C703" H 5725 1475 50  0000 L CNN
-F 1 "22p" H 5725 1275 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5738 1225 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/40/U-Series-894201.pdf" H 5700 1375 50  0001 C CNN
-F 4 "06031U220FAT2A" H 5700 1375 60  0001 C CNN "Manufacturer Part"
-	1    5700 1375
+P 5225 1950
+F 0 "C703" H 5250 2050 50  0000 L CNN
+F 1 "22p" H 5250 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5263 1800 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/40/U-Series-894201.pdf" H 5225 1950 50  0001 C CNN
+F 4 "06031U220FAT2A" H 5225 1950 60  0001 C CNN "Manufacturer Part"
+	1    5225 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Variable C705
 U 1 1 5965C320
-P 5700 2725
-F 0 "C705" H 5725 2650 50  0000 L CNN
-F 1 "5-20pF" H 5725 2575 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 2725 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/384/659305J-204462.pdf" H 5700 2725 50  0001 C CNN
-F 4 "GKG20015" H 5700 2725 60  0001 C CNN "Manufacturer Part"
-	1    5700 2725
+P 4700 3325
+F 0 "C705" H 4725 3250 50  0000 L CNN
+F 1 "5-20pF" H 4725 3175 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4700 3325 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/384/659305J-204462.pdf" H 4700 3325 50  0001 C CNN
+F 4 "GKG20015" H 4700 3325 60  0001 C CNN "Manufacturer Part"
+	1    4700 3325
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R701
 U 1 1 5965C321
-P 5500 1375
-F 0 "R701" V 5400 1375 50  0000 C CNN
-F 1 "13k" V 5500 1375 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 1375 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/315/AOA0000C84-947596.pdf" H 5500 1375 50  0001 C CNN
-F 4 "RC0603FR-0713KL" V 5500 1375 60  0001 C CNN "Manufacturer Part"
-	1    5500 1375
+P 4500 1700
+F 0 "R701" V 4400 1700 50  0000 C CNN
+F 1 "13k" V 4500 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 1700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/315/AOA0000C84-947596.pdf" H 4500 1700 50  0001 C CNN
+F 4 "RC0603FR-0713KL" V 4500 1700 60  0001 C CNN "Manufacturer Part"
+	1    4500 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R703
 U 1 1 5965C322
-P 5500 2175
-F 0 "R703" V 5400 2175 50  0000 C CNN
-F 1 "89.8k" V 5500 2175 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 2175 50  0001 C CNN
-F 3 "http://ar.mouser.com/ProductDetail/Yageo/RT0603DRE0789K8L/?qs=sGAEpiMZZMvdGkrng054twOk7UJM2yUKv0DS%2fZUEqJKRqoA%2fZeTg9w%3d%3d" H 5500 2175 50  0001 C CNN
-F 4 "RT0603DRE0789K8L" V 5500 2175 60  0001 C CNN "Manufacturer Part"
-	1    5500 2175
+P 4500 2500
+F 0 "R703" V 4400 2500 50  0000 C CNN
+F 1 "89.8k" V 4500 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 2500 50  0001 C CNN
+F 3 "http://ar.mouser.com/ProductDetail/Yageo/RT0603DRE0789K8L/?qs=sGAEpiMZZMvdGkrng054twOk7UJM2yUKv0DS%2fZUEqJKRqoA%2fZeTg9w%3d%3d" H 4500 2500 50  0001 C CNN
+F 4 "RT0603DRE0789K8L" V 4500 2500 60  0001 C CNN "Manufacturer Part"
+	1    4500 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R704
 U 1 1 5965C323
-P 5500 2725
-F 0 "R704" V 5400 2725 50  0000 C CNN
-F 1 "10k" V 5500 2725 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 2725 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/303/APC-1-15.34-911303.pdf" H 5500 2725 50  0001 C CNN
-F 4 "RT0603DRE0710KL" V 5500 2725 60  0001 C CNN "Manufacturer Part"
-	1    5500 2725
+P 4500 3325
+F 0 "R704" V 4400 3325 50  0000 C CNN
+F 1 "10k" V 4500 3325 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 3325 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/303/APC-1-15.34-911303.pdf" H 4500 3325 50  0001 C CNN
+F 4 "RT0603DRE0710KL" V 4500 3325 60  0001 C CNN "Manufacturer Part"
+	1    4500 3325
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C701
 U 1 1 5965C324
-P 4300 1100
-F 0 "C701" H 4325 1200 50  0000 L CNN
-F 1 "100p" H 4325 1000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4338 950 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 4300 1100 50  0001 C CNN
-F 4 "VJ0603A101JXACW1BC" H 4300 1100 60  0001 C CNN "Manufacturer Part"
-	1    4300 1100
+P 3300 1425
+F 0 "C701" H 3325 1525 50  0000 L CNN
+F 1 "100p" H 3325 1325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3338 1275 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 3300 1425 50  0001 C CNN
+F 4 "VJ0603A101JXACW1BC" H 3300 1425 60  0001 C CNN "Manufacturer Part"
+	1    3300 1425
 	0    1    1    0   
 $EndComp
 $Comp
 L C_Variable C704
 U 1 1 5965C325
-P 5700 2175
-F 0 "C704" H 5725 2100 50  0000 L CNN
-F 1 "0.56-3.58p" H 5725 2025 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 2175 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/389/stptic-27l2-956732.pdf" H 5700 2175 50  0001 C CNN
-F 4 "STPTIC-27L2C5" H 5700 2175 60  0001 C CNN "Manufacturer Part"
-	1    5700 2175
+P 4700 2500
+F 0 "C704" H 4725 2425 50  0000 L CNN
+F 1 "0.56-3.58p" H 4725 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4700 2500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/389/stptic-27l2-956732.pdf" H 4700 2500 50  0001 C CNN
+F 4 "STPTIC-27L2C5" H 4700 2500 60  0001 C CNN "Manufacturer Part"
+	1    4700 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C709
 U 1 1 5965C326
-P 6225 2175
-F 0 "C709" H 6250 2275 50  0000 L CNN
-F 1 "180p" H 6250 2075 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6263 2025 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 6225 2175 50  0001 C CNN
-F 4 "VJ0603A181FXXPW1BC" H 6225 2175 60  0001 C CNN "Manufacturer Part"
-	1    6225 2175
+P 5225 2500
+F 0 "C709" H 5250 2600 50  0000 L CNN
+F 1 "180p" H 5250 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5263 2350 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 5225 2500 50  0001 C CNN
+F 4 "VJ0603A181FXXPW1BC" H 5225 2500 60  0001 C CNN "Manufacturer Part"
+	1    5225 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C710
 U 1 1 5965C327
-P 6225 2725
-F 0 "C710" H 6250 2825 50  0000 L CNN
-F 1 "1800p" H 6250 2625 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6263 2575 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/281/c03e-806517.pdf" H 6225 2725 50  0001 C CNN
-F 4 "GCM1885C1H182FA16D" H 6225 2725 60  0001 C CNN "Manufacturer Part"
-	1    6225 2725
+P 5225 3325
+F 0 "C710" H 5250 3425 50  0000 L CNN
+F 1 "1800p" H 5250 3225 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5263 3175 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/281/c03e-806517.pdf" H 5225 3325 50  0001 C CNN
+F 4 "GCM1885C1H182FA16D" H 5225 3325 60  0001 C CNN "Manufacturer Part"
+	1    5225 3325
 	1    0    0    -1  
 $EndComp
 $Comp
 L D_Schottky_BAT54S-7-F D701
 U 1 1 5965C328
-P 6575 1800
-F 0 "D701" V 6379 1879 50  0000 L CNN
-F 1 "D_Schottky_BAT54S-7-F" V 6470 1879 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 3125 -300 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3125 400 50  0001 C CNN
-F 4 "BAT54S-7-F" H 3675 200 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 3025 300 60  0001 C CNN "Link Digikey"
-F 6 "$0.21" H 2825 200 60  0001 C CNN "Price"
-	1    6575 1800
+P 6150 2475
+F 0 "D701" V 5954 2554 50  0000 L CNN
+F 1 "D_Schottky_BAT54S-7-F" V 6045 2554 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2700 375 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 2700 1075 50  0001 C CNN
+F 4 "BAT54S-7-F" H 3250 875 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 2600 975 60  0001 C CNN "Link Digikey"
+F 6 "$0.21" H 2400 875 60  0001 C CNN "Price"
+	1    6150 2475
 	0    1    1    0   
 $EndComp
 $Comp
 L CPC1017N U702
 U 1 1 5965C329
-P 4300 4250
-F 0 "U702" V 4254 4578 50  0000 L CNN
-F 1 "CPC1017N" V 4345 4578 50  0000 L CNN
-F 2 "library:2.54SOP4" H 1100 3400 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/205/CPC1017N-16278.pdf" H 1200 3500 60  0001 C CNN
-F 4 "CPC1017NTR" H 1300 3600 60  0001 C CNN "Manuf. Part Number"
-F 5 "http://www.mouser.com/ProductDetail/IXYS-Integrated-Circuits/CPC1017NTR/?qs=sGAEpiMZZMtGt%252bn33CgIPw%2fs1DdMEG3bQtImX8rzk0M%3d" H 1400 3700 60  0001 C CNN "Link Mouser"
-F 6 "$1.05" H 1500 3800 60  0001 C CNN "Price"
-	1    4300 4250
+P 3175 4725
+F 0 "U702" V 3129 5053 50  0000 L CNN
+F 1 "CPC1017N" V 3220 5053 50  0000 L CNN
+F 2 "library:2.54SOP4" H -25 3875 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/205/CPC1017N-16278.pdf" H 75  3975 60  0001 C CNN
+F 4 "CPC1017NTR" H 175 4075 60  0001 C CNN "Manuf. Part Number"
+F 5 "http://www.mouser.com/ProductDetail/IXYS-Integrated-Circuits/CPC1017NTR/?qs=sGAEpiMZZMtGt%252bn33CgIPw%2fs1DdMEG3bQtImX8rzk0M%3d" H 275 4175 60  0001 C CNN "Link Mouser"
+F 6 "$1.05" H 375 4275 60  0001 C CNN "Price"
+	1    3175 4725
 	0    -1   -1   0   
 $EndComp
 $Comp
 L D_Schottky_BAT54S-7-F D702
 U 1 1 5965C32A
-P 6700 4500
-F 0 "D702" V 6504 4579 50  0000 L CNN
-F 1 "D_Schottky_BAT54S-7-F" V 6595 4579 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 3250 2400 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3250 3100 50  0001 C CNN
-F 4 "BAT54S-7-F" H 3800 2900 60  0001 C CNN "Manuf. Part Number"
-F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 3150 3000 60  0001 C CNN "Link Digikey"
-F 6 "$0.21" H 2950 2900 60  0001 C CNN "Price"
-	1    6700 4500
+P 5875 5325
+F 0 "D702" V 5679 5404 50  0000 L CNN
+F 1 "D_Schottky_BAT54S-7-F" V 5770 5404 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2425 3225 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 2425 3925 50  0001 C CNN
+F 4 "BAT54S-7-F" H 2975 3725 60  0001 C CNN "Manuf. Part Number"
+F 5 "https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54S-7-F/BAT54S-FDICT-ND/755493" H 2325 3825 60  0001 C CNN "Link Digikey"
+F 6 "$0.21" H 2125 3725 60  0001 C CNN "Price"
+	1    5875 5325
 	0    1    1    0   
 $EndComp
 Text HLabel 8700 2050 0    60   Input ~ 0
@@ -236,7 +236,7 @@ F 4 "CD4051BM96" V 9400 1875 60  0000 C CNN "Manuf. Part Number"
 	1    9250 1800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1300 1600 0    60   Input ~ 0
+Text HLabel 950  1175 0    60   Input ~ 0
 VDD_A
 $Comp
 L GNDA #PWR029
@@ -372,29 +372,29 @@ F 3 "" H 8725 4575 50  0001 C CNN
 	1    8725 4575
 	0    1    1    0   
 $EndComp
-Text HLabel 3925 1100 0    60   Input ~ 0
+Text HLabel 2925 1425 0    60   Input ~ 0
 CHA_IN
-Text HLabel 3950 3800 0    60   Input ~ 0
+Text HLabel 2825 4275 0    60   Input ~ 0
 CHB_IN
 Text HLabel 9800 1300 2    60   Input ~ 0
 CHA_OUT
 Text HLabel 9825 4025 2    60   Input ~ 0
 CHB_OUT
-Text HLabel 3950 1950 0    60   Input ~ 0
+Text HLabel 2950 2275 0    60   Input ~ 0
 CHA_DC_COUPLING
-Text HLabel 3950 4650 0    60   Input ~ 0
+Text HLabel 2825 5125 0    60   Input ~ 0
 CHB_DC_COUPLING
-Text HLabel 1300 1050 0    60   Input ~ 0
+Text HLabel 950  625  0    60   Input ~ 0
 GND_A
-Text HLabel 1300 1300 0    60   Input ~ 0
+Text HLabel 950  875  0    60   Input ~ 0
 GND_D
-Text Label 6800 1600 0    60   ~ 0
+Text Label 6375 2275 0    60   ~ 0
 CHA_ATT_20dB
-Text Label 6475 2450 0    60   ~ 0
+Text Label 5475 3050 0    60   ~ 0
 CHA_ATT_40dB
-Text Label 6475 5150 0    60   ~ 0
+Text Label 5350 5950 0    60   ~ 0
 CHB_ATT_40dB
-Text Label 6925 4300 0    60   ~ 0
+Text Label 6100 5125 0    60   ~ 0
 CHB_ATT_20dB
 Text Label 8700 1150 2    60   ~ 0
 CHA_ATT_20dB
@@ -404,324 +404,385 @@ Text Label 8725 3875 2    60   ~ 0
 CHB_ATT_20dB
 Text Label 8725 3975 2    60   ~ 0
 CHB_ATT_40dB
-Text Label 1475 1600 0    60   ~ 0
+Text Label 1125 1175 0    60   ~ 0
 VDD_A
-Text HLabel 1300 1750 0    60   Input ~ 0
+Text HLabel 950  1325 0    60   Input ~ 0
 VSS_A
-Text Label 1475 1750 0    60   ~ 0
+Text Label 1125 1325 0    60   ~ 0
 VSS_A
 Text Label 9250 950  1    60   ~ 0
 VDD_A
-Text Label 6650 1150 0    60   ~ 0
+Text Label 6225 1825 0    60   ~ 0
 VDD_A
-Text Label 6650 2075 0    60   ~ 0
+Text Label 6225 2750 0    60   ~ 0
 VSS_A
 Text Label 9400 2650 3    60   ~ 0
 VSS_A
 Text Label 9425 5375 3    60   ~ 0
 VSS_A
-Text Label 6800 4800 0    60   ~ 0
+Text Label 5975 5625 0    60   ~ 0
 VSS_A
-Text Label 6775 3850 0    60   ~ 0
+Text Label 5950 4675 0    60   ~ 0
 VDD_A
 Text Label 9275 3675 1    60   ~ 0
 VDD_A
 $Comp
 L CPC1017N U701
 U 1 1 5965C337
-P 4300 1550
-F 0 "U701" V 4254 1878 50  0000 L CNN
-F 1 "CPC1017N" V 4345 1878 50  0000 L CNN
-F 2 "library:2.54SOP4" H 1100 700 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/205/CPC1017N-16278.pdf" H 1200 800 60  0001 C CNN
-F 4 "CPC1017NTR" H 1300 900 60  0001 C CNN "Manuf. Part Number"
-F 5 "http://www.mouser.com/ProductDetail/IXYS-Integrated-Circuits/CPC1017NTR/?qs=sGAEpiMZZMtGt%252bn33CgIPw%2fs1DdMEG3bQtImX8rzk0M%3d" H 1400 1000 60  0001 C CNN "Link Mouser"
-F 6 "$1.05" H 1500 1100 60  0001 C CNN "Price"
-	1    4300 1550
+P 3300 1875
+F 0 "U701" V 3254 2203 50  0000 L CNN
+F 1 "CPC1017N" V 3345 2203 50  0000 L CNN
+F 2 "library:2.54SOP4" H 100 1025 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/205/CPC1017N-16278.pdf" H 200 1125 60  0001 C CNN
+F 4 "CPC1017NTR" H 300 1225 60  0001 C CNN "Manuf. Part Number"
+F 5 "http://www.mouser.com/ProductDetail/IXYS-Integrated-Circuits/CPC1017NTR/?qs=sGAEpiMZZMtGt%252bn33CgIPw%2fs1DdMEG3bQtImX8rzk0M%3d" H 400 1325 60  0001 C CNN "Link Mouser"
+F 6 "$1.05" H 500 1425 60  0001 C CNN "Price"
+	1    3300 1875
 	0    -1   -1   0   
 $EndComp
-Text Label 1475 1050 0    60   ~ 0
+Text Label 1125 625  0    60   ~ 0
 GND_A
-Text Label 1475 1300 0    60   ~ 0
+Text Label 1125 875  0    60   ~ 0
 GND_D
-Text Label 5500 3100 3    60   ~ 0
+Text Label 4500 3700 3    60   ~ 0
 GND_A
 Text Label 9225 5375 3    60   ~ 0
 GND_A
 Text Label 9200 2650 3    60   ~ 0
 GND_A
-Text Label 4450 2000 3    60   ~ 0
+Text Label 3450 2325 3    60   ~ 0
 GND_D
-Text Label 4450 4700 3    60   ~ 0
+Text Label 3325 5175 3    60   ~ 0
 GND_D
 $Comp
 L R R702
 U 1 1 5965C338
-P 5500 1725
-F 0 "R702" V 5400 1725 50  0000 C CNN
-F 1 "887k" V 5500 1725 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 1725 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5500 1725 50  0001 C CNN
-F 4 "RC0603FR-07887KL" V 5500 1725 60  0001 C CNN "Manufacturer Part"
-	1    5500 1725
+P 4500 2050
+F 0 "R702" V 4400 2050 50  0000 C CNN
+F 1 "887k" V 4500 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 2050 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 4500 2050 50  0001 C CNN
+F 4 "RC0603FR-07887KL" V 4500 2050 60  0001 C CNN "Manufacturer Part"
+	1    4500 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 1225 5700 1225
-Connection ~ 5600 1225
-Wire Wire Line
-	4450 1100 5600 1100
-Wire Wire Line
-	5600 1100 5600 1225
-Connection ~ 4550 1100
-Connection ~ 4050 1100
-Wire Wire Line
-	6650 1150 6575 1150
-Wire Wire Line
-	6575 1150 6575 1350
-Wire Wire Line
-	6575 2075 6650 2075
-Wire Wire Line
-	6225 1600 6800 1600
-Connection ~ 6475 1600
-Wire Wire Line
-	6575 2075 6575 1950
-Wire Wire Line
-	4450 3800 5600 3800
-Connection ~ 4550 3800
-Connection ~ 4050 3800
-Wire Wire Line
-	6775 3850 6700 3850
-Wire Wire Line
-	6700 3850 6700 4050
-Wire Wire Line
-	6225 4300 6925 4300
-Connection ~ 6600 4300
-Wire Wire Line
-	3950 4650 4150 4650
-Wire Wire Line
-	1475 1050 1300 1050
-Wire Wire Line
-	1300 1300 1475 1300
-Wire Wire Line
-	1475 1750 1300 1750
-Wire Wire Line
-	1300 1600 1475 1600
-Wire Wire Line
-	4450 4700 4450 4650
-Wire Wire Line
-	3950 3800 4150 3800
-Wire Wire Line
-	4050 3850 4050 3800
-Wire Wire Line
-	4550 3800 4550 3850
-Wire Wire Line
-	3925 1100 4150 1100
-Wire Wire Line
-	3950 1950 4150 1950
-Wire Wire Line
-	4450 2000 4450 1950
-Wire Wire Line
-	4050 1150 4050 1100
-Wire Wire Line
-	4550 1150 4550 1100
-Wire Wire Line
-	5500 1575 5500 1525
-Wire Wire Line
-	5500 1875 5500 2025
-Wire Wire Line
-	5500 1950 6225 1950
-Wire Wire Line
-	5700 1525 5700 2025
-Connection ~ 5500 1950
-Wire Wire Line
-	5500 2875 5500 3100
-Wire Wire Line
-	5500 3000 6225 3000
-Wire Wire Line
-	5700 3000 5700 2875
-Connection ~ 5500 3000
-Wire Wire Line
-	6225 3000 6225 2875
-Connection ~ 5700 3000
-Wire Wire Line
-	5500 2325 5500 2575
-Wire Wire Line
-	5700 2325 5700 2575
-Wire Wire Line
-	6225 2325 6225 2575
-Wire Wire Line
-	5500 2450 6475 2450
-Connection ~ 6225 2450
-Connection ~ 5700 2450
-Connection ~ 5500 2450
-Connection ~ 5700 1950
-Wire Wire Line
-	6225 1600 6225 2025
-Connection ~ 6225 1950
 $Comp
 L C C706
 U 1 1 5965C339
-P 5700 4075
-F 0 "C706" H 5725 4175 50  0000 L CNN
-F 1 "22p" H 5725 3975 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5738 3925 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/40/U-Series-894201.pdf" H 5700 4075 50  0001 C CNN
-F 4 "06031U220FAT2A" H 5700 4075 60  0001 C CNN "Manufacturer Part"
-	1    5700 4075
+P 5100 4750
+F 0 "C706" H 5125 4850 50  0000 L CNN
+F 1 "22p" H 5125 4650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5138 4600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/40/U-Series-894201.pdf" H 5100 4750 50  0001 C CNN
+F 4 "06031U220FAT2A" H 5100 4750 60  0001 C CNN "Manufacturer Part"
+	1    5100 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Variable C708
 U 1 1 5965C33A
-P 5700 5425
-F 0 "C708" H 5725 5350 50  0000 L CNN
-F 1 "5-20pF" H 5725 5275 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 5425 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/384/659305J-204462.pdf" H 5700 5425 50  0001 C CNN
-F 4 "GKG20015" H 5700 5425 60  0001 C CNN "Manufacturer Part"
-	1    5700 5425
+P 4575 6225
+F 0 "C708" H 4600 6150 50  0000 L CNN
+F 1 "5-20pF" H 4600 6075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4575 6225 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/384/659305J-204462.pdf" H 4575 6225 50  0001 C CNN
+F 4 "GKG20015" H 4575 6225 60  0001 C CNN "Manufacturer Part"
+	1    4575 6225
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R705
 U 1 1 5965C33B
-P 5500 4075
-F 0 "R705" V 5400 4075 50  0000 C CNN
-F 1 "13k" V 5500 4075 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 4075 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/315/AOA0000C84-947596.pdf" H 5500 4075 50  0001 C CNN
-F 4 "RC0603FR-0713KL" V 5500 4075 60  0001 C CNN "Manufacturer Part"
-	1    5500 4075
+P 4375 4550
+F 0 "R705" V 4275 4550 50  0000 C CNN
+F 1 "13k" V 4375 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4305 4550 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/315/AOA0000C84-947596.pdf" H 4375 4550 50  0001 C CNN
+F 4 "RC0603FR-0713KL" V 4375 4550 60  0001 C CNN "Manufacturer Part"
+	1    4375 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R707
 U 1 1 5965C33C
-P 5500 4875
-F 0 "R707" V 5400 4875 50  0000 C CNN
-F 1 "89.8k" V 5500 4875 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 4875 50  0001 C CNN
-F 3 "http://ar.mouser.com/ProductDetail/Yageo/RT0603DRE0789K8L/?qs=sGAEpiMZZMvdGkrng054twOk7UJM2yUKv0DS%2fZUEqJKRqoA%2fZeTg9w%3d%3d" H 5500 4875 50  0001 C CNN
-F 4 "RT0603DRE0789K8L" V 5500 4875 60  0001 C CNN "Manufacturer Part"
-	1    5500 4875
+P 4375 5350
+F 0 "R707" V 4275 5350 50  0000 C CNN
+F 1 "89.8k" V 4375 5350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4305 5350 50  0001 C CNN
+F 3 "http://ar.mouser.com/ProductDetail/Yageo/RT0603DRE0789K8L/?qs=sGAEpiMZZMvdGkrng054twOk7UJM2yUKv0DS%2fZUEqJKRqoA%2fZeTg9w%3d%3d" H 4375 5350 50  0001 C CNN
+F 4 "RT0603DRE0789K8L" V 4375 5350 60  0001 C CNN "Manufacturer Part"
+	1    4375 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R708
 U 1 1 5965C33D
-P 5500 5425
-F 0 "R708" V 5400 5425 50  0000 C CNN
-F 1 "10k" V 5500 5425 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 5425 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/303/APC-1-15.34-911303.pdf" H 5500 5425 50  0001 C CNN
-F 4 "RT0603DRE0710KL" V 5500 5425 60  0001 C CNN "Manufacturer Part"
-	1    5500 5425
+P 4375 6225
+F 0 "R708" V 4275 6225 50  0000 C CNN
+F 1 "10k" V 4375 6225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4305 6225 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/303/APC-1-15.34-911303.pdf" H 4375 6225 50  0001 C CNN
+F 4 "RT0603DRE0710KL" V 4375 6225 60  0001 C CNN "Manufacturer Part"
+	1    4375 6225
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Variable C707
 U 1 1 5965C33E
-P 5700 4875
-F 0 "C707" H 5725 4800 50  0000 L CNN
-F 1 "0.56-3.58p" H 5725 4725 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5700 4875 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/389/stptic-27l2-956732.pdf" H 5700 4875 50  0001 C CNN
-F 4 "STPTIC-27L2C5" H 5700 4875 60  0001 C CNN "Manufacturer Part"
-	1    5700 4875
+P 4575 5350
+F 0 "C707" H 4600 5275 50  0000 L CNN
+F 1 "0.56-3.58p" H 4600 5200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4575 5350 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/389/stptic-27l2-956732.pdf" H 4575 5350 50  0001 C CNN
+F 4 "STPTIC-27L2C5" H 4575 5350 60  0001 C CNN "Manufacturer Part"
+	1    4575 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C711
 U 1 1 5965C33F
-P 6225 4875
-F 0 "C711" H 6250 4975 50  0000 L CNN
-F 1 "180p" H 6250 4775 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6263 4725 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 6225 4875 50  0001 C CNN
-F 4 "VJ0603A181FXXPW1BC" H 6225 4875 60  0001 C CNN "Manufacturer Part"
-	1    6225 4875
+P 5100 5350
+F 0 "C711" H 5125 5450 50  0000 L CNN
+F 1 "180p" H 5125 5250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5138 5200 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 5100 5350 50  0001 C CNN
+F 4 "VJ0603A181FXXPW1BC" H 5100 5350 60  0001 C CNN "Manufacturer Part"
+	1    5100 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C712
 U 1 1 5965C340
-P 6225 5425
-F 0 "C712" H 6250 5525 50  0000 L CNN
-F 1 "1800p" H 6250 5325 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6263 5275 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/281/c03e-806517.pdf" H 6225 5425 50  0001 C CNN
-F 4 "GCM1885C1H182FA16D" H 6225 5425 60  0001 C CNN "Manufacturer Part"
-	1    6225 5425
+P 5100 6225
+F 0 "C712" H 5125 6325 50  0000 L CNN
+F 1 "1800p" H 5125 6125 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5138 6075 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/281/c03e-806517.pdf" H 5100 6225 50  0001 C CNN
+F 4 "GCM1885C1H182FA16D" H 5100 6225 60  0001 C CNN "Manufacturer Part"
+	1    5100 6225
 	1    0    0    -1  
 $EndComp
-Text Label 5500 5800 3    60   ~ 0
+Text Label 4375 6600 3    60   ~ 0
 GND_A
 $Comp
 L R R706
 U 1 1 5965C341
-P 5500 4425
-F 0 "R706" V 5400 4425 50  0000 C CNN
-F 1 "887k" V 5500 4425 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 4425 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5500 4425 50  0001 C CNN
-F 4 "RC0603FR-07887KL" V 5500 4425 60  0001 C CNN "Manufacturer Part"
-	1    5500 4425
+P 4375 4900
+F 0 "R706" V 4275 4900 50  0000 C CNN
+F 1 "887k" V 4375 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4305 4900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 4375 4900 50  0001 C CNN
+F 4 "RC0603FR-07887KL" V 4375 4900 60  0001 C CNN "Manufacturer Part"
+	1    4375 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 3925 5700 3925
-Connection ~ 5600 3925
-Wire Wire Line
-	5600 3800 5600 3925
-Wire Wire Line
-	5500 4275 5500 4225
-Wire Wire Line
-	5500 4575 5500 4725
-Wire Wire Line
-	5500 4650 6225 4650
-Wire Wire Line
-	5700 4225 5700 4725
-Connection ~ 5500 4650
-Wire Wire Line
-	5500 5575 5500 5800
-Wire Wire Line
-	5500 5700 6225 5700
-Wire Wire Line
-	5700 5700 5700 5575
-Connection ~ 5500 5700
-Wire Wire Line
-	6225 5700 6225 5575
-Connection ~ 5700 5700
-Wire Wire Line
-	5500 5025 5500 5275
-Wire Wire Line
-	5700 5025 5700 5275
-Wire Wire Line
-	6225 5025 6225 5275
-Wire Wire Line
-	5500 5150 6475 5150
-Connection ~ 6225 5150
-Connection ~ 5700 5150
-Connection ~ 5500 5150
-Connection ~ 5700 4650
-Wire Wire Line
-	6225 4300 6225 4725
-Connection ~ 6225 4650
 $Comp
 L C C702
 U 1 1 5965C342
-P 4300 3800
-F 0 "C702" H 4325 3900 50  0000 L CNN
-F 1 "100p" H 4325 3700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4338 3650 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 4300 3800 50  0001 C CNN
-F 4 "VJ0603A101JXACW1BC" H 4300 3800 60  0001 C CNN "Manufacturer Part"
-	1    4300 3800
+P 3175 4275
+F 0 "C702" H 3200 4375 50  0000 L CNN
+F 1 "100p" H 3200 4175 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3213 4125 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 3175 4275 50  0001 C CNN
+F 4 "VJ0603A101JXACW1BC" H 3175 4275 60  0001 C CNN "Manufacturer Part"
+	1    3175 4275
 	0    1    1    0   
 $EndComp
+$Comp
+L R_Small R710
+U 1 1 5967F665
+P 4500 2850
+F 0 "R710" V 4400 2800 50  0000 L CNN
+F 1 "0" V 4575 2775 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4500 2850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/PYu-RC1206_51_RoHS_L-4-349080.pdf" H 4500 2850 50  0001 C CNN
+F 4 "RC1206JR-070RL" V 4500 2850 60  0001 C CNN "Manufacturer Part"
+F 5 "2A" V 4500 2850 60  0001 C CNN "Current Max."
+	1    4500 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Variable C714
+U 1 1 5967FFA6
+P 4700 1850
+F 0 "C714" H 4725 1775 50  0000 L CNN
+F 1 "Optional" H 4725 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4700 1850 50  0001 C CNN
+F 3 "" H 4700 1850 50  0001 C CNN
+	1    4700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R709
+U 1 1 59681947
+P 4375 5675
+F 0 "R709" V 4275 5625 50  0000 L CNN
+F 1 "0" V 4450 5600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4375 5675 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/PYu-RC1206_51_RoHS_L-4-349080.pdf" H 4375 5675 50  0001 C CNN
+F 4 "RC1206JR-070RL" V 4375 5675 60  0001 C CNN "Manufacturer Part"
+F 5 "2A" V 4375 5675 60  0001 C CNN "Current Max."
+	1    4375 5675
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Variable C713
+U 1 1 59683E8B
+P 4575 4725
+F 0 "C713" H 4600 4650 50  0000 L CNN
+F 1 "Optional" H 4600 4575 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4575 4725 50  0001 C CNN
+F 3 "" H 4575 4725 50  0001 C CNN
+	1    4575 4725
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6700 4800 6800 4800
+	4500 1550 5225 1550
+Connection ~ 4600 1550
 Wire Wire Line
-	6700 4650 6700 4800
+	3450 1425 4600 1425
+Wire Wire Line
+	4600 1425 4600 1550
+Connection ~ 3550 1425
+Connection ~ 3050 1425
+Wire Wire Line
+	6225 1825 6150 1825
+Wire Wire Line
+	6150 1825 6150 2025
+Wire Wire Line
+	6150 2750 6225 2750
+Wire Wire Line
+	4500 2275 6375 2275
+Connection ~ 6050 2275
+Wire Wire Line
+	6150 2750 6150 2625
+Wire Wire Line
+	3325 4275 4475 4275
+Connection ~ 3425 4275
+Connection ~ 2925 4275
+Wire Wire Line
+	5950 4675 5875 4675
+Wire Wire Line
+	5875 4675 5875 4875
+Wire Wire Line
+	4375 5125 6100 5125
+Connection ~ 5775 5125
+Wire Wire Line
+	2825 5125 3025 5125
+Wire Wire Line
+	1125 625  950  625 
+Wire Wire Line
+	950  875  1125 875 
+Wire Wire Line
+	1125 1325 950  1325
+Wire Wire Line
+	950  1175 1125 1175
+Wire Wire Line
+	3325 5175 3325 5125
+Wire Wire Line
+	2825 4275 3025 4275
+Wire Wire Line
+	2925 4325 2925 4275
+Wire Wire Line
+	3425 4275 3425 4325
+Wire Wire Line
+	2925 1425 3150 1425
+Wire Wire Line
+	2950 2275 3150 2275
+Wire Wire Line
+	3450 2325 3450 2275
+Wire Wire Line
+	3050 1475 3050 1425
+Wire Wire Line
+	3550 1475 3550 1425
+Wire Wire Line
+	4500 1900 4500 1850
+Wire Wire Line
+	4500 2200 4500 2350
+Connection ~ 4500 2275
+Wire Wire Line
+	4500 3475 4500 3700
+Wire Wire Line
+	4500 3600 5225 3600
+Wire Wire Line
+	4700 3600 4700 3475
+Connection ~ 4500 3600
+Wire Wire Line
+	5225 3600 5225 3475
+Connection ~ 4700 3600
+Wire Wire Line
+	4500 3050 5475 3050
+Connection ~ 5225 3050
+Connection ~ 4700 3050
+Connection ~ 4500 3050
+Connection ~ 4700 2275
+Connection ~ 5225 2275
+Connection ~ 4475 4400
+Wire Wire Line
+	4475 4275 4475 4400
+Wire Wire Line
+	4375 4750 4375 4700
+Wire Wire Line
+	4375 5050 4375 5200
+Connection ~ 4375 5125
+Wire Wire Line
+	4375 6375 4375 6600
+Wire Wire Line
+	4375 6500 5100 6500
+Wire Wire Line
+	4575 6500 4575 6375
+Connection ~ 4375 6500
+Wire Wire Line
+	5100 6500 5100 6375
+Connection ~ 4575 6500
+Wire Wire Line
+	4375 5775 4375 6075
+Wire Wire Line
+	4575 5500 4575 6075
+Wire Wire Line
+	5100 5500 5100 6075
+Wire Wire Line
+	4375 5950 5350 5950
+Connection ~ 5100 5950
+Connection ~ 4575 5950
+Connection ~ 4375 5950
+Connection ~ 4575 5125
+Wire Wire Line
+	5100 4900 5100 5200
+Connection ~ 5100 5125
+Wire Wire Line
+	5875 5625 5975 5625
+Wire Wire Line
+	5875 5475 5875 5625
+Wire Wire Line
+	4500 2750 4500 2650
+Wire Wire Line
+	5225 2100 5225 2350
+Wire Wire Line
+	4500 2950 4500 3175
+Wire Wire Line
+	4700 2650 4700 3175
+Wire Wire Line
+	5225 2650 5225 3175
+Wire Wire Line
+	4700 2000 4700 2350
+Wire Wire Line
+	5225 1550 5225 1800
+Wire Wire Line
+	4700 2275 4675 2275
+Connection ~ 4675 2275
+Wire Wire Line
+	4700 1700 4700 1550
+Connection ~ 4700 1550
+Wire Wire Line
+	4375 5575 4375 5500
+Wire Wire Line
+	4575 4875 4575 5200
+Wire Wire Line
+	4575 4400 4575 4575
+Wire Wire Line
+	4375 4400 5100 4400
+Connection ~ 4575 4400
+Wire Wire Line
+	5100 4400 5100 4600
 $EndSCHEMATC

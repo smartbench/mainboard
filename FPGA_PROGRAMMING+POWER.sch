@@ -134,8 +134,8 @@ P 2050 4700
 F 0 "C302" H 2075 4800 50  0000 L CNN
 F 1 "10uF" H 2075 4600 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2050 4700 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H 2050 4700 50  0001 C CNN
-F 4 "TAJA106K010RNJV" H 2050 4700 60  0001 C CNN "Manufacturer Part"
+F 3 "http://www.mouser.com/ds/2/40/TAJ_AUTO-783622.pdf" H 2050 4700 50  0001 C CNN
+F 4 "TAJA106K016TNJ" H 2050 4700 60  0001 C CNN "Manufacturer Part"
 	1    2050 4700
 	1    0    0    -1  
 $EndComp
@@ -429,8 +429,8 @@ P 2550 5450
 F 0 "C304" H 2575 5550 50  0000 L CNN
 F 1 "10uF" H 2575 5350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2550 5450 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/40/taj-776811.pdf" H 2550 5450 50  0001 C CNN
-F 4 "TAJA106K010RNJV" H 2550 5450 60  0001 C CNN "Manufacturer Part"
+F 3 "http://www.mouser.com/ds/2/40/TAJ_AUTO-783622.pdf" H 2550 5450 50  0001 C CNN
+F 4 "TAJA106K016TNJ" H 2550 5450 60  0001 C CNN "Manufacturer Part"
 	1    2550 5450
 	1    0    0    -1  
 $EndComp
