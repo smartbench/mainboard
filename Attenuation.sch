@@ -249,8 +249,6 @@ F 3 "" H 8700 1550 50  0001 C CNN
 	1    8700 1550
 	0    1    1    0   
 $EndComp
-Text HLabel 8700 1350 0    60   Input ~ 0
-CHB_OFFSET
 $Comp
 L GNDA #PWR030
 U 1 1 5965C32D
@@ -326,8 +324,6 @@ F 3 "" H 8725 4275 50  0001 C CNN
 	1    8725 4275
 	0    1    1    0   
 $EndComp
-Text HLabel 8725 4075 0    60   Input ~ 0
-CHA_OFFSET
 $Comp
 L GNDA #PWR035
 U 1 1 5965C333
@@ -785,4 +781,34 @@ Wire Wire Line
 Connection ~ 4575 4400
 Wire Wire Line
 	5100 4400 5100 4600
+$Comp
+L CONN_01X01 J701
+U 1 1 596A5B58
+P 7800 1350
+F 0 "J701" H 7800 1450 50  0000 C CNN
+F 1 "CONN_01X01" V 7900 1350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch1.27mm" H 7800 1350 50  0001 C CNN
+F 3 "" H 7800 1350 50  0001 C CNN
+	1    7800 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 1350 8700 1350
+$Comp
+L CONN_01X01 J702
+U 1 1 596A6054
+P 7925 4075
+F 0 "J702" H 7925 4175 50  0000 C CNN
+F 1 "CONN_01X01" V 8025 4075 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch1.27mm" H 7925 4075 50  0001 C CNN
+F 3 "" H 7925 4075 50  0001 C CNN
+	1    7925 4075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8125 4075 8725 4075
+Text Notes 7000 1700 0    60   ~ 0
+Test Point. \nConnect to channel offset B.
+Text Notes 7050 4400 0    60   ~ 0
+Test Point. \nConnect to channel offset A.
 $EndSCHEMATC

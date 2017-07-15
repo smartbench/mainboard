@@ -210,33 +210,10 @@ F 6 "25V (min. 10V)" H 6300 5550 60  0001 C CNN "VDC"
 	1    6300 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X35 J401
-U 1 1 58E81FE2
-P 8050 3600
-F 0 "J401" H 8050 5400 50  0000 C CNN
-F 1 "CONN_01X35" V 8150 3600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x35_Pitch1.27mm" H 8050 3600 50  0001 C CNN
-F 3 "" H 8050 3600 50  0001 C CNN
-	1    8050 3600
-	1    0    0    -1  
-$EndComp
 Text Notes 2400 3050 2    60   ~ 0
 Available pins for ADC connections
 Text Notes 2750 2300 2    60   ~ 0
 TO LEFT CONNECTOR
-Text Label 7850 3800 2    60   ~ 0
-IOR_139
-Text Label 7850 3700 2    60   ~ 0
-IOR_138
-Text Label 7850 3500 2    60   ~ 0
-IOR_137
-Text Label 7850 4100 2    60   ~ 0
-IOR_146
-Text Label 7850 4000 2    60   ~ 0
-IOR_144
-Text Label 7850 3900 2    60   ~ 0
-IOR_140
 Text Label 7850 2500 2    60   ~ 0
 IOR_112
 Text Label 7850 2400 2    60   ~ 0
@@ -253,48 +230,6 @@ Text Label 7850 2700 2    60   ~ 0
 IOR_115
 Text Label 7850 2600 2    60   ~ 0
 IOR_114
-Text Label 7850 3300 2    60   ~ 0
-IOR_128
-Text Label 7850 3200 2    60   ~ 0
-IOR_120
-Text Label 7850 3100 2    60   ~ 0
-IOR_119
-Text Label 7850 3000 2    60   ~ 0
-IOR_118
-Text Label 7850 3400 2    60   ~ 0
-IOR_136
-Text Label 7850 4200 2    60   ~ 0
-IOR_147
-Text Label 7850 4300 2    60   ~ 0
-IOR_148
-Text Label 7850 4400 2    60   ~ 0
-IOR_152
-Text Label 7850 4500 2    60   ~ 0
-IOR_160
-Text Label 7850 4600 2    60   ~ 0
-IOR_161
-Text Label 7850 4700 2    60   ~ 0
-IOR_164
-Text Label 7850 4800 2    60   ~ 0
-IOR_165
-Text Label 7850 4900 2    60   ~ 0
-IOR_166
-Text Label 7850 5000 2    60   ~ 0
-IOR_167
-$Comp
-L C C406
-U 1 1 58E82127
-P 7700 5350
-F 0 "C406" H 7450 5400 50  0000 L CNN
-F 1 "100nF" H 7350 5300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7738 5200 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7700 5350 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 7700 5350 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 7700 5350 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 7700 5350 60  0001 C CNN "VDC"
-	1    7700 5350
-	1    0    0    -1  
-$EndComp
 $Comp
 L C C405
 U 1 1 58E823D3
@@ -335,14 +270,6 @@ Connection ~ 6050 5350
 Connection ~ 6300 5350
 Wire Notes Line
 	1900 2700 2950 2700
-Wire Wire Line
-	7400 5200 7850 5200
-Connection ~ 7700 5200
-Wire Wire Line
-	7400 5600 7850 5600
-Wire Wire Line
-	7850 5600 7850 5300
-Connection ~ 7700 5600
 Connection ~ 7150 1700
 Wire Wire Line
 	7150 2000 7150 2100
@@ -408,24 +335,12 @@ Text HLabel 3300 4450 0    60   BiDi ~ 12
 ADC_17
 Text HLabel 3050 5050 0    60   Input ~ 12
 +3.3V
-Text HLabel 7400 5200 0    60   Input ~ 12
-+3.3V
 Text HLabel 6950 1700 0    60   Input ~ 12
-+3.3V
-Text HLabel 6650 5350 2    60   Input ~ 12
 +3.3V
 Text HLabel 3050 5450 0    60   Input ~ 12
 GNDD
 Connection ~ 3550 5450
-Text HLabel 6650 5700 2    60   Input ~ 12
-GNDD
 Connection ~ 6300 5700
-Text HLabel 7400 5600 0    60   Input ~ 12
-GNDD
-Wire Wire Line
-	7700 5600 7700 5500
-Text HLabel 7300 3600 0    60   Input ~ 12
-GNDD
 Text HLabel 6950 2100 0    60   Input ~ 12
 GNDD
 Connection ~ 7150 2100
@@ -766,8 +681,6 @@ OSC
 Text Label 5600 6450 0    60   ~ 0
 OSC
 Wire Wire Line
-	7300 3600 7850 3600
-Wire Wire Line
 	6950 1700 7300 1700
 Wire Wire Line
 	7300 1700 7300 2000
@@ -781,8 +694,33 @@ Wire Wire Line
 	7400 1600 7400 1900
 Wire Wire Line
 	7400 1900 7850 1900
-Text HLabel 7400 5100 0    60   Input ~ 12
-+5V
-Wire Wire Line
-	7400 5100 7850 5100
+$Comp
+L CONN_01X20 J401
+U 1 1 59699B76
+P 8050 2850
+F 0 "J401" H 8050 3900 50  0000 C CNN
+F 1 "CONN_01X20" V 8150 2850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch1.27mm" H 8050 2850 50  0001 C CNN
+F 3 "" H 8050 2850 50  0001 C CNN
+	1    8050 2850
+	1    0    0    -1  
+$EndComp
+Text Label 7850 3700 2    60   ~ 0
+IOR_139
+Text Label 7850 3600 2    60   ~ 0
+IOR_138
+Text Label 7850 3500 2    60   ~ 0
+IOR_137
+Text Label 7850 3300 2    60   ~ 0
+IOR_128
+Text Label 7850 3200 2    60   ~ 0
+IOR_120
+Text Label 7850 3100 2    60   ~ 0
+IOR_119
+Text Label 7850 3000 2    60   ~ 0
+IOR_118
+Text Label 7850 3400 2    60   ~ 0
+IOR_136
+Text Label 7850 3800 2    60   ~ 0
+IOR_140
 $EndSCHEMATC
