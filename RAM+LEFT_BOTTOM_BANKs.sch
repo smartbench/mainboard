@@ -66,629 +66,494 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 8800 1550 0    60   ~ 12
-LEFT HEADER
-Text HLabel 6900 2900 0    60   BiDi Italic 12
+Text HLabel 8000 2875 0    60   BiDi Italic 12
 D0
-Text HLabel 6900 3000 0    60   BiDi Italic 12
+Text HLabel 8000 2975 0    60   BiDi Italic 12
 D1
-Text HLabel 6900 3100 0    60   BiDi Italic 12
+Text HLabel 8000 3075 0    60   BiDi Italic 12
 D2
-Text HLabel 6900 3200 0    60   BiDi Italic 12
+Text HLabel 8000 3175 0    60   BiDi Italic 12
 D3
-Text HLabel 6900 3300 0    60   BiDi Italic 12
+Text HLabel 8000 3275 0    60   BiDi Italic 12
 D4
-Text HLabel 6900 3400 0    60   BiDi Italic 12
+Text HLabel 8000 3375 0    60   BiDi Italic 12
 D5
-Text HLabel 6900 3500 0    60   BiDi Italic 12
+Text HLabel 8000 3475 0    60   BiDi Italic 12
 D6
-Text HLabel 6900 3600 0    60   BiDi Italic 12
+Text HLabel 8000 3575 0    60   BiDi Italic 12
 D7
-Text HLabel 6900 3700 0    60   BiDi Italic 12
+Text HLabel 8000 3675 0    60   BiDi Italic 12
 ~RXF
-Text HLabel 6900 3800 0    60   BiDi Italic 12
+Text HLabel 8000 3775 0    60   BiDi Italic 12
 ~TXE
-Text HLabel 6900 3900 0    60   BiDi Italic 12
+Text HLabel 8000 3875 0    60   BiDi Italic 12
 ~RD
-Text HLabel 6900 4000 0    60   BiDi Italic 12
+Text HLabel 8000 3975 0    60   BiDi Italic 12
 ~WR
-Text HLabel 6900 4100 0    60   BiDi Italic 12
+Text HLabel 8000 4075 0    60   BiDi Italic 12
 SIWU
 $Comp
 L iCE40-HX4K-TQ144 U301
 U 4 1 58DF7249
-P 7250 4700
-F 0 "U301" H 7450 4950 60  0000 L CNN
-F 1 "iCE40-HX4K-TQ144" H 7450 4850 60  0000 L CNN
-F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 7250 4700 60  0001 C CNN
-F 3 "" H 7250 4700 60  0001 C CNN
-	4    7250 4700
+P 8350 4675
+F 0 "U301" H 8550 4925 60  0000 L CNN
+F 1 "iCE40-HX4K-TQ144" H 8550 4825 60  0000 L CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 8350 4675 60  0001 C CNN
+F 3 "" H 8350 4675 60  0001 C CNN
+	4    8350 4675
 	1    0    0    1   
 $EndComp
 $Comp
 L C C510
 U 1 1 58E8E956
-P 7600 2150
-F 0 "C510" H 7700 2150 50  0000 L CNN
-F 1 "100nF" H 7650 2050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7638 2000 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7600 2150 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 7600 2150 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 7600 2150 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 7600 2150 60  0001 C CNN "VDC"
-	1    7600 2150
+P 8700 2125
+F 0 "C510" H 8800 2125 50  0000 L CNN
+F 1 "100nF" H 8750 2025 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8738 1975 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 8700 2125 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 8700 2125 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 8700 2125 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 8700 2125 60  0001 C CNN "VDC"
+	1    8700 2125
 	-1   0    0    -1  
 $EndComp
 $Comp
 L C C509
 U 1 1 58E8E993
-P 7350 2150
-F 0 "C509" H 7450 2150 50  0000 L CNN
-F 1 "100nF" H 7400 2050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7388 2000 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7350 2150 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 7350 2150 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 7350 2150 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 7350 2150 60  0001 C CNN "VDC"
-	1    7350 2150
+P 8450 2125
+F 0 "C509" H 8550 2125 50  0000 L CNN
+F 1 "100nF" H 8500 2025 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8488 1975 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 8450 2125 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 8450 2125 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 8450 2125 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 8450 2125 60  0001 C CNN "VDC"
+	1    8450 2125
 	-1   0    0    -1  
 $EndComp
 $Comp
 L C C502
 U 1 1 58E8E9D1
-P 2050 5550
-F 0 "C502" H 2150 5550 50  0000 L CNN
-F 1 "100nF" H 2100 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2088 5400 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 2050 5550 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 2050 5550 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 2050 5550 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 2050 5550 60  0001 C CNN "VDC"
-	1    2050 5550
+P 3150 5525
+F 0 "C502" H 3250 5525 50  0000 L CNN
+F 1 "100nF" H 3200 5425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3188 5375 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3150 5525 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 3150 5525 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 3150 5525 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 3150 5525 60  0001 C CNN "VDC"
+	1    3150 5525
 	-1   0    0    -1  
 $EndComp
 $Comp
 L C C501
 U 1 1 58E8E924
-P 1800 5550
-F 0 "C501" H 1900 5550 50  0000 L CNN
-F 1 "100nF" H 1850 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1838 5400 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 1800 5550 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 1800 5550 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 1800 5550 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 1800 5550 60  0001 C CNN "VDC"
-	1    1800 5550
+P 2900 5525
+F 0 "C501" H 3000 5525 50  0000 L CNN
+F 1 "100nF" H 2950 5425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2938 5375 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 2900 5525 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 2900 5525 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 2900 5525 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 2900 5525 60  0001 C CNN "VDC"
+	1    2900 5525
 	-1   0    0    -1  
 $EndComp
-Text Notes 2100 1450 2    60   ~ 12
+Text Notes 3200 1425 2    60   ~ 12
 FPGA BANK 3\n(LEFT BANK)
 $Comp
 L iCE40-HX4K-TQ144 U301
 U 5 1 58DE89B0
-P 2300 2150
-F 0 "U301" H 2500 2400 60  0000 L CNN
-F 1 "iCE40-HX4K-TQ144" H 2500 2300 60  0000 L CNN
-F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 2300 2150 60  0001 C CNN
-F 3 "" H 2300 2150 60  0001 C CNN
-	5    2300 2150
+P 3400 2125
+F 0 "U301" H 3600 2375 60  0000 L CNN
+F 1 "iCE40-HX4K-TQ144" H 3600 2275 60  0000 L CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 3400 2125 60  0001 C CNN
+F 3 "" H 3400 2125 60  0001 C CNN
+	5    3400 2125
 	-1   0    0    -1  
 $EndComp
-$Comp
-L C C511
-U 1 1 58E81763
-P 10050 4900
-F 0 "C511" H 10150 4900 50  0000 L CNN
-F 1 "100nF" H 10100 4800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10088 4750 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10050 4900 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 10050 4900 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 10050 4900 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 10050 4900 60  0001 C CNN "VDC"
-	1    10050 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C512
-U 1 1 58E817F5
-P 10000 1950
-F 0 "C512" H 10100 1950 50  0000 L CNN
-F 1 "100nF" H 10050 1850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10038 1800 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10000 1950 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 10000 1950 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 10000 1950 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 10000 1950 60  0001 C CNN "VDC"
-	1    10000 1950
-	1    0    0    -1  
-$EndComp
-Text Label 5800 2400 0    60   ~ 0
+Text Label 6900 2375 0    60   ~ 0
 DQ0
-Text Label 5800 2500 0    60   ~ 0
+Text Label 6900 2475 0    60   ~ 0
 DQ1
-Text Label 5800 2600 0    60   ~ 0
+Text Label 6900 2575 0    60   ~ 0
 DQ2
-Text Label 5800 2700 0    60   ~ 0
+Text Label 6900 2675 0    60   ~ 0
 DQ3
-Text Label 5800 2800 0    60   ~ 0
+Text Label 6900 2775 0    60   ~ 0
 DQ4
-Text Label 5800 2900 0    60   ~ 0
+Text Label 6900 2875 0    60   ~ 0
 DQ5
-Text Label 5800 3000 0    60   ~ 0
+Text Label 6900 2975 0    60   ~ 0
 DQ6
-Text Label 5800 3100 0    60   ~ 0
+Text Label 6900 3075 0    60   ~ 0
 DQ7
-Text Label 5800 3200 0    60   ~ 0
+Text Label 6900 3175 0    60   ~ 0
 DQ8
-Text Label 5800 3300 0    60   ~ 0
+Text Label 6900 3275 0    60   ~ 0
 DQ9
-Text Label 5800 3400 0    60   ~ 0
+Text Label 6900 3375 0    60   ~ 0
 DQ10
-Text Label 5800 3500 0    60   ~ 0
+Text Label 6900 3475 0    60   ~ 0
 DQ11
-Text Label 5800 3600 0    60   ~ 0
+Text Label 6900 3575 0    60   ~ 0
 DQ12
-Text Label 5800 3700 0    60   ~ 0
+Text Label 6900 3675 0    60   ~ 0
 DQ13
-Text Label 3700 2400 2    60   ~ 0
+Text Label 4800 2375 2    60   ~ 0
 A0
-Text Label 3700 2500 2    60   ~ 0
+Text Label 4800 2475 2    60   ~ 0
 A1
-Text Label 3700 2600 2    60   ~ 0
+Text Label 4800 2575 2    60   ~ 0
 A2
-Text Label 3700 2700 2    60   ~ 0
+Text Label 4800 2675 2    60   ~ 0
 A3
-Text Label 3700 3000 2    60   ~ 0
+Text Label 4800 2975 2    60   ~ 0
 A6
-Text Label 3700 3100 2    60   ~ 0
+Text Label 4800 3075 2    60   ~ 0
 A7
-Text Label 3700 3200 2    60   ~ 0
+Text Label 4800 3175 2    60   ~ 0
 A8
-Text Label 3700 3300 2    60   ~ 0
+Text Label 4800 3275 2    60   ~ 0
 A9
-Text Label 3700 3400 2    60   ~ 0
+Text Label 4800 3375 2    60   ~ 0
 A10
-Text Label 3700 3500 2    60   ~ 0
+Text Label 4800 3475 2    60   ~ 0
 A11
-Text Label 3700 4200 2    60   ~ 0
+Text Label 4800 4175 2    60   ~ 0
 LDQM
-Text Label 3700 4100 2    60   ~ 0
+Text Label 4800 4075 2    60   ~ 0
 UDQM
-Text Label 3700 4000 2    60   ~ 0
+Text Label 4800 3975 2    60   ~ 0
 ~CS
-Text Label 3700 3900 2    60   ~ 0
+Text Label 4800 3875 2    60   ~ 0
 ~RAS
-Text Label 3700 3800 2    60   ~ 0
+Text Label 4800 3775 2    60   ~ 0
 ~CAS
-Text Label 3700 3700 2    60   ~ 0
+Text Label 4800 3675 2    60   ~ 0
 ~WE
-Text Label 3700 4400 2    60   ~ 0
+Text Label 4800 4375 2    60   ~ 0
 CKE
-Text Label 3700 4500 2    60   ~ 0
+Text Label 4800 4475 2    60   ~ 0
 CLK
 $Comp
 L C C503
 U 1 1 58E824C6
-P 3250 1650
-F 0 "C503" H 3350 1650 50  0000 L CNN
-F 1 "100nF" H 3300 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3288 1500 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3250 1650 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 3250 1650 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 3250 1650 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 3250 1650 60  0001 C CNN "VDC"
-	1    3250 1650
+P 4350 1625
+F 0 "C503" H 4450 1625 50  0000 L CNN
+F 1 "100nF" H 4400 1525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4388 1475 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 4350 1625 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 4350 1625 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 4350 1625 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 4350 1625 60  0001 C CNN "VDC"
+	1    4350 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C504
 U 1 1 58E824D0
-P 3500 1650
-F 0 "C504" H 3600 1650 50  0000 L CNN
-F 1 "100nF" H 3550 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3538 1500 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3500 1650 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 3500 1650 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 3500 1650 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 3500 1650 60  0001 C CNN "VDC"
-	1    3500 1650
+P 4600 1625
+F 0 "C504" H 4700 1625 50  0000 L CNN
+F 1 "100nF" H 4650 1525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4638 1475 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 4600 1625 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 4600 1625 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 4600 1625 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 4600 1625 60  0001 C CNN "VDC"
+	1    4600 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C505
 U 1 1 58E824DA
-P 3700 1650
-F 0 "C505" H 3800 1650 50  0000 L CNN
-F 1 "100nF" H 3750 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3738 1500 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3700 1650 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 3700 1650 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 3700 1650 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 3700 1650 60  0001 C CNN "VDC"
-	1    3700 1650
+P 4800 1625
+F 0 "C505" H 4900 1625 50  0000 L CNN
+F 1 "100nF" H 4850 1525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4838 1475 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 4800 1625 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 4800 1625 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 4800 1625 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 4800 1625 60  0001 C CNN "VDC"
+	1    4800 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C506
 U 1 1 58E824E4
-P 3950 1650
-F 0 "C506" H 4050 1650 50  0000 L CNN
-F 1 "100nF" H 4000 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3988 1500 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3950 1650 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 3950 1650 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 3950 1650 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 3950 1650 60  0001 C CNN "VDC"
-	1    3950 1650
+P 5050 1625
+F 0 "C506" H 5150 1625 50  0000 L CNN
+F 1 "100nF" H 5100 1525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5088 1475 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 5050 1625 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 5050 1625 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 5050 1625 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 5050 1625 60  0001 C CNN "VDC"
+	1    5050 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C507
 U 1 1 58E824EE
-P 4150 1650
-F 0 "C507" H 4250 1650 50  0000 L CNN
-F 1 "100nF" H 4200 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4188 1500 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 4150 1650 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 4150 1650 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 4150 1650 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 4150 1650 60  0001 C CNN "VDC"
-	1    4150 1650
+P 5250 1625
+F 0 "C507" H 5350 1625 50  0000 L CNN
+F 1 "100nF" H 5300 1525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5288 1475 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 5250 1625 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 5250 1625 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 5250 1625 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 5250 1625 60  0001 C CNN "VDC"
+	1    5250 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C508
 U 1 1 58E824F8
-P 4350 1650
-F 0 "C508" H 4450 1650 50  0000 L CNN
-F 1 "100nF" H 4400 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4388 1500 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 4350 1650 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 4350 1650 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 4350 1650 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 4350 1650 60  0001 C CNN "VDC"
-	1    4350 1650
+P 5450 1625
+F 0 "C508" H 5550 1625 50  0000 L CNN
+F 1 "100nF" H 5500 1525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5488 1475 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 5450 1625 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 5450 1625 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 5450 1625 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 5450 1625 60  0001 C CNN "VDC"
+	1    5450 1625
 	1    0    0    -1  
 $EndComp
-Text Label 7250 4200 2    60   ~ 0
+Text Label 8350 4175 2    60   ~ 0
 DQ0
-Text Label 7250 4300 2    60   ~ 0
+Text Label 8350 4275 2    60   ~ 0
 DQ1
-Text Label 7250 4400 2    60   ~ 0
+Text Label 8350 4375 2    60   ~ 0
 DQ2
-Text Label 7250 4500 2    60   ~ 0
+Text Label 8350 4475 2    60   ~ 0
 DQ3
-Text Label 7250 4600 2    60   ~ 0
+Text Label 8350 4575 2    60   ~ 0
 DQ4
-Text Label 7250 4700 2    60   ~ 0
+Text Label 8350 4675 2    60   ~ 0
 DQ5
-Text Label 2300 4850 0    60   ~ 0
+Text Label 3400 4825 0    60   ~ 0
 DQ6
-Text Label 2300 4750 0    60   ~ 0
+Text Label 3400 4725 0    60   ~ 0
 DQ7
-Text Label 2300 4650 0    60   ~ 0
+Text Label 3400 4625 0    60   ~ 0
 LDQM
-Text Label 2300 4550 0    60   ~ 0
+Text Label 3400 4525 0    60   ~ 0
 ~WE
-Text Label 2300 4450 0    60   ~ 0
+Text Label 3400 4425 0    60   ~ 0
 ~CAS
-Text Label 2300 4350 0    60   ~ 0
+Text Label 3400 4325 0    60   ~ 0
 ~RAS
-Text Label 2300 4250 0    60   ~ 0
+Text Label 3400 4225 0    60   ~ 0
 ~CS
-Text Label 2300 3950 0    60   ~ 0
+Text Label 3400 3925 0    60   ~ 0
 A0
-Text Label 2300 3850 0    60   ~ 0
+Text Label 3400 3825 0    60   ~ 0
 A1
-Text Label 2300 3750 0    60   ~ 0
+Text Label 3400 3725 0    60   ~ 0
 A2
-Text Label 2300 3650 0    60   ~ 0
+Text Label 3400 3625 0    60   ~ 0
 A3
-Text Label 2300 4150 0    60   ~ 0
+Text Label 3400 4125 0    60   ~ 0
 A11
-Text Label 2300 4050 0    60   ~ 0
+Text Label 3400 4025 0    60   ~ 0
 A10
-Text Notes 7600 1500 2    60   ~ 12
+Text Notes 8700 1475 2    60   ~ 12
 FPGA BANK 2\n(BOTTOM BANK)
-$Comp
-L CONN_01X35 J501
-U 1 1 58E92216
-P 8850 3500
-F 0 "J501" H 8850 5300 50  0000 C CNN
-F 1 "CONN_01X35" V 8950 3500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x35_Pitch1.27mm" H 8850 3500 50  0001 C CNN
-F 3 "" H 8850 3500 50  0001 C CNN
-	1    8850 3500
-	-1   0    0    -1  
-$EndComp
-Text HLabel 9050 2400 2    60   BiDi ~ 12
-IOT_168
-Text HLabel 9050 2500 2    60   BiDi ~ 12
-IOT_169
-Text HLabel 9050 2600 2    60   BiDi ~ 12
-IOT_170
-Text HLabel 9050 2700 2    60   BiDi ~ 12
-IOT_171
-Text HLabel 9050 2800 2    60   BiDi ~ 12
-IOT_172
-Text HLabel 9050 2900 2    60   BiDi ~ 12
-IOT_173
-Text HLabel 9050 3000 2    60   BiDi ~ 12
-IOT_174
 Wire Wire Line
-	1800 5400 2550 5400
-Connection ~ 2050 5400
+	2900 5375 3650 5375
+Connection ~ 3150 5375
 Wire Wire Line
-	7250 4000 6900 4000
+	8350 3975 8000 3975
 Wire Wire Line
-	7250 3900 6900 3900
+	8350 3875 8000 3875
 Wire Wire Line
-	7250 3800 6900 3800
+	8350 3775 8000 3775
 Wire Wire Line
-	7250 3700 6900 3700
+	8350 3675 8000 3675
 Wire Wire Line
-	7250 3600 6900 3600
+	8350 3575 8000 3575
 Wire Wire Line
-	7250 3400 6900 3400
+	8350 3375 8000 3375
 Wire Wire Line
-	7250 3300 6900 3300
+	8350 3275 8000 3275
 Wire Wire Line
-	7250 3200 6900 3200
+	8350 3175 8000 3175
 Wire Wire Line
-	7250 3100 6900 3100
+	8350 3075 8000 3075
 Wire Wire Line
-	7250 3000 6900 3000
+	8350 2975 8000 2975
 Wire Wire Line
-	7250 2900 6900 2900
+	8350 2875 8000 2875
 Wire Wire Line
-	7250 4100 6900 4100
-Connection ~ 2300 5050
+	8350 4075 8000 4075
+Connection ~ 3400 5025
 Wire Wire Line
-	7250 3500 6900 3500
+	8350 3475 8000 3475
 Wire Wire Line
-	7350 2300 7750 2300
+	8450 2275 8850 2275
 Wire Wire Line
-	7350 2000 7600 2000
+	8450 1975 8700 1975
 Wire Wire Line
-	7450 2000 7500 2000
+	8550 1975 8600 1975
 Wire Wire Line
-	7100 1900 7750 1900
+	8200 1875 8850 1875
 Wire Wire Line
-	7450 1900 7450 2000
+	8550 1875 8550 1975
 Wire Wire Line
-	7100 1900 7100 2700
+	8200 1875 8200 2675
 Wire Wire Line
-	7100 2700 7250 2700
-Connection ~ 7500 2000
+	8200 2675 8350 2675
+Connection ~ 8600 1975
 Wire Wire Line
-	7250 2700 7250 2800
-Connection ~ 7450 1900
-Connection ~ 2050 5700
+	8350 2675 8350 2775
+Connection ~ 8550 1875
+Connection ~ 3150 5675
 Wire Wire Line
-	3250 1450 5250 1450
-Connection ~ 4350 1450
+	4350 1425 6350 1425
+Connection ~ 5450 1425
 Wire Wire Line
-	4700 1450 4700 1900
-Connection ~ 4700 1450
-Connection ~ 3700 1450
-Connection ~ 4150 1450
+	5800 1425 5800 1875
+Connection ~ 5800 1425
+Connection ~ 4800 1425
+Connection ~ 5250 1425
 Wire Wire Line
-	3500 1500 3500 1450
+	4600 1475 4600 1425
 Wire Wire Line
-	3700 1500 3700 1450
+	4800 1475 4800 1425
 Wire Wire Line
-	4150 1500 4150 1450
+	5250 1475 5250 1425
 Wire Wire Line
-	4350 1500 4350 1450
+	5450 1475 5450 1425
 Wire Wire Line
-	4350 1850 4350 1800
+	5450 1825 5450 1775
 Wire Wire Line
-	3150 1850 4350 1850
+	4250 1825 5450 1825
 Wire Wire Line
-	3500 1850 3500 1800
-Connection ~ 3700 1850
+	4600 1825 4600 1775
+Connection ~ 4800 1825
 Wire Wire Line
-	4150 1800 4150 1850
-Connection ~ 4150 1850
+	5250 1775 5250 1825
+Connection ~ 5250 1825
 Wire Wire Line
-	3950 1500 3950 1450
-Connection ~ 3950 1450
+	5050 1475 5050 1425
+Connection ~ 5050 1425
 Wire Wire Line
-	3950 1800 3950 1850
-Connection ~ 3950 1850
+	5050 1775 5050 1825
+Connection ~ 5050 1825
 Wire Wire Line
-	3250 1450 3250 1500
-Connection ~ 3500 1450
+	4350 1425 4350 1475
+Connection ~ 4600 1425
 Wire Wire Line
-	3250 1850 3250 1800
-Connection ~ 3500 1850
+	4350 1825 4350 1775
+Connection ~ 4600 1825
 Wire Wire Line
-	4500 1900 4500 1800
+	5600 1875 5600 1775
 Wire Wire Line
-	4500 1800 5000 1800
-Connection ~ 4700 1800
+	5600 1775 6100 1775
+Connection ~ 5800 1775
 Wire Wire Line
-	5000 1800 5000 1900
+	6100 1775 6100 1875
 Wire Wire Line
-	4600 1900 4600 1800
-Connection ~ 4600 1800
+	5700 1875 5700 1775
+Connection ~ 5700 1775
 Wire Wire Line
-	4800 1900 4800 1800
-Connection ~ 4800 1800
+	5900 1875 5900 1775
+Connection ~ 5900 1775
 Wire Wire Line
-	4900 1900 4900 1800
-Connection ~ 4900 1800
+	6000 1875 6000 1775
+Connection ~ 6000 1775
 Wire Wire Line
-	5000 5100 5000 5000
+	6100 5075 6100 4975
 Wire Wire Line
-	4500 5100 5150 5100
+	5600 5075 6250 5075
 Wire Wire Line
-	4600 5000 4600 5100
-Connection ~ 4600 5100
+	5700 4975 5700 5075
+Connection ~ 5700 5075
 Wire Wire Line
-	4700 5000 4700 5100
-Connection ~ 4700 5100
+	5800 4975 5800 5075
+Connection ~ 5800 5075
 Wire Wire Line
-	4800 5000 4800 5100
-Connection ~ 4800 5100
+	5900 4975 5900 5075
+Connection ~ 5900 5075
 Wire Wire Line
-	4900 5000 4900 5100
-Connection ~ 4900 5100
+	6000 4975 6000 5075
+Connection ~ 6000 5075
 Wire Wire Line
-	10050 5200 10050 5050
-Wire Wire Line
-	9050 5200 10350 5200
-Wire Wire Line
-	1800 5700 2550 5700
-Wire Wire Line
-	9050 1800 10300 1800
-Wire Wire Line
-	9050 1900 9300 1900
-Wire Wire Line
-	9300 1800 9300 2000
-Connection ~ 9300 1800
-Wire Wire Line
-	9300 2000 9050 2000
-Connection ~ 9300 1900
-Wire Wire Line
-	9050 2100 10300 2100
-Wire Wire Line
-	9050 2200 9250 2200
-Wire Wire Line
-	9250 2100 9250 2300
-Connection ~ 9250 2100
-Wire Wire Line
-	9250 2300 9050 2300
-Connection ~ 9250 2200
-Wire Wire Line
-	9050 4700 10350 4700
-Wire Wire Line
-	10050 4700 10050 4750
-Connection ~ 10050 4700
-Wire Wire Line
-	9050 4800 9200 4800
-Wire Wire Line
-	9200 4700 9200 4900
-Connection ~ 9200 4700
-Wire Wire Line
-	9200 4900 9050 4900
-Connection ~ 9200 4800
-Connection ~ 10050 5200
-Wire Wire Line
-	9050 5100 9200 5100
-Wire Wire Line
-	9200 5000 9200 5200
-Connection ~ 9200 5200
-Wire Wire Line
-	9050 5000 9200 5000
-Connection ~ 9200 5100
-Text Label 2300 2150 0    60   ~ 0
+	2900 5675 3650 5675
+Text Label 3400 2125 0    60   ~ 0
 A6
-Text Label 2300 2250 0    60   ~ 0
+Text Label 3400 2225 0    60   ~ 0
 A7
-Text Label 2300 2350 0    60   ~ 0
+Text Label 3400 2325 0    60   ~ 0
 A8
-Text Label 2300 2450 0    60   ~ 0
+Text Label 3400 2425 0    60   ~ 0
 A9
-Text Label 2300 2550 0    60   ~ 0
+Text Label 3400 2525 0    60   ~ 0
 CKE
-Text Label 2300 2650 0    60   ~ 0
+Text Label 3400 2625 0    60   ~ 0
 CLK
-Text Label 2300 2750 0    60   ~ 0
+Text Label 3400 2725 0    60   ~ 0
 UDQM
-Text Label 2300 2950 0    60   ~ 0
+Text Label 3400 2925 0    60   ~ 0
 DQ9
-Text Label 2300 3050 0    60   ~ 0
+Text Label 3400 3025 0    60   ~ 0
 DQ10
-Text Label 2300 3150 0    60   ~ 0
+Text Label 3400 3125 0    60   ~ 0
 DQ11
-Text Label 2300 3250 0    60   ~ 0
+Text Label 3400 3225 0    60   ~ 0
 DQ12
-Text Label 2300 3350 0    60   ~ 0
+Text Label 3400 3325 0    60   ~ 0
 DQ13
-Text Label 2300 2850 0    60   ~ 0
+Text Label 3400 2825 0    60   ~ 0
 DQ8
+NoConn ~ 6900 4375
+NoConn ~ 6900 4475
+Text HLabel 3650 5375 2    60   Input Italic 12
++3.3V
+Text HLabel 3650 5675 2    60   Input Italic 12
+GNDD
+Text HLabel 6350 1425 2    60   Input Italic 12
++3.3V
+Text HLabel 8850 1875 2    60   Input Italic 12
++3.3V
+Text HLabel 8850 2275 2    60   Input Italic 12
+GNDD
+Connection ~ 8700 2275
 Wire Wire Line
-	9050 3400 9650 3400
-NoConn ~ 5800 4400
-NoConn ~ 5800 4500
-Connection ~ 9050 3200
-Connection ~ 9050 3300
-Connection ~ 9050 3400
-Connection ~ 9050 3500
-Connection ~ 9050 3600
-Connection ~ 9050 3700
-Connection ~ 9050 3800
-Connection ~ 9050 3900
-Connection ~ 9050 4000
-Connection ~ 9050 4100
-Connection ~ 9050 4200
-Connection ~ 9050 4300
-Connection ~ 9050 4400
-Connection ~ 9050 4500
-Text HLabel 2550 5400 2    60   Input Italic 12
-+3.3V
-Text HLabel 2550 5700 2    60   Input Italic 12
+	5600 5075 5600 4975
+Text HLabel 6250 5075 2    60   Input Italic 12
 GNDD
-Text HLabel 5250 1450 2    60   Input Italic 12
-+3.3V
-Text HLabel 7750 1900 2    60   Input Italic 12
-+3.3V
-Text HLabel 10300 1800 2    60   Input Italic 12
-+3.3V
-Text HLabel 10350 5200 2    60   Input Italic 12
-GNDD
-Text HLabel 10300 2100 2    60   Input Italic 12
-GNDD
-Text HLabel 9650 3400 2    60   Input Italic 12
-GNDD
-Text HLabel 7750 2300 2    60   Input Italic 12
-GNDD
-Connection ~ 7600 2300
-Wire Wire Line
-	4500 5100 4500 5000
-Text HLabel 5150 5100 2    60   Input Italic 12
-GNDD
-Connection ~ 5000 5100
+Connection ~ 6100 5075
 $Comp
 L AS4C1M16S U501
 U 1 1 58E82490
-P 4750 3450
-F 0 "U501" H 4750 3350 50  0000 C CNN
-F 1 "AS4C1M16S" H 4750 3550 50  0000 C CNN
-F 2 "TSOP50-II:TSOP50-II" H 4750 3450 50  0001 C CNN
-F 3 "DOCUMENTATION" H 4750 3450 50  0001 C CNN
-	1    4750 3450
+P 5850 3425
+F 0 "U501" H 5850 3325 50  0000 C CNN
+F 1 "AS4C1M16S" H 5850 3525 50  0000 C CNN
+F 2 "TSOP50-II:TSOP50-II" H 5850 3425 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5850 3425 50  0001 C CNN
+	1    5850 3425
 	1    0    0    -1  
 $EndComp
-Text HLabel 3150 1850 0    60   Input Italic 12
+Text HLabel 4250 1825 0    60   Input Italic 12
 GNDD
-Connection ~ 3250 1850
-Text HLabel 10350 4700 2    60   Input Italic 12
-+3.3V
+Connection ~ 4350 1825
 Wire Wire Line
-	3700 1800 3700 1850
+	4800 1775 4800 1825
 Wire Wire Line
-	2300 4950 2300 5400
-Connection ~ 2300 5400
-Text HLabel 10350 4600 2    60   Input ~ 12
-+5V
-Wire Wire Line
-	9050 4600 10350 4600
-Wire Wire Line
-	9050 3100 9050 4500
-Connection ~ 10000 1800
-Connection ~ 10000 2100
-Text Label 5800 3800 0    60   ~ 0
+	3400 4925 3400 5375
+Connection ~ 3400 5375
+Text Label 6900 3775 0    60   ~ 0
 DQ14
-Text Label 5800 3900 0    60   ~ 0
+Text Label 6900 3875 0    60   ~ 0
 DQ15
-Text HLabel 3700 2800 0    60   Input ~ 0
+Text HLabel 4800 2775 0    60   Input ~ 0
 A4
-Text HLabel 3700 2900 0    60   Input ~ 0
+Text HLabel 4800 2875 0    60   Input ~ 0
 A5
-Text Label 2300 3450 0    60   ~ 0
+Text Label 3400 3425 0    60   ~ 0
 DQ14
-Text Label 2300 3550 0    60   ~ 0
+Text Label 3400 3525 0    60   ~ 0
 DQ15
 $EndSCHEMATC
