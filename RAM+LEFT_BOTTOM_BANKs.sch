@@ -56,7 +56,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 11
+Sheet 4 11
 Title ""
 Date ""
 Rev ""
@@ -66,8 +66,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 8800 1550 0    60   ~ 12
-LEFT HEADER
 Text HLabel 6900 2900 0    60   BiDi Italic 12
 D0
 Text HLabel 6900 3000 0    60   BiDi Italic 12
@@ -173,34 +171,6 @@ F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 2300 2150 60  0001 C CNN
 F 3 "" H 2300 2150 60  0001 C CNN
 	5    2300 2150
 	-1   0    0    -1  
-$EndComp
-$Comp
-L C C511
-U 1 1 58E81763
-P 10050 4900
-F 0 "C511" H 10150 4900 50  0000 L CNN
-F 1 "100nF" H 10100 4800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10088 4750 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10050 4900 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 10050 4900 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 10050 4900 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 10050 4900 60  0001 C CNN "VDC"
-	1    10050 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C512
-U 1 1 58E817F5
-P 10000 1950
-F 0 "C512" H 10100 1950 50  0000 L CNN
-F 1 "100nF" H 10050 1850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10038 1800 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10000 1950 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 10000 1950 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 10000 1950 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 10000 1950 60  0001 C CNN "VDC"
-	1    10000 1950
-	1    0    0    -1  
 $EndComp
 Text Label 5800 2400 0    60   ~ 0
 DQ0
@@ -390,31 +360,6 @@ Text Label 2300 4050 0    60   ~ 0
 A10
 Text Notes 7600 1500 2    60   ~ 12
 FPGA BANK 2\n(BOTTOM BANK)
-$Comp
-L CONN_01X35 J501
-U 1 1 58E92216
-P 8850 3500
-F 0 "J501" H 8850 5300 50  0000 C CNN
-F 1 "CONN_01X35" V 8950 3500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x35_Pitch1.27mm" H 8850 3500 50  0001 C CNN
-F 3 "" H 8850 3500 50  0001 C CNN
-	1    8850 3500
-	-1   0    0    -1  
-$EndComp
-Text HLabel 9050 2400 2    60   BiDi ~ 12
-IOT_168
-Text HLabel 9050 2500 2    60   BiDi ~ 12
-IOT_169
-Text HLabel 9050 2600 2    60   BiDi ~ 12
-IOT_170
-Text HLabel 9050 2700 2    60   BiDi ~ 12
-IOT_171
-Text HLabel 9050 2800 2    60   BiDi ~ 12
-IOT_172
-Text HLabel 9050 2900 2    60   BiDi ~ 12
-IOT_173
-Text HLabel 9050 3000 2    60   BiDi ~ 12
-IOT_174
 Wire Wire Line
 	1800 5400 2550 5400
 Connection ~ 2050 5400
@@ -535,53 +480,7 @@ Wire Wire Line
 	4900 5000 4900 5100
 Connection ~ 4900 5100
 Wire Wire Line
-	10050 5200 10050 5050
-Wire Wire Line
-	9050 5200 10350 5200
-Wire Wire Line
 	1800 5700 2550 5700
-Wire Wire Line
-	9050 1800 10300 1800
-Wire Wire Line
-	9050 1900 9300 1900
-Wire Wire Line
-	9300 1800 9300 2000
-Connection ~ 9300 1800
-Wire Wire Line
-	9300 2000 9050 2000
-Connection ~ 9300 1900
-Wire Wire Line
-	9050 2100 10300 2100
-Wire Wire Line
-	9050 2200 9250 2200
-Wire Wire Line
-	9250 2100 9250 2300
-Connection ~ 9250 2100
-Wire Wire Line
-	9250 2300 9050 2300
-Connection ~ 9250 2200
-Wire Wire Line
-	9050 4700 10350 4700
-Wire Wire Line
-	10050 4700 10050 4750
-Connection ~ 10050 4700
-Wire Wire Line
-	9050 4800 9200 4800
-Wire Wire Line
-	9200 4700 9200 4900
-Connection ~ 9200 4700
-Wire Wire Line
-	9200 4900 9050 4900
-Connection ~ 9200 4800
-Connection ~ 10050 5200
-Wire Wire Line
-	9050 5100 9200 5100
-Wire Wire Line
-	9200 5000 9200 5200
-Connection ~ 9200 5200
-Wire Wire Line
-	9050 5000 9200 5000
-Connection ~ 9200 5100
 Text Label 2300 2150 0    60   ~ 0
 A6
 Text Label 2300 2250 0    60   ~ 0
@@ -608,24 +507,8 @@ Text Label 2300 3350 0    60   ~ 0
 DQ13
 Text Label 2300 2850 0    60   ~ 0
 DQ8
-Wire Wire Line
-	9050 3400 9650 3400
 NoConn ~ 5800 4400
 NoConn ~ 5800 4500
-Connection ~ 9050 3200
-Connection ~ 9050 3300
-Connection ~ 9050 3400
-Connection ~ 9050 3500
-Connection ~ 9050 3600
-Connection ~ 9050 3700
-Connection ~ 9050 3800
-Connection ~ 9050 3900
-Connection ~ 9050 4000
-Connection ~ 9050 4100
-Connection ~ 9050 4200
-Connection ~ 9050 4300
-Connection ~ 9050 4400
-Connection ~ 9050 4500
 Text HLabel 2550 5400 2    60   Input Italic 12
 +3.3V
 Text HLabel 2550 5700 2    60   Input Italic 12
@@ -634,14 +517,6 @@ Text HLabel 5250 1450 2    60   Input Italic 12
 +3.3V
 Text HLabel 7750 1900 2    60   Input Italic 12
 +3.3V
-Text HLabel 10300 1800 2    60   Input Italic 12
-+3.3V
-Text HLabel 10350 5200 2    60   Input Italic 12
-GNDD
-Text HLabel 10300 2100 2    60   Input Italic 12
-GNDD
-Text HLabel 9650 3400 2    60   Input Italic 12
-GNDD
 Text HLabel 7750 2300 2    60   Input Italic 12
 GNDD
 Connection ~ 7600 2300
@@ -664,28 +539,18 @@ $EndComp
 Text HLabel 3150 1850 0    60   Input Italic 12
 GNDD
 Connection ~ 3250 1850
-Text HLabel 10350 4700 2    60   Input Italic 12
-+3.3V
 Wire Wire Line
 	3700 1800 3700 1850
 Wire Wire Line
 	2300 4950 2300 5400
 Connection ~ 2300 5400
-Text HLabel 10350 4600 2    60   Input ~ 12
-+5V
-Wire Wire Line
-	9050 4600 10350 4600
-Wire Wire Line
-	9050 3100 9050 4500
-Connection ~ 10000 1800
-Connection ~ 10000 2100
 Text Label 5800 3800 0    60   ~ 0
 DQ14
 Text Label 5800 3900 0    60   ~ 0
 DQ15
-Text HLabel 3700 2800 0    60   Input ~ 0
+Text HLabel 3700 2800 0    60   BiDi ~ 0
 A4
-Text HLabel 3700 2900 0    60   Input ~ 0
+Text HLabel 3700 2900 0    60   BiDi ~ 0
 A5
 Text Label 2300 3450 0    60   ~ 0
 DQ14

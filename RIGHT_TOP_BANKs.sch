@@ -56,7 +56,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 11 11
 Title ""
 Date ""
 Rev ""
@@ -94,18 +94,10 @@ F 3 "" H 6050 2100 60  0001 C CNN
 	3    6050 2100
 	-1   0    0    -1  
 $EndComp
-Text Label 6050 3600 0    60   ~ 0
-IOR_139
 Text Label 6050 3500 0    60   ~ 0
 IOR_138
 Text Label 6050 3400 0    60   ~ 0
 IOR_137
-Text Label 6050 4000 0    60   ~ 0
-IOR_146
-Text Label 6050 3900 0    60   ~ 0
-IOR_144
-Text Label 6050 3700 0    60   ~ 0
-IOR_140
 Text Notes 5150 1600 0    60   ~ 12
 FPGA BANK 1\n(RIGHT BANK)
 Text Notes 7150 1450 0    60   ~ 12
@@ -178,24 +170,6 @@ F 6 "25V (min. 10V)" H 6050 5550 60  0001 C CNN "VDC"
 	1    6050 5550
 	1    0    0    -1  
 $EndComp
-Text Label 6050 4100 0    60   ~ 0
-IOR_147
-Text Label 6050 4200 0    60   ~ 0
-IOR_148
-Text Label 6050 4300 0    60   ~ 0
-IOR_152
-Text Label 6050 4400 0    60   ~ 0
-IOR_160
-Text Label 6050 4500 0    60   ~ 0
-IOR_161
-Text Label 6050 4600 0    60   ~ 0
-IOR_164
-Text Label 6050 4700 0    60   ~ 0
-IOR_165
-Text Label 6050 4800 0    60   ~ 0
-IOR_166
-Text Label 6050 4900 0    60   ~ 0
-IOR_167
 $Comp
 L C C404
 U 1 1 58E8F216
@@ -290,49 +264,43 @@ IOT_173
 Text HLabel 3300 2650 0    60   BiDi ~ 12
 IOT_174
 Text HLabel 3300 4550 0    60   BiDi ~ 12
-DQ15
+A5
 Text HLabel 3300 4650 0    60   BiDi ~ 12
-DQ14
-Wire Notes Line
-	1900 4450 2950 4450
+A4
 Text Notes 2550 4700 2    60   ~ 0
 RAM connections
-Text HLabel 3300 2750 0    60   BiDi ~ 12
-ADC_0
-Text HLabel 3300 2850 0    60   BiDi ~ 12
-ADC_1
 Text HLabel 3300 2950 0    60   BiDi ~ 12
-ADC_2
+ADC_0
 Text HLabel 3300 3050 0    60   BiDi ~ 12
-ADC_3
+ADC_1
 Text HLabel 3300 3150 0    60   BiDi ~ 12
-ADC_4
+ADC_2
 Text HLabel 3300 3250 0    60   BiDi ~ 12
-ADC_5
+ADC_3
 Text HLabel 3300 3350 0    60   BiDi ~ 12
-ADC_6
+ADC_4
 Text HLabel 3300 3450 0    60   BiDi ~ 12
-ADC_7
+ADC_5
 Text HLabel 3300 3550 0    60   BiDi ~ 12
-ADC_8
+ADC_6
 Text HLabel 3300 3650 0    60   BiDi ~ 12
-ADC_9
+ADC_7
 Text HLabel 3300 3750 0    60   BiDi ~ 12
-ADC_10
+ADC_8
 Text HLabel 3300 3850 0    60   BiDi ~ 12
-ADC_11
+ADC_9
 Text HLabel 3300 3950 0    60   BiDi ~ 12
-ADC_12
+ADC_10
 Text HLabel 3300 4050 0    60   BiDi ~ 12
-ADC_13
+ADC_11
 Text HLabel 3300 4150 0    60   BiDi ~ 12
-ADC_14
+ADC_12
 Text HLabel 3300 4250 0    60   BiDi ~ 12
-ADC_15
+ADC_13
 Text HLabel 3300 4350 0    60   BiDi ~ 12
-ADC_16
+ADC_14
 Text HLabel 3300 4450 0    60   BiDi ~ 12
-ADC_17
+ADC_15
 Text HLabel 3050 5050 0    60   Input ~ 12
 +3.3V
 Text HLabel 6950 1700 0    60   Input ~ 12
@@ -705,8 +673,6 @@ F 3 "" H 8050 2850 50  0001 C CNN
 	1    8050 2850
 	1    0    0    -1  
 $EndComp
-Text Label 7850 3700 2    60   ~ 0
-IOR_139
 Text Label 7850 3600 2    60   ~ 0
 IOR_138
 Text Label 7850 3500 2    60   ~ 0
@@ -721,6 +687,44 @@ Text Label 7850 3000 2    60   ~ 0
 IOR_118
 Text Label 7850 3400 2    60   ~ 0
 IOR_136
-Text Label 7850 3800 2    60   ~ 0
-IOR_140
+Wire Notes Line
+	1800 4500 2850 4500
+Text HLabel 3300 2750 0    60   BiDi ~ 12
+IOT_177
+Text HLabel 3300 2850 0    60   BiDi ~ 12
+IOT_178
+Text HLabel 6050 3900 2    60   BiDi ~ 12
+IOT_144
+Text HLabel 6050 4000 2    60   BiDi ~ 12
+IOT_146
+Text HLabel 6050 4100 2    60   BiDi ~ 12
+IOT_147
+Text HLabel 6050 4200 2    60   BiDi ~ 12
+IOT_148
+Text HLabel 6050 4300 2    60   BiDi ~ 12
+IOT_152
+Text HLabel 6050 4400 2    60   BiDi ~ 12
+IOT_160
+Text HLabel 6050 4500 2    60   BiDi ~ 12
+IOT_161
+Text HLabel 6050 4600 2    60   BiDi ~ 12
+IOT_164
+Text HLabel 6050 4700 2    60   BiDi ~ 12
+IOT_165
+Text HLabel 6050 4800 2    60   BiDi ~ 12
+IOT_166
+Text HLabel 6050 4900 2    60   BiDi ~ 12
+IOT_167
+Text HLabel 6650 5350 2    60   Input ~ 12
++3.3V
+Text HLabel 6650 5700 2    60   Input ~ 12
+GNDD
+Text HLabel 6050 3600 2    60   BiDi ~ 12
+IOT_139
+Text HLabel 6050 3700 2    60   BiDi ~ 12
+IOT_140
+Text HLabel 7850 3700 0    60   Input ~ 12
+GNDD
+Text HLabel 7850 3800 0    60   Input ~ 12
++3.3V
 $EndSCHEMATC
