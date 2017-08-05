@@ -51,7 +51,7 @@ LIBS:multiplexors
 LIBS:tcr2ef13
 LIBS:voltage-references
 LIBS:voltage-regulators
-LIBS:iCE40hxk4_dev_board-cache
+LIBS:switches
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

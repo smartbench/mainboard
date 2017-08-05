@@ -51,7 +51,7 @@ LIBS:multiplexors
 LIBS:tcr2ef13
 LIBS:voltage-references
 LIBS:voltage-regulators
-LIBS:iCE40hxk4_dev_board-cache
+LIBS:switches
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -69,249 +69,249 @@ $EndDescr
 $Comp
 L iCE40-HX4K-TQ144 U?
 U 2 1 58E15B2E
-P 3300 2050
+P 2550 2050
 AR Path="/58DE85E5/58E15B2E" Ref="U?"  Part="2" 
 AR Path="/58E1AFDD/58E15B2E" Ref="U301"  Part="2" 
-F 0 "U301" H 3500 2300 60  0000 L CNN
-F 1 "iCE40-HX4K-TQ144" H 3500 2200 60  0000 L CNN
-F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 3300 2050 60  0001 C CNN
-F 3 "" H 3300 2050 60  0001 C CNN
-	2    3300 2050
+F 0 "U301" H 2750 2300 60  0000 L CNN
+F 1 "iCE40-HX4K-TQ144" H 2750 2200 60  0000 L CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 2550 2050 60  0001 C CNN
+F 3 "" H 2550 2050 60  0001 C CNN
+	2    2550 2050
 	1    0    0    -1  
 $EndComp
-Text Notes 3550 1600 0    60   ~ 12
+Text Notes 2800 1600 0    60   ~ 12
 FPGA BANK 0\n(TOP BANK)
 $Comp
 L iCE40-HX4K-TQ144 U?
 U 3 1 58E16C0F
-P 6050 2100
+P 5800 2075
 AR Path="/58DE85E5/58E16C0F" Ref="U?"  Part="3" 
 AR Path="/58E1AFDD/58E16C0F" Ref="U301"  Part="3" 
-F 0 "U301" H 6250 2350 60  0000 L CNN
-F 1 "iCE40-HX4K-TQ144" H 6250 2250 60  0000 L CNN
-F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 6050 2100 60  0001 C CNN
-F 3 "" H 6050 2100 60  0001 C CNN
-	3    6050 2100
+F 0 "U301" H 6000 2325 60  0000 L CNN
+F 1 "iCE40-HX4K-TQ144" H 6000 2225 60  0000 L CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 5800 2075 60  0001 C CNN
+F 3 "" H 5800 2075 60  0001 C CNN
+	3    5800 2075
 	-1   0    0    -1  
 $EndComp
-Text Label 6050 3500 0    60   ~ 0
+Text Label 5800 3475 0    60   ~ 0
 IOR_138
-Text Label 6050 3400 0    60   ~ 0
+Text Label 5800 3375 0    60   ~ 0
 IOR_137
-Text Notes 5150 1600 0    60   ~ 12
+Text Notes 4900 1575 0    60   ~ 12
 FPGA BANK 1\n(RIGHT BANK)
-Text Notes 7150 1450 0    60   ~ 12
+Text Notes 7100 1425 0    60   ~ 12
 RIGHT HEADER
-Text Label 6050 2400 0    60   ~ 0
+Text Label 5800 2375 0    60   ~ 0
 IOR_112
-Text Label 6050 2300 0    60   ~ 0
+Text Label 5800 2275 0    60   ~ 0
 IOR_111
-Text Label 6050 2200 0    60   ~ 0
+Text Label 5800 2175 0    60   ~ 0
 IOR_110
-Text Label 6050 2100 0    60   ~ 0
+Text Label 5800 2075 0    60   ~ 0
 IOR_109
-Text Label 6050 2800 0    60   ~ 0
+Text Label 5800 2775 0    60   ~ 0
 IOR_117
-Text Label 6050 2700 0    60   ~ 0
+Text Label 5800 2675 0    60   ~ 0
 IOR_116
-Text Label 6050 2600 0    60   ~ 0
+Text Label 5800 2575 0    60   ~ 0
 IOR_115
-Text Label 6050 2500 0    60   ~ 0
+Text Label 5800 2475 0    60   ~ 0
 IOR_114
-Text Label 6050 3200 0    60   ~ 0
+Text Label 5800 3175 0    60   ~ 0
 IOR_128
-Text Label 6050 3100 0    60   ~ 0
+Text Label 5800 3075 0    60   ~ 0
 IOR_120
-Text Label 6050 3000 0    60   ~ 0
+Text Label 5800 2975 0    60   ~ 0
 IOR_119
-Text Label 6050 2900 0    60   ~ 0
+Text Label 5800 2875 0    60   ~ 0
 IOR_118
-Text Label 6050 3300 0    60   ~ 0
+Text Label 5800 3275 0    60   ~ 0
 IOR_136
 $Comp
 L C C401
 U 1 1 58E8F0A4
-P 3550 5300
-F 0 "C401" H 3650 5300 50  0000 L CNN
-F 1 "100nF" H 3600 5200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3588 5150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3550 5300 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 3550 5300 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 3550 5300 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 3550 5300 60  0001 C CNN "VDC"
-	1    3550 5300
+P 2800 5300
+F 0 "C401" H 2900 5300 50  0000 L CNN
+F 1 "100nF" H 2850 5200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2838 5150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 2800 5300 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 2800 5300 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 2800 5300 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 2800 5300 60  0001 C CNN "VDC"
+	1    2800 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C402
 U 1 1 58E8F15F
-P 3800 5300
-F 0 "C402" H 3900 5300 50  0000 L CNN
-F 1 "100nF" H 3850 5200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3838 5150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3800 5300 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 3800 5300 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 3800 5300 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 3800 5300 60  0001 C CNN "VDC"
-	1    3800 5300
+P 3050 5300
+F 0 "C402" H 3150 5300 50  0000 L CNN
+F 1 "100nF" H 3100 5200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3088 5150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3050 5300 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 3050 5300 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 3050 5300 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 3050 5300 60  0001 C CNN "VDC"
+	1    3050 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C403
 U 1 1 58E8F19F
-P 6050 5550
-F 0 "C403" H 6150 5550 50  0000 L CNN
-F 1 "100nF" H 6100 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 5400 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 6050 5550 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 6050 5550 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 6050 5550 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 6050 5550 60  0001 C CNN "VDC"
-	1    6050 5550
+P 5800 5525
+F 0 "C403" H 5900 5525 50  0000 L CNN
+F 1 "100nF" H 5850 5425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5838 5375 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 5800 5525 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 5800 5525 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 5800 5525 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 5800 5525 60  0001 C CNN "VDC"
+	1    5800 5525
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C404
 U 1 1 58E8F216
-P 6300 5550
-F 0 "C404" H 6400 5550 50  0000 L CNN
-F 1 "100nF" H 6350 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6338 5400 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 6300 5550 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 6300 5550 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 6300 5550 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 6300 5550 60  0001 C CNN "VDC"
-	1    6300 5550
+P 6050 5525
+F 0 "C404" H 6150 5525 50  0000 L CNN
+F 1 "100nF" H 6100 5425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 5375 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 6050 5525 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 6050 5525 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 6050 5525 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 6050 5525 60  0001 C CNN "VDC"
+	1    6050 5525
 	1    0    0    -1  
 $EndComp
-Text Notes 2400 3050 2    60   ~ 0
+Text Notes 2175 3050 2    60   ~ 0
 Available pins for ADC connections
-Text Notes 2750 2300 2    60   ~ 0
-TO LEFT CONNECTOR
-Text Label 7850 2500 2    60   ~ 0
+Text Notes 2000 2300 2    60   ~ 0
+Analog frontend control pins\n
+Text Label 7800 2475 2    60   ~ 0
 IOR_112
-Text Label 7850 2400 2    60   ~ 0
+Text Label 7800 2375 2    60   ~ 0
 IOR_111
-Text Label 7850 2300 2    60   ~ 0
+Text Label 7800 2275 2    60   ~ 0
 IOR_110
-Text Label 7850 2200 2    60   ~ 0
+Text Label 7800 2175 2    60   ~ 0
 IOR_109
-Text Label 7850 2900 2    60   ~ 0
+Text Label 7800 2875 2    60   ~ 0
 IOR_117
-Text Label 7850 2800 2    60   ~ 0
+Text Label 7800 2775 2    60   ~ 0
 IOR_116
-Text Label 7850 2700 2    60   ~ 0
+Text Label 7800 2675 2    60   ~ 0
 IOR_115
-Text Label 7850 2600 2    60   ~ 0
+Text Label 7800 2575 2    60   ~ 0
 IOR_114
 $Comp
 L C C405
 U 1 1 58E823D3
-P 7150 1850
-F 0 "C405" H 6900 1900 50  0000 L CNN
-F 1 "100nF" H 6800 1800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7188 1700 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7150 1850 50  0001 C CNN
-F 4 "C0603C104K3RACTU" H 7150 1850 60  0001 C CNN "Manufacturer Part"
-F 5 "X7R" H 7150 1850 60  0001 C CNN "Dielectric"
-F 6 "25V (min. 10V)" H 7150 1850 60  0001 C CNN "VDC"
-	1    7150 1850
+P 7100 1825
+F 0 "C405" H 6850 1875 50  0000 L CNN
+F 1 "100nF" H 6750 1775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7138 1675 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 7100 1825 50  0001 C CNN
+F 4 "C0603C104K3RACTU" H 7100 1825 60  0001 C CNN "Manufacturer Part"
+F 5 "X7R" H 7100 1825 60  0001 C CNN "Dielectric"
+F 6 "25V (min. 10V)" H 7100 1825 60  0001 C CNN "VDC"
+	1    7100 1825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 5450 3800 5450
+	2300 5450 3050 5450
 Wire Wire Line
-	3550 5150 3800 5150
+	2800 5150 3050 5150
 Wire Wire Line
-	3300 4750 3300 5050
-Connection ~ 3300 4850
+	2550 4750 2550 5050
+Connection ~ 2550 4850
 Wire Wire Line
-	3700 5050 3700 5150
+	2950 5050 2950 5150
 Wire Wire Line
-	3050 5050 3700 5050
-Connection ~ 3300 5050
-Connection ~ 3700 5150
+	2300 5050 2950 5050
+Connection ~ 2550 5050
+Connection ~ 2950 5150
 Wire Wire Line
-	6050 5700 6650 5700
+	5800 5675 6400 5675
 Wire Wire Line
-	6050 5000 6050 5400
-Connection ~ 6050 5100
+	5800 4975 5800 5375
+Connection ~ 5800 5075
 Wire Wire Line
-	6050 5350 6650 5350
+	5800 5325 6400 5325
 Wire Wire Line
-	6300 5350 6300 5400
-Connection ~ 6050 5350
-Connection ~ 6300 5350
+	6050 5325 6050 5375
+Connection ~ 5800 5325
+Connection ~ 6050 5325
 Wire Notes Line
-	1900 2700 2950 2700
-Connection ~ 7150 1700
+	1050 2900 2100 2900
+Connection ~ 7100 1675
 Wire Wire Line
-	7150 2000 7150 2100
+	7100 1975 7100 2075
 Wire Wire Line
-	6950 2100 7850 2100
-Text HLabel 3300 2050 0    60   BiDi ~ 12
+	6900 2075 7800 2075
+Text HLabel 2550 2050 0    60   BiDi ~ 12
 IOT_168
-Text HLabel 3300 2150 0    60   BiDi ~ 12
+Text HLabel 2550 2150 0    60   BiDi ~ 12
 IOT_169
-Text HLabel 3300 2250 0    60   BiDi ~ 12
+Text HLabel 2550 2250 0    60   BiDi ~ 12
 IOT_170
-Text HLabel 3300 2350 0    60   BiDi ~ 12
+Text HLabel 2550 2350 0    60   BiDi ~ 12
 IOT_171
-Text HLabel 3300 2450 0    60   BiDi ~ 12
+Text HLabel 2550 2450 0    60   BiDi ~ 12
 IOT_172
-Text HLabel 3300 2550 0    60   BiDi ~ 12
+Text HLabel 2550 2550 0    60   BiDi ~ 12
 IOT_173
-Text HLabel 3300 2650 0    60   BiDi ~ 12
+Text HLabel 2550 2650 0    60   BiDi ~ 12
 IOT_174
-Text HLabel 3300 4550 0    60   BiDi ~ 12
+Text HLabel 2550 4550 0    60   BiDi ~ 12
 A5
-Text HLabel 3300 4650 0    60   BiDi ~ 12
+Text HLabel 2550 4650 0    60   BiDi ~ 12
 A4
-Text Notes 2550 4700 2    60   ~ 0
+Text Notes 1800 4700 2    60   ~ 0
 RAM connections
-Text HLabel 3300 2950 0    60   BiDi ~ 12
+Text HLabel 2550 2950 0    60   BiDi ~ 12
 ADC_0
-Text HLabel 3300 3050 0    60   BiDi ~ 12
+Text HLabel 2550 3050 0    60   BiDi ~ 12
 ADC_1
-Text HLabel 3300 3150 0    60   BiDi ~ 12
+Text HLabel 2550 3150 0    60   BiDi ~ 12
 ADC_2
-Text HLabel 3300 3250 0    60   BiDi ~ 12
+Text HLabel 2550 3250 0    60   BiDi ~ 12
 ADC_3
-Text HLabel 3300 3350 0    60   BiDi ~ 12
+Text HLabel 2550 3350 0    60   BiDi ~ 12
 ADC_4
-Text HLabel 3300 3450 0    60   BiDi ~ 12
+Text HLabel 2550 3450 0    60   BiDi ~ 12
 ADC_5
-Text HLabel 3300 3550 0    60   BiDi ~ 12
+Text HLabel 2550 3550 0    60   BiDi ~ 12
 ADC_6
-Text HLabel 3300 3650 0    60   BiDi ~ 12
+Text HLabel 2550 3650 0    60   BiDi ~ 12
 ADC_7
-Text HLabel 3300 3750 0    60   BiDi ~ 12
+Text HLabel 2550 3750 0    60   BiDi ~ 12
 ADC_8
-Text HLabel 3300 3850 0    60   BiDi ~ 12
+Text HLabel 2550 3850 0    60   BiDi ~ 12
 ADC_9
-Text HLabel 3300 3950 0    60   BiDi ~ 12
+Text HLabel 2550 3950 0    60   BiDi ~ 12
 ADC_10
-Text HLabel 3300 4050 0    60   BiDi ~ 12
+Text HLabel 2550 4050 0    60   BiDi ~ 12
 ADC_11
-Text HLabel 3300 4150 0    60   BiDi ~ 12
+Text HLabel 2550 4150 0    60   BiDi ~ 12
 ADC_12
-Text HLabel 3300 4250 0    60   BiDi ~ 12
+Text HLabel 2550 4250 0    60   BiDi ~ 12
 ADC_13
-Text HLabel 3300 4350 0    60   BiDi ~ 12
+Text HLabel 2550 4350 0    60   BiDi ~ 12
 ADC_14
-Text HLabel 3300 4450 0    60   BiDi ~ 12
+Text HLabel 2550 4450 0    60   BiDi ~ 12
 ADC_15
-Text HLabel 3050 5050 0    60   Input ~ 12
+Text HLabel 2300 5050 0    60   Input ~ 12
 +3.3V
-Text HLabel 6950 1700 0    60   Input ~ 12
+Text HLabel 6900 1675 0    60   Input ~ 12
 +3.3V
-Text HLabel 3050 5450 0    60   Input ~ 12
+Text HLabel 2300 5450 0    60   Input ~ 12
 GNDD
-Connection ~ 3550 5450
-Connection ~ 6300 5700
-Text HLabel 6950 2100 0    60   Input ~ 12
+Connection ~ 2800 5450
+Connection ~ 6050 5675
+Text HLabel 6900 2075 0    60   Input ~ 12
 GNDD
-Connection ~ 7150 2100
+Connection ~ 7100 2075
 $Comp
 L LED_ALT D401
 U 1 1 58F9FF73
@@ -644,87 +644,117 @@ Wire Wire Line
 Connection ~ 4850 6750
 Wire Wire Line
 	5300 6450 5600 6450
-Text Label 6050 3800 0    60   ~ 0
+Text Label 5800 3775 0    60   ~ 0
 OSC
 Text Label 5600 6450 0    60   ~ 0
 OSC
 Wire Wire Line
-	6950 1700 7300 1700
+	6900 1675 7250 1675
 Wire Wire Line
-	7300 1700 7300 2000
+	7250 1675 7250 1975
 Wire Wire Line
-	7300 2000 7850 2000
-Text HLabel 6950 1600 0    60   Input ~ 12
+	7250 1975 7800 1975
+Text HLabel 6900 1575 0    60   Input ~ 12
 +5V
 Wire Wire Line
-	6950 1600 7400 1600
+	6900 1575 7350 1575
 Wire Wire Line
-	7400 1600 7400 1900
+	7350 1575 7350 1875
 Wire Wire Line
-	7400 1900 7850 1900
+	7350 1875 7800 1875
 $Comp
 L CONN_01X20 J401
 U 1 1 59699B76
-P 8050 2850
-F 0 "J401" H 8050 3900 50  0000 C CNN
-F 1 "CONN_01X20" V 8150 2850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch1.27mm" H 8050 2850 50  0001 C CNN
-F 3 "" H 8050 2850 50  0001 C CNN
-	1    8050 2850
+P 8000 2825
+F 0 "J401" H 8000 3875 50  0000 C CNN
+F 1 "CONN_01X20" V 8100 2825 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch1.27mm" H 8000 2825 50  0001 C CNN
+F 3 "" H 8000 2825 50  0001 C CNN
+	1    8000 2825
 	1    0    0    -1  
 $EndComp
-Text Label 7850 3600 2    60   ~ 0
+Text Label 7800 3575 2    60   ~ 0
 IOR_138
-Text Label 7850 3500 2    60   ~ 0
+Text Label 7800 3475 2    60   ~ 0
 IOR_137
-Text Label 7850 3300 2    60   ~ 0
+Text Label 7800 3275 2    60   ~ 0
 IOR_128
-Text Label 7850 3200 2    60   ~ 0
+Text Label 7800 3175 2    60   ~ 0
 IOR_120
-Text Label 7850 3100 2    60   ~ 0
+Text Label 7800 3075 2    60   ~ 0
 IOR_119
-Text Label 7850 3000 2    60   ~ 0
+Text Label 7800 2975 2    60   ~ 0
 IOR_118
-Text Label 7850 3400 2    60   ~ 0
+Text Label 7800 3375 2    60   ~ 0
 IOR_136
 Wire Notes Line
-	1800 4500 2850 4500
-Text HLabel 3300 2750 0    60   BiDi ~ 12
+	1050 4500 2100 4500
+Text HLabel 2550 2750 0    60   BiDi ~ 12
 IOT_177
-Text HLabel 3300 2850 0    60   BiDi ~ 12
+Text HLabel 2550 2850 0    60   BiDi ~ 12
 IOT_178
-Text HLabel 6050 3900 2    60   BiDi ~ 12
+Text HLabel 5800 3875 2    60   BiDi ~ 12
 IOT_144
-Text HLabel 6050 4000 2    60   BiDi ~ 12
+Text HLabel 5800 3975 2    60   BiDi ~ 12
 IOT_146
-Text HLabel 6050 4100 2    60   BiDi ~ 12
+Text HLabel 5800 4075 2    60   BiDi ~ 12
 IOT_147
-Text HLabel 6050 4200 2    60   BiDi ~ 12
+Text HLabel 5800 4175 2    60   BiDi ~ 12
 IOT_148
-Text HLabel 6050 4300 2    60   BiDi ~ 12
+Text HLabel 5800 4275 2    60   BiDi ~ 12
 IOT_152
-Text HLabel 6050 4400 2    60   BiDi ~ 12
+Text HLabel 5800 4375 2    60   BiDi ~ 12
 IOT_160
-Text HLabel 6050 4500 2    60   BiDi ~ 12
+Text HLabel 5800 4475 2    60   BiDi ~ 12
 IOT_161
-Text HLabel 6050 4600 2    60   BiDi ~ 12
+Text HLabel 5800 4575 2    60   BiDi ~ 12
 IOT_164
-Text HLabel 6050 4700 2    60   BiDi ~ 12
+Text HLabel 5800 4675 2    60   BiDi ~ 12
 IOT_165
-Text HLabel 6050 4800 2    60   BiDi ~ 12
+Text HLabel 5800 4775 2    60   BiDi ~ 12
 IOT_166
-Text HLabel 6050 4900 2    60   BiDi ~ 12
+Text HLabel 5800 4875 2    60   BiDi ~ 12
 IOT_167
-Text HLabel 6650 5350 2    60   Input ~ 12
+Text HLabel 6400 5325 2    60   Input ~ 12
 +3.3V
-Text HLabel 6650 5700 2    60   Input ~ 12
+Text HLabel 6400 5675 2    60   Input ~ 12
 GNDD
-Text HLabel 6050 3600 2    60   BiDi ~ 12
-IOT_139
-Text HLabel 6050 3700 2    60   BiDi ~ 12
+Text HLabel 5800 3675 2    60   BiDi ~ 12
 IOT_140
-Text HLabel 7850 3700 0    60   Input ~ 12
+Text HLabel 7800 3675 0    60   Input ~ 12
 GNDD
-Text HLabel 7850 3800 0    60   Input ~ 12
+Text HLabel 7800 3775 0    60   Input ~ 12
 +3.3V
+Text Notes 7650 4325 2    60   ~ 0
+Analog frontend control pins\n
+Wire Notes Line
+	6300 3600 7350 3600
+$Comp
+L SW_Push SW1101
+U 1 1 5986C47F
+P 6725 3300
+F 0 "SW1101" H 6775 3400 50  0000 L CNN
+F 1 "SW_Push" H 6725 3240 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 6725 3500 50  0001 C CNN
+F 3 "" H 6725 3500 50  0001 C CNN
+	1    6725 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR041
+U 1 1 5986C566
+P 7100 3300
+F 0 "#PWR041" H 7100 3050 50  0001 C CNN
+F 1 "GND" H 7100 3150 50  0000 C CNN
+F 2 "" H 7100 3300 50  0001 C CNN
+F 3 "" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 3300 7100 3300
+Wire Wire Line
+	5800 3575 6525 3575
+Wire Wire Line
+	6525 3575 6525 3300
 $EndSCHEMATC
