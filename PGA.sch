@@ -52,11 +52,12 @@ LIBS:tcr2ef13
 LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
+LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
