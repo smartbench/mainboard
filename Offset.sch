@@ -344,7 +344,7 @@ F 0 "U1103" H 4850 5450 60  0000 C CNN
 F 1 "MCP4716" H 4900 4850 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4725 5150 60  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22272C.pdf" H 4225 4450 60  0001 C CNN
-F 4 "MCP4716A0T-E/CH" H 4175 4650 60  0001 C CNN "Manuf. Part Number"
+F 4 "MCP4716A1T-E/CH" H 4175 4650 60  0001 C CNN "Manuf. Part Number"
 F 5 "https://www.digikey.com/product-detail/en/microchip-technology/MCP4716A0T-E-CH/MCP4716A0T-E-CHCT-ND/2684987" H 4225 4550 60  0001 C CNN "Link Digikey"
 F 6 "$0.84" H 4925 4650 60  0001 C CNN "Price (Digikey)"
 	1    4675 5150
