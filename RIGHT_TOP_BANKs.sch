@@ -737,20 +737,20 @@ Text Label 7850 3800 2    60   ~ 0
 IOR_140
 Text Label 7850 3900 2    60   ~ 0
 IOR_144
-Text Label 6050 4000 0    60   ~ 0
-IOR_146
 Text Label 7850 3700 2    60   ~ 0
 IOR_139
 Wire Wire Line
 	7850 4300 7850 4200
 Text Label 6050 3600 0    60   ~ 0
 IOR_139
-Text Label 7850 4000 2    60   ~ 0
-IOR_146
 Text Label 6050 3900 0    60   ~ 0
 IOR_144
 Text Label 6050 3700 0    60   ~ 0
 IOR_140
 Wire Wire Line
 	6050 4100 6525 4100
+Text HLabel 6050 4000 2    60   BiDi ~ 12
+IOT_146
+Wire Wire Line
+	7850 4000 7850 4100
 $EndSCHEMATC
