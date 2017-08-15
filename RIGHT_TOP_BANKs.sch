@@ -51,6 +51,7 @@ LIBS:multiplexors
 LIBS:tcr2ef13
 LIBS:voltage-references
 LIBS:voltage-regulators
+LIBS:switches
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
@@ -662,17 +663,6 @@ Wire Wire Line
 	7400 1600 7400 1900
 Wire Wire Line
 	7400 1900 7850 1900
-$Comp
-L CONN_01X20 J401
-U 1 1 59699B76
-P 8050 2850
-F 0 "J401" H 8050 3900 50  0000 C CNN
-F 1 "CONN_01X20" V 8150 2850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch1.27mm" H 8050 2850 50  0001 C CNN
-F 3 "" H 8050 2850 50  0001 C CNN
-	1    8050 2850
-	1    0    0    -1  
-$EndComp
 Text Label 7850 3600 2    60   ~ 0
 IOR_138
 Text Label 7850 3500 2    60   ~ 0
@@ -693,12 +683,6 @@ Text HLabel 3300 2750 0    60   BiDi ~ 12
 IOT_177
 Text HLabel 3300 2850 0    60   BiDi ~ 12
 IOT_178
-Text HLabel 6050 3900 2    60   BiDi ~ 12
-IOT_144
-Text HLabel 6050 4000 2    60   BiDi ~ 12
-IOT_146
-Text HLabel 6050 4100 2    60   BiDi ~ 12
-IOT_147
 Text HLabel 6050 4200 2    60   BiDi ~ 12
 IOT_148
 Text HLabel 6050 4300 2    60   BiDi ~ 12
@@ -719,12 +703,54 @@ Text HLabel 6650 5350 2    60   Input ~ 12
 +3.3V
 Text HLabel 6650 5700 2    60   Input ~ 12
 GNDD
-Text HLabel 6050 3600 2    60   BiDi ~ 12
-IOT_139
-Text HLabel 6050 3700 2    60   BiDi ~ 12
-IOT_140
-Text HLabel 7850 3700 0    60   Input ~ 12
+Text HLabel 7850 4100 0    60   Input ~ 12
 GNDD
-Text HLabel 7850 3800 0    60   Input ~ 12
+Text HLabel 7850 4300 0    60   Input ~ 12
 +3.3V
+$Comp
+L SW_Push SW1101
+U 1 1 59936E4F
+P 6725 4100
+F 0 "SW1101" H 6775 4200 50  0000 L CNN
+F 1 "SW_Push" H 6725 4040 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 6725 4300 50  0001 C CNN
+F 3 "" H 6725 4300 50  0001 C CNN
+	1    6725 4100
+	1    0    0    -1  
+$EndComp
+Text HLabel 7025 4100 2    60   Input ~ 12
+GNDD
+Wire Wire Line
+	7025 4100 6925 4100
+$Comp
+L CONN_01X25 J1101
+U 1 1 5994C423
+P 8050 3100
+F 0 "J1101" H 8050 4400 50  0000 C CNN
+F 1 "CONN_01X25" V 8150 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x25_Pitch1.27mm" H 8050 3100 50  0001 C CNN
+F 3 "" H 8050 3100 50  0001 C CNN
+	1    8050 3100
+	1    0    0    -1  
+$EndComp
+Text Label 7850 3800 2    60   ~ 0
+IOR_140
+Text Label 7850 3900 2    60   ~ 0
+IOR_144
+Text Label 6050 4000 0    60   ~ 0
+IOR_146
+Text Label 7850 3700 2    60   ~ 0
+IOR_139
+Wire Wire Line
+	7850 4300 7850 4200
+Text Label 6050 3600 0    60   ~ 0
+IOR_139
+Text Label 7850 4000 2    60   ~ 0
+IOR_146
+Text Label 6050 3900 0    60   ~ 0
+IOR_144
+Text Label 6050 3700 0    60   ~ 0
+IOR_140
+Wire Wire Line
+	6050 4100 6525 4100
 $EndSCHEMATC
