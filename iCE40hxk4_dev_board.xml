@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ivan/Documentos/Proyecto/git/mainboard/iCE40hxk4_dev_board.sch</source>
-    <date>mar 22 ago 2017 19:12:39 ART</date>
+    <date>mar 22 ago 2017 19:51:59 ART</date>
     <tool>Eeschema 4.0.7-e0-6372~58~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -865,7 +865,7 @@
     </comp>
     <comp ref="C705">
       <value>5-20pF</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
       <datasheet>http://www.mouser.com/ds/2/384/659305J-204462.pdf</datasheet>
       <fields>
         <field name="MPN">GKG20015</field>
@@ -922,11 +922,11 @@
       <tstamp>5965C324</tstamp>
     </comp>
     <comp ref="C704">
-      <value>0.56-3.58p</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <datasheet>http://www.mouser.com/ds/2/389/stptic-27l2-956732.pdf</datasheet>
+      <value>1-3pF</value>
+      <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
+      <datasheet>http://www.mouser.com/ds/2/384/659305J-204462.pdf</datasheet>
       <fields>
-        <field name="MPN">STPTIC-27L2C5</field>
+        <field name="MPN">GKG3R015</field>
       </fields>
       <libsource lib="device" part="C_Variable"/>
       <sheetpath names="/Analog front end/ATTENUATION/" tstamps="/594C84EF/58FE2814/"/>
@@ -1053,7 +1053,7 @@
     </comp>
     <comp ref="C708">
       <value>5-20pF</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
       <datasheet>http://www.mouser.com/ds/2/384/659305J-204462.pdf</datasheet>
       <fields>
         <field name="MPN">GKG20015</field>
@@ -1096,11 +1096,11 @@
       <tstamp>5965C33D</tstamp>
     </comp>
     <comp ref="C707">
-      <value>0.56-3.58p</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
-      <datasheet>http://www.mouser.com/ds/2/389/stptic-27l2-956732.pdf</datasheet>
+      <value>1-3pF</value>
+      <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
+      <datasheet>http://www.mouser.com/ds/2/384/659305J-204462.pdf</datasheet>
       <fields>
-        <field name="MPN">STPTIC-27L2C5</field>
+        <field name="MPN">GKG3R015</field>
       </fields>
       <libsource lib="device" part="C_Variable"/>
       <sheetpath names="/Analog front end/ATTENUATION/" tstamps="/594C84EF/58FE2814/"/>
@@ -1173,7 +1173,7 @@
     </comp>
     <comp ref="C714">
       <value>Not used</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
       <libsource lib="device" part="C_Variable"/>
       <sheetpath names="/Analog front end/ATTENUATION/" tstamps="/594C84EF/58FE2814/"/>
       <tstamp>5967FFA6</tstamp>
@@ -1192,7 +1192,7 @@
     </comp>
     <comp ref="C713">
       <value>Not used</value>
-      <footprint>Capacitors_SMD:C_0603_HandSoldering</footprint>
+      <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
       <libsource lib="device" part="C_Variable"/>
       <sheetpath names="/Analog front end/ATTENUATION/" tstamps="/594C84EF/58FE2814/"/>
       <tstamp>59683E8B</tstamp>
@@ -5262,14 +5262,38 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="memory">
+      <uri>/usr/share/kicad/library/memory.lib</uri>
+    </library>
+    <library logical="analog_switches">
+      <uri>/usr/share/kicad/library/analog_switches.lib</uri>
+    </library>
+    <library logical="ftdi">
+      <uri>/usr/share/kicad/library/ftdi.lib</uri>
+    </library>
     <library logical="Lattice_iCE40HX4K_FPGA">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/Lattice_iCE40HX4K_FPGA.lib</uri>
     </library>
     <library logical="my_memory">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_memory.lib</uri>
     </library>
-    <library logical="clc4007">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/clc4007.lib</uri>
+    <library logical="my_oscillators">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_oscillators.lib</uri>
+    </library>
+    <library logical="MIC2005A-2">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/MIC2005A-2.lib</uri>
+    </library>
+    <library logical="my_regul">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_regul.lib</uri>
+    </library>
+    <library logical="lm4040dym3-2">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/lm4040dym3-2.lib</uri>
     </library>
     <library logical="AS4C1M16S">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/AS4C1M16S.lib</uri>
@@ -5277,38 +5301,20 @@
     <library logical="adc1175">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/adc1175.lib</uri>
     </library>
+    <library logical="clc4007">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/clc4007.lib</uri>
+    </library>
     <library logical="DACs">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/DACs.lib</uri>
-    </library>
-    <library logical="my_oscillators">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_oscillators.lib</uri>
-    </library>
-    <library logical="my_regul">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_regul.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
-    </library>
-    <library logical="switches">
-      <uri>/usr/share/kicad/library/switches.lib</uri>
-    </library>
-    <library logical="voltage-regulators">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-regulators.lib</uri>
-    </library>
-    <library logical="lm4040dym3-2">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/lm4040dym3-2.lib</uri>
     </library>
     <library logical="d_schottky_300mv">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/d_schottky_300mv.lib</uri>
     </library>
+    <library logical="voltage-references">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-references.lib</uri>
+    </library>
     <library logical="mic7300">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/mic7300.lib</uri>
-    </library>
-    <library logical="ftdi">
-      <uri>/usr/share/kicad/library/ftdi.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="tcr2ef13">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/tcr2ef13.lib</uri>
@@ -5316,17 +5322,11 @@
     <library logical="multiplexors">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/multiplexors.lib</uri>
     </library>
-    <library logical="analog_switches">
-      <uri>/usr/share/kicad/library/analog_switches.lib</uri>
+    <library logical="switches">
+      <uri>/usr/share/kicad/library/switches.lib</uri>
     </library>
-    <library logical="memory">
-      <uri>/usr/share/kicad/library/memory.lib</uri>
-    </library>
-    <library logical="MIC2005A-2">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/MIC2005A-2.lib</uri>
-    </library>
-    <library logical="voltage-references">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-references.lib</uri>
+    <library logical="voltage-regulators">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-regulators.lib</uri>
     </library>
   </libraries>
   <nets>
