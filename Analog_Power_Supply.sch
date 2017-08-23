@@ -57,7 +57,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -314,9 +314,9 @@ Wire Wire Line
 Wire Wire Line
 	5900 4200 6150 4200
 Wire Wire Line
-	6075 3825 6075 4200
+	6075 3825 6075 4775
 Wire Wire Line
-	7425 3775 7425 4200
+	7425 3775 7425 4775
 Wire Wire Line
 	7425 3500 7425 3575
 Wire Wire Line
@@ -343,4 +343,43 @@ Connection ~ 6100 2350
 Connection ~ 7150 2050
 Connection ~ 6075 4200
 Connection ~ 7425 4200
+$Comp
+L CONN_01X01 J?
+U 1 1 599EBADE
+P 6275 4775
+F 0 "J?" H 6275 4875 50  0000 C CNN
+F 1 "Testpoint" V 6375 4775 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 6275 4775 50  0001 C CNN
+F 3 "" H 6275 4775 50  0001 C CNN
+	1    6275 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EBAFD
+P 7625 4775
+F 0 "J?" H 7625 4875 50  0000 C CNN
+F 1 "Testpoint" V 7725 4775 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 7625 4775 50  0001 C CNN
+F 3 "" H 7625 4775 50  0001 C CNN
+	1    7625 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EBB63
+P 7300 1625
+F 0 "J?" H 7300 1725 50  0000 C CNN
+F 1 "Testpoint" V 7400 1625 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 7300 1625 50  0001 C CNN
+F 3 "" H 7300 1625 50  0001 C CNN
+	1    7300 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1625 7100 2050
+Connection ~ 7100 2050
+Wire Wire Line
+	7425 4200 7400 4200
+Connection ~ 7400 4200
 $EndSCHEMATC

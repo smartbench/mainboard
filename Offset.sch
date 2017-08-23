@@ -57,7 +57,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 8 11
 Title ""
 Date ""
 Rev ""
@@ -807,4 +807,118 @@ Connection ~ 5025 2675
 Connection ~ 4125 1600
 Connection ~ 3875 1700
 Connection ~ 3875 2050
+$Comp
+L CONN_01X01 J?
+U 1 1 599E2B08
+P 10100 3975
+F 0 "J?" H 10100 4075 50  0000 C CNN
+F 1 "Testpoint" V 10200 3975 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 10100 3975 50  0001 C CNN
+F 3 "" H 10100 3975 50  0001 C CNN
+	1    10100 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 3650 2900 3650
+Connection ~ 2775 3650
+Wire Wire Line
+	5475 2875 5400 2875
+Wire Wire Line
+	5400 2875 5400 3150
+Connection ~ 5400 3150
+Wire Wire Line
+	9750 3975 9900 3975
+Connection ~ 9750 3975
+Wire Wire Line
+	6700 3675 6625 3675
+Connection ~ 6625 3675
+Wire Wire Line
+	6500 5750 6350 5750
+Connection ~ 6350 5750
+Wire Wire Line
+	9825 5900 9725 5900
+Connection ~ 9725 5900
+Wire Wire Line
+	5375 4750 5375 5225
+Connection ~ 5375 5225
+Wire Wire Line
+	2800 5625 2850 5625
+Connection ~ 2800 5625
+$Comp
+L CONN_01X01 J?
+U 1 1 599F1C55
+P 10025 5900
+F 0 "J?" H 10025 6000 50  0000 C CNN
+F 1 "Testpoint" V 10125 5900 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 10025 5900 50  0001 C CNN
+F 3 "" H 10025 5900 50  0001 C CNN
+	1    10025 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599F1D31
+P 6700 5750
+F 0 "J?" H 6700 5850 50  0000 C CNN
+F 1 "Testpoint" V 6800 5750 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 6700 5750 50  0001 C CNN
+F 3 "" H 6700 5750 50  0001 C CNN
+	1    6700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599F1E16
+P 6900 3675
+F 0 "J?" H 6900 3775 50  0000 C CNN
+F 1 "Testpoint" V 7000 3675 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 6900 3675 50  0001 C CNN
+F 3 "" H 6900 3675 50  0001 C CNN
+	1    6900 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599F1F79
+P 5675 2875
+F 0 "J?" H 5675 2975 50  0000 C CNN
+F 1 "Testpoint" V 5800 2950 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5675 2875 50  0001 C CNN
+F 3 "" H 5675 2875 50  0001 C CNN
+	1    5675 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599F20B1
+P 5575 4750
+F 0 "J?" H 5575 4850 50  0000 C CNN
+F 1 "Testpoint" V 5700 4825 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5575 4750 50  0001 C CNN
+F 3 "" H 5575 4750 50  0001 C CNN
+	1    5575 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599F21E0
+P 3100 3650
+F 0 "J?" H 3100 3750 50  0000 C CNN
+F 1 "Testpoint" V 3225 3725 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 3100 3650 50  0001 C CNN
+F 3 "" H 3100 3650 50  0001 C CNN
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599F233C
+P 3050 5625
+F 0 "J?" H 3050 5725 50  0000 C CNN
+F 1 "Testpoint" V 3175 5700 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 3050 5625 50  0001 C CNN
+F 3 "" H 3050 5625 50  0001 C CNN
+	1    3050 5625
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

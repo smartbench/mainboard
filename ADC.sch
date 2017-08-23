@@ -57,7 +57,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
@@ -831,7 +831,7 @@ Text Notes 3750 5975 0    60   ~ 0
 DAC VOLTAGE REFERENCE (1.2V)
 Text Notes 7250 1225 0    60   ~ 0
 ADC Input Protection
-Text Notes 6975 4075 0    60   ~ 0
+Text Notes 7100 3950 0    60   ~ 0
 ADC Input Protection
 Text Notes 3725 3900 0    60   ~ 0
 ADC VOLTAGE REFERENCES (CHB)\nTOP-BOTTOM = 2.5V
@@ -891,6 +891,76 @@ Text Label 9325 5925 3    60   ~ 0
 GND_A
 Text Label 9725 5925 3    60   ~ 0
 GND_D
+NoConn ~ 8800 2175
+NoConn ~ 8800 2675
+NoConn ~ 8825 5000
+NoConn ~ 8825 5500
+$Comp
+L CONN_01X01 J?
+U 1 1 599E7444
+P 8475 1500
+F 0 "J?" H 8475 1600 50  0000 C CNN
+F 1 "Testpoint" V 8575 1500 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 8475 1500 50  0001 C CNN
+F 3 "" H 8475 1500 50  0001 C CNN
+	1    8475 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599E7723
+P 8425 4300
+F 0 "J?" H 8425 4400 50  0000 C CNN
+F 1 "Testpoint" V 8525 4300 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 8425 4300 50  0001 C CNN
+F 3 "" H 8425 4300 50  0001 C CNN
+	1    8425 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599E7936
+P 6950 4175
+F 0 "J?" H 6950 4275 50  0000 C CNN
+F 1 "Testpoint" V 7050 4175 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 6950 4175 50  0001 C CNN
+F 3 "" H 6950 4175 50  0001 C CNN
+	1    6950 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599E7A18
+P 7100 1475
+F 0 "J?" H 7100 1575 50  0000 C CNN
+F 1 "Testpoint" V 7200 1475 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 7100 1475 50  0001 C CNN
+F 3 "" H 7100 1475 50  0001 C CNN
+	1    7100 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599E8E3F
+P 5175 4200
+F 0 "J?" H 5175 4300 50  0000 C CNN
+F 1 "Testpoint" V 5275 4200 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5175 4200 50  0001 C CNN
+F 3 "" H 5175 4200 50  0001 C CNN
+	1    5175 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599E904A
+P 5275 1625
+F 0 "J?" H 5275 1725 50  0000 C CNN
+F 1 "Testpoint" V 5375 1625 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5275 1625 50  0001 C CNN
+F 3 "" H 5275 1625 50  0001 C CNN
+	1    5275 1625
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	7100 1775 7375 1775
 Wire Wire Line
@@ -1260,8 +1330,25 @@ Connection ~ 4525 3050
 Connection ~ 7000 5200
 Connection ~ 7175 2475
 Connection ~ 9300 1375
-NoConn ~ 8800 2175
-NoConn ~ 8800 2675
-NoConn ~ 8825 5000
-NoConn ~ 8825 5500
+Wire Wire Line
+	8275 1500 8275 1775
+Connection ~ 8275 1775
+Wire Wire Line
+	8225 4300 8225 4600
+Connection ~ 8225 4600
+Wire Wire Line
+	6900 1775 6900 1475
+Wire Wire Line
+	6750 4175 6675 4175
+Wire Wire Line
+	6675 4175 6675 4600
+Connection ~ 6675 4600
+Wire Wire Line
+	4975 4200 4975 4475
+Connection ~ 4975 4475
+Wire Wire Line
+	5075 1625 5075 1925
+Wire Wire Line
+	5075 1925 5100 1925
+Connection ~ 5100 1925
 $EndSCHEMATC

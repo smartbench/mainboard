@@ -57,7 +57,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -1136,7 +1136,7 @@ F 3 "" H 4150 2200 50  0001 C CNN
 	1    4150 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 4000 1800 0    60   ~ 0
+Text Notes 4025 2825 0    60   ~ 0
 DUAL LDO REGULATOR 3.3V/1.2V
 Text Notes 4200 4250 0    79   Italic 16
 FTDI ROM
@@ -1246,7 +1246,7 @@ Text HLabel 2350 2450 0    60   Output ~ 12
 GND
 Text HLabel 5550 3550 0    60   Output ~ 12
 GNDD
-Text HLabel 6050 2650 2    60   Output ~ 12
+Text HLabel 5700 2775 2    60   Output ~ 12
 GND
 Text HLabel 3900 1950 2    60   Output ~ 12
 +5V
@@ -1286,6 +1286,31 @@ Text Notes 3700 3000 0    51   ~ 0
 Fault is active low.
 Text HLabel 3600 3300 2    60   Output ~ 12
 +5V
+NoConn ~ 9000 2750
+NoConn ~ 9000 2550
+NoConn ~ 9000 5450
+NoConn ~ 9000 5550
+NoConn ~ 9000 5650
+NoConn ~ 9000 5850
+NoConn ~ 9000 5950
+NoConn ~ 6600 5750
+NoConn ~ 1500 4100
+NoConn ~ 9000 3450
+NoConn ~ 9000 3550
+NoConn ~ 9000 3650
+NoConn ~ 9000 3750
+NoConn ~ 9000 3850
+$Comp
+L CONN_01X01 J?
+U 1 1 599EE852
+P 3625 775
+F 0 "J?" H 3625 875 50  0000 C CNN
+F 1 "Testpoint" V 3725 775 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 3625 775 50  0001 C CNN
+F 3 "" H 3625 775 50  0001 C CNN
+	1    3625 775 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4950 5800 4950 5500
 Wire Wire Line
@@ -1467,7 +1492,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 4300 1350 4300
 Wire Wire Line
-	5300 1900 5300 2350
+	5300 1800 5300 2350
 Wire Wire Line
 	1800 4000 3950 4000
 Wire Wire Line
@@ -1555,7 +1580,9 @@ Wire Wire Line
 Wire Wire Line
 	3650 3700 3750 3700
 Wire Wire Line
-	3850 2650 6050 2650
+	3850 2650 5700 2650
+Wire Wire Line
+	5700 2650 5700 2775
 Wire Wire Line
 	3550 3150 3550 3300
 Wire Wire Line
@@ -1668,18 +1695,51 @@ Connection ~ 5700 2650
 Connection ~ 3450 1300
 Connection ~ 10600 3250
 Connection ~ 3850 1950
-NoConn ~ 9000 2750
-NoConn ~ 9000 2550
-NoConn ~ 9000 5450
-NoConn ~ 9000 5550
-NoConn ~ 9000 5650
-NoConn ~ 9000 5850
-NoConn ~ 9000 5950
-NoConn ~ 6600 5750
-NoConn ~ 1500 4100
-NoConn ~ 9000 3450
-NoConn ~ 9000 3550
-NoConn ~ 9000 3650
-NoConn ~ 9000 3750
-NoConn ~ 9000 3850
+$Comp
+L CONN_01X01 J?
+U 1 1 599EEB8A
+P 3925 3500
+F 0 "J?" H 3925 3600 50  0000 C CNN
+F 1 "Testpoint" V 4025 3500 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 3925 3500 50  0001 C CNN
+F 3 "" H 3925 3500 50  0001 C CNN
+	1    3925 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 775  3425 1000
+Connection ~ 3425 1000
+Wire Wire Line
+	3725 3500 3300 3500
+Wire Wire Line
+	3300 3500 3300 3700
+Connection ~ 3300 3700
+$Comp
+L CONN_01X01 J?
+U 1 1 599EF14F
+P 5075 1800
+F 0 "J?" H 5075 1900 50  0000 C CNN
+F 1 "Testpoint" V 5175 1800 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5075 1800 50  0001 C CNN
+F 3 "" H 5075 1800 50  0001 C CNN
+	1    5075 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EF7E9
+P 6175 2500
+F 0 "J?" H 6175 2600 50  0000 C CNN
+F 1 "Testpoint" V 6275 2500 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 6175 2500 50  0001 C CNN
+F 3 "" H 6175 2500 50  0001 C CNN
+	1    6175 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6175 2300 6175 2250
+Connection ~ 6175 2250
+Wire Wire Line
+	5300 1800 5275 1800
+Connection ~ 5300 1900
 $EndSCHEMATC

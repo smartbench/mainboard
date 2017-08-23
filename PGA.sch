@@ -57,7 +57,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -909,4 +909,32 @@ Connection ~ 7975 4425
 Connection ~ 7725 4425
 Connection ~ 6725 5375
 Connection ~ 6725 5575
+$Comp
+L CONN_01X01 J?
+U 1 1 599EBDBC
+P 7900 3900
+F 0 "J?" H 7900 4000 50  0000 C CNN
+F 1 "Testpoint" V 8000 3900 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 7900 3900 50  0001 C CNN
+F 3 "" H 7900 3900 50  0001 C CNN
+	1    7900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EBE1F
+P 7825 1250
+F 0 "J?" H 7825 1350 50  0000 C CNN
+F 1 "Testpoint" V 7925 1250 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 7825 1250 50  0001 C CNN
+F 3 "" H 7825 1250 50  0001 C CNN
+	1    7825 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 1250 7625 1575
+Connection ~ 7625 1575
+Wire Wire Line
+	7700 3900 7700 4425
+Connection ~ 7700 4425
 $EndSCHEMATC

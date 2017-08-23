@@ -605,9 +605,9 @@ Text HLabel 2925 1425 0    60   Input ~ 0
 CHA_IN
 Text HLabel 2825 4275 0    60   Input ~ 0
 CHB_IN
-Text HLabel 9800 1300 2    60   Input ~ 0
+Text HLabel 9925 1300 2    60   Input ~ 0
 CHA_OUT
-Text HLabel 9825 4025 2    60   Input ~ 0
+Text HLabel 10025 4025 2    60   Input ~ 0
 CHB_OUT
 Text HLabel 2950 2275 0    60   Input ~ 0
 CHA_DC_COUPLING
@@ -679,6 +679,72 @@ Text Label 8125 1450 3    60   ~ 0
 GND_A
 Text Label 8200 4175 3    60   ~ 0
 GND_A
+$Comp
+L CONN_01X01 J?
+U 1 1 599EC0AF
+P 10025 1600
+F 0 "J?" H 10025 1700 50  0000 C CNN
+F 1 "Testpoint" V 10125 1600 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 10025 1600 50  0001 C CNN
+F 3 "" H 10025 1600 50  0001 C CNN
+	1    10025 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EC0FA
+P 10150 3725
+F 0 "J?" H 10150 3825 50  0000 C CNN
+F 1 "Testpoint" V 10250 3725 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 10150 3725 50  0001 C CNN
+F 3 "" H 10150 3725 50  0001 C CNN
+	1    10150 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EC1CA
+P 5825 4325
+F 0 "J?" H 5825 4425 50  0000 C CNN
+F 1 "Testpoint" V 5925 4325 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5825 4325 50  0001 C CNN
+F 3 "" H 5825 4325 50  0001 C CNN
+	1    5825 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EC2EF
+P 5675 6200
+F 0 "J?" H 5675 6300 50  0000 C CNN
+F 1 "Testpoint" V 5775 6200 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5675 6200 50  0001 C CNN
+F 3 "" H 5675 6200 50  0001 C CNN
+	1    5675 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EC39F
+P 5950 3200
+F 0 "J?" H 5950 3300 50  0000 C CNN
+F 1 "Testpoint" V 6050 3200 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5950 3200 50  0001 C CNN
+F 3 "" H 5950 3200 50  0001 C CNN
+	1    5950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J?
+U 1 1 599EC468
+P 5850 1975
+F 0 "J?" H 5850 2075 50  0000 C CNN
+F 1 "Testpoint" V 5950 1975 50  0000 C CNN
+F 2 "library:Via-0.8mm" H 5850 1975 50  0001 C CNN
+F 3 "" H 5850 1975 50  0001 C CNN
+	1    5850 1975
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4500 1550 5225 1550
 Wire Wire Line
@@ -766,7 +832,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 5500 5100 6075
 Wire Wire Line
-	4375 5950 5350 5950
+	4375 5950 5475 5950
 Wire Wire Line
 	5100 4900 5100 5200
 Wire Wire Line
@@ -836,4 +902,28 @@ Connection ~ 5100 5125
 Connection ~ 4675 2275
 Connection ~ 4700 1550
 Connection ~ 4575 4400
+Wire Wire Line
+	5650 1975 5650 2275
+Wire Wire Line
+	5650 2275 5675 2275
+Connection ~ 5675 2275
+Wire Wire Line
+	5475 5950 5475 6200
+Wire Wire Line
+	5625 4325 5625 5125
+Connection ~ 5625 5125
+Wire Wire Line
+	5750 3200 5475 3200
+Wire Wire Line
+	5475 3200 5475 3050
+Wire Wire Line
+	9800 1300 9925 1300
+Wire Wire Line
+	9825 1600 9825 1300
+Connection ~ 9825 1300
+Wire Wire Line
+	9825 4025 10025 4025
+Wire Wire Line
+	9950 3725 9950 4025
+Connection ~ 9950 4025
 $EndSCHEMATC
