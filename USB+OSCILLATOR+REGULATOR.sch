@@ -53,7 +53,7 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -190,17 +190,6 @@ F 3 "http://www.mouser.com/ds/2/268/mic20xx-1076814.pdf" H 2950 2350 50  0001 C 
 F 4 "MIC2005A-2YM5" H 2750 2700 50  0001 C CNN "MPN"
 	1    2950 2350
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 J201
-U 1 1 58E0AC97
-P 1000 1050
-F 0 "J201" H 1000 1200 50  0000 C CNN
-F 1 "CONN_01X02" V 1100 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch1.27mm" H 1000 1050 50  0001 C CNN
-F 3 "" H 1000 1050 50  0001 C CNN
-	1    1000 1050
-	-1   0    0    1   
 $EndComp
 $Comp
 L D_Schottky D201
@@ -913,13 +902,13 @@ $EndComp
 $Comp
 L PWR_FLAG #FLG1001
 U 1 1 58F8188C
-P 900 1550
-F 0 "#FLG1001" H 900 1625 50  0001 C CNN
-F 1 "PWR_FLAG" H 900 1700 50  0000 C CNN
-F 2 "" H 900 1550 50  0001 C CNN
-F 3 "" H 900 1550 50  0001 C CNN
-	1    900  1550
-	1    0    0    -1  
+P 800 1800
+F 0 "#FLG1001" H 800 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 1950 50  0000 C CNN
+F 2 "" H 800 1800 50  0001 C CNN
+F 3 "" H 800 1800 50  0001 C CNN
+	1    800  1800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L L_Core_Ferrite L202
@@ -1274,7 +1263,7 @@ Text HLabel 9800 1750 0    60   Output ~ 12
 GNDD
 Text HLabel 5550 1600 0    60   Output ~ 12
 GNDD
-Text HLabel 1350 1450 2    60   Output ~ 12
+Text HLabel 1200 1800 2    60   Output ~ 12
 GND
 Text HLabel 6400 2900 0    60   Output ~ 12
 GNDD
@@ -1508,9 +1497,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 2450 2400 2450
 Wire Wire Line
-	1200 1100 1250 1100
-Wire Wire Line
-	1200 1000 1500 1000
+	1100 1000 1500 1000
 Wire Wire Line
 	1400 1300 3750 1300
 Wire Wire Line
@@ -1560,10 +1547,6 @@ Wire Wire Line
 Wire Wire Line
 	8650 950  8750 950 
 Wire Wire Line
-	1350 1450 1250 1450
-Wire Wire Line
-	1250 1100 1250 1550
-Wire Wire Line
 	6400 2900 6500 2900
 Wire Wire Line
 	6500 2900 6500 2750
@@ -1575,8 +1558,6 @@ Wire Wire Line
 	3800 4650 4100 4650
 Wire Wire Line
 	3800 4950 4100 4950
-Wire Wire Line
-	1250 1550 900  1550
 Wire Wire Line
 	3650 3700 3750 3700
 Wire Wire Line
@@ -1689,7 +1670,6 @@ Connection ~ 6400 1600
 Connection ~ 5300 4050
 Connection ~ 3950 4650
 Connection ~ 3950 4950
-Connection ~ 1250 1450
 Connection ~ 3750 4000
 Connection ~ 5700 2650
 Connection ~ 3450 1300
@@ -1742,4 +1722,26 @@ Connection ~ 6175 2250
 Wire Wire Line
 	5300 1800 5275 1800
 Connection ~ 5300 1900
+$Comp
+L USB_OTG J?
+U 1 1 599EBDA6
+P 800 1200
+F 0 "J?" H 600 1650 50  0000 L CNN
+F 1 "USB_EXT" H 600 1550 50  0000 L CNN
+F 2 "Connect:USB_Micro-B" H 950 1150 50  0001 C CNN
+F 3 "" H 950 1150 50  0001 C CNN
+	1    800  1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1600 850  1800
+Wire Wire Line
+	800  1800 1200 1800
+Connection ~ 850  1800
+Wire Wire Line
+	700  1600 850  1600
+Connection ~ 800  1600
+NoConn ~ 1100 1200
+NoConn ~ 1100 1300
+NoConn ~ 1100 1400
 $EndSCHEMATC
