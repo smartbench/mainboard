@@ -53,7 +53,7 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1013,20 +1013,6 @@ F 4 "CRCW06031K50JNEA" H 3580 3800 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L LED_ALT D205
-U 1 1 58F97BFA
-P 9250 3150
-F 0 "D205" H 9250 3250 50  0000 C CNN
-F 1 "GREEN" H 9250 3100 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 9250 3150 50  0001 C CNN
-F 3 "www.kingbrightusa.com/images/catalog/SPEC/APTD1608LCGCK.pdf" H 9250 3150 50  0001 C CNN
-F 4 "2mA" H 9250 3150 60  0001 C CNN "If"
-F 5 "APTD1608LCGCK" H 9250 3350 50  0001 C CNN "MPN"
-F 6 "1.9V" H 9250 3150 60  0001 C CNN "Vf"
-	1    9250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L FT2232H U205
 U 1 1 58DACB1C
 P 7800 4150
@@ -1036,70 +1022,6 @@ F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 7800 4150 50  0001 C CNN
 F 3 "" H 7800 4150 50  0001 C CNN
 F 4 "FT2232H" H 6750 6350 50  0001 C CNN "MPN"
 	1    7800 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R232
-U 1 1 58F9B086
-P 10300 3150
-F 0 "R232" V 10250 3300 50  0000 C CNN
-F 1 "680R" V 10300 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 10300 3150 50  0001 C CNN
-F 4 "RC0603FR-07680RL" H 10250 3400 50  0001 C CNN "MPN"
-	1    10300 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L R R233
-U 1 1 58F9B3F0
-P 10300 3250
-F 0 "R233" V 10250 3400 50  0000 C CNN
-F 1 "680R" V 10300 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3250 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 10300 3250 50  0001 C CNN
-F 4 "RC0603FR-07680RL" H 10250 3500 50  0001 C CNN "MPN"
-	1    10300 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L R R234
-U 1 1 58F9B988
-P 10300 3350
-F 0 "R234" V 10250 3500 50  0000 C CNN
-F 1 "680R" V 10300 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 3350 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 10300 3350 50  0001 C CNN
-F 4 "RC0603FR-07680RL" H 10250 3600 50  0001 C CNN "MPN"
-	1    10300 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L LED_ALT D206
-U 1 1 58F9D81C
-P 9550 3250
-F 0 "D206" H 9550 3350 50  0000 C CNN
-F 1 "YELLOW" H 9550 3200 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 9550 3250 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSYCK.pdf" H 9550 3250 50  0001 C CNN
-F 4 "2mA" H 9550 3250 60  0001 C CNN "If"
-F 5 "APTD1608LSYCK" H 9550 3450 50  0001 C CNN "MPN"
-F 6 "1.75V" H 9550 3250 60  0001 C CNN "Vf"
-	1    9550 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED_ALT D207
-U 1 1 58F9E03E
-P 9900 3350
-F 0 "D207" H 9900 3450 50  0000 C CNN
-F 1 "RED" H 9900 3300 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 9900 3350 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD1608LSURCK.pdf" H 9900 3350 50  0001 C CNN
-F 4 "2mA" H 9900 3350 60  0001 C CNN "If"
-F 5 "APTD1608LSURCK" H 9900 3550 50  0001 C CNN "MPN"
-F 6 "1.75V" H 9900 3350 60  0001 C CNN "Vf"
-	1    9900 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1207,7 +1129,7 @@ Text Label 1800 2250 2    60   ~ 0
 Vbus_filtered
 Text Notes 1200 750  0    79   ~ 16
 EXTERNAL SOURCE
-Text Label 2250 1000 0    79   ~ 0
+Text Label 2075 1000 0    79   ~ 0
 Vext_filtered
 Text Label 1850 1700 2    79   ~ 0
 Vext_filtered
@@ -1268,8 +1190,6 @@ GND
 Text HLabel 6400 2900 0    60   Output ~ 12
 GNDD
 Text HLabel 5200 3900 0    60   Output ~ 12
-+3.3V
-Text HLabel 10750 3250 2    60   Output ~ 12
 +3.3V
 Text Notes 3700 3000 0    51   ~ 0
 Fault is active low.
@@ -1577,26 +1497,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 1000 3450 1000
 Wire Wire Line
-	9000 3150 9100 3150
-Wire Wire Line
-	9000 3250 9400 3250
-Wire Wire Line
-	9000 3350 9750 3350
-Wire Wire Line
-	10150 3350 10050 3350
-Wire Wire Line
-	10150 3250 9700 3250
-Wire Wire Line
-	10150 3150 9400 3150
-Wire Wire Line
-	10450 3150 10600 3150
-Wire Wire Line
-	10600 3150 10600 3350
-Wire Wire Line
-	10600 3350 10450 3350
-Wire Wire Line
-	10450 3250 10750 3250
-Wire Wire Line
 	5550 5800 6150 5800
 Wire Wire Line
 	6150 5800 6150 5350
@@ -1673,7 +1573,6 @@ Connection ~ 3950 4950
 Connection ~ 3750 4000
 Connection ~ 5700 2650
 Connection ~ 3450 1300
-Connection ~ 10600 3250
 Connection ~ 3850 1950
 $Comp
 L CONN_01X01 J1002
@@ -1686,8 +1585,6 @@ F 3 "" H 3925 3500 50  0001 C CNN
 	1    3925 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3425 775  3425 1000
 Connection ~ 3425 1000
 Wire Wire Line
 	3725 3500 3300 3500
@@ -1744,4 +1641,12 @@ Connection ~ 800  1600
 NoConn ~ 1100 1200
 NoConn ~ 1100 1300
 NoConn ~ 1100 1400
+Wire Wire Line
+	3425 775  2950 775 
+Wire Wire Line
+	2950 775  2950 1000
+Connection ~ 2950 1000
+NoConn ~ 9000 3150
+NoConn ~ 9000 3250
+NoConn ~ 9000 3350
 $EndSCHEMATC
