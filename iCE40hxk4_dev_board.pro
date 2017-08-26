@@ -1,4 +1,4 @@
-update=mar 15 ago 2017 16:30:00 ART
+update=sáb 26 ago 2017 18:17:11 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -82,3 +82,4 @@ LibName50=library/tcr2ef13
 LibName51=library/voltage-references
 LibName52=library/voltage-regulators
 LibName53=switches
+LibName54=library/kobiconn_161-3507_jack_3
