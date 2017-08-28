@@ -787,39 +787,39 @@ Text Label 7025 4175 0    60   ~ 0
 CHA_VREF_CENT
 Text Label 7025 4375 0    60   ~ 0
 V_REF_DAC
-Text HLabel 5225 1200 0    60   Input ~ 0
+Text HLabel 4750 1200 0    60   Input ~ 0
 CHA_ATT_SEL_0
-Text HLabel 5225 1300 0    60   Input ~ 0
+Text HLabel 4750 1300 0    60   Input ~ 0
 CHA_ATT_SEL_1
-Text HLabel 5225 1400 0    60   Input ~ 0
+Text HLabel 4750 1400 0    60   Input ~ 0
 CHA_ATT_SEL_2
 Text HLabel 5225 1500 0    60   Input ~ 0
 CHA_ATT_EN
-Text HLabel 5225 1750 0    60   Input ~ 0
+Text HLabel 4750 1750 0    60   Input ~ 0
 CHB_ATT_SEL_0
-Text HLabel 5225 1850 0    60   Input ~ 0
+Text HLabel 4750 1850 0    60   Input ~ 0
 CHB_ATT_SEL_1
-Text HLabel 5225 1950 0    60   Input ~ 0
+Text HLabel 4750 1950 0    60   Input ~ 0
 CHB_ATT_SEL_2
 Text HLabel 5225 2050 0    60   Input ~ 0
 CHB_ATT_EN
-Text HLabel 5225 2300 0    60   Input ~ 0
+Text HLabel 4750 2300 0    60   Input ~ 0
 CHA_DC_COUPLING
-Text HLabel 5225 2400 0    60   Input ~ 0
+Text HLabel 4750 2400 0    60   Input ~ 0
 CHB_DC_COUPLING
-Text HLabel 8625 1225 0    60   Input ~ 0
+Text HLabel 8150 1225 0    60   Input ~ 0
 CHA_GAIN_SEL_0
-Text HLabel 8625 1325 0    60   Input ~ 0
+Text HLabel 8150 1325 0    60   Input ~ 0
 CHA_GAIN_SEL_1
-Text HLabel 8625 1425 0    60   Input ~ 0
+Text HLabel 8150 1425 0    60   Input ~ 0
 CHA_GAIN_SEL_2
 Text HLabel 8625 1525 0    60   Input ~ 0
 CHA_GAIN_EN
-Text HLabel 8625 1675 0    60   Input ~ 0
+Text HLabel 8150 1675 0    60   Input ~ 0
 CHB_GAIN_SEL_0
-Text HLabel 8625 1775 0    60   Input ~ 0
+Text HLabel 8150 1775 0    60   Input ~ 0
 CHB_GAIN_SEL_1
-Text HLabel 8625 1875 0    60   Input ~ 0
+Text HLabel 8150 1875 0    60   Input ~ 0
 CHB_GAIN_SEL_2
 Text HLabel 8625 1975 0    60   Input ~ 0
 CHB_GAIN_EN
@@ -948,39 +948,19 @@ Wire Wire Line
 Wire Wire Line
 	5525 1500 5225 1500
 Wire Wire Line
-	5225 1400 5525 1400
+	4750 1400 5050 1400
 Wire Wire Line
-	5525 1300 5225 1300
+	5050 1300 4750 1300
 Wire Wire Line
-	5225 1200 5525 1200
+	4750 1200 5050 1200
 Wire Wire Line
 	5525 2050 5225 2050
 Wire Wire Line
-	5225 1950 5525 1950
+	4750 1950 5050 1950
 Wire Wire Line
-	5525 1850 5225 1850
+	5050 1850 4750 1850
 Wire Wire Line
-	5225 1750 5525 1750
-Wire Wire Line
-	5525 2300 5225 2300
-Wire Wire Line
-	5525 2400 5225 2400
-Wire Wire Line
-	8925 1525 8625 1525
-Wire Wire Line
-	8625 1425 8925 1425
-Wire Wire Line
-	8925 1325 8625 1325
-Wire Wire Line
-	8625 1225 8925 1225
-Wire Wire Line
-	8925 1975 8625 1975
-Wire Wire Line
-	8625 1875 8925 1875
-Wire Wire Line
-	8925 1775 8625 1775
-Wire Wire Line
-	8625 1675 8925 1675
+	4750 1750 5050 1750
 Wire Wire Line
 	9825 4075 10125 4075
 Wire Wire Line
@@ -1277,4 +1257,220 @@ Connection ~ 1375 3775
 Connection ~ 1200 3775
 Connection ~ 2600 4775
 Connection ~ 2600 3775
+$Comp
+L R R309
+U 1 1 59A410C0
+P 5200 1200
+F 0 "R309" V 5150 1375 50  0000 C CNN
+F 1 "1K" V 5200 1200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 1200 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 1200 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 1300 50  0001 C CNN "MPN"
+	1    5200 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R310
+U 1 1 59A417EF
+P 5200 1300
+F 0 "R310" V 5150 1475 50  0000 C CNN
+F 1 "1K" V 5200 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 1300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 1300 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 1400 50  0001 C CNN "MPN"
+	1    5200 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R311
+U 1 1 59A41A75
+P 5200 1400
+F 0 "R311" V 5150 1575 50  0000 C CNN
+F 1 "1K" V 5200 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 1400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 1400 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 1500 50  0001 C CNN "MPN"
+	1    5200 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1200 5525 1200
+Wire Wire Line
+	5525 1300 5350 1300
+Wire Wire Line
+	5350 1400 5525 1400
+$Comp
+L R R312
+U 1 1 59A43C3A
+P 5200 1750
+F 0 "R312" V 5150 1925 50  0000 C CNN
+F 1 "1K" V 5200 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 1750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 1750 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 1850 50  0001 C CNN "MPN"
+	1    5200 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R313
+U 1 1 59A43EDA
+P 5200 1850
+F 0 "R313" V 5150 2025 50  0000 C CNN
+F 1 "1K" V 5200 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 1850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 1850 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 1950 50  0001 C CNN "MPN"
+	1    5200 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R314
+U 1 1 59A44169
+P 5200 1950
+F 0 "R314" V 5150 2125 50  0000 C CNN
+F 1 "1K" V 5200 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 1950 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 1950 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 2050 50  0001 C CNN "MPN"
+	1    5200 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1750 5525 1750
+Wire Wire Line
+	5525 1850 5350 1850
+Wire Wire Line
+	5350 1950 5525 1950
+$Comp
+L R R315
+U 1 1 59A455C8
+P 5200 2300
+F 0 "R315" V 5150 2475 50  0000 C CNN
+F 1 "1K" V 5200 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 2300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 2300 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 2400 50  0001 C CNN "MPN"
+	1    5200 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R316
+U 1 1 59A45879
+P 5200 2400
+F 0 "R316" V 5150 2575 50  0000 C CNN
+F 1 "1K" V 5200 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 2400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5200 2400 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 5280 2500 50  0001 C CNN "MPN"
+	1    5200 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2400 4750 2400
+Wire Wire Line
+	4750 2300 5050 2300
+Wire Wire Line
+	5350 2300 5525 2300
+Wire Wire Line
+	5525 2400 5350 2400
+Wire Wire Line
+	8150 1425 8450 1425
+Wire Wire Line
+	8450 1325 8150 1325
+Wire Wire Line
+	8150 1225 8450 1225
+$Comp
+L R R317
+U 1 1 59A46A6F
+P 8600 1225
+F 0 "R317" V 8550 1400 50  0000 C CNN
+F 1 "1K" V 8600 1225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 1225 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 8600 1225 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8680 1325 50  0001 C CNN "MPN"
+	1    8600 1225
+	0    1    1    0   
+$EndComp
+$Comp
+L R R318
+U 1 1 59A46A76
+P 8600 1325
+F 0 "R318" V 8550 1500 50  0000 C CNN
+F 1 "1K" V 8600 1325 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 1325 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 8600 1325 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8680 1425 50  0001 C CNN "MPN"
+	1    8600 1325
+	0    1    1    0   
+$EndComp
+$Comp
+L R R319
+U 1 1 59A46A7D
+P 8600 1425
+F 0 "R319" V 8550 1600 50  0000 C CNN
+F 1 "1K" V 8600 1425 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 1425 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 8600 1425 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8680 1525 50  0001 C CNN "MPN"
+	1    8600 1425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 1225 8925 1225
+Wire Wire Line
+	8925 1325 8750 1325
+Wire Wire Line
+	8750 1425 8925 1425
+Wire Wire Line
+	8150 1875 8450 1875
+Wire Wire Line
+	8450 1775 8150 1775
+Wire Wire Line
+	8150 1675 8450 1675
+$Comp
+L R R320
+U 1 1 59A4783A
+P 8600 1675
+F 0 "R320" V 8550 1850 50  0000 C CNN
+F 1 "1K" V 8600 1675 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 1675 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 8600 1675 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8680 1775 50  0001 C CNN "MPN"
+	1    8600 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L R R321
+U 1 1 59A47841
+P 8600 1775
+F 0 "R321" V 8550 1950 50  0000 C CNN
+F 1 "1K" V 8600 1775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 1775 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 8600 1775 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8680 1875 50  0001 C CNN "MPN"
+	1    8600 1775
+	0    1    1    0   
+$EndComp
+$Comp
+L R R322
+U 1 1 59A47848
+P 8600 1875
+F 0 "R322" V 8550 2050 50  0000 C CNN
+F 1 "1K" V 8600 1875 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 1875 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 8600 1875 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8680 1975 50  0001 C CNN "MPN"
+	1    8600 1875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 1675 8925 1675
+Wire Wire Line
+	8925 1775 8750 1775
+Wire Wire Line
+	8750 1875 8925 1875
+Wire Wire Line
+	8625 1525 8925 1525
+Wire Wire Line
+	8925 1975 8625 1975
 $EndSCHEMATC
