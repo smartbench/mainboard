@@ -53,6 +53,7 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:kobiconn_161-3507_jack_3
+LIBS:mountinghole
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END

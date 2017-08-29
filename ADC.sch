@@ -53,6 +53,7 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:kobiconn_161-3507_jack_3
+LIBS:mountinghole
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
@@ -919,28 +920,6 @@ F 3 "" H 8425 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 J703
-U 1 1 599E7936
-P 6950 4175
-F 0 "J703" H 6950 4275 50  0000 C CNN
-F 1 "Testpoint" V 7050 4175 50  0000 C CNN
-F 2 "library:TestPoint" H 6950 4175 50  0001 C CNN
-F 3 "" H 6950 4175 50  0001 C CNN
-	1    6950 4175
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X01 J704
-U 1 1 599E7A18
-P 7100 1475
-F 0 "J704" H 7100 1575 50  0000 C CNN
-F 1 "Testpoint" V 7200 1475 50  0000 C CNN
-F 2 "library:TestPoint" H 7100 1475 50  0001 C CNN
-F 3 "" H 7100 1475 50  0001 C CNN
-	1    7100 1475
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_01X01 J701
 U 1 1 599E8E3F
 P 5175 4200
@@ -1337,13 +1316,6 @@ Connection ~ 8275 1775
 Wire Wire Line
 	8225 4300 8225 4600
 Connection ~ 8225 4600
-Wire Wire Line
-	6900 1775 6900 1475
-Wire Wire Line
-	6750 4175 6675 4175
-Wire Wire Line
-	6675 4175 6675 4600
-Connection ~ 6675 4600
 Wire Wire Line
 	4975 4200 4975 4475
 Connection ~ 4975 4475

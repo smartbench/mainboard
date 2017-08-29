@@ -1,4 +1,4 @@
-update=sáb 26 ago 2017 18:17:11 ART
+update=Tue 29 Aug 2017 01:20:44 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -83,3 +83,4 @@ LibName51=library/voltage-references
 LibName52=library/voltage-regulators
 LibName53=switches
 LibName54=library/kobiconn_161-3507_jack_3
+LibName55=library/mountinghole
