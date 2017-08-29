@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ivan/Documentos/Proyecto/git/mainboard/iCE40hxk4_dev_board.sch</source>
-    <date>lun 28 ago 2017 16:00:02 ART</date>
+    <date>mar 29 ago 2017 00:33:59 ART</date>
     <tool>Eeschema 4.0.7-e0-6372~58~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1343,6 +1343,9 @@
     <comp ref="C714">
       <value>Not used</value>
       <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="C_Variable"/>
       <sheetpath names="/Analog front end/ATTENUATION/" tstamps="/594C84EF/58FE2814/"/>
       <tstamp>5967FFA6</tstamp>
@@ -1362,6 +1365,9 @@
     <comp ref="C713">
       <value>Not used</value>
       <footprint>Capacitors_THT:CP_Radial_Tantal_D6.0mm_P5.00mm</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="C_Variable"/>
       <sheetpath names="/Analog front end/ATTENUATION/" tstamps="/594C84EF/58FE2814/"/>
       <tstamp>59683E8B</tstamp>
@@ -1502,6 +1508,9 @@
     <comp ref="R833">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>5937F68F</tstamp>
@@ -1773,6 +1782,9 @@
     <comp ref="R837">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>596843B0</tstamp>
@@ -1780,6 +1792,9 @@
     <comp ref="R834">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>59684448</tstamp>
@@ -1787,6 +1802,9 @@
     <comp ref="R838">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>59684505</tstamp>
@@ -1794,6 +1812,9 @@
     <comp ref="R835">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>596845B7</tstamp>
@@ -1801,6 +1822,9 @@
     <comp ref="R839">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>5968467E</tstamp>
@@ -1808,6 +1832,9 @@
     <comp ref="R836">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>5968491C</tstamp>
@@ -1815,6 +1842,9 @@
     <comp ref="R840">
       <value>Not used</value>
       <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/Analog front end/PGA/" tstamps="/594C84EF/58FE67E8/"/>
       <tstamp>596849D3</tstamp>
@@ -1938,11 +1968,11 @@
       <tstamp>594D049F</tstamp>
     </comp>
     <comp ref="U902">
-      <value>TCR2EF13</value>
+      <value>TCR2EF13,LM(CT</value>
       <footprint>library:SC-74(5-pins)</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&amp;prodName=TCR2EF13</datasheet>
       <fields>
-        <field name="MPN">TCR2EF13</field>
+        <field name="MPN">TCR2EF13,LM(CT</field>
       </fields>
       <libsource lib="tcr2ef13" part="TCR2EF13"/>
       <sheetpath names="/Analog front end/powerSupply/" tstamps="/594C84EF/591462FD/"/>
@@ -2758,7 +2788,7 @@
       <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/22272C.pdf</datasheet>
       <fields>
-        <field name="MPN">MCP4716A0-E/CH</field>
+        <field name="MPN">MCP4716A0T-E/CH</field>
       </fields>
       <libsource lib="DACs" part="MCP4716"/>
       <sheetpath names="/Analog front end/OFFSET/" tstamps="/594C84EF/58FF252D/"/>
@@ -2769,7 +2799,7 @@
       <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/22272C.pdf</datasheet>
       <fields>
-        <field name="MPN">MCP4716A1-E/CH</field>
+        <field name="MPN">MCP4716A1T-E/CH</field>
       </fields>
       <libsource lib="DACs" part="MCP4716"/>
       <sheetpath names="/Analog front end/OFFSET/" tstamps="/594C84EF/58FF252D/"/>
@@ -3350,11 +3380,11 @@
       <tstamp>58DAD39B</tstamp>
     </comp>
     <comp ref="U203">
-      <value>93LC56BT-I/O</value>
+      <value>93LC56BT-I/OT</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-6_Handsoldering</footprint>
       <datasheet>http://www.mouser.com/ds/2/268/21794b-74044.pdf</datasheet>
       <fields>
-        <field name="MPN">93LC56BT-I/O</field>
+        <field name="MPN">93LC56BT-I/OT</field>
       </fields>
       <libsource lib="my_memory" part="93LCxxB_sot-23-6"/>
       <sheetpath names="/USB+OSCILLATOR+REGULATOR/" tstamps="/58DAC4BF/"/>
@@ -3419,10 +3449,11 @@
       <tstamp>58DC1CB3</tstamp>
     </comp>
     <comp ref="U204">
-      <value>MIC5355/6-xYMME</value>
+      <value>MIC5355-S4YMME</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-8_Handsoldering</footprint>
+      <datasheet>http://www.mouser.com/ds/2/268/mic5355_6-779175.pdf</datasheet>
       <fields>
-        <field name="MPN">MIC5355/6-xYMME</field>
+        <field name="MPN">MIC5355-S4YMME </field>
       </fields>
       <libsource lib="my_regul" part="MIC5355/6-xYMME"/>
       <sheetpath names="/USB+OSCILLATOR+REGULATOR/" tstamps="/58DAC4BF/"/>
@@ -4082,6 +4113,9 @@
     <comp ref="J202">
       <value>USB_OTG</value>
       <footprint>Connectors:USB_Micro-B</footprint>
+      <fields>
+        <field name="MPN">47642-0001</field>
+      </fields>
       <libsource lib="conn" part="USB_OTG"/>
       <sheetpath names="/USB+OSCILLATOR+REGULATOR/" tstamps="/58DAC4BF/"/>
       <tstamp>58F55419</tstamp>
@@ -4210,6 +4244,9 @@
     <comp ref="J1005">
       <value>USB_EXT</value>
       <footprint>Connectors:USB_Micro-B</footprint>
+      <fields>
+        <field name="MPN">47642-0001</field>
+      </fields>
       <libsource lib="conn" part="USB_OTG"/>
       <sheetpath names="/USB+OSCILLATOR+REGULATOR/" tstamps="/58DAC4BF/"/>
       <tstamp>599EBDA6</tstamp>
@@ -5606,14 +5643,11 @@
     <library logical="Lattice_iCE40HX4K_FPGA">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/Lattice_iCE40HX4K_FPGA.lib</uri>
     </library>
-    <library logical="my_oscillators">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_oscillators.lib</uri>
-    </library>
     <library logical="my_memory">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_memory.lib</uri>
     </library>
-    <library logical="AS4C1M16S">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/AS4C1M16S.lib</uri>
+    <library logical="my_oscillators">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_oscillators.lib</uri>
     </library>
     <library logical="my_regul">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/my_regul.lib</uri>
@@ -5621,38 +5655,41 @@
     <library logical="MIC2005A-2">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/MIC2005A-2.lib</uri>
     </library>
-    <library logical="d_schottky_300mv">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/d_schottky_300mv.lib</uri>
-    </library>
-    <library logical="clc4007">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/clc4007.lib</uri>
+    <library logical="AS4C1M16S">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/AS4C1M16S.lib</uri>
     </library>
     <library logical="adc1175">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/adc1175.lib</uri>
     </library>
+    <library logical="clc4007">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/clc4007.lib</uri>
+    </library>
     <library logical="DACs">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/DACs.lib</uri>
-    </library>
-    <library logical="lm4040dym3-2">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/lm4040dym3-2.lib</uri>
-    </library>
-    <library logical="voltage-references">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-references.lib</uri>
-    </library>
-    <library logical="mic7300">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/mic7300.lib</uri>
     </library>
     <library logical="tcr2ef13">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/tcr2ef13.lib</uri>
     </library>
+    <library logical="d_schottky_300mv">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/d_schottky_300mv.lib</uri>
+    </library>
+    <library logical="lm4040dym3-2">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/lm4040dym3-2.lib</uri>
+    </library>
+    <library logical="mic7300">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/mic7300.lib</uri>
+    </library>
+    <library logical="voltage-references">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-references.lib</uri>
+    </library>
     <library logical="multiplexors">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/multiplexors.lib</uri>
     </library>
-    <library logical="voltage-regulators">
-      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-regulators.lib</uri>
-    </library>
     <library logical="switches">
       <uri>/usr/share/kicad/library/switches.lib</uri>
+    </library>
+    <library logical="voltage-regulators">
+      <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/voltage-regulators.lib</uri>
     </library>
     <library logical="kobiconn_161-3507_jack_3">
       <uri>/home/ivan/Documentos/Proyecto/git/mainboard/library/kobiconn_161-3507_jack_3.lib</uri>
