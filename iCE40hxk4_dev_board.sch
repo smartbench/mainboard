@@ -52,8 +52,9 @@ LIBS:tcr2ef13
 LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
-LIBS:kobiconn_161-3507_jack_3
 LIBS:mountinghole
+LIBS:kobiconn_161-3507_3.5mm_jack
+LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
@@ -545,18 +546,6 @@ F 3 "" H 9800 2875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KobiConn_161-3507_Jack_3.5mm J102
-U 1 1 59A2F66A
-P 10525 3450
-F 0 "J102" V 9825 3450 60  0000 C CNN
-F 1 "KobiConn_161-3509-E_Jack_3.5mm" V 9925 3550 60  0000 C CNN
-F 2 "library:KobiConn_161-3507_Jack_3.5mm" H 10675 3450 60  0001 C CNN
-F 3 "http://ar.mouser.com/ProductDetail/Kobiconn/161-3509-E/?qs=sGAEpiMZZMv0W4pxf2HiV4Mt5ZQSVq1hR5HUmztPvpo%3d" H 10675 3450 60  0001 C CNN
-F 4 "KobiConn_161-3509-E" V 10525 3450 60  0001 C CNN "MPN"
-	1    10525 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L MountingHole J106
 U 1 1 59A63C8B
 P 3000 7050
@@ -804,7 +793,7 @@ Wire Wire Line
 Wire Wire Line
 	9800 2750 10225 2750
 Wire Wire Line
-	10925 2750 10825 2750
+	10625 2750 10925 2750
 Wire Wire Line
 	10425 2525 10425 2750
 Wire Wire Line
@@ -828,4 +817,17 @@ Connection ~ 5000 2175
 Connection ~ 2625 7050
 Connection ~ 2625 7225
 Connection ~ 2625 7425
+$Comp
+L KobiConn_161-3509-E_Jack_3.5mm J102
+U 1 1 59A6731A
+P 10525 3450
+F 0 "J102" H 10525 4050 60  0000 C CNN
+F 1 "Jack Estereo" H 10525 3950 60  0000 C CNN
+F 2 "library:KobiConn_161-3509-E_Jack_3.5mm" H 10675 3450 60  0001 C CNN
+F 3 "http://ar.mouser.com/ProductDetail/Kobiconn/161-3509-E/?qs=sGAEpiMZZMv0W4pxf2HiV4Mt5ZQSVq1hR5HUmztPvpo%3d" H 10675 3450 60  0001 C CNN
+F 4 "KobiConn_161-3509-E" H 10525 3450 60  0001 C CNN "MPN"
+	1    10525 3450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10825 2750
 $EndSCHEMATC

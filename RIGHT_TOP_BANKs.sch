@@ -52,8 +52,9 @@ LIBS:tcr2ef13
 LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
-LIBS:kobiconn_161-3507_jack_3
 LIBS:mountinghole
+LIBS:kobiconn_161-3507_3.5mm_jack
+LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
