@@ -55,6 +55,7 @@ LIBS:switches
 LIBS:mountinghole
 LIBS:kobiconn_161-3507_3.5mm_jack
 LIBS:kobiconn_161-3509-E_3.5mm_jack
+LIBS:iCE40hxk4_dev_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -386,9 +387,9 @@ U 1 1 58F9ED80
 P 5000 6450
 F 0 "Xtal401" H 4700 6700 50  0000 L CNN
 F 1 "LFSPXO019966" H 5050 6200 50  0000 L CNN
-F 2 "Oscillators:Oscillator_SMD_Fordahl_DFAS11-4pin_7.0x5.0mm_HandSoldering" H 5700 6100 50  0001 C CNN
-F 3 "" H 4900 6450 50  0001 C CNN
-F 4 "LFSPXO019966" H 4700 6800 50  0001 C CNN "MPN"
+F 2 "library:VLGA_4_2.5x2.0mm" H 5700 6100 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/268/20005625A-1022977.pdf" H 4900 6450 50  0001 C CNN
+F 4 "DSC6003JI2A-012.0000T" H 4700 6800 50  0001 C CNN "MPN"
 	1    5000 6450
 	1    0    0    -1  
 $EndComp
