@@ -590,17 +590,6 @@ F 3 "" H 3000 6875 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
-U 1 1 59A6AB48
-P 2625 7500
-F 0 "#PWR?" H 2625 7250 50  0001 C CNN
-F 1 "GND" H 2625 7350 50  0000 C CNN
-F 2 "" H 2625 7500 50  0001 C CNN
-F 3 "" H 2625 7500 50  0001 C CNN
-	1    2625 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L KobiConn_161-3509-E_Jack_3.5mm J102
 U 1 1 59A6731A
 P 10525 3450
@@ -810,24 +799,15 @@ Wire Wire Line
 	10425 2525 10425 2750
 Wire Wire Line
 	5000 2275 5000 2175
-Wire Wire Line
-	2850 7425 2625 7425
-Wire Wire Line
-	2625 6875 2625 7500
-Wire Wire Line
-	2625 6875 2850 6875
-Wire Wire Line
-	2850 7050 2625 7050
-Wire Wire Line
-	2850 7225 2625 7225
 Connection ~ 2775 1975
 Connection ~ 2675 4025
 Connection ~ 5775 6975
 Connection ~ 7275 6225
 Connection ~ 9550 3950
 Connection ~ 5000 2175
-Connection ~ 2625 7050
-Connection ~ 2625 7225
-Connection ~ 2625 7425
 Connection ~ 10825 2750
+NoConn ~ 2850 7425
+NoConn ~ 2850 7225
+NoConn ~ 2850 7050
+NoConn ~ 2850 6875
 $EndSCHEMATC
