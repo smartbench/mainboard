@@ -778,8 +778,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 3525 7475 3525
 Wire Wire Line
-	5050 2175 4900 2175
-Wire Wire Line
 	5350 2175 5475 2175
 Wire Wire Line
 	4900 2275 5000 2275
@@ -797,17 +795,27 @@ Wire Wire Line
 	10625 2750 10925 2750
 Wire Wire Line
 	10425 2525 10425 2750
-Wire Wire Line
-	5000 2275 5000 2175
 Connection ~ 2775 1975
 Connection ~ 2675 4025
 Connection ~ 5775 6975
 Connection ~ 7275 6225
 Connection ~ 9550 3950
-Connection ~ 5000 2175
 Connection ~ 10825 2750
 NoConn ~ 2850 7425
 NoConn ~ 2850 7225
 NoConn ~ 2850 7050
 NoConn ~ 2850 6875
+Wire Wire Line
+	4900 2175 5050 2175
+$Comp
+L GNDA #PWR?
+U 1 1 59ACDDEF
+P 5000 2275
+F 0 "#PWR?" H 5000 2025 50  0001 C CNN
+F 1 "GNDA" H 5000 2125 50  0000 C CNN
+F 2 "" H 5000 2275 50  0001 C CNN
+F 3 "" H 5000 2275 50  0001 C CNN
+	1    5000 2275
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
