@@ -1,4 +1,4 @@
-update=mar 11 jul 2017 19:16:45 ART
+update=mar 29 ago 2017 21:08:07 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -81,3 +81,7 @@ LibName49=library/multiplexors
 LibName50=library/tcr2ef13
 LibName51=library/voltage-references
 LibName52=library/voltage-regulators
+LibName53=switches
+LibName54=library/mountinghole
+LibName55=library/kobiconn_161-3507_3.5mm_jack
+LibName56=library/kobiconn_161-3509-E_3.5mm_jack
