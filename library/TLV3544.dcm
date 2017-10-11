@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV3544
+D Quad Op amp, GBP 100MHz
+K AmpliOp
+$ENDCMP
+#
+#End Doc Library
