@@ -134,7 +134,7 @@ L MIC5270 U903
 U 1 1 594D049F
 P 6650 4200
 F 0 "U903" H 6650 3970 60  0000 C CNN
-F 1 "MIC5270" H 6650 3864 60  0000 C CNN
+F 1 "TPS72325DBVR" H 6650 3864 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 4950 -1100 60  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf" H 4950 -900 60  0001 C CNN
 F 4 "MIC5270-3.0YM5-TR" H 6650 4070 50  0001 C CNN "MPN"
@@ -146,10 +146,10 @@ L TCR2EF13 U902
 U 1 1 594D04A0
 P 6600 2200
 F 0 "U902" H 6600 1870 60  0000 C CNN
-F 1 "TCR2EF13,LM" H 6600 1764 60  0000 C CNN
+F 1 "MIC5317-2.5YM5-TR" H 6600 1764 60  0000 C CNN
 F 2 "library:SC-74(5-pins)" H 4625 -1600 60  0001 C CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&prodName=TCR2EF13" H 4225 -1700 60  0001 C CNN
-F 4 "TCR2EF13,LM" H 6600 1970 50  0001 C CNN "MPN"
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&prodName=TCR2EF1http://www.mouser.com/ds/2/268/MIC5317-778662.pdf" H 4225 -1700 60  0001 C CNN
+F 4 "MIC5317-2.5YM5-TR" H 6600 1970 50  0001 C CNN "MPN"
 	1    6600 2200
 	1    0    0    -1  
 $EndComp
@@ -247,7 +247,7 @@ F 4 "1" H 7300 1825 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 Text Label 7675 4200 0    60   ~ 0
--3V0
+VSS_A
 Text Label 1550 3450 2    60   ~ 0
 +5V
 Text Label 1550 4250 2    60   ~ 0
@@ -255,15 +255,15 @@ Text Label 1550 4250 2    60   ~ 0
 Text Label 5700 1725 2    60   ~ 0
 +5V
 Text Label 7300 2050 0    60   ~ 0
-+3V3_A
+VDD_A
 Text Label 5900 4200 2    60   ~ 0
 -5V
 Text HLabel 1150 825  0    60   Input ~ 0
 +5V
 Text HLabel 2350 825  2    60   Output ~ 0
-+3V3_A
+VDD_A
 Text HLabel 2350 1000 2    60   Output ~ 0
--3V0
+VSS_A
 Text HLabel 1150 1000 0    60   Input ~ 0
 GND_A
 Text HLabel 2350 1175 2    60   Output ~ 0
@@ -271,13 +271,13 @@ Text HLabel 2350 1175 2    60   Output ~ 0
 Text Label 1250 825  0    60   ~ 0
 +5V
 Text Label 2225 825  2    60   ~ 0
-+3V3_A
+VDD_A
 Text Label 2225 1000 2    60   ~ 0
--3V0
+VSS_A
 Text Label 2225 1175 2    60   ~ 0
 -5V
 Text Notes 1375 6550 0    60   ~ 0
-Cosumos:\n- Inverter LM2776 entrega 200mA, consumo < 100mA\n- Regulador -3V0 entrega 100mA, consumo < 100mA\n- Regulador +3V3 entrega 200mA, consumo < 100mA
+Cosumos:\n- Inverter LM2776 entrega 200mA, consumo < 100mA\n- Regulador VSS_A=-2V5 entrega 200mA, consumo < 100mA\n- Regulador VDD_A=+2V5 entrega 150mA, consumo < 100mA
 Text Notes 3200 4800 0    60   ~ 0
 Flying Capacitor:\n1uF,10V\nCeramic\nX7R or X5R\n>1uF@2MHz\n>0.2uF @anyFreq @anyVDC
 Text Notes 650  3250 0    60   ~ 0
