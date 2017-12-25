@@ -53,10 +53,8 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:mountinghole
-LIBS:kobiconn_161-3507_3.5mm_jack
-LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
