@@ -144,10 +144,10 @@ L TCR2EF13 U902
 U 1 1 594D04A0
 P 6600 2200
 F 0 "U902" H 6600 1870 60  0000 C CNN
-F 1 "MIC5317-2.5YM5-TR" H 6600 1764 60  0000 C CNN
+F 1 "Reg. 2V5 LDO 300mA" H 6600 1764 60  0000 C CNN
 F 2 "library:SC-74(5-pins)" H 4625 -1600 60  0001 C CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&prodName=TCR2EF1http://www.mouser.com/ds/2/268/MIC5317-778662.pdf" H 4225 -1700 60  0001 C CNN
-F 4 "MIC5317-2.5YM5-TR" H 6600 1970 50  0001 C CNN "MPN"
+F 3 "http://www.ti.com/lit/ds/symlink/tlv733p.pdf" H 4225 -1700 60  0001 C CNN
+F 4 "TLV73325PDBVR" H 6600 1970 50  0001 C CNN "MPN"
 	1    6600 2200
 	1    0    0    -1  
 $EndComp
