@@ -53,8 +53,10 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:mountinghole
+LIBS:kobiconn_161-3507_3.5mm_jack
+LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -562,23 +564,7 @@ Wire Wire Line
 Wire Wire Line
 	7975 1575 7975 1700
 Wire Wire Line
-	5525 1575 6225 1575
-Wire Wire Line
-	6225 1575 6575 1575
-Wire Wire Line
-	6575 1575 6925 1575
-Wire Wire Line
-	6925 1575 7275 1575
-Wire Wire Line
-	7275 1575 7625 1575
-Wire Wire Line
-	7625 1575 7975 1575
-Wire Wire Line
-	7975 1575 8325 1575
-Wire Wire Line
-	8325 1575 8675 1575
-Wire Wire Line
-	8675 1575 8950 1575
+	5525 1575 8950 1575
 Wire Wire Line
 	6575 1700 6575 1575
 Wire Wire Line
@@ -598,25 +584,9 @@ Wire Wire Line
 Wire Wire Line
 	3800 5700 3800 5625
 Wire Wire Line
-	6125 3075 6225 3075
+	6125 3075 8675 3075
 Wire Wire Line
-	6225 3075 6575 3075
-Wire Wire Line
-	6575 3075 6925 3075
-Wire Wire Line
-	6925 3075 7275 3075
-Wire Wire Line
-	7275 3075 7625 3075
-Wire Wire Line
-	7625 3075 7975 3075
-Wire Wire Line
-	7975 3075 8325 3075
-Wire Wire Line
-	8325 3075 8675 3075
-Wire Wire Line
-	8675 1250 8675 1575
-Wire Wire Line
-	8675 1575 8675 1700
+	8675 1250 8675 1700
 Wire Wire Line
 	8325 1700 8325 1575
 Wire Wire Line
@@ -630,21 +600,7 @@ Wire Wire Line
 Wire Wire Line
 	7275 2925 7275 3075
 Wire Wire Line
-	6125 5925 6225 5925
-Wire Wire Line
-	6225 5925 6575 5925
-Wire Wire Line
-	6575 5925 6925 5925
-Wire Wire Line
-	6925 5925 7275 5925
-Wire Wire Line
-	7275 5925 7625 5925
-Wire Wire Line
-	7625 5925 7975 5925
-Wire Wire Line
-	7975 5925 8325 5925
-Wire Wire Line
-	8325 5925 8675 5925
+	6125 5925 8675 5925
 Connection ~ 6225 1575
 Connection ~ 6925 1575
 Connection ~ 7275 1575
@@ -663,14 +619,10 @@ Connection ~ 8325 1575
 Wire Wire Line
 	6925 2925 6925 3075
 Wire Wire Line
-	6900 1700 6925 1700
-Wire Wire Line
-	6925 1700 6950 1700
+	6900 1700 6950 1700
 Connection ~ 6925 1700
 Wire Wire Line
-	6900 1900 6925 1900
-Wire Wire Line
-	6925 1900 6950 1900
+	6900 1900 6950 1900
 Connection ~ 6925 1900
 Wire Wire Line
 	7275 1975 7275 1900
@@ -937,29 +889,11 @@ Wire Wire Line
 Wire Wire Line
 	7975 4425 7975 4550
 Wire Wire Line
-	5525 4425 6225 4425
-Wire Wire Line
-	6225 4425 6575 4425
-Wire Wire Line
-	6575 4425 6925 4425
-Wire Wire Line
-	6925 4425 7275 4425
-Wire Wire Line
-	7275 4425 7625 4425
-Wire Wire Line
-	7625 4425 7975 4425
-Wire Wire Line
-	7975 4425 8325 4425
-Wire Wire Line
-	8325 4425 8675 4425
-Wire Wire Line
-	8675 4425 8950 4425
+	5525 4425 8950 4425
 Wire Wire Line
 	6575 4550 6575 4425
 Wire Wire Line
-	8675 4100 8675 4425
-Wire Wire Line
-	8675 4425 8675 4575
+	8675 4100 8675 4575
 Wire Wire Line
 	8325 4550 8325 4425
 Wire Wire Line
@@ -975,14 +909,10 @@ Connection ~ 6575 4425
 Connection ~ 8675 4425
 Connection ~ 8325 4425
 Wire Wire Line
-	6900 4550 6925 4550
-Wire Wire Line
-	6925 4550 6950 4550
+	6900 4550 6950 4550
 Connection ~ 6925 4550
 Wire Wire Line
-	6900 4750 6925 4750
-Wire Wire Line
-	6925 4750 6950 4750
+	6900 4750 6950 4750
 Connection ~ 6925 4750
 Wire Wire Line
 	7275 4750 7275 4850

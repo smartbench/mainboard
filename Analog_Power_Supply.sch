@@ -53,8 +53,10 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:mountinghole
+LIBS:kobiconn_161-3507_3.5mm_jack
+LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -133,9 +135,9 @@ U 1 1 594D049F
 P 6650 4200
 F 0 "U903" H 6650 3970 60  0000 C CNN
 F 1 "TPS72325DBVR" H 6650 3864 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 4950 -1100 60  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic5270.pdf" H 4950 -900 60  0001 C CNN
-F 4 "MIC5270-3.0YM5-TR" H 6650 4070 50  0001 C CNN "MPN"
+F 2 "pone el footprint bien acá mono" H 4950 -1100 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps723.pdf" H 4950 -900 60  0001 C CNN
+F 4 "TPS72325DBVR" H 6650 4070 50  0001 C CNN "MPN"
 	1    6650 4200
 	1    0    0    -1  
 $EndComp
