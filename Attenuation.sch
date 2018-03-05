@@ -53,10 +53,8 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:mountinghole
-LIBS:kobiconn_161-3507_3.5mm_jack
-LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -75,7 +73,7 @@ L C C703
 U 1 1 5965C31F
 P 5225 1950
 F 0 "C703" H 5250 2050 50  0000 L CNN
-F 1 "22pF" H 5250 1850 50  0000 L CNN
+F 1 "20pF" H 5250 1850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5263 1800 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/U-Series-894201.pdf" H 5225 1950 50  0001 C CNN
 F 4 "C0G" H 5250 2150 50  0001 C CNN "Dielectric"
@@ -165,7 +163,7 @@ L C C709
 U 1 1 5965C326
 P 5225 2500
 F 0 "C709" H 5250 2600 50  0000 L CNN
-F 1 "180pF" H 5250 2400 50  0000 L CNN
+F 1 "200pF" H 5250 2400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5263 2350 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 5225 2500 50  0001 C CNN
 F 4 "C0G" H 5250 2700 50  0001 C CNN "Dielectric"
@@ -389,7 +387,7 @@ L C C706
 U 1 1 5965C339
 P 5100 4750
 F 0 "C706" H 5125 4850 50  0000 L CNN
-F 1 "22pF" H 5125 4650 50  0000 L CNN
+F 1 "20pF" H 5125 4650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5138 4600 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/40/U-Series-894201.pdf" H 5100 4750 50  0001 C CNN
 F 4 "C0G" H 5125 4950 50  0001 C CNN "Dielectric"
@@ -464,7 +462,7 @@ L C C711
 U 1 1 5965C33F
 P 5100 5350
 F 0 "C711" H 5125 5450 50  0000 L CNN
-F 1 "180pF" H 5125 5250 50  0000 L CNN
+F 1 "200pF" H 5125 5250 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5138 5200 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 5100 5350 50  0001 C CNN
 F 4 "C0G" H 5125 5550 50  0001 C CNN "Dielectric"

@@ -53,10 +53,8 @@ LIBS:voltage-references
 LIBS:voltage-regulators
 LIBS:switches
 LIBS:mountinghole
-LIBS:kobiconn_161-3507_3.5mm_jack
-LIBS:kobiconn_161-3509-E_3.5mm_jack
 LIBS:iCE40hxk4_dev_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -139,7 +137,7 @@ U 1 1 58FEFD23
 P 7175 2000
 F 0 "D1005" H 7250 2100 50  0000 L CNN
 F 1 "D_Schottky_BAT54-7-F" H 7100 2225 50  0000 L CNN
-F 2 "Diodes_SMD:D_SOT-23_ANK" H 1075 -575 50  0001 C CNN
+F 2 "library:D_SOT-23_ANK_variant" H 1075 -575 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 1075 125 50  0001 C CNN
 F 4 "BAT54-7-F" H 7250 2200 50  0001 C CNN "MPN"
 	1    7175 2000
@@ -163,7 +161,7 @@ U 1 1 58FF0DCF
 P 7000 4825
 F 0 "D1004" H 7075 4925 50  0000 L CNN
 F 1 "D_Schottky_BAT54-7-F" H 6925 5050 50  0000 L CNN
-F 2 "Diodes_SMD:D_SOT-23_ANK" H 900 2250 50  0001 C CNN
+F 2 "library:D_SOT-23_ANK_variant" H 900 2250 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 900 2950 50  0001 C CNN
 F 4 "BAT54-7-F" H 7075 5025 50  0001 C CNN "MPN"
 	1    7000 4825
